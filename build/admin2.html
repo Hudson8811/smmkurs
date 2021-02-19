@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1320, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__flex">
+          <div class="header__left"><a class="header__logo header__logo--admin" href=""><img src="img/logo_admin.png" alt="logo"></a>
+            <ul class="header__menu">
+              <li class="active"><a href="">Экспресс SMM</a></li>
+              <li><a href="">Комплекс SMM</a></li>
+            </ul>
+          </div><a class="header__burger" href="javascript:;"></a>
+          <div class="header__right">
+            <ul class="header__menu">
+              <li class="active"><a href="">Потоки</a></li>
+              <li><a href="">Уроки</a></li>
+              <li><a href="">Личный кабинет</a></li>
+            </ul>
+            <div class="header__login"><a href="">Выйти</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main main--admin">
+      <div class="admin-top">
+        <div class="container">
+          <div class="admin-top__flex">
+            <div class="admin-top__title">Создание потока</div>
+            <div class="admin-top__title">Экспресс SMM</div>
+          </div>
+        </div>
+      </div>
+      <div class="admin-top-bar">
+        <div class="container">
+          <div class="admin-top-bar__flex"><a class="admin-top-bar__back" href="">
+              <div class="admin-top-bar__back-img"><img src="img/left-arrow.png"></div>
+              <div class="admin-top-bar__back-text">Выйти на главную</div></a>
+            <button class="admin-top-bar__save btn btn--dark" disabled type="button">Сохранить</button>
+          </div>
+        </div>
+      </div>
+      <div class="admin-kurs-info">
+        <div class="container">
+          <div class="admin-kurs-info__title">Экспресс SMM <span>#6</span></div>
+        </div>
+      </div>
+      <div class="admin-params">
+        <div class="container">
+          <div class="admin-params__flex">
+            <div class="admin-params__col">
+              <div class="admin-params__dates">
+                <div class="admin-params__date">
+                  <div class="admin-params__date-label">Cтарт курса</div>
+                  <div class="admin-params__date-input">
+                    <input class="input-style" type="date" name="date_from">
+                  </div>
+                </div>
+                <div class="admin-params__date">
+                  <div class="admin-params__date-label">Конец курса</div>
+                  <div class="admin-params__date-input">
+                    <input class="input-style" type="date" name="date_to">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="admin-params__col admin-params__col--pt">
+              <div class="admin-params__checkbox">
+                <label class="checkbox">
+                  <input type="checkbox" name="potok" value="1" checked>
+                  <div class="checkbox__icon"></div>
+                  <div class="checkbox__text">Не потоковый</div>
+                </label>
+              </div>
+            </div>
+            <div class="admin-params__col">
+              <div class="admin-params__checkbox">
+                <label class="checkbox">
+                  <input type="checkbox" name="" value="1">
+                  <div class="checkbox__icon"></div>
+                  <div class="checkbox__text">Уроки открываются после прохождения предыдущего</div>
+                </label>
+              </div>
+              <div class="admin-params__checkbox">
+                <label class="checkbox">
+                  <input type="checkbox" name="" value="1">
+                  <div class="checkbox__icon"></div>
+                  <div class="checkbox__text">Уроки открыты сразу</div>
+                </label>
+              </div>
+              <div class="admin-params__checkbox">
+                <label class="checkbox">
+                  <input type="checkbox" name="" value="1">
+                  <div class="checkbox__icon"></div>
+                  <div class="checkbox__text">Открывать уроки с интервалом</div>
+                </label>
+                <select class="input-style input-style--select" name="interval">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>дня
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="admin-lists">
+        <div class="container">
+          <div class="admin-lists__title">Добавление уроков</div>
+          <div class="admin-lists__flex">
+            <div class="admin-lists__col admin-lists__col--left admin-lists__col--min">
+              <div class="admin-list">
+                <div class="admin-list__top">
+                  <div class="admin-list__top-left"></div>
+                  <div class="admin-list__top-title">Экспресс SMM <span>#6</span></div>
+                </div>
+                <ol class="kurs-list" id="kurs-list">
+                  <li class="kurs-list__item">
+                    <input type="hidden" name="urok[]" value="1">
+                    <div class="kurs-list__item-title">Знакомство с преподавателем</div>
+                    <div class="kurs-list__item-dots"></div><a class="kurs-list__item-del js-remove-urok" href="javascript:;"></a>
+                    <input class="input-style kurs-list__item-date" type="date" name="date_start[]">
+                    <div class="kurs-list__item-checkbox">
+                      <label class="checkbox">
+                        <input type="checkbox" name="" value="1">
+                        <div class="checkbox__icon"></div>
+                        <div class="checkbox__text"><img src="img/present-drag.png" alt=""></div>
+                      </label>
+                    </div>
+                  </li>
+                  <li class="kurs-list__item">
+                    <input type="hidden" name="urok[]" value="1">
+                    <div class="kurs-list__item-title">Введение</div>
+                    <div class="kurs-list__item-dots"></div><a class="kurs-list__item-del js-remove-urok" href="javascript:;"></a>
+                    <input class="input-style kurs-list__item-date" type="date" name="date_start[]">
+                    <div class="kurs-list__item-checkbox">
+                      <label class="checkbox">
+                        <input type="checkbox" name="" value="1">
+                        <div class="checkbox__icon"></div>
+                        <div class="checkbox__text"><img src="img/present-drag.png" alt=""></div>
+                      </label>
+                    </div>
+                  </li>
+                  <li class="kurs-list__item">
+                    <input type="hidden" name="urok[]" value="1">
+                    <div class="kurs-list__item-title">Что то еще</div>
+                    <div class="kurs-list__item-dots"></div><a class="kurs-list__item-del js-remove-urok" href="javascript:;"></a>
+                    <input class="input-style kurs-list__item-date" type="date" name="date_start[]">
+                    <div class="kurs-list__item-checkbox">
+                      <label class="checkbox">
+                        <input type="checkbox" name="" value="1">
+                        <div class="checkbox__icon"></div>
+                        <div class="checkbox__text"><img src="img/present-drag.png" alt=""></div>
+                      </label>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="admin-lists__col admin-lists__col--right admin-lists__col--min">
+              <div class="admin-list">
+                <div class="admin-list__top">
+                  <div class="admin-list__top-left"><a class="btn btn--dark btn--small js-add-all-urok" href="javascript:;">Добавить все</a></div>
+                  <div class="admin-list__top-title">Все уроки</div>
+                </div>
+                <ol class="kurs-list" id="kurs-list-all">
+                  <li class="kurs-list__item">
+                    <input type="hidden" name="urok[]" value="23">
+                    <div class="kurs-list__item-title">Знакомство с преподавателем 22</div>
+                    <div class="kurs-list__item-dots"></div><a class="kurs-list__item-del js-remove-urok" href="javascript:;"></a>
+                    <input class="input-style kurs-list__item-date" type="date" name="date_start[]">
+                    <div class="kurs-list__item-checkbox">
+                      <label class="checkbox">
+                        <input type="checkbox" name="" value="1">
+                        <div class="checkbox__icon"></div>
+                        <div class="checkbox__text"><img src="img/present-drag.png" alt=""></div>
+                      </label>
+                    </div><a class="kurs-list__item-add" href="javascript:;"></a>
+                  </li>
+                  <li class="kurs-list__item">
+                    <input type="hidden" name="urok[]" value="22">
+                    <div class="kurs-list__item-title">Знакомство с преподавателем 23</div>
+                    <div class="kurs-list__item-dots"></div><a class="kurs-list__item-del js-remove-urok" href="javascript:;"></a>
+                    <input class="input-style kurs-list__item-date" type="date" name="date_start[]">
+                    <div class="kurs-list__item-checkbox">
+                      <label class="checkbox">
+                        <input type="checkbox" name="" value="1">
+                        <div class="checkbox__icon"></div>
+                        <div class="checkbox__text"><img src="img/present-drag.png" alt=""></div>
+                      </label>
+                    </div><a class="kurs-list__item-add" href="javascript:;"></a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer--dark">
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__left">
+            <div class="footer__title">Москва, Россия</div>
+            <div class="footer__row"><a class="footer__link" href="">Оферта</a><a class="footer__link" href="">Политика обработки персональных данных</a></div>
+          </div>
+          <div class="footer__right"><a class="footer__title footer__title--link" href="mailto:tutor@smmagnat.ru">tutor@smmagnat.ru</a>
+            <div class="footer__row"><a class="footer__link" href="">Instagram</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

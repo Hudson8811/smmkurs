@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__flex"><a class="header__logo" href=""><img src="img/logo.png" alt="logo"></a><a class="header__burger" href="javascript:;"></a>
+          <div class="header__right">
+            <ul class="header__menu">
+              <li class="active"><a href="">Курсы</a></li>
+              <li><a href="">Личный кабинет</a></li>
+            </ul>
+            <div class="header__login"><a href="">Выйти</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="cabinet-page">
+        <div class="container">
+          <div class="cabinet-page__top">
+            <div class="cabinet-page__title"><img src="img/hand.png" alt="hi">Привет,
+              <div class="js-auto-width">
+                <input class="js-name-input" value="Иван Иванов" readonly maxlength="30"><span>Иван Иванов</span>
+              </div>!
+            </div><a class="cabinet-page__edit js-name-edit" href="javascript:;"><span>Изменить имя</span>
+              <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.95942 13.2439L11.7933 4.40645C12.1647 3.92988 12.2967 3.3789 12.1729 2.81788C12.0656 2.30787 11.752 1.82293 11.2816 1.45505L10.1343 0.543716C9.13566 -0.250569 7.89765 -0.16696 7.18785 0.744378L6.42028 1.74016C6.32124 1.86474 6.346 2.04868 6.4698 2.14901C6.4698 2.14901 8.40936 3.70414 8.45063 3.73758C8.58268 3.86299 8.68173 4.03021 8.70649 4.23087C8.74775 4.62384 8.47539 4.99172 8.07097 5.04188C7.88114 5.06696 7.69956 5.00844 7.56751 4.89975L5.52891 3.27773C5.42987 3.20332 5.2813 3.2192 5.19877 3.31954L0.353996 9.59021C0.0403655 9.98317 -0.0669294 10.4932 0.0403655 10.9865L0.659374 13.6703C0.692388 13.8125 0.81619 13.9128 0.964752 13.9128L3.68839 13.8794C4.1836 13.871 4.64579 13.6452 4.95942 13.2439ZM8.77314 12.4081H13.2143C13.6476 12.4081 14 12.7651 14 13.204C14 13.6438 13.6476 14 13.2143 14H8.77314C8.33984 14 7.98741 13.6438 7.98741 13.204C7.98741 12.7651 8.33984 12.4081 8.77314 12.4081Z" fill="#FF4E00"></path>
+              </svg></a>
+          </div>
+          <div class="cabinet-page__section">
+            <div class="cabinet-page__section-title">Основная информация</div>
+            <div class="cabinet-page__section-info">Здесь можно изменить информацию о себе и указать дополнительную</div>
+            <div class="cabinet-page__row">
+              <div class="cabinet-page__element">
+                <div class="cabinet-page__element-title">Почта</div>
+                <div class="cabinet-page__element-input">
+                  <div class="js-auto-width">
+                    <input type="email" readonly name="email" value="ivanov@mail.ru"><span>ivanov@mail.ru</span>
+                  </div>
+                </div>
+                <div class="cabinet-page__element-edit"><a href="javascript:;">Изменить</a></div>
+              </div>
+              <div class="cabinet-page__element">
+                <div class="cabinet-page__element-title">Телефон</div>
+                <div class="cabinet-page__element-input">
+                  <div class="js-auto-width">
+                    <input type="text" readonly name="phone" value="ivanov@mail.ru"><span>ivanov@mail.ru</span>
+                  </div>
+                </div>
+                <div class="cabinet-page__element-edit"><a href="javascript:;">Изменить</a></div>
+              </div>
+              <div class="cabinet-page__element">
+                <div class="cabinet-page__element-title">Город</div>
+                <div class="cabinet-page__element-input">
+                  <div class="js-auto-width">
+                    <input type="text" readonly name="city" value="ivanov@mail.ru"><span>ivanov@mail.ru</span>
+                  </div>
+                </div>
+                <div class="cabinet-page__element-edit"><a href="javascript:;">Изменить</a></div>
+              </div>
+            </div>
+            <div class="cabinet-page__row">
+              <div class="cabinet-page__element">
+                <div class="cabinet-page__element-title">Пароль</div>
+                <div class="cabinet-page__element-input">
+                  <div class="js-auto-width">
+                    <input type="password" readonly name="password" value="password"><span>password</span>
+                  </div>
+                </div>
+                <div class="cabinet-page__element-edit"><a class="js-change-pass" href="javascript:;">Изменить</a></div>
+              </div>
+              <div class="cabinet-page__element cabinet-page__element--confirm" style="display:none;">
+                <div class="cabinet-page__element-title">Подтвердите пароль</div>
+                <div class="cabinet-page__element-input">
+                  <div class="js-auto-width">
+                    <input type="password" readonly name="password2" value="password"><span>password</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cabinet-page__section">
+            <div class="cabinet-page__section-title">Активация ключа</div>
+            <div class="cabinet-page__section-info">Введите код в поле ниже</div>
+            <label class="input-block">
+              <input class="success" type="text" placeholder="some text">
+              <div class="input-block__placeholder">Ключ</div>
+              <div class="input-block__status-icon"></div>
+              <div class="input-block__error">Код уже был активирован</div>
+            </label>
+          </div>
+          <div class="cabinet-page__history history">
+            <div class="history__item">
+              <div class="history__icon">
+                <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="12" fill="#77C285" fill-opacity="0.2"></rect>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.113 16.5H23.9051C26.3271 16.5 28.0181 18.169 28.0181 20.5609V27.4391C28.0181 29.831 26.3271 31.5 23.9051 31.5H18.113C15.691 31.5 14 29.831 14 27.4391V20.5609C14 18.169 15.691 16.5 18.113 16.5ZM31.958 18.879C32.397 18.6556 32.912 18.679 33.331 18.9429C33.75 19.2059 34 19.6627 34 20.1622V27.8384C34 28.3389 33.75 28.7947 33.331 29.0577C33.102 29.2008 32.846 29.2739 32.588 29.2739C32.373 29.2739 32.158 29.2231 31.957 29.1206L30.476 28.3734C29.928 28.0952 29.588 27.5369 29.588 26.9165V21.083C29.588 20.4617 29.928 19.9034 30.476 19.6272L31.958 18.879Z" fill="#62CA76"></path>
+                </svg>
+              </div>
+              <div class="history__count">17</div>
+              <div class="history__title">Лекций прослушано</div>
+            </div>
+            <div class="history__item">
+              <div class="history__icon">
+                <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="12" fill="#E56862" fill-opacity="0.2"></rect>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.3304 14.0004H28.6694C32.0704 14.0004 33.9904 15.9294 34.0004 19.3304V28.6704C34.0004 32.0704 32.0704 34.0004 28.6694 34.0004H19.3304C15.9294 34.0004 14.0004 32.0704 14.0004 28.6704V19.3304C14.0004 15.9294 15.9294 14.0004 19.3304 14.0004ZM24.0494 29.8604C24.4804 29.8604 24.8394 29.5404 24.8794 29.1104V18.9204C24.9194 18.6104 24.7704 18.2994 24.5004 18.1304C24.2194 17.9604 23.8794 17.9604 23.6104 18.1304C23.3394 18.2994 23.1904 18.6104 23.2194 18.9204V29.1104C23.2704 29.5404 23.6294 29.8604 24.0494 29.8604ZM28.6504 29.8604C29.0704 29.8604 29.4294 29.5404 29.4804 29.1104V25.8304C29.5094 25.5094 29.3604 25.2104 29.0894 25.0404C28.8204 24.8704 28.4804 24.8704 28.2004 25.0404C27.9294 25.2104 27.7804 25.5094 27.8204 25.8304V29.1104C27.8604 29.5404 28.2194 29.8604 28.6504 29.8604ZM20.2194 29.1104C20.1794 29.5404 19.8204 29.8604 19.3894 29.8604C18.9594 29.8604 18.5994 29.5404 18.5604 29.1104V22.2004C18.5304 21.8894 18.6794 21.5804 18.9504 21.4104C19.2194 21.2404 19.5604 21.2404 19.8304 21.4104C20.0994 21.5804 20.2504 21.8894 20.2194 22.2004V29.1104Z" fill="#E45851"></path>
+                </svg>
+              </div>
+              <div class="history__count">1</div>
+              <div class="history__title">Завершено курсов</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer--dark">
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__left">
+            <div class="footer__title">Москва, Россия</div>
+            <div class="footer__row"><a class="footer__link" href="">Оферта</a><a class="footer__link" href="">Политика обработки персональных данных</a></div>
+          </div>
+          <div class="footer__right"><a class="footer__title footer__title--link" href="mailto:tutor@smmagnat.ru">tutor@smmagnat.ru</a>
+            <div class="footer__row"><a class="footer__link" href="">Instagram</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

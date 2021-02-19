@@ -1,0 +1,108 @@
+extends layouts/admin
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    .admin-top
+        .container
+            .admin-top__flex
+                .admin-top__title Потоки
+                .admin-top__title Экспресс SMM
+
+    .admin-potoks
+        .container
+            .admin-potoks__block
+                .admin-potoks__title Текущие
+                .admin-potoks__flex
+                    .admin-potoks__potok.admin-potok.admin-potok--current(data-id="1")
+                        .admin-potok__dot
+                        .admin-potok__title Экспресс SMM <span>#4</span>
+                        .admin-potok__status Идёт
+                        .admin-potok__users
+                            .admin-potok__users-img
+                                img(src="img/user.svg" alt="")
+                            .admin-potok__users-text 13 человек
+                        .admin-potok__date <span>18.01.2020<span> – </span>17.02.2020</span>
+                    .admin-potoks__potok.admin-potok.active.admin-potok--next(data-id="1")
+                        .admin-potok__dot
+                        .admin-potok__title Экспресс SMM <span>#4</span>
+                        .admin-potok__status Идёт
+                        .admin-potok__users
+                            .admin-potok__users-img
+                                img(src="img/user.svg")
+                            .admin-potok__users-text 13 человек
+                        .admin-potok__date <span>18.01.2020<span> – </span>17.02.2020</span>
+                    .admin-potoks__potok.admin-potok.admin-potok--end(data-id="1")
+                        .admin-potok__dot
+                        .admin-potok__title Экспресс SMM <span>#4</span>
+                        .admin-potok__status Идёт
+                        .admin-potok__users
+                            .admin-potok__users-img
+                                img(src="img/user.svg")
+                            .admin-potok__users-text 13 человек
+                        .admin-potok__date <span>18.01.2020<span> – </span>17.02.2020</span>
+                    .admin-potoks__potok.admin-potok.admin-potok--notime(data-id="1")
+                        .admin-potok__dot
+                        .admin-potok__title Экспресс SMM <span>#4</span>
+                        .admin-potok__status Идёт
+                        .admin-potok__users
+                            .admin-potok__users-img
+                                img(src="img/user.svg")
+                            .admin-potok__users-text 13 человек
+                        .admin-potok__date
+                    .admin-potoks__potok.admin-addpotok
+                        .admin-addpotok__img
+                            img(src="img/plus.png" alt="")
+                        .admin-addpotok__text Новый поток
+
+            .admin-potoks__block
+                .admin-potoks__title Закончились
+                .admin-potoks__flex
+                    .admin-potoks__potok.admin-potok.admin-potok--current
+                        .admin-potok__dot
+                        .admin-potok__title Экспресс SMM <span>#4</span>
+                        .admin-potok__status Идёт
+                        .admin-potok__users
+                            .admin-potok__users-img
+                                img(src="img/user.svg" alt="")
+                            .admin-potok__users-text 13 человек
+                        .admin-potok__date <span>18.01.2020<span> – </span>17.02.2020</span>
+                    .admin-potoks__potok.admin-potok.active.admin-potok--next
+                        .admin-potok__dot
+                        .admin-potok__title Экспресс SMM <span>#4</span>
+                        .admin-potok__status Идёт
+                        .admin-potok__users
+                            .admin-potok__users-img
+                                img(src="img/user.svg")
+                            .admin-potok__users-text 13 человек
+                        .admin-potok__date <span>18.01.2020<span> – </span>17.02.2020</span>
+                    .admin-potoks__potok.admin-potok.admin-potok--end
+                        .admin-potok__dot
+                        .admin-potok__title Экспресс SMM <span>#4</span>
+                        .admin-potok__status Идёт
+                        .admin-potok__users
+                            .admin-potok__users-img
+                                img(src="img/user.svg")
+                            .admin-potok__users-text 13 человек
+                        .admin-potok__date <span>18.01.2020<span> – </span>17.02.2020</span>
+                    .admin-potoks__potok.admin-potok.admin-potok--notime
+                        .admin-potok__dot
+                        .admin-potok__title Экспресс SMM <span>#4</span>
+                        .admin-potok__status Идёт
+                        .admin-potok__users
+                            .admin-potok__users-img
+                                img(src="img/user.svg")
+                            .admin-potok__users-text 13 человек
+                        .admin-potok__date
+    .admin-modal#agreeModal
+        .admin-modal__text Вы уверены, что хотите переключить поток, в который попадают оплатившие?
+        .admin-modal__btns
+            a.admin-modal__btn.btn.js-agree(href="javascript:;") Да
+            a.admin-modal__btn.btn.btn--border.js-false(href="javascript:;") Ой, не туда

@@ -1,0 +1,131 @@
+extends layouts/admin
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    .m-admin
+        .m-admin-top
+            .container
+                ul.header__menu.m-admin-top__menu
+                    li
+                        a(href="") Пользователи
+                    li.active
+                        a(href="") Курсы
+
+        .m-admin-users
+            .container
+                .m-admin-table
+                    .m-admin-table__row.m-admin-table__row--head
+                        .m-admin-table__cell Курс
+                        .m-admin-table__cell Потоки
+                    .m-admin-table__row
+                        .m-admin-table__cell
+                            | Экспресс SMM
+                        .m-admin-table__cell
+                            .m-admin-table__groups
+                                .m-admin-table__groups-title Текущие
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--next.m-admin-table__groups-kurs--current(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   &nbsp;/&nbsp;   17 человек    &nbsp;/&nbsp;   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--notime(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--end(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                            .m-admin-table__groups
+                                .m-admin-table__groups-title Закончились
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--next.m-admin-table__groups-kurs--current(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--notime(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--end(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+
+                    .m-admin-table__row
+                        .m-admin-table__cell
+                            | Экспресс SMM
+                        .m-admin-table__cell
+                            .m-admin-table__groups
+                                .m-admin-table__groups-title Текущие
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--next.m-admin-table__groups-kurs--current(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--notime(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--end(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                            .m-admin-table__groups
+                                .m-admin-table__groups-title Закончились
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--next.m-admin-table__groups-kurs--current(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--notime(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--end(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+
+                    .m-admin-table__row
+                        .m-admin-table__cell
+                            | Экспресс SMM
+                        .m-admin-table__cell
+                            .m-admin-table__groups
+                                .m-admin-table__groups-title Текущие
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--next.m-admin-table__groups-kurs--current(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--notime(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--end(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                            .m-admin-table__groups
+                                .m-admin-table__groups-title Закончились
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--next.m-admin-table__groups-kurs--current(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--notime(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+                                a.m-admin-table__groups-kurs.m-admin-table__groups-kurs--end(href="javascript:;" data-group="1" data-lesson="1")
+                                    .m-admin-table__groups-dot
+                                    .m-admin-table__groups-info Экспресс #5   /   17 человек    /   21.01.2021 — 21.05.2021
+                                    .m-admin-table__groups-status Ожидает начала
+
+    .admin-modal#agreeModal
+        .admin-modal__text Вы уверены, что хотите переключить поток, в который попадают оплатившие?
+        .admin-modal__btns
+            a.admin-modal__btn.btn.js-agree(href="javascript:;") Да
+            a.admin-modal__btn.btn.btn--border.js-false(href="javascript:;") Ой, не туда

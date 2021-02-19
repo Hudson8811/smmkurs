@@ -1,0 +1,110 @@
+extends layouts/admin
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    .admin-top
+        .container
+            .admin-top__flex
+                .admin-top__title Создание потока
+                .admin-top__title Экспресс SMM
+
+    .admin-top-bar
+        .container
+            .admin-top-bar__flex
+                a.admin-top-bar__back(href="")
+                    .admin-top-bar__back-img
+                        img(src="img/left-arrow.png")
+                    .admin-top-bar__back-text Выйти на главную
+                button.admin-top-bar__save.btn.btn--dark(type="button") Редактировать поток
+
+    .admin-kurs-info
+        .container
+            .admin-kurs-info__title Экспресс SMM <span>#6</span>
+            .admin-kurs-info__date 18.01.2020 – 17.02.2020
+            .admin-kurs-info__status.admin-kurs-info__status--active Идет
+
+
+
+    .admin-lists
+        .container
+            .admin-lists__title Ученики
+            .admin-lists__flex.admin-lists__flex--start
+                .admin-lists__col.admin-lists__col--left.admin-lists__col--min
+                    .people
+                        .people__title
+                            .people__title-text Общая успеваемость
+                            .people__title-progress.progress
+                                .progress__bar
+                                    .progress__bar-inner(style="width:50%")
+                                .progress__procent 50%
+                        .people__search
+                            input.input-style(type="text" name="search")
+                        ol.people-list
+                            li.people-list__item(data-id="1")
+                                .people-list__item-email evgmed@inbox.ru
+                                .people-list__item-progress.progress
+                                    .progress__bar
+                                        .progress__bar-inner(style="width:50%")
+                                    .progress__procent 50%
+                                a.people-list__item-link.js-edit-people(href="javascript:;") Доступ
+                                a.people-list__item-link.js-del-people(href="javascript:;") Исключить
+                                .admin-edit-modal
+                                    .admin-edit-modal__title evgmed@inbox.ru
+                                    .admin-params__dates
+                                        .admin-params__date
+                                            .admin-params__date-label Cтарт курса
+                                            .admin-params__date-input
+                                                input.input-style(type="date" name="date_start")
+                                        .admin-params__date
+                                            .admin-params__date-label Конец курса
+                                            .admin-params__date-input
+                                                input.input-style(type="date" name="date_end")
+
+
+                            li.people-list__item(data-id="2")
+                                .people-list__item-email evgmed@inbox.ru
+                                .people-list__item-progress.progress
+                                    .progress__bar
+                                        .progress__bar-inner(style="width:50%")
+                                    .progress__procent 50%
+                                a.people-list__item-link.js-edit-people(href="javascript:;") Доступ
+                                a.people-list__item-link.js-del-people(href="javascript:;") Исключить
+
+                                .admin-edit-modal
+                                    .admin-edit-modal__title evgmed@inbox.ru
+                                    .admin-params__dates
+                                        .admin-params__date
+                                            .admin-params__date-label Cтарт курса
+                                            .admin-params__date-input
+                                                input.input-style(type="date" name="date_start")
+                                        .admin-params__date
+                                            .admin-params__date-label Конец курса
+                                            .admin-params__date-input
+                                                input.input-style(type="date" name="date_end")
+
+
+                .admin-lists__col.admin-lists__col--right
+                    .people-search
+                        .people-search__title Добавить ученика
+                        .people-search__input
+                            input.input-style(type="text" name="search")
+                        ul.people-search__results
+                            li
+                                a(href="javascript:;" data-id="1") evgmed@inbox.ru
+
+
+
+
+    .admin-modal#agreeModal
+        .admin-modal__text Вы уверены, что хотите исключить <strong></strong>?
+        .admin-modal__btns
+            a.admin-modal__btn.btn.js-agree(href="javascript:;") Да
+            a.admin-modal__btn.btn.btn--border.js-false(href="javascript:;") Ой, не туда

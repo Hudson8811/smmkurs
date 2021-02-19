@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1320, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__flex">
+          <div class="header__left"><a class="header__logo header__logo--admin" href=""><img src="img/logo_admin.png" alt="logo"></a>
+            <ul class="header__menu">
+              <li class="active"><a href="">Экспресс SMM</a></li>
+              <li><a href="">Комплекс SMM</a></li>
+            </ul>
+          </div><a class="header__burger" href="javascript:;"></a>
+          <div class="header__right">
+            <ul class="header__menu">
+              <li class="active"><a href="">Потоки</a></li>
+              <li><a href="">Уроки</a></li>
+              <li><a href="">Личный кабинет</a></li>
+            </ul>
+            <div class="header__login"><a href="">Выйти</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main main--admin">
+      <div class="admin-top">
+        <div class="container">
+          <div class="admin-top__flex">
+            <div class="admin-top__title">Уроки</div>
+            <div class="admin-top__title">Экспресс SMM</div>
+          </div>
+        </div>
+      </div>
+      <div class="admin-lessons">
+        <div class="container">
+          <div class="admin-lessons__container"><a class="btn btn--dark admin-lessons__add js-new-urok" href="javascript:;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <path d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"></path>
+              </svg>Создать</a>
+            <ol class="kurs-list" id="kurs-list">
+              <li class="kurs-list__item">
+                <input type="hidden" name="urok[]" value="1">
+                <div class="kurs-list__item-title">Знакомство с преподавателем</div><a class="kurs-list__item-edit js-edit-urok" href="javascript:;"></a>
+                <div class="kurs-list__item-dots"></div><a class="kurs-list__item-del js-delete-urok" href="javascript:;"></a>
+              </li>
+              <li class="kurs-list__item">
+                <input type="hidden" name="urok[]" value="1">
+                <div class="kurs-list__item-title">Введение</div><a class="kurs-list__item-edit js-edit-urok" href="javascript:;"></a>
+                <div class="kurs-list__item-dots"></div><a class="kurs-list__item-del js-delete-urok" href="javascript:;"></a>
+              </li>
+              <li class="kurs-list__item">
+                <input type="hidden" name="urok[]" value="1">
+                <div class="kurs-list__item-title">Что то еще</div><a class="kurs-list__item-edit js-edit-urok" href="javascript:;"></a>
+                <div class="kurs-list__item-dots"></div><a class="kurs-list__item-del js-delete-urok" href="javascript:;"></a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="admin-modal" id="agreeModal">
+        <div class="admin-modal__text">Вы уверены, что хотите удалить урок?</div>
+        <div class="admin-modal__btns"><a class="admin-modal__btn btn js-agree" href="javascript:;">Да</a><a class="admin-modal__btn btn btn--border js-false" href="javascript:;">Ой, не туда</a></div>
+      </div>
+      <div class="admin-modal admin-modal--big" id="newUrokModal">
+        <div class="admin-modal__title">Создание урока</div>
+        <div class="admin-modal__input">
+          <div class="admin-modal__input-label">Название урока</div>
+          <div class="admin-modal__input-input">
+            <input class="input-style" type="text" name="name">
+          </div>
+        </div>
+        <div class="admin-modal__input">
+          <div class="admin-modal__input-label">Тэг #</div>
+          <div class="admin-modal__input-input">
+            <input class="input-style" type="text" name="name" style="width: 143px;">
+          </div>
+        </div>
+        <div class="admin-modal__btns"><a class="admin-modal__btn btn js-agree" href="javascript:;">Перейти к созданию</a><a class="admin-modal__btn btn btn--border js-false" href="javascript:;">Отмена</a></div>
+      </div>
+      <div class="admin-modal admin-modal--big" id="editUrokModal">
+        <div class="admin-modal__title">Редактирование</div>
+        <div class="admin-modal__input">
+          <div class="admin-modal__input-label">Название урока</div>
+          <div class="admin-modal__input-input">
+            <input class="input-style" type="text" name="name" value="123">
+          </div>
+        </div>
+        <div class="admin-modal__input">
+          <div class="admin-modal__input-label">Тэг #</div>
+          <div class="admin-modal__input-input">
+            <input class="input-style" type="text" name="name" style="width: 143px;" value="123">
+          </div>
+        </div>
+        <div class="admin-modal__btns"><a class="admin-modal__btn btn btn--border" href="">Редактировать урок</a><a class="admin-modal__btn btn btn--border js-copy-urok" href="javascript:;">Создать копию урока</a></div>
+        <div class="admin-modal__btns"><a class="admin-modal__btn btn js-agree" href="javascript:;">Сохранить</a><a class="admin-modal__btn btn btn--border js-false" href="javascript:;">Отмена</a></div>
+      </div>
+    </main>
+    <footer class="footer footer--dark">
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__left">
+            <div class="footer__title">Москва, Россия</div>
+            <div class="footer__row"><a class="footer__link" href="">Оферта</a><a class="footer__link" href="">Политика обработки персональных данных</a></div>
+          </div>
+          <div class="footer__right"><a class="footer__title footer__title--link" href="mailto:tutor@smmagnat.ru">tutor@smmagnat.ru</a>
+            <div class="footer__row"><a class="footer__link" href="">Instagram</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

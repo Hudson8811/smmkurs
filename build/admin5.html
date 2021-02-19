@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1320, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__flex">
+          <div class="header__left"><a class="header__logo header__logo--admin" href=""><img src="img/logo_admin.png" alt="logo"></a>
+            <ul class="header__menu">
+              <li class="active"><a href="">Экспресс SMM</a></li>
+              <li><a href="">Комплекс SMM</a></li>
+            </ul>
+          </div><a class="header__burger" href="javascript:;"></a>
+          <div class="header__right">
+            <ul class="header__menu">
+              <li class="active"><a href="">Потоки</a></li>
+              <li><a href="">Уроки</a></li>
+              <li><a href="">Личный кабинет</a></li>
+            </ul>
+            <div class="header__login"><a href="">Выйти</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main main--admin">
+      <div class="admin-top">
+        <div class="container">
+          <div class="admin-top__flex">
+            <div class="admin-top__title">Личный кабинет</div>
+            <div class="admin-top__title">Экспресс SMM</div>
+          </div>
+        </div>
+      </div>
+      <div class="admin-cabinet">
+        <div class="container">
+          <div class="admin-cabinet__inner">
+            <div class="admin-cabinet__top">
+              <div class="admin-cabinet__input admin-cabinet__input--left">
+                <div class="admin-modal__input-label">Название курса</div>
+                <div class="admin-modal__input-input">
+                  <input class="input-style" type="text" name="name">
+                </div>
+              </div><a class="btn js-save-cabinet" href="javascript:;">Сохранить</a>
+            </div>
+            <div class="admin-cabinet__center">
+              <div class="admin-cabinet__item">
+                <div class="admin-cabinet__left">
+                  <div class="admin-cabinet__input admin-cabinet__input--left">
+                    <div class="admin-modal__input-label">Имя преподавателя</div>
+                    <div class="admin-modal__input-input">
+                      <input class="input-style" type="text" name="name">
+                    </div>
+                  </div>
+                  <div class="admin-cabinet__input admin-cabinet__input--left">
+                    <div class="admin-modal__input-label">Ссылка на Instagram</div>
+                    <div class="admin-modal__input-input">
+                      <input class="input-style" type="text" name="name">
+                    </div>
+                  </div>
+                  <div class="admin-cabinet__input admin-cabinet__input--left">
+                    <div class="admin-modal__input-label">Ссылка на LinkedIn</div>
+                    <div class="admin-modal__input-input">
+                      <input class="input-style" type="text" name="name">
+                    </div>
+                  </div>
+                  <div class="admin-cabinet__photo">
+                    <label class="js-photo-add">
+                      <div class="admin-cabinet__photolink">
+                        <div class="admin-cabinet__photolink-img"></div>
+                        <div class="admin-cabinet__photolink-text">Добавить фото</div>
+                      </div>
+                      <input type="file" name="photo" accept="image/x-png,image/gif,image/jpeg"><img src="#" alt="">
+                    </label>
+                  </div>
+                </div>
+                <div class="admin-cabinet__right">
+                  <div class="admin-cabinet__input admin-cabinet__input--right">
+                    <div class="admin-modal__input-label">О преподавателе</div>
+                    <div class="admin-modal__input-input">
+                      <textarea class="input-style" name="name"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer--dark">
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__left">
+            <div class="footer__title">Москва, Россия</div>
+            <div class="footer__row"><a class="footer__link" href="">Оферта</a><a class="footer__link" href="">Политика обработки персональных данных</a></div>
+          </div>
+          <div class="footer__right"><a class="footer__title footer__title--link" href="mailto:tutor@smmagnat.ru">tutor@smmagnat.ru</a>
+            <div class="footer__row"><a class="footer__link" href="">Instagram</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

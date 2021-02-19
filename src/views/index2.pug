@@ -1,0 +1,77 @@
+extends layouts/default
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    section.page-section.my-courses
+        .container
+            h1.page-section__title Учиться — круто!
+
+            .page-section__text
+                p Преобрести наши курсы можно ниже.
+                p Так же вам доступны бесплатные вводные уроки.
+
+
+    section.page-section.my-store
+        .container
+            h2.page-section__title Наши направления
+            .tabs
+                ul.tabs__list
+                    li.active
+                        a(href="javascript:;" data-cat="") Все
+                    li
+                        a(href="javascript:;" data-cat="SMM") SMM
+                    li
+                        a(href="javascript:;" data-cat="Стратегии") Стратегии
+                    li
+                        a(href="javascript:;" data-cat="Таргетинг") Таргетинг
+                    li
+                        a(href="javascript:;" data-cat="Дизайн") Дизайн
+                    li
+                        a(href="javascript:;" data-cat="Копирайтинг") Копирайтинг
+                    li
+                        a(href="javascript:;" data-cat="Управление") Управление
+                    li
+                        a(href="javascript:;" data-cat="Контекст") Контекст
+
+            .kurses.tab-items
+                .kurses__kurs.kurs.kurs--type_1(data-cat="SMM")
+                    .kurs__inner
+                        .kurs__content
+                            .kurs__top
+                                .kurs__tag SMM
+                                .kurs__time 1 месяц
+                            .kurs__bottom
+                                h3.kurs__title Экспресс SMM
+                                .kurs__btns
+                                    a.kurs__btn.btn(href="") Купить
+                                    a.kurs__btn.btn.btn--white(href="") Бесплатный урок
+                .kurses__kurs.kurs.kurs--type_1(data-cat="Стратегии")
+                    .kurs__inner
+                        .kurs__content
+                            .kurs__top
+                                .kurs__tag SMM
+                                .kurs__time 1 месяц
+                            .kurs__bottom
+                                h3.kurs__title Экспресс SMM 3
+                                .kurs__btns
+                                    a.kurs__btn.btn(href="") Купить
+                                    a.kurs__btn.btn.btn--white(href="") Бесплатный урок
+                .kurses__kurs.kurs.kurs--type_1(data-cat="SMM")
+                    .kurs__inner
+                        .kurs__content
+                            .kurs__top
+                                .kurs__tag SMM
+                                .kurs__time 1 месяц
+                            .kurs__bottom
+                                h3.kurs__title Экспресс SMM 2
+                                .kurs__btns
+                                    a.kurs__btn.btn(href="") Купить
+                                    a.kurs__btn.btn.btn--white(href="") Бесплатный урок

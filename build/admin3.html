@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1320, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__flex">
+          <div class="header__left"><a class="header__logo header__logo--admin" href=""><img src="img/logo_admin.png" alt="logo"></a>
+            <ul class="header__menu">
+              <li class="active"><a href="">Экспресс SMM</a></li>
+              <li><a href="">Комплекс SMM</a></li>
+            </ul>
+          </div><a class="header__burger" href="javascript:;"></a>
+          <div class="header__right">
+            <ul class="header__menu">
+              <li class="active"><a href="">Потоки</a></li>
+              <li><a href="">Уроки</a></li>
+              <li><a href="">Личный кабинет</a></li>
+            </ul>
+            <div class="header__login"><a href="">Выйти</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main main--admin">
+      <div class="admin-top">
+        <div class="container">
+          <div class="admin-top__flex">
+            <div class="admin-top__title">Создание потока</div>
+            <div class="admin-top__title">Экспресс SMM</div>
+          </div>
+        </div>
+      </div>
+      <div class="admin-top-bar">
+        <div class="container">
+          <div class="admin-top-bar__flex"><a class="admin-top-bar__back" href="">
+              <div class="admin-top-bar__back-img"><img src="img/left-arrow.png"></div>
+              <div class="admin-top-bar__back-text">Выйти на главную</div></a>
+            <button class="admin-top-bar__save btn btn--dark" type="button">Редактировать поток</button>
+          </div>
+        </div>
+      </div>
+      <div class="admin-kurs-info">
+        <div class="container">
+          <div class="admin-kurs-info__title">Экспресс SMM <span>#6</span></div>
+          <div class="admin-kurs-info__date">18.01.2020 – 17.02.2020</div>
+          <div class="admin-kurs-info__status admin-kurs-info__status--active">Идет</div>
+        </div>
+      </div>
+      <div class="admin-lists">
+        <div class="container">
+          <div class="admin-lists__title">Ученики</div>
+          <div class="admin-lists__flex admin-lists__flex--start">
+            <div class="admin-lists__col admin-lists__col--left admin-lists__col--min">
+              <div class="people">
+                <div class="people__title">
+                  <div class="people__title-text">Общая успеваемость</div>
+                  <div class="people__title-progress progress">
+                    <div class="progress__bar">
+                      <div class="progress__bar-inner" style="width:50%"></div>
+                    </div>
+                    <div class="progress__procent">50%</div>
+                  </div>
+                </div>
+                <div class="people__search">
+                  <input class="input-style" type="text" name="search">
+                </div>
+                <ol class="people-list">
+                  <li class="people-list__item" data-id="1">
+                    <div class="people-list__item-email">evgmed@inbox.ru</div>
+                    <div class="people-list__item-progress progress">
+                      <div class="progress__bar">
+                        <div class="progress__bar-inner" style="width:50%"></div>
+                      </div>
+                      <div class="progress__procent">50%</div>
+                    </div><a class="people-list__item-link js-edit-people" href="javascript:;">Доступ</a><a class="people-list__item-link js-del-people" href="javascript:;">Исключить</a>
+                    <div class="admin-edit-modal">
+                      <div class="admin-edit-modal__title">evgmed@inbox.ru</div>
+                      <div class="admin-params__dates">
+                        <div class="admin-params__date">
+                          <div class="admin-params__date-label">Cтарт курса</div>
+                          <div class="admin-params__date-input">
+                            <input class="input-style" type="date" name="date_start">
+                          </div>
+                        </div>
+                        <div class="admin-params__date">
+                          <div class="admin-params__date-label">Конец курса</div>
+                          <div class="admin-params__date-input">
+                            <input class="input-style" type="date" name="date_end">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="people-list__item" data-id="2">
+                    <div class="people-list__item-email">evgmed@inbox.ru</div>
+                    <div class="people-list__item-progress progress">
+                      <div class="progress__bar">
+                        <div class="progress__bar-inner" style="width:50%"></div>
+                      </div>
+                      <div class="progress__procent">50%</div>
+                    </div><a class="people-list__item-link js-edit-people" href="javascript:;">Доступ</a><a class="people-list__item-link js-del-people" href="javascript:;">Исключить</a>
+                    <div class="admin-edit-modal">
+                      <div class="admin-edit-modal__title">evgmed@inbox.ru</div>
+                      <div class="admin-params__dates">
+                        <div class="admin-params__date">
+                          <div class="admin-params__date-label">Cтарт курса</div>
+                          <div class="admin-params__date-input">
+                            <input class="input-style" type="date" name="date_start">
+                          </div>
+                        </div>
+                        <div class="admin-params__date">
+                          <div class="admin-params__date-label">Конец курса</div>
+                          <div class="admin-params__date-input">
+                            <input class="input-style" type="date" name="date_end">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="admin-lists__col admin-lists__col--right">
+              <div class="people-search">
+                <div class="people-search__title">Добавить ученика</div>
+                <div class="people-search__input">
+                  <input class="input-style" type="text" name="search">
+                </div>
+                <ul class="people-search__results">
+                  <li><a href="javascript:;" data-id="1">evgmed@inbox.ru</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="admin-modal" id="agreeModal">
+        <div class="admin-modal__text">Вы уверены, что хотите исключить <strong></strong>?</div>
+        <div class="admin-modal__btns"><a class="admin-modal__btn btn js-agree" href="javascript:;">Да</a><a class="admin-modal__btn btn btn--border js-false" href="javascript:;">Ой, не туда</a></div>
+      </div>
+    </main>
+    <footer class="footer footer--dark">
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__left">
+            <div class="footer__title">Москва, Россия</div>
+            <div class="footer__row"><a class="footer__link" href="">Оферта</a><a class="footer__link" href="">Политика обработки персональных данных</a></div>
+          </div>
+          <div class="footer__right"><a class="footer__title footer__title--link" href="mailto:tutor@smmagnat.ru">tutor@smmagnat.ru</a>
+            <div class="footer__row"><a class="footer__link" href="">Instagram</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

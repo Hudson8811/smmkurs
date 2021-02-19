@@ -1,0 +1,65 @@
+extends layouts/default2
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    .article
+        .article__top
+            .container
+                .article__top-left
+                    .article__top-empty
+                    .article__top-center
+                        .article__top-bread
+                            a(href="") Экспресс SMM
+                        h1.article__top-title Аудитория
+                    .article__top-btns
+                        a.btn.btn--white(href="") Предыдущий урок
+                        a.btn.btn--white(href="") Главное меню
+            .article__top-image
+                img(src="images/teacher.jpg" alt="")
+
+        .article__content
+            .container
+                .arctic-section.arctic-text
+                    .arctic-text__inner.arctic-section__text
+                        h3 asdsamdksalmdsalkdmal madlk amdlkam
+                        p ajsndjksa nkajsnd kjasn dkasdn sajdnkdna kjndj asnkj andkjasn djdn askj dndjknask njd nakjdn askjd nasnd sjandaskjdnaskjdn kjand sajkdn
+                        p asjdnksaj ndsakjdnsakd nasdjknsa jkdnajk dnjkdnasjkd nasjkd naskjd naskj dnasjkd na kjdnkja ndkjasndkajsndn djkasn dkjasnd jkn ajskdnasjk dnsajk dnjas ndjas
+                        p asjdnksaj ndsakjdnsakd nasdjknsa jkdnajk dnjkdnasjkd nasjkd naskjd naskj dnasjkd na kjdnkja ndkjasndkajsndn djkasn dkjasnd jkn ajskdnasjk dnsajk dnjas ndjas
+
+                .arctic-section.arctic-text
+                    .arctic-text__inner
+                        h4 Урок 1. Знакомимся
+                        .arctic-section__video
+                            | <iframe width="800" height="451" src="https://www.youtube.com/embed/2n-yJwuVE4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                .arctic-section.arctic-image
+                    .arctic-image__inner
+                        img(src="images/teacher.jpg" alt="")
+
+                .arctic-section.arctic-quite
+                    .arctic-quite__inner.arctic-section__text
+                        p <strong>Правильное понимание своей аудитории</strong> позволит оптимизировать используемые инструменты продвижения, каналы продвижения, средства коммуникации и многое другое. Важно не быть заложником стереотипов, отдавая предпочтение одной социальной сети, исходя из собственных домыслов о персонах, использующих её, а также принципах функционирования.
+
+
+                .article-next
+                    .article-next__inner
+                        .article-next__left
+                            .article-next__label Следующий урок
+                            .article-next__title Общение с клиентом / / Гарантии
+                            .article-next__btns
+                                a.article-next__btn.article-next__btn--disabled.btn(href="")
+                                    img(src="img/lock.png")
+                                    span Пройти
+                                .article-next__date Откроется 12.01.2021
+                        .article-next__right
+                            img(src="images/teacher.jpg" alt="")
+
+        #article-end

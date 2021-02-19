@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1320, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__flex">
+          <div class="header__left"><a class="header__logo header__logo--admin" href=""><img src="img/logo_admin.png" alt="logo"></a>
+            <ul class="header__menu">
+              <li class="active"><a href="">Экспресс SMM</a></li>
+              <li><a href="">Комплекс SMM</a></li>
+            </ul>
+          </div><a class="header__burger" href="javascript:;"></a>
+          <div class="header__right">
+            <ul class="header__menu">
+              <li class="active"><a href="">Потоки</a></li>
+              <li><a href="">Уроки</a></li>
+              <li><a href="">Личный кабинет</a></li>
+            </ul>
+            <div class="header__login"><a href="">Выйти</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main main--admin">
+      <div class="m-admin">
+        <div class="m-admin-top">
+          <div class="container">
+            <ul class="header__menu m-admin-top__menu">
+              <li class="active"><a href="">Пользователи</a></li>
+              <li><a href="">Курсы</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-admin-groups">
+          <div class="container">
+            <div class="m-admin-search people-search">
+              <div class="people-search__input">
+                <input class="input-style" type="text" name="search" placeholder="Почта, Телефон или ФИО">
+              </div>
+            </div>
+            <div class="m-admin-roles">
+              <div class="admin-params__checkbox">
+                <label class="checkbox">
+                  <input type="checkbox" name="customers" value="1" checked>
+                  <div class="checkbox__icon"></div>
+                  <div class="checkbox__text">Клиент</div>
+                </label>
+              </div>
+              <div class="admin-params__checkbox">
+                <label class="checkbox">
+                  <input type="checkbox" name="customers" value="1" checked>
+                  <div class="checkbox__icon"></div>
+                  <div class="checkbox__text">Преподаватель</div>
+                </label>
+              </div>
+              <div class="admin-params__checkbox">
+                <label class="checkbox">
+                  <input type="checkbox" name="customers" value="1" checked>
+                  <div class="checkbox__icon"></div>
+                  <div class="checkbox__text">Администратор</div>
+                </label>
+              </div>
+            </div>
+            <div class="m-admin-table">
+              <div class="m-admin-table__row m-admin-table__row--head">
+                <div class="m-admin-table__cell">Контакт</div>
+                <div class="m-admin-table__cell m-admin-table__cell--filter">Дата регистрации</div>
+                <div class="m-admin-table__cell m-admin-table__cell--filter">Покупки</div>
+              </div>
+              <div class="m-admin-table__row">
+                <div class="m-admin-table__cell">
+                  Светлана Александрова Ершова<br>
+                  Почта: evgmed@inbox.ru<br>
+                  Телефон: 89037870095<br>
+                  <br>
+                  Тип: Клиент
+                </div>
+                <div class="m-admin-table__cell">12.10.2020 17:41</div>
+                <div class="m-admin-table__cell">
+                  <div class="m-admin-table__access">
+                    <div class="m-admin-table__access-item" data-id="">Копирайтинг #6  &nbsp;/&nbsp;   доступ закончился   &nbsp;/&nbsp;<a class="js-edit-access" href="javascript:;">изменить</a>&nbsp;/&nbsp;<a class="js-remove-access" href="javascript:;">удалить</a></div>
+                    <div class="m-admin-table__access-item" data-id="">Копирайтинг #6  &nbsp;/&nbsp;   доступ до 20.01.2021   &nbsp;/&nbsp;<a class="js-edit-access" href="javascript:;">изменить</a>&nbsp;/&nbsp;<a class="js-remove-access" href="javascript:;">удалить</a></div>
+                    <div class="m-admin-table__access-item" data-id="">Копирайтинг #6  &nbsp;/&nbsp;   доступ закончился   &nbsp;/&nbsp;<a class="js-edit-access" href="javascript:;">изменить</a>&nbsp;/&nbsp;<a class="js-remove-access" href="javascript:;">удалить</a></div><br><a class="m-admin-table__access-add" href="javascript:;" data-user="1">Добавить доступ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-admin-pagination"><a class="m-admin-pagination__link" href="">1</a><a class="m-admin-pagination__link" href="">2</a><a class="m-admin-pagination__link" href="">3</a>
+              <div class="m-admin-pagination__sep">...</div><a class="m-admin-pagination__link" href="">333</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer--dark">
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__left">
+            <div class="footer__title">Москва, Россия</div>
+            <div class="footer__row"><a class="footer__link" href="">Оферта</a><a class="footer__link" href="">Политика обработки персональных данных</a></div>
+          </div>
+          <div class="footer__right"><a class="footer__title footer__title--link" href="mailto:tutor@smmagnat.ru">tutor@smmagnat.ru</a>
+            <div class="footer__row"><a class="footer__link" href="">Instagram</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+extends layouts/admin
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    .admin-top
+        .container
+            .admin-top__flex
+                .admin-top__title Создание потока
+                .admin-top__title Экспресс SMM
+
+    .admin-top-bar
+        .container
+            .admin-top-bar__flex
+                a.admin-top-bar__back(href="")
+                    .admin-top-bar__back-img
+                        img(src="img/left-arrow.png")
+                    .admin-top-bar__back-text Выйти на главную
+                button.admin-top-bar__save.btn.btn--dark(disabled type="button") Сохранить
+
+    .admin-kurs-info
+        .container
+            .admin-kurs-info__title Экспресс SMM <span>#6</span>
+
+    .admin-params
+        .container
+            .admin-params__flex
+                .admin-params__col
+                    .admin-params__dates
+                        .admin-params__date
+                            .admin-params__date-label Cтарт курса
+                            .admin-params__date-input
+                                input.input-style(type="date" name="date_start")
+                        .admin-params__date
+                            .admin-params__date-label Конец курса
+                            .admin-params__date-input
+                                input.input-style(type="date" name="date_end")
+                .admin-params__col.admin-params__col--pt
+                    .admin-params__checkbox
+                        label.checkbox
+                            input(type="checkbox" name="potok" value="1" checked)
+                            .checkbox__icon
+                            .checkbox__text Не потоковый
+                .admin-params__col
+                    .admin-params__checkbox
+                        label.checkbox
+                            input(type="checkbox" name="" value="1")
+                            .checkbox__icon
+                            .checkbox__text Уроки открываются после прохождения предыдущего
+                    .admin-params__checkbox
+                        label.checkbox
+                            input(type="checkbox" name="" value="1")
+                            .checkbox__icon
+                            .checkbox__text Уроки открыты сразу
+                    .admin-params__checkbox
+                        label.checkbox
+                            input(type="checkbox" name="" value="1")
+                            .checkbox__icon
+                            .checkbox__text Открывать уроки с интервалом
+                        select.input-style.input-style--select(name="interval")
+                            option(value="1") 1
+                            option(value="2") 2
+                            option(value="3") 3
+                            option(value="4") 4
+                        | дня
+
+    .admin-lists
+        .container
+            .admin-lists__title Добавление уроков
+            .admin-lists__flex
+                .admin-lists__col.admin-lists__col--left.admin-lists__col--min
+                    .admin-list
+                        .admin-list__top
+                            .admin-list__top-left
+                            .admin-list__top-title Экспресс SMM <span>#6</span>
+
+                        .admin-list__empty
+                            .admin-list__empty-text Добавьте сюда уроки из блока справа
+
+                .admin-lists__col.admin-lists__col--right.admin-lists__col--min
+                    .admin-list
+                        .admin-list__top
+                            .admin-list__top-left
+                            .admin-list__top-title Все уроки
+
+                        .admin-list__empty
+                            .admin-list__empty-text Кажется, вы ещё не создали ни одного урока
+                            a.admin-list__empty-link(href="") Перейти к созданию
+
+

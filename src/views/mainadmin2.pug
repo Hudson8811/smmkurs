@@ -1,0 +1,87 @@
+extends layouts/admin
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    .m-admin
+        .m-admin-top
+            .container
+                ul.header__menu.m-admin-top__menu
+                    li.active
+                        a(href="") Пользователи
+                    li
+                        a(href="") Курсы
+
+
+
+        .m-admin-groups
+            .container
+                .m-admin-search.people-search
+                    .people-search__input
+                        input.input-style(type="text" name="search" placeholder="Почта, Телефон или ФИО")
+                .m-admin-roles
+                    .admin-params__checkbox
+                        label.checkbox
+                            input(type="checkbox" name="customers" value="1" checked)
+                            .checkbox__icon
+                            .checkbox__text Клиент
+                    .admin-params__checkbox
+                        label.checkbox
+                            input(type="checkbox" name="customers" value="1" checked)
+                            .checkbox__icon
+                            .checkbox__text Преподаватель
+                    .admin-params__checkbox
+                        label.checkbox
+                            input(type="checkbox" name="customers" value="1" checked)
+                            .checkbox__icon
+                            .checkbox__text Администратор
+
+                .m-admin-table
+                    .m-admin-table__row.m-admin-table__row--head
+                        .m-admin-table__cell Контакт
+                        .m-admin-table__cell.m-admin-table__cell--filter Дата регистрации
+                        .m-admin-table__cell.m-admin-table__cell--filter Покупки
+                    .m-admin-table__row
+                        .m-admin-table__cell
+                            | Светлана Александрова Ершова<br>
+                            | Почта: evgmed@inbox.ru<br>
+                            | Телефон: 89037870095<br>
+                            | <br>
+                            | Тип: Клиент
+                        .m-admin-table__cell
+                            | 12.10.2020 17:41
+
+                        .m-admin-table__cell
+                            .m-admin-table__access
+                                .m-admin-table__access-item(data-id="")
+                                    | Копирайтинг #6  &nbsp;/&nbsp;   доступ закончился   &nbsp;/&nbsp;
+                                    a.js-edit-access(href="javascript:;") изменить
+                                    | &nbsp;/&nbsp;
+                                    a.js-remove-access(href="javascript:;") удалить
+                                .m-admin-table__access-item(data-id="")
+                                    | Копирайтинг #6  &nbsp;/&nbsp;   доступ до 20.01.2021   &nbsp;/&nbsp;
+                                    a.js-edit-access(href="javascript:;") изменить
+                                    | &nbsp;/&nbsp;
+                                    a.js-remove-access(href="javascript:;") удалить
+                                .m-admin-table__access-item(data-id="")
+                                    | Копирайтинг #6  &nbsp;/&nbsp;   доступ закончился   &nbsp;/&nbsp;
+                                    a.js-edit-access(href="javascript:;") изменить
+                                    | &nbsp;/&nbsp;
+                                    a.js-remove-access(href="javascript:;") удалить
+                                br
+                                a.m-admin-table__access-add(href="javascript:;" data-user="1") Добавить доступ
+
+                .m-admin-pagination
+                    a.m-admin-pagination__link(href="") 1
+                    a.m-admin-pagination__link(href="") 2
+                    a.m-admin-pagination__link(href="") 3
+                    .m-admin-pagination__sep ...
+                    a.m-admin-pagination__link(href="") 333
+

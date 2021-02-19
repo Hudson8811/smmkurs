@@ -1,0 +1,56 @@
+extends layouts/admin
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    .admin-top
+        .container
+            .admin-top__flex
+                .admin-top__title Личный кабинет
+                .admin-top__title Экспресс SMM
+
+    .admin-cabinet
+        .container
+            .admin-cabinet__inner
+                .admin-cabinet__top
+                    .admin-cabinet__input.admin-cabinet__input--left
+                        .admin-modal__input-label Название курса
+                        .admin-modal__input-input
+                            input.input-style(type="text" name="name")
+                    a.btn.js-save-cabinet(href="javascript:;") Сохранить
+
+                .admin-cabinet__center
+                    .admin-cabinet__item
+                        .admin-cabinet__left
+                            .admin-cabinet__input.admin-cabinet__input--left
+                                .admin-modal__input-label Имя преподавателя
+                                .admin-modal__input-input
+                                    input.input-style(type="text" name="name")
+                            .admin-cabinet__input.admin-cabinet__input--left
+                                .admin-modal__input-label Ссылка на Instagram
+                                .admin-modal__input-input
+                                    input.input-style(type="text" name="name")
+                            .admin-cabinet__input.admin-cabinet__input--left
+                                .admin-modal__input-label Ссылка на LinkedIn
+                                .admin-modal__input-input
+                                    input.input-style(type="text" name="name")
+                            .admin-cabinet__photo
+                                label.js-photo-add
+                                    .admin-cabinet__photolink
+                                        .admin-cabinet__photolink-img
+                                        .admin-cabinet__photolink-text Добавить фото
+                                    input(type="file" name="photo" accept="image/x-png,image/gif,image/jpeg")
+                                    img(src="#" alt="")
+                        .admin-cabinet__right
+                            .admin-cabinet__input.admin-cabinet__input--right
+                                .admin-modal__input-label О преподавателе
+                                .admin-modal__input-input
+                                    textarea.input-style(name="name")
+

@@ -1,0 +1,29 @@
+extends layouts/default
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    section.cabinet-page
+        .container
+            .cabinet-page__top
+                .cabinet-page__title Авторизация
+            form.cabinet-page__section.login-form
+                input(type='hidden' name='mode' value='login')
+                label.input-block
+                    input.js-noempty(type="text" required="required" placeholder="example@email.ru")
+                    .input-block__placeholder Email или логин
+                    .input-block__status-icon
+                    .input-block__error Неверный email
+                label.input-block
+                    input.js-noempty(type="password" required="required" placeholder="*******")
+                    .input-block__placeholder Пароль
+                    .input-block__status-icon
+                    .input-block__error Неверный пароль
+                button.btn(type="submit") Войти

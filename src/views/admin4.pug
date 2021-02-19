@@ -1,0 +1,81 @@
+extends layouts/admin
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    .admin-top
+        .container
+            .admin-top__flex
+                .admin-top__title Уроки
+                .admin-top__title Экспресс SMM
+
+    .admin-lessons
+        .container
+            .admin-lessons__container
+                a.btn.btn--dark.admin-lessons__add.js-new-urok(href="javascript:;")
+                    svg(xmlns='http://www.w3.org/2000/svg' width="23px" height="23px" viewbox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve')
+                        path(d='M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z')
+                    | Создать
+                ol.kurs-list#kurs-list
+                    li.kurs-list__item
+                        input(type="hidden" name="urok[]" value="1")
+                        .kurs-list__item-title Знакомство с преподавателем
+                        a.kurs-list__item-edit.js-edit-urok(href="javascript:;")
+                        .kurs-list__item-dots
+                        a.kurs-list__item-del.js-delete-urok(href="javascript:;")
+                    li.kurs-list__item
+                        input(type="hidden" name="urok[]" value="1")
+                        .kurs-list__item-title Введение
+                        a.kurs-list__item-edit.js-edit-urok(href="javascript:;")
+                        .kurs-list__item-dots
+                        a.kurs-list__item-del.js-delete-urok(href="javascript:;")
+                    li.kurs-list__item
+                        input(type="hidden" name="urok[]" value="1")
+                        .kurs-list__item-title Что то еще
+                        a.kurs-list__item-edit.js-edit-urok(href="javascript:;")
+                        .kurs-list__item-dots
+                        a.kurs-list__item-del.js-delete-urok(href="javascript:;")
+
+    .admin-modal#agreeModal
+        .admin-modal__text Вы уверены, что хотите удалить урок?
+        .admin-modal__btns
+            a.admin-modal__btn.btn.js-agree(href="javascript:;") Да
+            a.admin-modal__btn.btn.btn--border.js-false(href="javascript:;") Ой, не туда
+
+    .admin-modal.admin-modal--big#newUrokModal
+        .admin-modal__title Создание урока
+        .admin-modal__input
+            .admin-modal__input-label Название урока
+            .admin-modal__input-input
+                input.input-style(type="text" name="name")
+        .admin-modal__input
+            .admin-modal__input-label Тэг #
+            .admin-modal__input-input
+                input.input-style(type="text" name="name" style="width: 143px;")
+        .admin-modal__btns
+            a.admin-modal__btn.btn.js-agree(href="javascript:;") Перейти к созданию
+            a.admin-modal__btn.btn.btn--border.js-false(href="javascript:;") Отмена
+
+    .admin-modal.admin-modal--big#editUrokModal
+        .admin-modal__title Редактирование
+        .admin-modal__input
+            .admin-modal__input-label Название урока
+            .admin-modal__input-input
+                input.input-style(type="text" name="name" value="123")
+        .admin-modal__input
+            .admin-modal__input-label Тэг #
+            .admin-modal__input-input
+                input.input-style(type="text" name="name" style="width: 143px;" value="123")
+        .admin-modal__btns
+            a.admin-modal__btn.btn.btn--border(href="") Редактировать урок
+            a.admin-modal__btn.btn.btn--border.js-copy-urok(href="javascript:;") Создать копию урока
+        .admin-modal__btns
+            a.admin-modal__btn.btn.js-agree(href="javascript:;") Сохранить
+            a.admin-modal__btn.btn.btn--border.js-false(href="javascript:;") Отмена

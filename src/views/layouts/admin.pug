@@ -1,0 +1,34 @@
+doctype html
+
+block vars
+include ../components/_mixins
+
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=1320, initial-scale=1.0")
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+        meta(property="og:image" content="images/logo.svg")
+        meta(name="format-detection" content="telephone=no")
+        link(href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap' rel='stylesheet')
+        link(href="css/main.css" rel="stylesheet")
+        link(href="css/admin.css" rel="stylesheet")
+
+        //title= `${page.title}`
+
+    body
+        block header
+            include ../partials/_admin_header
+
+        main.main.main--admin
+            block main
+
+        block footer
+            include ../partials/_footer
+
+
+        script(src="js/main.js")
+        script(src="js/admin.js")
+
+        block scripts
