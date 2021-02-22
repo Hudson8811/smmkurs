@@ -7,17 +7,9 @@ block vars
 		};
 
 block main
-	//
-		section.copywriting-header
-			.container.copywriting-header__container
-				.copywriting-header__content
-					img.copywriting-header__logo(src="img/logo2.png" alt="logo")
-					.copywriting-header__title Копирайтинг
-					.copywriting-header__subtitle Курс, который научит вас писать
-					.copywriting-header__link Записаться
-				.copywriting-header__kurs-info
-					img.copywriting-header__play(src="img/play.svg" alt="play")
-					.copywriting-header__play-text О курсе за 49 секунд
+	.copywriting-banner__decor
+		img.copywriting-banner__decor-img(src="img/decor.svg")
+		include partials/copywriting/copywriting-banner
 
 	section.copywriting-need
 		img.copywriting-need__bg-1(src="img/landings/copywriting/copywriting-need-bg-1.svg")
@@ -53,20 +45,9 @@ block main
 								img(src="img/landings/copywriting/copywriting-need-4.svg")
 							.copywriting-need__card-title Маркетологов
 							.copywriting-need__card-desc Чтобы понимать, как <br>  создавать лучший контент
-	hr
-	hr
-	hr
-	hr
-	hr
-	section.copywriting-kurs
-		.container.copywriting-kurs
-			.copywriting-kurs__expert
-				.copywriting-kurs__expert-wrapper
-					.copywriting-kurs__expert-text Грамотный текст — может доказать вашу экспертность без доказательств
-					img.copywriting-kurs__expert-img
-				.copywriting-kurs__possession-wrapper
-					.copywriting-kurs__possession Владение словом отражается на мышлении и на том как вы разговариваете
-				.copywriting-kurs__core Текст сильно недооценён, но копирайтинг — это ядро маркетинга
+
+
+	include partials/copywriting/copywriting-kurs
 	section.copywriting-programm
 		.container.copywriting-programm__container
 			.copywriting-programm__content
@@ -123,3 +104,4 @@ block main
 				.copywriting-teacher__teacher-name
 				.copywriting-teacher__teacher-info
 				.copywriting-teacher__teacher-link
+	section.copywriting-teacher

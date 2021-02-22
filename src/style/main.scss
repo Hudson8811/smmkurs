@@ -18,7 +18,12 @@
 
 @import "partials/lands";
 
+@import "partials/copywriting/copywriting-banner";
+@import "partials/copywriting/.copywriting-banner-adaptive";
+@import "partials/copywriting/copywriting-kurs";
+
+
 @import "partials/copywriting/copywriting";
 
-@import "partials/copywriting/copywriting-need.scss";
-@import "partials/copywriting/copywriting-need-adapt.scss";
+@import "partials/copywriting/copywriting-need";
+@import "partials/copywriting/copywriting-need-adapt";

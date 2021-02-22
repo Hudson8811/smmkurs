@@ -1,0 +1,75 @@
+@media (max-width: 1600px) {
+    &__subtitle {
+        font-size: 90px;
+    }
+    &__logo {
+        margin-bottom: 90px;
+    }
+}
+@media (max-width: 1200px) {
+    &__subtitle {
+        font-size: 64px;
+    }
+    &__logo {
+        margin-bottom: 60px;
+    }
+    &__link {
+        padding: 20px 50px;
+    }
+}
+@media (max-width:375px) {
+    .copywriting-banner {
+        padding-top: 97px;
+        padding-bottom: 94px;
+        background-color: #000;
+        &__decor {
+            &-img {
+                position: absolute;
+                right: -100%;
+                top: 0;
+                width: 1000px;
+            height: 600px;
+            }
+        }
+        
+        &__content {
+        }
+        
+        &__logo {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 94px; 
+        }
+        &__row {
+            flex-direction: column;
+        }
+        &__title {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        &__subtitle {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        &__link {
+            font-size: 18px;
+        }
+         
+        &__kurs-info {
+            margin-top: 0px;
+            margin-bottom: 52px;
+        } 
+        
+        &__play {
+            width: 14px;
+            height: 12px;
+            margin-right: 28px;
+        }
+        
+        &__play-text {
+            font-size: 18px;
+        }
+    }
+}
