@@ -1,0 +1,149 @@
+.copywriting-header {
+    padding-top: 172px;
+    padding-bottom: 302px;
+    background-color: #000;
+    background-image: url('../img/decor.svg');
+    background-repeat: no-repeat;
+    background-position: 105% 50%;
+
+    &__container {
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__content {
+    }
+    
+    &__logo {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 113px;
+    }
+    
+    &__title {
+        font-family: ALS Hauss;
+        font-size: 41px;
+        line-height: 125.8%;
+        margin-bottom: 39px;
+    }
+    
+    &__subtitle {
+        font-family: ALS Hauss;
+        font-size: 113px;
+        line-height: 100%;
+        margin-bottom: 55px;
+    }
+    
+    &__link {
+        font-size: 32px;
+        line-height: 125.8%;
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        background: #FF4E00;
+        border-radius: 18px;
+        padding: 30px 100px;
+    }
+    
+    &__kurs-info {
+        margin-right: 94px;
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+    }
+    
+    &__play {
+        margin-right: 28px;
+    }
+    
+    &__play-text {
+        font-size: 32px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FEA430;
+    }
+}
+.copywriting-need {
+padding-top: 174px;
+padding-bottom: 165px;
+    &__container {
+        color: #fff;
+    }
+    
+    &__title {
+        max-width: 1200px;
+        margin-bottom: 168px;
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 113px;
+        line-height: 100%;
+        color: #000000;
+    }
+    
+    &__content {
+        position: relative;
+        background: #000000;
+        border-radius: 80px;
+        padding: 100px 250px;
+    }
+    
+    &__decor {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 100%;
+        /* or 48px */
+        background: #5B6CFF;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 30px 60px;
+        color: #FFFFFF;
+        transform: rotate(-10.51deg) translate(-50%,-75%);
+
+    }
+    
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 85px;
+    }
+    
+    &__card {
+        width: 615px;
+    }
+    
+    &__card-img {
+        margin-bottom: 40px;
+    }
+    
+    &__card-title {
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 41px;
+        line-height: 125.8%;
+        margin-bottom: 32px;
+    }
+    
+    &__card-desc {
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: 350;
+        font-size: 24px;
+        line-height: 125.8%;
+    }
+    }
+    .container {
+    }
+    
