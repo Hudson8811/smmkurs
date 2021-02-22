@@ -1,0 +1,103 @@
+.copywriting-banner {
+    padding-top: 172px;
+    padding-bottom: 302px;
+    background-color: #000;
+    &__decor {
+        &-img {
+            position: absolute;
+            right: 10%;
+            top: 0;
+        }
+    }
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    
+    &__content {
+    }
+    
+    &__logo {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 97px;
+        @media (max-width: 1600px) {
+            margin-bottom: 90px;
+        }
+
+        @media (max-width: 1200px) {
+            margin-bottom: 60px;
+        }
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-family: ALS Hauss;
+        font-size: 41px;
+        line-height: 125.8%;
+        margin-bottom: 30px;
+    }
+    
+    &__subtitle {
+        font-family: ALS Hauss;
+        font-size: 113px;
+        line-height: 100%;
+        margin-bottom: 69px;
+        margin-right: 40px;
+        @media (max-width: 1600px) {
+            font-size: 90px;
+        }
+
+        @media (max-width: 1200px) {
+            font-size: 64px;
+        }
+    }
+    
+    &__link {
+        font-size: 32px;
+        line-height: 125.8%;
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        background: #FF4E00;
+        border-radius: 18px; 
+        padding: 37px 141px;
+        cursor: pointer;
+        transition-duration: .2s;
+        &:hover {
+            background: #d03e00
+        }
+
+        @media (max-width: 1200px) {
+            padding: 20px 50px;
+        }
+    }
+    
+    &__kurs-info {
+        margin-right: 94px;
+        margin-top: -130px;
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        cursor: pointer;
+    }
+    
+    &__play {
+        margin-right: 28px;
+    }
+    
+    &__play-text {
+        font-size: 32px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FEA430;
+    }
+}

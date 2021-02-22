@@ -7,48 +7,33 @@ block vars
         };
 
 block main
-    section.copywriting-header
-        .container.copywriting-header__container
-            .copywriting-header__content
-                img.copywriting-header__logo(src="img/logo2.png" alt="logo")
-                .copywriting-header__title Копирайтинг
-                .copywriting-header__subtitle Курс, который научит вас писать
-                .copywriting-header__link Записаться
-            .copywriting-header__kurs-info
-                img.copywriting-header__play(src="img/play.svg" alt="play")
-                .copywriting-header__play-text О курсе за 49 секунд
-    section.copywriting-need
-        .container.copywriting-need__container
-            .copywriting-need__title Слово — главный способ воздействия на других людей
-            .copywriting-need__content
-                .copywriting-need__decor Для кого?
-                .copywriting-need__row
-                    .copywriting-need__card
-                        img.copywriting-need__card-img(src="img/copywriting-need1.svg")
-                        .copywriting-need__card-title Для всех
-                        .copywriting-need__card-desc Кто хочет научиться писать
-                    .copywriting-need__card
-                        img.copywriting-need__card-img(src="img/copywriting-need2.svg") 
-                        .copywriting-need__card-title Владельцев компаний и блогеров
-                        .copywriting-need__card-desc Чтобы научиться понятно и грамотно доносить свою мысль
-                .copywriting-need__row
-                    .copywriting-need__card
-                        img.copywriting-need__card-img(src="img/copywriting-need1.svg")
-                        .copywriting-need__card-title Для всех
-                        .copywriting-need__card-desc Кто хочет научиться писать
-                    .copywriting-need__card
-                        img.copywriting-need__card-img(src="img/copywriting-need2.svg")
-                        .copywriting-need__card-title Владельцев компаний и блогеров
-                        .copywriting-need__card-desc Чтобы научиться понятно и грамотно доносить свою мысль
-    section.copywriting-kurs
-        .container.copywriting-kurs
-            .copywriting-kurs__expert
-                .copywriting-kurs__expert-wrapper
-                    .copywriting-kurs__expert-text Грамотный текст — может доказать вашу экспертность без доказательств
-                    img.copywriting-kurs__expert-img
-                .copywriting-kurs__possession-wrapper
-                    .copywriting-kurs__possession Владение словом отражается на мышлении и на том как вы разговариваете
-                .copywriting-kurs__core Текст сильно недооценён, но копирайтинг — это ядро маркетинга
+    .copywriting-banner__decor
+        img.copywriting-banner__decor-img(src="img/decor.svg")
+        include partials/copywriting/copywriting-banner
+        section.copywriting-need
+            .container.copywriting-need__container
+                .copywriting-need__title Слово — главный способ воздействия на других людей
+                .copywriting-need__content
+                    .copywriting-need__decor Для кого?
+                    .copywriting-need__row
+                        .copywriting-need__card
+                            img.copywriting-need__card-img(src="img/copywriting-need1.svg")
+                            .copywriting-need__card-title Для всех
+                            .copywriting-need__card-desc Кто хочет научиться писать
+                        .copywriting-need__card
+                            img.copywriting-need__card-img(src="img/copywriting-need2.svg") 
+                            .copywriting-need__card-title Владельцев компаний и блогеров
+                            .copywriting-need__card-desc Чтобы научиться понятно и грамотно доносить свою мысль
+                    .copywriting-need__row
+                        .copywriting-need__card
+                            img.copywriting-need__card-img(src="img/copywriting-need1.svg")
+                            .copywriting-need__card-title Для всех
+                            .copywriting-need__card-desc Кто хочет научиться писать
+                        .copywriting-need__card
+                            img.copywriting-need__card-img(src="img/copywriting-need2.svg")
+                            .copywriting-need__card-title Владельцев компаний и блогеров
+                            .copywriting-need__card-desc Чтобы научиться понятно и грамотно доносить свою мысль
+    include partials/copywriting/copywriting-kurs
     section.copywriting-programm
         .container.copywriting-programm__container
             .copywriting-programm__content 
@@ -105,3 +90,4 @@ block main
                 .copywriting-teacher__teacher-name
                 .copywriting-teacher__teacher-info
                 .copywriting-teacher__teacher-link
+    section.copywriting-teacher
