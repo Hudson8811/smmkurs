@@ -1,0 +1,21 @@
+@media screen and (max-width: 1385px) {
+	.copywriting-need__title {
+		max-width: 910px;
+		font-size: 96px;
+		margin-bottom: 185px;
+	}
+	.copywriting-need__inner{
+		max-width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.copywriting-need__star-wrap{
+		display: none;
+	}
+	.copywriting-need__title{
+		width: 100%;
+		max-width: 100%;
+	}
+}

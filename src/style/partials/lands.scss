@@ -1,0 +1,18 @@
+.container2 {
+	box-sizing: border-box;
+	width: 1571px;
+	max-width: 95%;
+	max-width: calc(100% - 20px * 2);
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+	.container2 {
+		max-width: calc(100% - 47px * 2);
+	}
+}
+
+.main2{
+	display: block;
+	flex-grow: 1;
+}

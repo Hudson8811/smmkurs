@@ -1,107 +1,125 @@
-extends layouts/kurs
+extends layouts/lands
 
 block vars
-    -
-        const page = {
-            title: 'index.html'
-        };
+	-
+		const page = {
+			title: 'index.html'
+		};
 
 block main
-    section.copywriting-header
-        .container.copywriting-header__container
-            .copywriting-header__content
-                img.copywriting-header__logo(src="img/logo2.png" alt="logo")
-                .copywriting-header__title Копирайтинг
-                .copywriting-header__subtitle Курс, который научит вас писать
-                .copywriting-header__link Записаться
-            .copywriting-header__kurs-info
-                img.copywriting-header__play(src="img/play.svg" alt="play")
-                .copywriting-header__play-text О курсе за 49 секунд
-    section.copywriting-need
-        .container.copywriting-need__container
-            .copywriting-need__title Слово — главный способ воздействия на других людей
-            .copywriting-need__content
-                .copywriting-need__decor Для кого?
-                .copywriting-need__row
-                    .copywriting-need__card
-                        img.copywriting-need__card-img(src="img/copywriting-need1.svg")
-                        .copywriting-need__card-title Для всех
-                        .copywriting-need__card-desc Кто хочет научиться писать
-                    .copywriting-need__card
-                        img.copywriting-need__card-img(src="img/copywriting-need2.svg") 
-                        .copywriting-need__card-title Владельцев компаний и блогеров
-                        .copywriting-need__card-desc Чтобы научиться понятно и грамотно доносить свою мысль
-                .copywriting-need__row
-                    .copywriting-need__card
-                        img.copywriting-need__card-img(src="img/copywriting-need1.svg")
-                        .copywriting-need__card-title Для всех
-                        .copywriting-need__card-desc Кто хочет научиться писать
-                    .copywriting-need__card
-                        img.copywriting-need__card-img(src="img/copywriting-need2.svg")
-                        .copywriting-need__card-title Владельцев компаний и блогеров
-                        .copywriting-need__card-desc Чтобы научиться понятно и грамотно доносить свою мысль
-    section.copywriting-kurs
-        .container.copywriting-kurs
-            .copywriting-kurs__expert
-                .copywriting-kurs__expert-wrapper
-                    .copywriting-kurs__expert-text Грамотный текст — может доказать вашу экспертность без доказательств
-                    img.copywriting-kurs__expert-img
-                .copywriting-kurs__possession-wrapper
-                    .copywriting-kurs__possession Владение словом отражается на мышлении и на том как вы разговариваете
-                .copywriting-kurs__core Текст сильно недооценён, но копирайтинг — это ядро маркетинга
-    section.copywriting-programm
-        .container.copywriting-programm__container
-            .copywriting-programm__content 
-                .copywriting-programm__title Програма курса
-                .copywriting-programm__desc 
-                    img(src="") 
-                    span — курс содержит домашнее задание
-                .copywriting-programm__column
-                    .copywriting-programm__card
-                        .copywriting-programm__card-left
-                            .copywriting-programm__card-lesson Урок 0
-                            .copywriting-programm__card-title Знакомство с преподавателем 
-                            .copywriting-programm__card-video
-                                img.copywriting-programm__card-play 
-                                .copywriting-programm__card-video-text Видео-урок
-                        .copywriting-programm__card-right 
-                            .copywriting-programm__card-plus
-                            .copywriting-programm__card-free
-    section.copywriting-work
-        .copywriting-work__container.container
-            .copywriting-work__title Как проходит курс
-            .copywriting-work__content
-                .copywriting-work__row
-                    .copywriting-work__card-md
-                        .copywriting-work__card-text
-                    .copywriting-work__card-md
-                        .copywriting-work__card-text
-                .copywriting-work__row
-                    .copywriting-work__card-xl
-                        .copywriting-work__card-img
-                        .copywriting-work__text-wrapper
-                            .copywriting-work__card-title
-                            .copywriting-work__card-desc
-                .copywriting-work__row
-                    .copywriting-work__card-md
-                        .copywriting-work__card-text
-                    .copywriting-work__column
-                        .copywriting-work__card-sm
-                            .copywriting-work__card-text
-                        .copywriting-work__card-sm
-                            .copywriting-work__card-text
-    section.copywriting-feedback
-        .copywriting-feedback__container.container
-            .copywriting-feedback__title
-            .copywriting-feedback__slider
-            .copywriting-feedback__link-btn
-            .copywriting-feedback__link-info
-    section.copywriting-teacher
-        .copywriting-teacher___container.container
-        .copywriting-teacher__title
-        .copywriting-teacher__content
-            .copywriting-teacher__teacher-img
-            .copywriting-teacher__teacher-wrapper
-                .copywriting-teacher__teacher-name
-                .copywriting-teacher__teacher-info
-                .copywriting-teacher__teacher-link
+	//
+		section.copywriting-header
+			.container.copywriting-header__container
+				.copywriting-header__content
+					img.copywriting-header__logo(src="img/logo2.png" alt="logo")
+					.copywriting-header__title Копирайтинг
+					.copywriting-header__subtitle Курс, который научит вас писать
+					.copywriting-header__link Записаться
+				.copywriting-header__kurs-info
+					img.copywriting-header__play(src="img/play.svg" alt="play")
+					.copywriting-header__play-text О курсе за 49 секунд
+
+	section.copywriting-need
+		img.copywriting-need__bg-1(src="img/landings/copywriting/copywriting-need-bg-1.svg")
+		img.copywriting-need__bg-2(src="img/landings/copywriting/copywriting-need-bg-2.svg")
+
+		.container2.copywriting-need__container
+			.copywriting-need__title Слово — главный способ воздействия на других людей
+		.copywriting-need__star-wrap
+			.copywriting-need__star
+				img(src="img/orange-star.svg", alt="")
+		.container2.copywriting-need__container
+			.copywriting-need__content
+				.copywriting-need__decor Для кого?
+				.copywriting-need__inner
+					.copywriting-need__row
+						.copywriting-need__card
+							.copywriting-need__card-img
+								img(src="img/landings/copywriting/copywriting-need-1.svg")
+							.copywriting-need__card-title Для всех
+							.copywriting-need__card-desc Кто хочет научиться <br> писать
+						.copywriting-need__card
+							.copywriting-need__card-img
+								img(src="img/landings/copywriting/copywriting-need-2.svg")
+							.copywriting-need__card-title Владельцев компаний и&nbsp;блогеров
+							.copywriting-need__card-desc Чтобы научиться понятно и грамотно доносить <br> свою мысль
+						.copywriting-need__card
+							.copywriting-need__card-img
+								img(src="img/landings/copywriting/copywriting-need-3.svg")
+							.copywriting-need__card-title Копирайтеров
+							.copywriting-need__card-desc Чтобы научиться писать коммерческие посты или структурировать свои знания
+						.copywriting-need__card
+							.copywriting-need__card-img
+								img(src="img/landings/copywriting/copywriting-need-4.svg")
+							.copywriting-need__card-title Маркетологов
+							.copywriting-need__card-desc Чтобы понимать, как <br>  создавать лучший контент
+	hr
+	hr
+	hr
+	hr
+	hr
+	section.copywriting-kurs
+		.container.copywriting-kurs
+			.copywriting-kurs__expert
+				.copywriting-kurs__expert-wrapper
+					.copywriting-kurs__expert-text Грамотный текст — может доказать вашу экспертность без доказательств
+					img.copywriting-kurs__expert-img
+				.copywriting-kurs__possession-wrapper
+					.copywriting-kurs__possession Владение словом отражается на мышлении и на том как вы разговариваете
+				.copywriting-kurs__core Текст сильно недооценён, но копирайтинг — это ядро маркетинга
+	section.copywriting-programm
+		.container.copywriting-programm__container
+			.copywriting-programm__content
+				.copywriting-programm__title Програма курса
+				.copywriting-programm__desc
+					img(src="")
+					span — курс содержит домашнее задание
+				.copywriting-programm__column
+					.copywriting-programm__card
+						.copywriting-programm__card-left
+							.copywriting-programm__card-lesson Урок 0
+							.copywriting-programm__card-title Знакомство с преподавателем
+							.copywriting-programm__card-video
+								img.copywriting-programm__card-play
+								.copywriting-programm__card-video-text Видео-урок
+						.copywriting-programm__card-right
+							.copywriting-programm__card-plus
+							.copywriting-programm__card-free
+	section.copywriting-work
+		.copywriting-work__container.container
+			.copywriting-work__title Как проходит курс
+			.copywriting-work__content
+				.copywriting-work__row
+					.copywriting-work__card-md
+						.copywriting-work__card-text
+					.copywriting-work__card-md
+						.copywriting-work__card-text
+				.copywriting-work__row
+					.copywriting-work__card-xl
+						.copywriting-work__card-img
+						.copywriting-work__text-wrapper
+							.copywriting-work__card-title
+							.copywriting-work__card-desc
+				.copywriting-work__row
+					.copywriting-work__card-md
+						.copywriting-work__card-text
+					.copywriting-work__column
+						.copywriting-work__card-sm
+							.copywriting-work__card-text
+						.copywriting-work__card-sm
+							.copywriting-work__card-text
+	section.copywriting-feedback
+		.copywriting-feedback__container.container
+			.copywriting-feedback__title
+			.copywriting-feedback__slider
+			.copywriting-feedback__link-btn
+			.copywriting-feedback__link-info
+	section.copywriting-teacher
+		.copywriting-teacher___container.container
+		.copywriting-teacher__title
+		.copywriting-teacher__content
+			.copywriting-teacher__teacher-img
+			.copywriting-teacher__teacher-wrapper
+				.copywriting-teacher__teacher-name
+				.copywriting-teacher__teacher-info
+				.copywriting-teacher__teacher-link
