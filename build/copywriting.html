@@ -13,32 +13,21 @@
   </head>
   <body>
     <main class="main2">
-      <div class="copywriting-banner__decor"><img class="copywriting-banner__decor-img" src="img/decor.svg">
-        <section class="copywriting-banner">
-          <div class="container2 copywriting-banner__container">
-            <div class="copywriting-banner__content"><img class="copywriting-banner__logo" src="img/logo2.png" alt="logo">
-              <div class="copywriting-banner__title">Копирайтинг</div>
-              <div class="copywriting-banner__row">
-                <div class="copywriting-banner__subtitle">Курс, который научит вас писать</div>
-                <div class="copywriting-banner__kurs-info"><img class="copywriting-banner__play" src="img/play.svg" alt="play">
-                  <div class="copywriting-banner__play-text">О курсе за 49 секунд</div>
-                </div>
-              </div>
-              <div class="copywriting-banner__link">Записаться</div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <section class="copywriting-need"><img class="copywriting-need__bg-1" src="img/landings/copywriting/copywriting-need-bg-1.svg"><img class="copywriting-need__bg-2" src="img/landings/copywriting/copywriting-need-bg-2.svg">
+      <!--.copywriting-banner__decor
+      img.copywriting-banner__decor-img(src="img/decor.svg")
+      include partials/copywriting/copywriting-banner
+      
+      -->
+      <section class="copywriting-need"><img class="copywriting-need__bg-1" src="img/landings/copywriting/copywriting-need-bg-1.svg"><img class="copywriting-need__bg-2" src="img/landings/copywriting/copywriting-need-bg-2.svg"><img class="copywriting-need__bg-mob" src="img/landings/copywriting/copywriting-needbg-mob.svg">
         <div class="container2 copywriting-need__container">
-          <div class="copywriting-need__title">Слово — главный способ воздействия на других людей</div>
+          <div class="copywriting-need__title">Слово — главный способ воздействия на&nbsp;других людей</div>
         </div>
         <div class="copywriting-need__star-wrap">
           <div class="copywriting-need__star"><img src="img/orange-star.svg" alt=""></div>
         </div>
         <div class="container2 copywriting-need__container">
           <div class="copywriting-need__content">
-            <div class="copywriting-need__decor">Для кого?</div>
+            <div class="copywriting-need__decor">Для&nbsp;кого?</div>
             <div class="copywriting-need__inner">
               <div class="copywriting-need__row">
                 <div class="copywriting-need__card">
@@ -66,79 +55,349 @@
           </div>
         </div>
       </section>
-      <section class="copywriting-kurs">
-        <div class="container2 copywriting-kurs__container">
-          <div class="copywriting-kurs__content">
-            <div class="copywriting-kurs__expert-wrapper"><img class="copywriting-kurs__expert-img" src="img/copirate.svg">
-              <div class="copywriting-kurs__expert-text">Грамотный текст — может доказать вашу экспертность без доказательств</div>
-            </div>
-            <div class="copywriting-kurs__possession-wrapper"><img class="copywriting-kurs__possession-img" src="img/bold-star.svg">
-              <div class="copywriting-kurs__possession">Владение словом отражается на мышлении и на том как вы разговариваете</div>
-            </div>
-            <div class="copywriting-kurs__core">Текст сильно недооценён, но копирайтинг — это ядро маркетинга</div>
-          </div>
-        </div>
-      </section>
+      <!--include partials/copywriting/copywriting-kurs-->
       <section class="copywriting-programm">
-        <div class="container copywriting-programm__container">
+        <div class="container2 copywriting-programm__container">
           <div class="copywriting-programm__content">
-            <div class="copywriting-programm__title">Програма курса</div>
-            <div class="copywriting-programm__desc"><img src=""><span>— курс содержит домашнее задание</span></div>
-            <div class="copywriting-programm__column">
-              <div class="copywriting-programm__card">
-                <div class="copywriting-programm__card-left">
-                  <div class="copywriting-programm__card-lesson">Урок 0</div>
-                  <div class="copywriting-programm__card-title">Знакомство с преподавателем</div>
-                  <div class="copywriting-programm__card-video"><img class="copywriting-programm__card-play">
-                    <div class="copywriting-programm__card-video-text">Видео-урок</div>
+            <div class="copywriting-programm__inner">
+              <h2 class="cwprog-title">Програма курса</h2>
+              <div class="cwprog-desc">
+                <div class="cwprog-desc-pic"><img src="img/landings/copywriting/prog/Document.svg"></div><span class="cwprog-desc-text">— курс содержит домашнее задание</span>
+              </div>
+              <div class="cwprog-cards">
+                <div class="cwprog-card">
+                  <div class="cwprog-card-left">
+                    <div class="cwprog-card-left__top">
+                      <h3 class="cwprog-card-title">Знакомство с преподавателем</h3>
+                      <div class="cwprog-card-types">
+                        <div class="cwprog-card-type">
+                          <div class="cwprog-card-type__pic"><img src="img/landings/copywriting/prog/video-urok.svg" alt="icon"></div>
+                          <div class="cwprog-card-type__name">Видео-урок</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cwprog-card-left__bottom">
+                      <div class="cwprog-card-part-name">Урок 0</div>
+                    </div>
+                  </div>
+                  <div class="cwprog-card-right">
+                    <div class="cwprog-text">
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">О себе</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Для чего нужно уметь писать</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Страхи перед текстом</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Как научиться писать?</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Личные фишки, как улучшить текст</div>
+                        </div>
+                      </div>
+                    </div><a class="btn btn--btn2 btn--green cwprog-card-btn" href="">Получить бесплатно</a>
                   </div>
                 </div>
-                <div class="copywriting-programm__card-right">
-                  <div class="copywriting-programm__card-plus"></div>
-                  <div class="copywriting-programm__card-free"></div>
+                <div class="cwprog-card">
+                  <div class="cwprog-card-left">
+                    <div class="cwprog-card-left__top">
+                      <h3 class="cwprog-card-title">Как написать всё, что угодно?</h3>
+                      <div class="cwprog-card-types">
+                        <div class="cwprog-card-type">
+                          <div class="cwprog-card-type__pic"><img src="img/landings/copywriting/prog/text-dz.svg" alt="icon"></div>
+                          <div class="cwprog-card-type__name">Текстовые уроки</div>
+                        </div>
+                        <div class="cwprog-card-type">
+                          <div class="cwprog-card-type__pic"><img src="img/landings/copywriting/prog/dz.svg" alt="icon"></div>
+                          <div class="cwprog-card-type__name">Домашние задания</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cwprog-card-left__bottom">
+                      <div class="cwprog-card-part-name">Модуль 1</div>
+                    </div>
+                  </div>
+                  <div class="cwprog-card-right">
+                    <div class="cwprog-text">
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Чему научит вас курс?</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Как полюбить русский язык?</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Основы каждого текста</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Словарный запас</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">План</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Абзацы</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Штампы</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Эстетика текста</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Как сделать, чтобы вас поняли и дочитали?</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Простота</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Обращение</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Лаконичность</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Полезность</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Ситуативность</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Сокращение</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Вдохновение</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Про что писать</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Разделяй и пиши</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Сомневаетесь — не пишите</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Рерайт</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Изучение материала</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Контент-план</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Ещё кое-что</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Как найти свой стиль?</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Сервисы, которые помогут сделать текст лучше</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cwprog-card">
+                  <div class="cwprog-card-left">
+                    <div class="cwprog-card-left__top">
+                      <h3 class="cwprog-card-title">Тексты и маркетинг</h3>
+                      <div class="cwprog-card-types">
+                        <div class="cwprog-card-type">
+                          <div class="cwprog-card-type__pic"><img src="img/landings/copywriting/prog/text-dz.svg" alt="icon"></div>
+                          <div class="cwprog-card-type__name">Тексты и маркетинг</div>
+                        </div>
+                        <div class="cwprog-card-type">
+                          <div class="cwprog-card-type__pic"><img src="img/landings/copywriting/prog/dz.svg" alt="icon"></div>
+                          <div class="cwprog-card-type__name">Домашние задания</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cwprog-card-left__bottom">
+                      <div class="cwprog-card-part-name">Модуль 2</div>
+                    </div>
+                  </div>
+                  <div class="cwprog-card-right">
+                    <div class="cwprog-text">
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Копирайтинг в основе маркетинга</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Продукт</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">ЦА</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Тесты гипотез с помощью текстов</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Тексты на таргет/продающие тексты</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Формулы</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Заголовки и СТА</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Письменный маркетинг</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Анонсы</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Рассылки</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Статьи</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Лендинги и сайты</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Афиши и моушен</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Анализ своего текста, текста клиента и конкурентов</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Заключение</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cwprog-card">
+                  <div class="cwprog-card-left">
+                    <div class="cwprog-card-left__top">
+                      <h3 class="cwprog-card-title">Тексты для социальных сетей и остального интернета</h3>
+                      <div class="cwprog-card-types">
+                        <div class="cwprog-card-type">
+                          <div class="cwprog-card-type__pic"><img src="img/landings/copywriting/prog/text-dz.svg" alt="icon"></div>
+                          <div class="cwprog-card-type__name">Тексты и маркетинг</div>
+                        </div>
+                        <div class="cwprog-card-type">
+                          <div class="cwprog-card-type__pic"><img src="img/landings/copywriting/prog/dz.svg" alt="icon"></div>
+                          <div class="cwprog-card-type__name">Домашние задания</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cwprog-card-left__bottom">
+                      <div class="cwprog-card-part-name">Модуль 3</div>
+                    </div>
+                  </div>
+                  <div class="cwprog-card-right">
+                    <div class="cwprog-text">
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">С чего начать новичку?</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Тестовые задания</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">О биржах</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Как повысить свою ценность в глаза клиента?</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">О портфолио</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">График работы</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Как это написать?</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Инстаграм</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Вконтакте</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Телеграм</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Яндекс.Дзен</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Сценарии</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Тексты на сайт</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Письма</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">СЕО-копирайтинг</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Копирайтинг и SMM</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Как писать в разных стилях и зачем это блогеру?</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Контент-план и рубрики</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Лексикон рынка</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Разработка TOV</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Блогеру</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Бренду</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Заблуждения о копирайтинге</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Креативность от которой тошнит</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Триггеры</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Конкуренция</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Особенности профессии</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Сомневаетесь — не пишите 2.0</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Работать ли со сложными темами</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Оформление текста</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Что ещё нужно уметь</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Взаимодействие с клиентами</div>
+                          <div class="cwprog-titem-name__plus js-cwprog-open-sub"></div>
+                        </div>
+                        <div class="cwprog-titem-sub cyrilic-before" style="display:none;">
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Что делать с самым умным клиентом?</div>
+                          <div class="cwprog-titem-sub cyrilic-before__txt">Люди бывают разными. Как с ними работать?</div>
+                        </div>
+                      </div>
+                      <div class="cwprog-text-item">
+                        <div class="cwprog-titem-name">
+                          <div class="cwprog-titem-name__txt">Заключение</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="copywriting-work">
-        <div class="copywriting-work__container container">
-          <div class="copywriting-work__title">Как проходит курс</div>
-          <div class="copywriting-work__content">
-            <div class="copywriting-work__row">
-              <div class="copywriting-work__card-md">
-                <div class="copywriting-work__card-text"></div>
-              </div>
-              <div class="copywriting-work__card-md">
-                <div class="copywriting-work__card-text"></div>
-              </div>
-            </div>
-            <div class="copywriting-work__row">
-              <div class="copywriting-work__card-xl">
-                <div class="copywriting-work__card-img"></div>
-                <div class="copywriting-work__text-wrapper">
-                  <div class="copywriting-work__card-title"></div>
-                  <div class="copywriting-work__card-desc"></div>
-                </div>
-              </div>
-            </div>
-            <div class="copywriting-work__row">
-              <div class="copywriting-work__card-md">
-                <div class="copywriting-work__card-text"></div>
-              </div>
-              <div class="copywriting-work__column">
-                <div class="copywriting-work__card-sm">
-                  <div class="copywriting-work__card-text"></div>
-                </div>
-                <div class="copywriting-work__card-sm">
-                  <div class="copywriting-work__card-text"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!--section.copywriting-work
+      .copywriting-work__container.container
+      	.copywriting-work__title Как проходит курс
+      	.copywriting-work__content
+      		.copywriting-work__row
+      			.copywriting-work__card-md
+      				.copywriting-work__card-text
+      			.copywriting-work__card-md
+      				.copywriting-work__card-text
+      		.copywriting-work__row
+      			.copywriting-work__card-xl
+      				.copywriting-work__card-img
+      				.copywriting-work__text-wrapper
+      					.copywriting-work__card-title
+      					.copywriting-work__card-desc
+      		.copywriting-work__row
+      			.copywriting-work__card-md
+      				.copywriting-work__card-text
+      			.copywriting-work__column
+      				.copywriting-work__card-sm
+      					.copywriting-work__card-text
+      				.copywriting-work__card-sm
+      					.copywriting-work__card-text
+      -->
       <section class="copywriting-feedback">
         <div class="copywriting-feedback__container container">
           <div class="copywriting-feedback__title"></div>

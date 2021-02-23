@@ -7,22 +7,23 @@ block vars
 		};
 
 block main
-	.copywriting-banner__decor
+	//.copywriting-banner__decor
 		img.copywriting-banner__decor-img(src="img/decor.svg")
 		include partials/copywriting/copywriting-banner
 
 	section.copywriting-need
 		img.copywriting-need__bg-1(src="img/landings/copywriting/copywriting-need-bg-1.svg")
 		img.copywriting-need__bg-2(src="img/landings/copywriting/copywriting-need-bg-2.svg")
+		img.copywriting-need__bg-mob(src="img/landings/copywriting/copywriting-needbg-mob.svg")
 
 		.container2.copywriting-need__container
-			.copywriting-need__title Слово — главный способ воздействия на других людей
+			.copywriting-need__title Слово — главный способ воздействия на&nbsp;других людей
 		.copywriting-need__star-wrap
 			.copywriting-need__star
 				img(src="img/orange-star.svg", alt="")
 		.container2.copywriting-need__container
 			.copywriting-need__content
-				.copywriting-need__decor Для кого?
+				.copywriting-need__decor Для&nbsp;кого?
 				.copywriting-need__inner
 					.copywriting-need__row
 						.copywriting-need__card
@@ -47,26 +48,251 @@ block main
 							.copywriting-need__card-desc Чтобы понимать, как <br>  создавать лучший контент
 
 
-	include partials/copywriting/copywriting-kurs
+	//include partials/copywriting/copywriting-kurs
 	section.copywriting-programm
-		.container.copywriting-programm__container
+		.container2.copywriting-programm__container
 			.copywriting-programm__content
-				.copywriting-programm__title Програма курса
-				.copywriting-programm__desc
-					img(src="")
-					span — курс содержит домашнее задание
-				.copywriting-programm__column
-					.copywriting-programm__card
-						.copywriting-programm__card-left
-							.copywriting-programm__card-lesson Урок 0
-							.copywriting-programm__card-title Знакомство с преподавателем
-							.copywriting-programm__card-video
-								img.copywriting-programm__card-play
-								.copywriting-programm__card-video-text Видео-урок
-						.copywriting-programm__card-right
-							.copywriting-programm__card-plus
-							.copywriting-programm__card-free
-	section.copywriting-work
+				.copywriting-programm__inner
+					h2.cwprog-title Програма курса
+					.cwprog-desc
+						.cwprog-desc-pic
+							img(src="img/landings/copywriting/prog/Document.svg")
+						span.cwprog-desc-text — курс содержит домашнее задание
+					.cwprog-cards
+						.cwprog-card
+							.cwprog-card-left
+								.cwprog-card-left__top
+									h3.cwprog-card-title Знакомство с преподавателем
+									.cwprog-card-types
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/video-urok.svg", alt="icon")
+											.cwprog-card-type__name Видео-урок
+								.cwprog-card-left__bottom
+									.cwprog-card-part-name Урок 0
+
+							.cwprog-card-right
+								.cwprog-text
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt О себе
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Для чего нужно уметь писать
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Страхи перед текстом
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Как научиться писать?
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Личные фишки, как улучшить текст
+
+								a.btn.btn--btn2.btn--green.cwprog-card-btn(href="") Получить бесплатно
+
+
+						.cwprog-card
+							.cwprog-card-left
+								.cwprog-card-left__top
+									h3.cwprog-card-title Как написать всё, что угодно?
+									.cwprog-card-types
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+											.cwprog-card-type__name Текстовые уроки
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/dz.svg", alt="icon")
+											.cwprog-card-type__name Домашние задания
+								.cwprog-card-left__bottom
+									.cwprog-card-part-name Модуль 1
+
+							.cwprog-card-right
+								.cwprog-text
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Чему научит вас курс?
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Как полюбить русский язык?
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Основы каждого текста
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Словарный запас
+											.cwprog-titem-sub.cyrilic-before__txt План
+											.cwprog-titem-sub.cyrilic-before__txt Абзацы
+											.cwprog-titem-sub.cyrilic-before__txt Штампы
+											.cwprog-titem-sub.cyrilic-before__txt Эстетика текста
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Как сделать, чтобы вас поняли и дочитали?
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Простота
+											.cwprog-titem-sub.cyrilic-before__txt Обращение
+											.cwprog-titem-sub.cyrilic-before__txt Лаконичность
+											.cwprog-titem-sub.cyrilic-before__txt Полезность
+											.cwprog-titem-sub.cyrilic-before__txt Ситуативность
+											.cwprog-titem-sub.cyrilic-before__txt Сокращение
+											.cwprog-titem-sub.cyrilic-before__txt Вдохновение
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Про что писать
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Разделяй и пиши
+											.cwprog-titem-sub.cyrilic-before__txt Сомневаетесь — не пишите
+											.cwprog-titem-sub.cyrilic-before__txt Рерайт
+											.cwprog-titem-sub.cyrilic-before__txt Изучение материала
+											.cwprog-titem-sub.cyrilic-before__txt Контент-план
+											.cwprog-titem-sub.cyrilic-before__txt Ещё кое-что
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Как найти свой стиль?
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Сервисы, которые помогут сделать текст лучше
+
+
+						.cwprog-card
+							.cwprog-card-left
+								.cwprog-card-left__top
+									h3.cwprog-card-title Тексты и маркетинг
+									.cwprog-card-types
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+											.cwprog-card-type__name Тексты и маркетинг
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/dz.svg", alt="icon")
+											.cwprog-card-type__name Домашние задания
+								.cwprog-card-left__bottom
+									.cwprog-card-part-name Модуль 2
+
+							.cwprog-card-right
+								.cwprog-text
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Копирайтинг в основе маркетинга
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Продукт
+											.cwprog-titem-sub.cyrilic-before__txt ЦА
+											.cwprog-titem-sub.cyrilic-before__txt Тесты гипотез с помощью текстов
+											.cwprog-titem-sub.cyrilic-before__txt Тексты на таргет/продающие тексты
+											.cwprog-titem-sub.cyrilic-before__txt Формулы
+											.cwprog-titem-sub.cyrilic-before__txt Заголовки и СТА
+
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Письменный маркетинг
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Анонсы
+											.cwprog-titem-sub.cyrilic-before__txt Рассылки
+											.cwprog-titem-sub.cyrilic-before__txt Статьи
+											.cwprog-titem-sub.cyrilic-before__txt Лендинги и сайты
+											.cwprog-titem-sub.cyrilic-before__txt Афиши и моушен
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Анализ своего текста, текста клиента и конкурентов
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Заключение
+
+
+
+						.cwprog-card
+							.cwprog-card-left
+								.cwprog-card-left__top
+									h3.cwprog-card-title Тексты для социальных сетей и остального интернета
+									.cwprog-card-types
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+											.cwprog-card-type__name Тексты и маркетинг
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/dz.svg", alt="icon")
+											.cwprog-card-type__name Домашние задания
+								.cwprog-card-left__bottom
+									.cwprog-card-part-name Модуль 3
+
+							.cwprog-card-right
+								.cwprog-text
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt С чего начать новичку?
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Тестовые задания
+											.cwprog-titem-sub.cyrilic-before__txt О биржах
+											.cwprog-titem-sub.cyrilic-before__txt Как повысить свою ценность в глаза клиента?
+											.cwprog-titem-sub.cyrilic-before__txt О портфолио
+											.cwprog-titem-sub.cyrilic-before__txt График работы
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Как это написать?
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Инстаграм
+											.cwprog-titem-sub.cyrilic-before__txt Вконтакте
+											.cwprog-titem-sub.cyrilic-before__txt Телеграм
+											.cwprog-titem-sub.cyrilic-before__txt Яндекс.Дзен
+											.cwprog-titem-sub.cyrilic-before__txt Сценарии
+											.cwprog-titem-sub.cyrilic-before__txt Тексты на сайт
+											.cwprog-titem-sub.cyrilic-before__txt Письма
+											.cwprog-titem-sub.cyrilic-before__txt СЕО-копирайтинг
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Копирайтинг и SMM
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Как писать в разных стилях и зачем это блогеру?
+											.cwprog-titem-sub.cyrilic-before__txt Контент-план и рубрики
+											.cwprog-titem-sub.cyrilic-before__txt Лексикон рынка
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Разработка TOV
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Блогеру
+											.cwprog-titem-sub.cyrilic-before__txt Бренду
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Заблуждения о копирайтинге
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Креативность от которой тошнит
+											.cwprog-titem-sub.cyrilic-before__txt Триггеры
+											.cwprog-titem-sub.cyrilic-before__txt Конкуренция
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Особенности профессии
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Сомневаетесь — не пишите 2.0
+											.cwprog-titem-sub.cyrilic-before__txt Работать ли со сложными темами
+											.cwprog-titem-sub.cyrilic-before__txt Оформление текста
+											.cwprog-titem-sub.cyrilic-before__txt Что ещё нужно уметь
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Взаимодействие с клиентами
+											.cwprog-titem-name__plus.js-cwprog-open-sub
+										.cwprog-titem-sub.cyrilic-before(style="display:none;")
+											.cwprog-titem-sub.cyrilic-before__txt Что делать с самым умным клиентом?
+											.cwprog-titem-sub.cyrilic-before__txt Люди бывают разными. Как с ними работать?
+
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Заключение
+
+
+	//section.copywriting-work
 		.copywriting-work__container.container
 			.copywriting-work__title Как проходит курс
 			.copywriting-work__content
