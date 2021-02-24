@@ -1,0 +1,154 @@
+@media (max-width: 1400px) {
+    .teacher {
+        &__title {
+            font-size: 82px;
+        }
+        
+        &__content {
+            display: flex;
+            align-items: center;
+        }
+        &__img-wrapper {
+            display: block;
+            position: relative;
+            width: 100%;
+            max-width: 677px;
+            margin-right: 88px;
+    
+            &::before {
+                content: '';
+                display: block;
+                padding-top: 877/677 * 100%;
+            }
+    
+        }
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-position: center center;
+        }
+        
+        &__teacher-wrapper {
+            margin-top: -70px;
+        }
+        
+        &__teacher-name {
+            margin-bottom: 32px;
+            font-size: 41px;
+            line-height: 125.8%;
+        }
+        
+        &__teacher-info {
+            font-size: 24px;
+            margin-bottom: 62px;
+        }
+        
+    }
+}
+@media (max-width: 1200px) {
+    .teacher {
+        &__title {
+            font-size: 68px;
+        }
+        
+        &__content {
+            display: flex;
+            align-items: center;
+        }
+        &__img-wrapper {
+            display: block;
+            position: relative;
+            width: 100%;
+            max-width: 677px;
+            margin-right: 50px;
+    
+            &::before {
+                content: '';
+                display: block;
+                padding-top: 877/677 * 100% + 10%;
+            }
+    
+        }
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-position: center center;
+        }
+        
+        &__teacher-wrapper {
+            margin-top: -40px;
+        }
+        
+        &__teacher-name {
+            margin-bottom: 32px;
+            font-size: 41px;
+            line-height: 125.8%;
+        }
+        
+        &__teacher-info {
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+        
+    }
+}
+@media (max-width: 375px) {
+ 
+    .teacher {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__wrapper {
+            margin: 0 -20px;
+            padding: 0 30px;
+            padding-top: 60px;
+            order: 0;
+            border-radius: 32px;
+        }
+        &__title {
+            font-size: 36px;
+            margin-bottom: 35px;
+        }
+
+        &__img-wrapper {
+            margin-right: 0;
+            order: 1;
+        }
+
+        &__teacher-wrapper {
+            margin-top: 0;
+        }
+
+        &__teacher-name {
+            font-size: 18px;
+        }
+
+        &__teacher-info {
+            font-size: 16px;
+        }
+
+        &__teacher-link {
+            font-size: 16px;
+            &::before {
+                content: '';
+                position: absolute;
+                height: 2px;
+                bottom: 1px;
+                left: 0;
+                right: 0;
+                background-color: #FF4E00;
+            }
+        }
+    }
+}

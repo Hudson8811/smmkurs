@@ -1,0 +1,106 @@
+@media (max-width: 1400px) {
+    .copywriting-kurs {
+        padding-top: 266px;
+        padding-bottom: 122px;
+        &__expert-wrapper {
+            margin-bottom: 241px;
+        }
+        &__expert-text {
+            font-size: 48px;
+        }
+        
+        &__expert-img {
+            right: 363/1571 * 100%;
+            width: 170px;
+            height: 170px;
+        }
+        &__possession-wrapper {
+            margin-bottom: 210px;
+        }
+        &__possession {
+            font-size: 48px;
+        }
+        &__possession-img {
+            top: -50px;
+            width: 362px;
+            height: 153px;
+        }
+        &__core {
+            font-size: 158px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .copywriting-kurs {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        &__expert-wrapper {
+            margin-bottom: 120px;
+        }
+        &__expert-img {
+            position: absolute;
+            right: 363/1571 * 100% - 10%;
+            top: 25px;
+        }
+        &__possession-wrapper {
+            margin-bottom: 110px;
+        }
+        &__core {
+            font-size: 128px;
+        }
+    }
+}
+@media (max-width:375px) {
+    .copywriting-kurs {
+        background: #000;
+        padding-top: 6px;
+        padding-bottom: 24px;
+    
+        &__container { 
+            color: #fff;
+        }
+    
+        &__content {
+        }
+        
+        &__expert-wrapper {
+            margin-bottom: 49px;
+            position: relative;
+        }
+
+        &__expert-img {
+           display: none;
+        }
+    
+        &__expert-text {
+            font-size: 20px;
+            width: 100%;
+            line-height: 100%;
+        }
+        
+        
+        &__possession-wrapper {
+            position: relative;
+            margin-bottom: 89px;
+    
+        }
+        &__possession-img {
+          position: absolute;
+          top: -29px;
+          left: -40px;
+          width: 204px;
+          height: 126px;
+        }
+        
+        &__possession {
+            font-size: 20px;
+            line-height: 100%;
+            width: 100%;
+        }
+        
+        &__core {
+            font-size: 36px;
+            line-height: 100%;
+        }
+    }
+}
