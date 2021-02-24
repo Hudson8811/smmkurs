@@ -19,21 +19,25 @@
 }
 @media (max-width:375px) {
     .copywriting-banner {
+        &__decor {
+        overflow: hidden;
+            position: relative;
+        }
         padding-top: 97px;
         padding-bottom: 94px;
         background-color: #000;
         &__decor {
             &-img {
                 position: absolute;
-                right: -100%;
-                top: 0;
-                width: 1000px;
-            height: 600px;
+                right: -19%;
+                top: -12px;
+                width: 375px;
+                height: 600px;
             }
         }
         
         &__content {
-        }
+        } 
         
         &__logo {
             width: 32px;
@@ -55,6 +59,7 @@
         
         &__link {
             font-size: 18px;
+            padding: 16px 57px;
         }
          
         &__kurs-info {
@@ -65,11 +70,12 @@
         &__play {
             width: 14px;
             height: 12px;
-            margin-right: 28px;
+            margin-right: 0px;
         }
         
         &__play-text {
             font-size: 18px;
+            flex: 0 0 auto;
         }
     }
 }

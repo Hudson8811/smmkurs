@@ -13,11 +13,22 @@
   </head>
   <body>
     <main class="main2">
-      <!--.copywriting-banner__decor
-      img.copywriting-banner__decor-img(src="img/decor.svg")
-      include partials/copywriting/copywriting-banner
-      
-      -->
+      <div class="copywriting-banner__decor"><img class="copywriting-banner__decor-img" src="img/decor.svg">
+        <section class="copywriting-banner">
+          <div class="container2 copywriting-banner__container">
+            <div class="copywriting-banner__content"><img class="copywriting-banner__logo" src="img/logo2.png" alt="logo">
+              <div class="copywriting-banner__title">Копирайтинг</div>
+              <div class="copywriting-banner__row">
+                <div class="copywriting-banner__subtitle">Курс, который научит вас писать</div>
+                <div class="copywriting-banner__kurs-info"><img class="copywriting-banner__play" src="img/play.svg" alt="play">
+                  <div class="copywriting-banner__play-text">О курсе за 49 секунд</div>
+                </div>
+              </div>
+              <div class="copywriting-banner__link">Записаться</div>
+            </div>
+          </div>
+        </section>
+      </div>
       <section class="copywriting-need"><img class="copywriting-need__bg-1" src="img/landings/copywriting/copywriting-need-bg-1.svg"><img class="copywriting-need__bg-2" src="img/landings/copywriting/copywriting-need-bg-2.svg"><img class="copywriting-need__bg-mob" src="img/landings/copywriting/copywriting-needbg-mob.svg">
         <div class="container2 copywriting-need__container">
           <div class="copywriting-need__title">Слово — главный способ воздействия на&nbsp;других людей</div>
@@ -55,7 +66,19 @@
           </div>
         </div>
       </section>
-      <!--include partials/copywriting/copywriting-kurs-->
+      <section class="copywriting-kurs">
+        <div class="container2 copywriting-kurs__container">
+          <div class="copywriting-kurs__content">
+            <div class="copywriting-kurs__expert-wrapper"><img class="copywriting-kurs__expert-img" src="img/copirate.svg">
+              <div class="copywriting-kurs__expert-text">Грамотный текст — может доказать вашу экспертность без доказательств</div>
+            </div>
+            <div class="copywriting-kurs__possession-wrapper"><img class="copywriting-kurs__possession-img" src="img/bold-star.svg">
+              <div class="copywriting-kurs__possession">Владение словом отражается на мышлении и на том как вы разговариваете</div>
+            </div>
+            <div class="copywriting-kurs__core">Текст<br/> сильно<br/> недооценён,<br/> но<br/>копирайтинг —<br/>это ядро<br/> маркетинга</div>
+          </div>
+        </div>
+      </section>
       <section class="copywriting-programm">
         <div class="container2 copywriting-programm__container">
           <div class="copywriting-programm__content">
@@ -410,30 +433,40 @@
           </div>
         </div>
       </section>
-      <!--section.copywriting-work
-      .copywriting-work__container.container
-      	.copywriting-work__title Как проходит курс
-      	.copywriting-work__content
-      		.copywriting-work__row
-      			.copywriting-work__card-md
-      				.copywriting-work__card-text
-      			.copywriting-work__card-md
-      				.copywriting-work__card-text
-      		.copywriting-work__row
-      			.copywriting-work__card-xl
-      				.copywriting-work__card-img
-      				.copywriting-work__text-wrapper
-      					.copywriting-work__card-title
-      					.copywriting-work__card-desc
-      		.copywriting-work__row
-      			.copywriting-work__card-md
-      				.copywriting-work__card-text
-      			.copywriting-work__column
-      				.copywriting-work__card-sm
-      					.copywriting-work__card-text
-      				.copywriting-work__card-sm
-      					.copywriting-work__card-text
-      -->
+      <section class="copywriting-work"><img class="copywriting-work__decor-one" src="img/work-line.svg"><img class="copywriting-work__decor-two" src="img/work-line2.svg">
+        <div class="copywriting-work__container container">
+          <div class="copywriting-work__title">Как проходит курс</div>
+          <div class="copywriting-work__content">
+            <div class="copywriting-work__row">
+              <div class="copywriting-work__card-md copywriting-work__card-md-one">
+                <div class="copywriting-work__card-text">Текстовый <br/> формат курса</div>
+                <div class="copywriting-work__card-btn">Почему?</div>
+              </div>
+              <div class="copywriting-work__card-md copywriting-work__card-md-two">
+                <div class="copywriting-work__card-text">Общение в чате<br/> в Telegram</div>
+              </div>
+              <div class="copywriting-work__card-xl">
+                <div class="copywriting-work__card-img-wrapper"><img class="copywriting-work__card-img" src="img/check.svg"></div>
+                <div class="copywriting-work__text-wrapper">
+                  <div class="copywriting-work__card-title">Индивидуальная проверка домашних заданий</div>
+                  <div class="copywriting-work__card-desc">После каждого урока вас ждут домашние задания, которые индивидуально проверяются преподователем и вы получаете обратную связь по каждой написанной строчке.</div>
+                </div>
+              </div>
+              <div class="copywriting-work__card-md copywriting-work__card-md-three">
+                <div class="copywriting-work__card-text">Обучение происходит на нашей IT-платформе в вашем личном кабинете</div>
+              </div>
+              <div class="copywriting-work__column">
+                <div class="copywriting-work__card-sm">
+                  <div class="copywriting-work__card-text">20 модулей</div>
+                </div>
+                <div class="copywriting-work__card-sm">
+                  <div class="copywriting-work__card-text">Доступ к курсу даётся на 4 месяца</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="copywriting-feedback">
         <div class="container2 cwfeedback-container">
           <div class="cwfeedback-title">Что по поводу курса <br> думают наши выпускники:</div>
@@ -450,19 +483,38 @@
           </div>
         </div>
       </section>
-      <section class="copywriting-teacher">
-        <div class="copywriting-teacher___container container"></div>
-        <div class="copywriting-teacher__title"></div>
-        <div class="copywriting-teacher__content">
-          <div class="copywriting-teacher__teacher-img"></div>
-          <div class="copywriting-teacher__teacher-wrapper">
-            <div class="copywriting-teacher__teacher-name"></div>
-            <div class="copywriting-teacher__teacher-info"></div>
-            <div class="copywriting-teacher__teacher-link"></div>
+      <section class="teacher">
+        <div class="teacher__container container2">
+          <div class="teacher__wrapper">
+            <div class="teacher__title">Преподаватель</div>
+            <div class="teacher__content">
+              <div class="teacher__img-wrapper"><img class="teacher__img" src="img/kokina.png"></div>
+              <div class="teacher__teacher-wrapper">
+                <div class="teacher__teacher-name">Катя Кокина</div>
+                <div class="teacher__teacher-info">Я устал судить, понял? Вот почему я злюсь и о ком-то выражаюсь плохо? Потому что мне хотелось бы видеть ответственность в музыкальном плане. </div><a class="teacher__teacher-link" href="#">instagram</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="copywriting-teacher"></section>
+      <section class="copywriting-features"><img class="copywriting-features__line" src="img/features-line.svg">
+        <div class="container2 copywriting-features__container">
+          <div class="copywriting-features__content">
+            <div class="copywriting-features__row">
+              <div class="copywriting-features__text-one copywriting-features__text">Слова сильно воздействуют на людей в эмоциональном плане.</div>
+              <div class="copywriting-features__img-wrapper-one copywriting-features__img-wrapper"><img class="copywriting-features__img" src="img/features1.svg"></div>
+            </div>
+            <div class="copywriting-features__row">
+              <div class="copywriting-features__img-wrapper-two copywriting-features__img-wrapper"><img class="copywriting-features__img" src="img/features2.svg"></div>
+              <div class="copywriting-features__text-two copywriting-features__text">Зачем нужен девиз? Слоган? Гимн? Хороший нейминг?</div>
+            </div>
+            <div class="copywriting-features__row">
+              <div class="copywriting-features__text-three copywriting-features__text">Даже если у вас есть клевая мысль или идея, её ещё надо правильно подать</div>
+              <div class="copywriting-features__img-wrapper-three copywriting-features__img-wrapper"><img class="copywriting-features__img" src="img/features3.svg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="js/main.js"></script>
     <script src="js/main2.js"></script>

@@ -1,0 +1,109 @@
+.teacher {
+background: #000;
+    &__container {
+      
+    }
+    
+    &__wrapper {
+        background: #FFFFFF;
+        border-radius: 60px;
+        padding: 0 61px;
+        padding-bottom: 0;
+        padding-top: 88px;
+    }
+    
+    &__title {
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 96px;
+        line-height: 100%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 14px;
+
+    }
+    
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+    &__img-wrapper {
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 677px;
+        margin-right: 88px;
+
+        &::before {
+            content: '';
+            display: block;
+            padding-top: 877/677 * 100%;
+        }
+
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center center;
+
+    }
+    
+    &__teacher-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        max-width: 450px;
+        margin-top: -70px;
+    }
+    
+    &__teacher-name {
+        margin-bottom: 32px;
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 41px;
+        line-height: 125.8%;
+    }
+    
+    &__teacher-info {
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 125.8%;
+        color: #000000;
+        margin-bottom: 82px;
+    }
+    
+    &__teacher-link {
+        position: relative;
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 41px;
+        line-height: 125.8%;
+        color: #FF4E00;
+        transition: 0.2s;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            height: 3px;
+            bottom: 5px;
+            left: 0;
+            right: 0;
+            background-color: #FF4E00;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+
+    }
+}
+    

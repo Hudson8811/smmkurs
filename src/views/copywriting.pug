@@ -7,7 +7,7 @@ block vars
 		};
 
 block main
-	//.copywriting-banner__decor
+	.copywriting-banner__decor
 		img.copywriting-banner__decor-img(src="img/decor.svg")
 		include partials/copywriting/copywriting-banner
 
@@ -48,7 +48,9 @@ block main
 							.copywriting-need__card-desc Чтобы понимать, как <br>  создавать лучший контент
 
 
-	//include partials/copywriting/copywriting-kurs
+	include partials/copywriting/copywriting-kurs
+
+
 	section.copywriting-programm
 		.container2.copywriting-programm__container
 			.copywriting-programm__content
@@ -323,29 +325,8 @@ block main
 											img(src="img/landings/copywriting/prog/dz.svg", alt="icon")
 										.cwprog-card-type__name Домашние задания
 
-	//section.copywriting-work
-		.copywriting-work__container.container
-			.copywriting-work__title Как проходит курс
-			.copywriting-work__content
-				.copywriting-work__row
-					.copywriting-work__card-md
-						.copywriting-work__card-text
-					.copywriting-work__card-md
-						.copywriting-work__card-text
-				.copywriting-work__row
-					.copywriting-work__card-xl
-						.copywriting-work__card-img
-						.copywriting-work__text-wrapper
-							.copywriting-work__card-title
-							.copywriting-work__card-desc
-				.copywriting-work__row
-					.copywriting-work__card-md
-						.copywriting-work__card-text
-					.copywriting-work__column
-						.copywriting-work__card-sm
-							.copywriting-work__card-text
-						.copywriting-work__card-sm
-							.copywriting-work__card-text
+	include partials/copywriting/copywriting-work
+
 	section.copywriting-feedback
 		.container2.cwfeedback-container
 			.cwfeedback-title Что по поводу курса <br> думают наши выпускники:
@@ -361,17 +342,5 @@ block main
 			.cwfeedback-description
 				.cwfeedback-description__txt Только отзывы от реальных людей, <br> которые можно проверить
 
-
-
-
-
-	section.copywriting-teacher
-		.copywriting-teacher___container.container
-		.copywriting-teacher__title
-		.copywriting-teacher__content
-			.copywriting-teacher__teacher-img
-			.copywriting-teacher__teacher-wrapper
-				.copywriting-teacher__teacher-name
-				.copywriting-teacher__teacher-info
-				.copywriting-teacher__teacher-link
-	section.copywriting-teacher
+	include partials/copywriting/teacher
+	include partials/copywriting/copywriting-features

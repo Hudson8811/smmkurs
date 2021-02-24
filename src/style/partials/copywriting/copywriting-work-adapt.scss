@@ -1,0 +1,56 @@
+@media (max-width: 1400px) {
+    .copywriting-work {
+        &__card-md {
+            &-three {
+                flex-basis: calc(50% - 20px);
+                margin-right: 40px;
+                padding: 81px 50px;
+            }
+        }
+        &__card-sm {
+            padding: 60px 90px;
+            &:first-child {
+                .copywriting-work__card-text {
+                    margin-right: 28px;
+                }
+            }
+            &:not(:last-child) {
+                margin-bottom: 39px;
+            }
+        }
+        &__card-xl {
+         
+            padding: 70px 20px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .copywriting-work {
+        &__card-md {
+            padding: 50px 20px;
+            &-three {
+                flex-basis: calc(50% - 20px);
+                margin-right: 40px;
+                padding: 81px 20px;
+            }
+        }
+        &__card-sm {
+            padding: 60px 10%;
+            &:first-child {
+                .copywriting-work__card-text {
+                    margin-right: 28px;
+                }
+            }
+            &:not(:last-child) {
+                margin-bottom: 39px;
+            }
+        }
+        &__card-xl {
+         
+            padding: 50px 20px;
+        }
+    }
+}
+@media (max-width:375px) {
+  
+}
