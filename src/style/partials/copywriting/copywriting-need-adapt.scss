@@ -19,8 +19,8 @@
 }
 @media screen and (max-width: 1024px) {
 	.copywriting-need {
-		padding-top: 60px;
-		padding-bottom: 78px;
+		padding-top: vw(60);
+		padding-bottom: vw(78);
 		&::after{
 			display: none;
 		}
@@ -32,20 +32,20 @@
 		&__title {
 			width: 100%;
 			max-width: 100%;
-			font-size: 36px;
+			font-size: vw(36);
 			line-height: 100%;
-			letter-spacing: 0px;
-			letter-spacing: -0.2px;
-			margin-bottom: 84px;
+			letter-spacing: vw(0);
+			letter-spacing: vw(-0.2);
+			margin-bottom: vw(84);
 		}
 
 		&__decor {
 
-			font-size: 18px;
+			font-size: vw(18);
 			line-height: 1;
-			padding: 17px 35px;
-			margin-top: 6px;
-			margin-left: 5px;
+			padding: vw(17) vw(35);
+			margin-top: vw(6);
+			margin-left: vw(5);
 		}
 
 		&__bg-1,
@@ -64,36 +64,36 @@
 		}
 
 		&__content {
-			border-radius: 40px;
-			padding: 74px 10px 91px;
+			border-radius: vw(40);
+			padding: vw(74) vw(10) vw(91);
 		}
 	}
 
 	.copywriting-need__inner {
-		width: 184px;
+		width: vw(184);
 	}
 
 	.copywriting-need__row {}
 
 	.copywriting-need__card {
-		margin-bottom: 47px;
+		margin-bottom: vw(47);
 
 		&-img {
 
-			height: 150px;
+			height: vw(150);
 
 		}
 
 		&-title {
-			font-size: 18px;
+			font-size: vw(18);
 			line-height: 1;
-			margin-top: 32px;
+			margin-top: vw(32);
 		}
 
 		&-desc {
-			font-size: 16px;
+			font-size: vw(16);
 			line-height: 125.8%;
-			margin-top: 16px;
+			margin-top: vw(16);
 		}
 
 		img {}
