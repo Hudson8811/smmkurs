@@ -1,0 +1,117 @@
+@media (max-width: 1500px) {
+    .copywriting-features {
+        &__row {
+            display: flex;
+            align-items: center;
+            &:nth-child(1) {
+                margin-bottom: 20px;
+            }
+            &:nth-child(2) {
+                margin-bottom: 170px;
+            }
+        }
+    }
+}
+@media (max-width: 1400px) {
+    .copywriting-features {
+        &__text {
+            font-size: 48px;
+        }
+        &__row {
+            display: flex;
+            align-items: center;
+            &:nth-child(1) {
+                margin-bottom: 20px;
+            }
+            &:nth-child(2) {
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+  
+}
+@media (max-width:375px) {
+    .copywriting-features {
+        padding-top: 78px;
+        padding-bottom: 50px;
+        &__line {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translateY(60%);
+            width: 100%;
+        }
+        &__text {
+            font-weight: 350;
+            font-size: 20px;
+            line-height: 125.8%;
+        }
+        &__content {
+            padding: 0;
+        }
+        &__text-one {
+            margin-right: 0;
+            order: 2;
+        }
+        
+        &__img-wrapper-one {
+            max-width: 216px;
+            transform: translateY(-32px);
+            align-self: flex-start;
+            order: 1;
+            &::before {
+                content: '';
+                display: block;
+                padding-top: 562/514 * 100%;
+            }
+        }
+        &__img-wrapper-two {
+            max-width: 196px;
+            margin-right: 0px;
+            width: 100%;
+            align-self: flex-end;
+            margin-bottom: 28px;
+            &::before {
+                content: '';
+                display: block;
+                padding-top: 515/564 * 100%;
+            }
+        }
+        &__text-two {
+            margin-top: 0px;
+        }
+        &__row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &:nth-child(1) {
+                margin-bottom: 60px;
+            }
+            &:nth-child(2) {
+                margin-bottom: 50px;
+            }
+        }
+        &__text-three {
+            order: 2;
+            margin-right: 0;
+           
+        }
+        
+        &__img-wrapper-three {
+            align-self: flex-start;
+            margin-left: 29px;
+            max-width: 85px;
+            width: 100%;
+            transform: translateY(0);
+            order: 1;
+            margin-bottom: 27px;
+            &::before {
+                content: '';
+                display: block;
+                padding-top: 263/261 * 100%;
+            }
+        }
+    }
+}
