@@ -4,7 +4,9 @@
 @import "libs/jquery.fancybox.min.css";
 @import "libs/slick.scss";
 @import "libs/slick-theme.scss";
-
+///////////////
+@import "libs/jquery.mCustomScrollbar.min.css";
+///////////////
 
 @import "partials/_var";
 @import "partials/mixins";
@@ -15,7 +17,7 @@
 
 
 @import "partials/content";
-
+//////////////////
 @import "partials/lands";
 
 @import "partials/copywriting/copywriting-banner";
@@ -33,8 +35,10 @@
 @import "partials/copywriting/copywriting-need";
 @import "partials/copywriting/copywriting-programm";
 @import "partials/copywriting/cwfeedback";
+@import "partials/copywriting/ylearn";
 
 @import "partials/copywriting/copywriting-need-adapt";
 @import "partials/copywriting/copywriting-programm-adaptive";
 @import "partials/copywriting/cwfeedback-adapt";
+@import "partials/copywriting/ylearn-adapt";
 

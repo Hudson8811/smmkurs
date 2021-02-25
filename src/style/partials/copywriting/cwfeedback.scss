@@ -32,13 +32,17 @@
 
 .cwfeedback-slider__slide {
 	width: 426px;
-	transition-duration: .5s;
+	transition-duration: .5s;position: relative;
+	margin-left: -50px;
+	margin-right: -50px;
+	z-index: 1;
 	img {
 		width: 100%;
 		height: auto;
 	}
 	&.slick-current{
-		width: 226px;
+		margin-top: -20px;
+		z-index: 2;
 
 	}
 }

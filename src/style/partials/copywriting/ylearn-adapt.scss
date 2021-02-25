@@ -1,0 +1,203 @@
+@media screen and (max-width: 1024px) {
+	.ylearn-section {
+		padding-top: vw(60);
+		padding-bottom: vw(135);
+
+		* {
+			box-sizing: border-box;
+		}
+	}
+
+	.ylearn-art {
+		display: none;
+	}
+
+	.ylearn-art {}
+
+	.ylearn-title {
+		width: vw(300);
+		margin: 0 auto;
+		/* or vw(41) */
+		text-align: center;
+		color: #FFFFFF;
+		font-size: vw(36);
+		font-weight: 500;
+		font-style: normal;
+		line-height: 115%;
+	}
+
+	.ylearn-row-container {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.ylearn-row-wrap {
+		margin-top: vw(54);
+	}
+
+	.ylearn-row {
+		display: flex;
+		margin-left: vw(-20);
+		padding-left: 48px;
+	}
+
+	.ylearn-col {
+		display: flex;
+
+		&--short {}
+
+		&--long {}
+
+		&:first-child {}
+	}
+
+	.ylearn-item {
+		position: relative;
+		display: flex;
+		overflow: hidden;
+		align-items: flex-start;
+		flex-direction: column;
+		width: vw(239);
+		min-height: vw(345);
+		margin-left: vw(20);
+		padding: vw(43) vw(17) vw(18);
+		color: #000000;
+		border-radius: vw(24);
+		background: #ffffff;
+
+		&+.ylearn-item {}
+
+		&__title {
+			flex-grow: 1;
+			font-size: vw(24);
+			font-weight: normal;
+			line-height: 125.8%;
+		}
+
+		&__img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+
+			&--desk {
+				display: none;
+			}
+		}
+
+		&--small {}
+
+		&--tall {}
+
+		&--1 {
+
+			.ylearn-item__title {}
+
+			.ylearn-item__img {
+				position: absolute;
+				right: vw(4);
+				bottom: vw(16);
+				align-self: flex-end;
+				width: vw(185);
+			}
+
+		}
+
+		&--2 {
+			color: #ffffff;
+			background: #6983FF;
+
+			.ylearn-item__title {}
+
+			.ylearn-item__img {}
+		}
+
+		&--3 {
+
+
+			.ylearn-item__title {}
+
+			.ylearn-item__img {
+				position: absolute;
+				bottom: vw(-145);
+				left: vw(-26);
+				width: vw(348);
+				max-width: unset;
+			}
+
+		}
+
+		&--4 {
+
+
+
+			.ylearn-item__title {
+				br {
+					display: none;
+				}
+			}
+
+			.ylearn-item__img {
+				align-self: flex-end;
+				width: vw(150);
+				margin-bottom: vw(13);
+			}
+
+		}
+
+		&--5 {
+			color: #ffffff;
+			background: #00C1FF;
+
+			.ylearn-item__title {
+				br {
+					display: none;
+				}
+			}
+
+			.ylearn-item__img {}
+		}
+
+		&--6 {
+
+
+
+
+			.ylearn-item__title {
+				white-space: unset;
+
+				word-break: break-all;
+
+			}
+
+			.ylearn-item__img {
+				position: absolute;
+
+				bottom: 0;
+
+				left: 0;
+
+				width: 100%;
+
+			}
+		}
+
+		&--7 {
+			.ylearn-item__title {}
+
+			.ylearn-item__img {
+				position: absolute;
+
+				right: vw(-54);
+
+				bottom: vw(55);
+
+				width: vw(263);
+
+				max-width: unset;
+
+			}
+		}
+
+	}
+
+}

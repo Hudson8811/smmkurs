@@ -37,6 +37,15 @@
 
 
 
+
+$resolutiond: 1920;
+
+
+@function vwd($px) {
+	@return (($px/$resolutiond) * 100)+vw;
+}
+
+
 $resolution: 375;
 
 

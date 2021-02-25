@@ -344,3 +344,37 @@ block main
 
 	include partials/copywriting/teacher
 	include partials/copywriting/copywriting-features
+	include partials/copywriting/ylearn
+
+	section.cart-page
+		.container
+			h1.cart-page__title Оплата
+			.cart-page__start Старт <span>30 октября</span>
+			.cart-page__flex
+				.cart-page__product.product
+					.product__title Забронировать
+					.product__price
+						.product__price-new 2 000 ₽
+					.product__info Забронируйте место со скидкой. Доплатить 8 000 ₽ надо в течение 15 дней в личном кабинете.
+					.product__btns
+						a.product__btn.btn.btn--border(href="")
+							| Забронировать
+
+				.cart-page__product.product.product--dark
+					.product__title Полная оплата
+					.product__price
+						.product__price-new 10 000 ₽
+						.product__price-old 13 000 ₽
+					.product__info В связи с индивидуальными проверками домашних заданий — количество мест ограничено.
+					.product__btns
+						a.product__btn.btn(href="")
+							| Оплатить
+						.product__timer
+							| До конца акции осталось: <span id="cart-timer">23 : 29 : 41</span>
+			.cart-page__agree
+				svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+					path(fill-rule='evenodd' clip-rule='evenodd' d='M16.3344 2.7502H7.66537C4.64437 2.7502 2.75037 4.8892 2.75037 7.9162V16.0842C2.75037 19.1112 4.63537 21.2502 7.66537 21.2502H16.3334C19.3644 21.2502 21.2504 19.1112 21.2504 16.0842V7.9162C21.2504 4.8892 19.3644 2.7502 16.3344 2.7502Z' stroke='#BABABA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
+					path(d='M8.43982 12.0002L10.8138 14.3732L15.5598 9.6272' stroke='#BABABA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
+				| Я соглашаюсь на обработку моих <a href="" target="_blank">персональных данных</a>.
+			.cart-page__payment
+				img(src="images/payment.png" alt="payment")
