@@ -60,8 +60,7 @@
             position: absolute;
             right: 25%;
             top: -35px;
-            max-width: 200px;
-            max-height: 160px;
+           
         }
         &__decor {
             display: none;
@@ -87,15 +86,20 @@
         }
         &__img {
             position: static;
-            width: 232px;
+            transform: translate(-60px,-3px);
+            width: 240px;
+            max-width: 100%;
+            width: 255px;
+            max-height: 100%;
         }
         &__title-wrapper {
-            margin-bottom: 32px;
+            margin-bottom: 39px;
             display: flex;
             flex-direction: column;
         }
         &__title {
             font-size: 36px;
+            margin-top: -15px;
         }
         &__text {
             font-size: 24px;

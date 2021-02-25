@@ -20,7 +20,7 @@
 @media (max-width:375px) {
     .copywriting-banner {
         &__decor {
-        overflow: hidden;
+            overflow: hidden;
             position: relative;
         }
         padding-top: 97px;
@@ -29,10 +29,9 @@
         &__decor {
             &-img {
                 position: absolute;
-                right: -19%;
-                top: -12px;
-                width: 375px;
-                height: 600px;
+                right: -22%;
+                top: 0px;
+                width: 100%;
             }
         }
         
@@ -70,7 +69,7 @@
         &__play {
             width: 14px;
             height: 12px;
-            margin-right: 0px;
+            margin-right: 9px;
         }
         
         &__play-text {

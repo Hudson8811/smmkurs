@@ -112,7 +112,7 @@
         &__wrapper {
             margin: 0 -20px;
             padding: 0 30px;
-            padding-top: 60px;
+            padding-top: 54px;
             order: 0;
             border-radius: 32px;
         }
@@ -124,6 +124,9 @@
         &__img-wrapper {
             margin-right: 0;
             order: 1;
+            &::before {
+                padding-top: 877/677 * 100%;
+            }
         }
 
         &__teacher-wrapper {
@@ -132,14 +135,17 @@
 
         &__teacher-name {
             font-size: 18px;
+            margin-bottom: 19px;
         }
 
         &__teacher-info {
             font-size: 16px;
+            padding-right: 10px;
         }
 
         &__teacher-link {
             font-size: 16px;
+            margin-bottom: 24px;
             &::before {
                 content: '';
                 position: absolute;
