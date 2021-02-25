@@ -1,0 +1,83 @@
+@media (max-width: 1400px) {
+    .recommendation {
+        padding-top: 180px;
+        padding-bottom: 120px;
+        background: #000;
+           
+            &__title {
+                font-size: 42px;
+                max-width: 60%;
+                margin-bottom: 80px;
+            }
+            
+            &__card-subtheme {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 51px;
+                padding: 18px 47px;
+                font-size: 18px;
+                line-height: 125.8%;
+            }
+            
+            &__card-bottom-wrapper {
+            }
+            
+            &__card-theme {
+                font-size: 28px;
+                line-height: 124%;
+                margin-bottom: 5px;
+                max-width: 260px;
+            }
+            
+            &__card-time {
+                font-size: 24px;
+                line-height: 124%;
+                opacity: 0.5;
+            }
+        }
+}
+@media (max-width: 1200px) {
+    .recommendation {
+        padding-top: 180px;
+        padding-bottom: 120px;
+        background: #000;
+           
+            &__title {
+                font-size: 42px;
+                max-width: 60%;
+                margin-bottom: 80px;
+            }
+            
+            &__card-subtheme {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 51px;
+                padding: 12px 30px;
+                font-size: 16px;
+                line-height: 125.8%;
+            }
+            
+            &__card-bottom-wrapper {
+            }
+            
+            &__card-theme {
+                font-size: 24px;
+                line-height: 124%;
+                margin-bottom: 5px;
+                max-width: 230px;
+            }
+            
+            &__card-time {
+                font-size: 20px;
+                line-height: 124%;
+                opacity: 0.5;
+            }
+        }
+}
+@media (max-width:375px) {
+  
+}

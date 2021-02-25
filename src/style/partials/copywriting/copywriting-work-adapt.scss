@@ -52,5 +52,139 @@
     }
 }
 @media (max-width:375px) {
-  
+    .copywriting-work {
+        background: #000;
+        padding-bottom: 300px;
+        position: relative;
+        &__title {
+            font-size: 36px;
+            margin-bottom: 55px;
+            
+        }
+        &__row {
+           overflow-x: scroll;
+           flex-wrap: nowrap;
+        }
+        &__card-md {
+            box-sizing: border-box;
+            max-width: 240px;
+            width: 100%;
+            background: #FFFFFF;
+            border-radius: 32px;
+            padding: 92px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            padding: 0 17px;
+           
+            &-one {
+                margin-right: 20px;
+                flex-direction: column;
+                margin-bottom: 0;
+                .copywriting-work__card-text {
+                    margin-bottom: 32px;
+                }
+            }
+            &-two {
+                margin-bottom: 0px;
+                margin-right: 20px;
+            }
+            &-three {
+                flex-basis: 100%;
+                margin-right: 20px;
+                padding: 0 17px;
+            }
+        }
+        &__decor-one {
+            width: 100vw;
+        }
+        &__decor-two {
+            bottom: 0;
+            right: 0;
+            width: 100vw;
+
+        }
+        &__card-xl {
+            box-sizing: border-box;
+            margin-bottom: 0px;
+            margin-right: 20px;
+            width: 540px;
+            background-color: #FF4E00;
+            border-radius: 32px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            flex-direction: column;
+            flex: 0 0 auto;
+            padding: 45px 35px;
+        }
+
+        &__card-sm {
+            box-sizing: border-box;
+            max-width: 240px;
+            width: 100%;
+            background: #FFFFFF;
+            border-radius: 32px;
+            padding: 92px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            height: 100%;
+            max-height: none;
+            padding: 0 17px;
+            &:first-child {
+                .copywriting-work__card-text {
+                    margin-right: 28px;
+                }
+            }
+            &:not(:last-child) {
+                margin-bottom:0px;
+                margin-right: 20px;
+            }
+        }
+        &__card-img {
+            width: 65px; 
+            height: 58px;
+            margin-right: 0px;
+            background-color: #fff;
+            margin-left: 0px;
+        }
+        &__card-text {
+            font-size: 24px;
+        }
+        &__card-btn {
+            border: 1px solid #000000;
+            border-radius: 51px;
+            box-sizing: border-box;
+            padding: 12px 40px;
+            font-size: 18px;
+        }
+        &__card-title {
+            font-family: ALS Hauss;
+            font-size: 24px;
+            line-height: 125.8%;
+            color: #FFFFFF;
+            margin-bottom: 29px;
+            text-align: center;
+            max-width: 380px;
+         
+        }
+        
+        &__card-desc {
+            font-family: ALS Hauss;
+            font-size: 18px;
+            line-height: 125.8%;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        &__column {
+            box-sizing: border-box;
+            flex-basis: calc(50% - 20px);
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }

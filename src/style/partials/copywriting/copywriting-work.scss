@@ -4,20 +4,17 @@ padding-bottom: 300px;
 position: relative;
     &__decor-one {
         position: absolute;
-        @media (max-width: 1024px) {
-            display: none;
-        }
+        width: 75vw;
     }
     &__decor-two {
         position: absolute;
         bottom: 0;
         right: 0;
-        @media (max-width: 1024px) {
-            display: none;
-        }
+        width: 35vw;
     }
     &__container {
         position: relative;
+
     }
     
     &__title {
@@ -96,9 +93,7 @@ position: relative;
     }
     
     &__card-img-wrapper {
-        @media (max-width: 1024px) {
-            display: none;
-        }
+     
     }
     
     &__card-img {
@@ -118,9 +113,6 @@ position: relative;
         line-height: 125.8%;
         color: #FFFFFF;
         margin-bottom: 29px;
-        @media (max-width: 1024px) {
-            display: none;
-        }
     }
     
     &__card-desc {
@@ -128,9 +120,6 @@ position: relative;
         font-size: 24px;
         line-height: 125.8%;
         color: #FFFFFF;
-        @media (max-width: 1024px) {
-            display: none;
-        }
     }
     
     &__column {
@@ -138,8 +127,6 @@ position: relative;
         flex-basis: calc(50% - 20px);
         display: flex;
         flex-direction: column;
-      
-       
     }
     
     &__card-sm {
