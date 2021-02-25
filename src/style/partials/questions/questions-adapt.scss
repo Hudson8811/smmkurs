@@ -1,0 +1,35 @@
+@media (max-width: 1400px) {
+   
+}
+@media (max-width: 1200px) {
+  
+}
+@media (max-width:375px) {
+    .questions {
+        padding-top: 89px;
+        padding-bottom: 75px;
+        &__title {
+            font-size: 36px;
+            margin-bottom: 0;
+        }
+        &__question {
+            padding-top: 55px;
+            padding-bottom: 55px;
+    
+            border-bottom: 1px solid #FFFFFF;
+            &:first-child {
+                border-top-width: 0;
+            }
+        }
+        &__question-title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 100%;
+            margin-bottom: 38px;
+        }
+        
+        &__question-desc {
+            font-size: 18px;
+        }
+    }
+}
