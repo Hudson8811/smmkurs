@@ -13,22 +13,20 @@
   </head>
   <body>
     <main class="main2">
-      <div class="copywriting-banner__decor"><img class="copywriting-banner__decor-img" src="img/decor.svg">
-        <section class="copywriting-banner">
-          <div class="container2 copywriting-banner__container">
-            <div class="copywriting-banner__content"><img class="copywriting-banner__logo" src="img/logo2.png" alt="logo">
-              <div class="copywriting-banner__title">Копирайтинг</div>
-              <div class="copywriting-banner__row">
-                <div class="copywriting-banner__subtitle">Курс, который научит вас писать</div>
-                <div class="copywriting-banner__kurs-info"><img class="copywriting-banner__play" src="img/play.svg" alt="play">
-                  <div class="copywriting-banner__play-text">О курсе за 49 секунд</div>
-                </div>
+      <section class="copywriting-banner"><img class="copywriting-banner__decor-img" src="img/decor.svg">
+        <div class="container2 copywriting-banner__container">
+          <div class="copywriting-banner__content"><img class="copywriting-banner__logo" src="img/logo2.png" alt="logo">
+            <div class="copywriting-banner__title">Копирайтинг</div>
+            <div class="copywriting-banner__row">
+              <div class="copywriting-banner__subtitle">Курс, который научит вас писать</div>
+              <div class="copywriting-banner__kurs-info js-callFancyVideo" data-src="images/452-old.mp4" data-preview="images/video-preview.jpg"><img class="copywriting-banner__play" src="img/play.svg" alt="play">
+                <div class="copywriting-banner__play-text">О курсе за 49 секунд</div>
               </div>
-              <div class="copywriting-banner__link">Записаться</div>
             </div>
+            <div class="copywriting-banner__link">Записаться</div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="copywriting-need"><img class="copywriting-need__bg-1" src="img/landings/copywriting/copywriting-need-bg-1.svg"><img class="copywriting-need__bg-2" src="img/landings/copywriting/copywriting-need-bg-2.svg"><img class="copywriting-need__bg-mob" src="img/landings/copywriting/copywriting-needbg-mob.svg">
         <div class="container2 copywriting-need__container">
           <div class="copywriting-need__title">Слово — главный способ воздействия на&nbsp;других людей</div>
@@ -436,11 +434,13 @@
       <section class="copywriting-work"><img class="copywriting-work__decor-one" src="img/work-line.svg"><img class="copywriting-work__decor-two" src="img/work-line2.svg">
         <div class="copywriting-work__container container">
           <div class="copywriting-work__title">Как проходит курс</div>
+        </div>
+        <div class="copywriting-work__container copywriting-work__container--2 container">
           <div class="copywriting-work__content">
             <div class="copywriting-work__row">
               <div class="copywriting-work__card-md copywriting-work__card-md-one">
                 <div class="copywriting-work__card-text">Текстовый <br/> формат курса</div>
-                <div class="copywriting-work__card-btn">Почему?</div>
+                <div class="copywriting-work__card-btn btn btn--border">Почему?</div>
               </div>
               <div class="copywriting-work__card-md copywriting-work__card-md-two">
                 <div class="copywriting-work__card-text">Общение в чате<br/> в Telegram</div>
@@ -448,7 +448,7 @@
               <div class="copywriting-work__card-xl">
                 <div class="copywriting-work__card-img-wrapper"><img class="copywriting-work__card-img" src="img/check.svg"></div>
                 <div class="copywriting-work__text-wrapper">
-                  <div class="copywriting-work__card-title">Индивидуальная проверка домашних заданий</div>
+                  <div class="copywriting-work__card-title">Индивидуальная <br class="display-mob"> проверка домашних заданий</div>
                   <div class="copywriting-work__card-desc">После каждого урока вас ждут домашние задания, которые индивидуально проверяются преподователем и вы получаете обратную связь по каждой написанной строчке.</div>
                 </div>
               </div>
@@ -464,6 +464,39 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="copywriting-feedback">
+        <div class="container2 cwfeedback-container">
+          <div class="cwfeedback-title">Что по поводу курса <br> думают наши выпускники:</div>
+          <!--Размер скрина ДОЛЖЕН быть: w=420, h<=400-->
+          <div class="cust-slider-wrap">
+            <div class="cwfeedback-slider custom-slider js-custom-slider">
+              <div class="custom-slider-card"><img src="img/landings/copywriting/feedback/slide1.png" alt=""></div>
+              <div class="custom-slider-card"><img src="img/landings/copywriting/feedback/slide1.png" alt=""></div>
+              <div class="custom-slider-card"><img src="img/landings/copywriting/feedback/slide1.png" alt=""></div>
+              <div class="custom-slider-card"><img src="img/landings/copywriting/feedback/slide2.png" alt=""></div>
+              <div class="custom-slider-card"><img src="img/landings/copywriting/feedback/slide1.png" alt=""></div>
+            </div><a class="visuallyhidden custom-slider-card-controller" href="#">Carousel controller</a>
+            <div class="cwfeedback-arrows">
+              <div class="cwfeedback-arrow cwfeedback-arrow--prev js-custom-slider-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 443.52 443.52">
+                  <path d="M143.492 221.863L336.226 29.129c6.663-6.664 6.663-17.468 0-24.132-6.665-6.662-17.468-6.662-24.132 0l-204.8 204.8c-6.662 6.664-6.662 17.468 0 24.132l204.8 204.8c6.78 6.548 17.584 6.36 24.132-.42 6.387-6.614 6.387-17.099 0-23.712L143.492 221.863z"></path>
+                </svg>
+              </div>
+              <div class="cwfeedback-arrow cwfeedback-arrow--next js-custom-slider-next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 443.52 443.52">
+                  <path d="M143.492 221.863L336.226 29.129c6.663-6.664 6.663-17.468 0-24.132-6.665-6.662-17.468-6.662-24.132 0l-204.8 204.8c-6.662 6.664-6.662 17.468 0 24.132l204.8 204.8c6.78 6.548 17.584 6.36 24.132-.42 6.387-6.614 6.387-17.099 0-23.712L143.492 221.863z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="cwfeedback-btn-wrap">
+            <div class="btn btn--white cwfeedback-btn">Смотреть всё</div>
+          </div>
+          <div class="cwfeedback-description">
+            <div class="cwfeedback-description__txt">Только отзывы от реальных людей, <br> которые можно проверить</div>
           </div>
         </div>
       </section>
@@ -499,7 +532,6 @@
           </div>
         </div>
       </section>
-<<<<<<< HEAD
       <section class="ylearn-section">
         <div class="container2 ylearn-container"><img class="ylearn-art" src="img/dark-star.svg" alt="">
           <h2 class="ylearn-title">Чему вы научитесь <br> на курсе</h2>
@@ -576,7 +608,6 @@
           <div class="cart-page__payment"><img src="images/payment.png" alt="payment"></div>
         </div>
       </section>
-=======
       <section class="vacancies"><img class="vacancies__decor" src="img/vacancies-decor.svg">
         <div class="container2 vacancies__container">
           <div class="vacancies__content">
@@ -662,8 +693,15 @@
           </div>
         </div>
       </footer>
->>>>>>> 59a0ba4c3fefd87d3f1cd5864ef5ceee273d35e8
     </main>
+    <div class="hide" id="popup-video" style="display: none;">
+      <div class="prop-blck">
+        <video id="popup-video-player" controls="" crossorigin="" disablepictureinpicture="" playsinline="" controlslist="nodownload" preload="metadata" poster="">
+          <source src="" type="video/mp4">
+        </video>
+        <div class="logo"></div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
     <script src="js/main2.js"></script>
   </body>

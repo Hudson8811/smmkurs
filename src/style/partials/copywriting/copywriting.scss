@@ -9,3 +9,31 @@
 		display: none !important;
 	}
 }
+
+
+
+.btn {
+	&--v2 {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		width: 273px;
+		max-width: 100%;
+		min-height: 72px;
+		border-radius: 18px;
+		font-size: 18px;
+		line-height: 125.8%;
+	}
+
+	&--green {
+		color: #000;
+		border-radius: 18px;
+		background: #AFF800;
+
+		&:hover {
+			opacity: .7;
+			background: #AFF800;
+		}
+	}
+}

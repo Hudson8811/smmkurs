@@ -4,30 +4,35 @@ block vars
 include ../components/_mixins
 
 html(lang="ru")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(name="description" content="")
-        meta(name="keywords" content="")
-        meta(property="og:image" content="images/logo.svg")
-        meta(name="format-detection" content="telephone=no")
-        link(href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap' rel='stylesheet')
-        link(href="css/main.css" rel="stylesheet")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="")
+		meta(name="keywords" content="")
+		meta(property="og:image" content="images/logo.svg")
+		meta(name="format-detection" content="telephone=no")
+		link(href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap' rel='stylesheet')
+		link(href="css/main.css" rel="stylesheet")
 
-        //title= `${page.title}`
+		//title= `${page.title}`
 
-    body
-        block header
-
-
-        main.main2
-            block main
-
-        block footer
+	body
+		block header
 
 
+		main.main2
+			block main
 
-        script(src="js/main.js")
-        script(src="js/main2.js")
+		block footer
 
-        block scripts
+		#popup-video.hide(style='display: none;')
+			.prop-blck
+				video#popup-video-player(controls='' crossorigin='' disablepictureinpicture='' playsinline='' controlslist='nodownload' preload='metadata' poster="")
+					source(src='' type='video/mp4')
+				.logo
+
+
+		script(src="js/main.js")
+		script(src="js/main2.js")
+
+		block scripts

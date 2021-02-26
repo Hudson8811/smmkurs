@@ -7,9 +7,7 @@ block vars
 		};
 
 block main
-	.copywriting-banner__decor
-		img.copywriting-banner__decor-img(src="img/decor.svg")
-		include partials/copywriting/copywriting-banner
+	include partials/copywriting/copywriting-banner
 
 	section.copywriting-need
 		img.copywriting-need__bg-1(src="img/landings/copywriting/copywriting-need-bg-1.svg")
@@ -327,20 +325,43 @@ block main
 
 	include partials/copywriting/copywriting-work
 
-	//- section.copywriting-feedback
-	//- 	.container2.cwfeedback-container
-	//- 		.cwfeedback-title Что по поводу курса <br> думают наши выпускники:
-	//- 		.cwfeedback-slider.js-cwfeedback-slider
-	//- 			.cwfeedback-slider__slide
-	//- 				img(src="img/landings/copywriting/feedback/slide1.png", alt="")
-	//- 			.cwfeedback-slider__slide
-	//- 				img(src="img/landings/copywriting/feedback/slide1.png", alt="")
-	//- 			.cwfeedback-slider__slide
-	//- 				img(src="img/landings/copywriting/feedback/slide2.png", alt="")
-	//- 		.cwfeedback-btn-wrap
-	//- 			.btn.btn--white.cwfeedback-btn Смотреть всё
-	//- 		.cwfeedback-description
-	//- 			.cwfeedback-description__txt Только отзывы от реальных людей, <br> которые можно проверить
+	section.copywriting-feedback
+		.container2.cwfeedback-container
+			.cwfeedback-title Что по поводу курса <br> думают наши выпускники:
+			//Размер скрина ДОЛЖЕН быть: w=420, h<=400
+			.cust-slider-wrap
+				.cwfeedback-slider.custom-slider.js-custom-slider
+					.custom-slider-card
+						img(src="img/landings/copywriting/feedback/slide1.png", alt="")
+					.custom-slider-card
+						img(src="img/landings/copywriting/feedback/slide1.png", alt="")
+					.custom-slider-card
+						img(src="img/landings/copywriting/feedback/slide1.png", alt="")
+					.custom-slider-card
+						img(src="img/landings/copywriting/feedback/slide2.png", alt="")
+					.custom-slider-card
+						img(src="img/landings/copywriting/feedback/slide1.png", alt="")
+				a.visuallyhidden.custom-slider-card-controller(href='#') Carousel controller
+				.cwfeedback-arrows
+					.cwfeedback-arrow.cwfeedback-arrow--prev.js-custom-slider-prev
+						svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 443.52 443.52')
+							path(d='M143.492 221.863L336.226 29.129c6.663-6.664 6.663-17.468 0-24.132-6.665-6.662-17.468-6.662-24.132 0l-204.8 204.8c-6.662 6.664-6.662 17.468 0 24.132l204.8 204.8c6.78 6.548 17.584 6.36 24.132-.42 6.387-6.614 6.387-17.099 0-23.712L143.492 221.863z')
+					.cwfeedback-arrow.cwfeedback-arrow--next.js-custom-slider-next
+						svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 443.52 443.52')
+							path(d='M143.492 221.863L336.226 29.129c6.663-6.664 6.663-17.468 0-24.132-6.665-6.662-17.468-6.662-24.132 0l-204.8 204.8c-6.662 6.664-6.662 17.468 0 24.132l204.8 204.8c6.78 6.548 17.584 6.36 24.132-.42 6.387-6.614 6.387-17.099 0-23.712L143.492 221.863z')
+
+			.cwfeedback-btn-wrap
+				.btn.btn--white.cwfeedback-btn Смотреть всё
+			.cwfeedback-description
+				.cwfeedback-description__txt Только отзывы от реальных людей, <br> которые можно проверить
+
+
+
+
+
+
+
+
 	include partials/copywriting/teacher
 	include partials/copywriting/copywriting-features
 	include partials/copywriting/ylearn

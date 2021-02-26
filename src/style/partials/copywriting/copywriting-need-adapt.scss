@@ -19,6 +19,7 @@
 }
 @media screen and (max-width: 1024px) {
 	.copywriting-need {
+		overflow: hidden;
 		padding-top: vw(60);
 		padding-bottom: vw(78);
 		&::after{
