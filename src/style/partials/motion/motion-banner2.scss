@@ -1,0 +1,100 @@
+.motion-banner2 {
+padding-top: 147px;
+padding-bottom: 176px;
+position: relative;
+overflow: hidden;
+    &__line1 {
+        position: absolute;
+        top: 9%;
+        left: 0;
+        width: 43vw;
+        height: 51vw;
+    }
+    
+    &__line2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 53vw;
+        height: 52vw;
+    }
+    
+    &__container {
+        position: relative;
+    }
+    
+    &__title {
+        max-width: 1140px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 350;
+        font-size: 113px;
+        line-height: 100%;
+        margin-bottom: 126px;
+    }
+    
+    &__content {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 66px;
+        position: relative;
+    }
+    &__card {
+        max-width: 360px;
+        width: 100%;
+        &:first-child {
+            margin-right: 45px;
+
+        }   
+    }
+    &__img-wrapper {
+        position: relative;
+        width: 100%;
+        margin-bottom: 22px;
+        &::before {
+            content: '';
+            display: block;
+            padding-top: 635/357 * 100%;
+        }
+    }
+    &__img-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        object-fit: cover;
+        object-position: center center;
+        transform: translate(-50%,-50%);
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    
+    &__img-desc {
+        text-align: center;
+        font-family: ALS Hauss;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 125.8%;
+    }
+    &__content-decor {
+        position: absolute;
+        bottom: 30%;
+        right: 15%;
+    }
+    
+    &__subtitle {
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 350;
+        font-size: 41px;
+        line-height: 125.8%;
+    }
+}

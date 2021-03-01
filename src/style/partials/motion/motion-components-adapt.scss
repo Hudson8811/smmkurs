@@ -1,0 +1,174 @@
+@media (max-width: 1500px) {
+    .motion-components {
+        &__section-title {
+            font-size: 62px;
+            line-height: 125.8%;
+        }
+        
+        &__card-sm {
+            &:not(:last-child) {
+                margin-bottom: 5vw;
+            }
+        }
+        
+        &__card-title {
+            font-size: 38px;
+            line-height: 125.8%;
+            margin-bottom: 29px;
+        }
+        
+        &__card-desc {
+            font-size: 24px;
+            line-height: 125.8%;
+        }
+    }
+}
+@media (max-width: 1400px) {
+    .motion-components {
+        &__section-title {
+            font-size: 56px;
+            line-height: 125.8%;
+        }
+        
+        &__card-sm {
+            &:not(:last-child) {
+                margin-bottom: 5vw;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .motion-components {
+        &__content {
+            box-sizing: border-box;
+            padding: 50px;
+            background: #FFFFFF;
+            border-radius: 32px;
+            position: relative;
+            padding-bottom: 60px;
+        }
+        &__section-title {
+            font-size: 48px;
+            line-height: 125.8%;
+        }
+        
+        &__card-sm {
+            &:not(:last-child) {
+                margin-bottom: 5vw;
+            }
+        }
+        
+        &__card-title {
+            font-size: 32px;
+            line-height: 125.8%;
+            margin-bottom: 10px;
+        }
+        
+        &__card-desc {
+            font-size: 22px;
+            line-height: 125.8%;
+        }
+    }
+}
+@media (max-width:375px) {
+    .motion-components {
+        background-color: #000;
+        padding-top: 115px;
+        padding-bottom: 70px;
+            &__container {
+                color: #fff;
+                max-width: calc(100% - 27px * 2);
+            }
+            
+            &__content {
+                box-sizing: border-box;
+                padding: 0px;
+                background: none;
+                border-radius: 32px;
+                position: relative;
+                padding-bottom:0px;
+            }
+            
+            &__row {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            &__column {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                box-sizing: border-box;
+                justify-content: space-between;
+                &:not(:first-child) {
+                    padding-left: 0;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+            
+            &__card-md {
+                box-sizing: border-box;
+                width: 100%;
+                &:first-child {
+                    display: none;
+                    margin-bottom: 0px;
+                }
+                &:last-child {
+                    padding: 65px 68px 109px 53px;
+                    background: #f76567;
+                    border-radius: 32px;
+                }
+            }
+            
+            &__card-img-wrapper {
+                position: relative;
+                bottom: 43%;
+                right: 24%;
+        
+                &::before {
+                    content: "";
+                    display: block;
+                    padding-top: 91%
+                }
+            }
+            
+            &__card-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            
+            &__section-title {
+                font-size: 32px;
+                line-height: 141.8%;
+                letter-spacing: 2.3px;
+            }
+            
+            &__card-sm {
+                padding: 73px 53px;
+                border-radius: 32px;
+                box-sizing: border-box;
+                border: 1px solid #fff;
+               &:not(:last-child) {
+                   margin-bottom: 20px;
+               }
+            }
+            
+            &__card-title {
+                font-size: 24px;
+                line-height: 125.8%;
+                margin-bottom: 19px;
+            }
+            
+            &__card-desc {
+                font-size: 18px;
+                line-height: 125.8%;
+            }
+            }
+}

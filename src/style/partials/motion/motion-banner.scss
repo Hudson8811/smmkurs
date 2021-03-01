@@ -1,0 +1,114 @@
+.motion-banner {
+    padding-top: 172px;
+    padding-bottom: 200px;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    &__decor-wrapper {
+        position: absolute;
+        right: -2.6vw;
+        top: -2vw;
+        overflow: hidden;
+        width: 68vw;
+        height: auto;
+        z-index: 2;
+    }
+    &__title-decor {
+        position: absolute;
+        top: -4vw;
+        right: 41%;
+    
+    }
+    &__decor {
+        top: -2px;
+        left: -2px;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    &__line {
+        display: none;
+    }
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+        z-index: 3;
+    }
+    
+    &__content {
+    }
+    
+    &__logo {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 97px;
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        max-width: 1140px;
+    }
+    &__title {
+        font-family: ALS Hauss;
+        font-size: 41px;
+        line-height: 125.8%;
+        margin-bottom: 15px;
+        position: relative;
+        display: none;
+    }
+    
+    &__subtitle {
+        font-family: ALS Hauss;
+        font-size: 113px;
+        line-height: 100%;
+        margin-bottom: 53px;
+        margin-right: 40px;
+        position: relative;
+    }
+    
+    &__link {
+        font-size: 32px;
+        line-height: 125.8%;
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        background: #FF4E00;
+        border-radius: 18px; 
+        padding: 37px 141px;
+        cursor: pointer;
+        transition-duration: .2s;
+        &:hover {
+            background: #d03e00
+        }
+
+
+    }
+    
+    &__kurs-info {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        cursor: pointer;
+        margin-bottom: 84px;
+        padding-left: 10px;
+    }
+    
+    &__play {
+        margin-right: 28px;
+    }
+    
+    &__play-text {
+        font-size: 32px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FEA430;
+        & bold {
+            font-weight: 500;
+        }
+    }
+}

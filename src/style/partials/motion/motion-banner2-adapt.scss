@@ -1,0 +1,99 @@
+@media (max-width: 1600px) {
+    .motion-banner2 {
+        &__content-decor {
+            position: absolute;
+            bottom: 30%;
+            right: 5%;
+        }
+    }
+}
+@media (max-width: 1400px) {
+    .motion-banner2 {
+        &__content-decor {
+            position: absolute;
+            bottom: 44%;
+            right: 0%;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .motion-banner2 {
+        &__title {
+            max-width: 1140px;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: 350;
+            font-size: 82px;
+            line-height: 100%;
+            margin-bottom: 126px;
+        }
+    }
+}
+@media (max-width:375px) {
+    .motion-banner2 {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        position: relative;
+            &__line1 {
+                display: none;
+            }
+            
+            &__line2 {
+                display: none;
+            }
+            
+            &__container {
+                max-width: calc(100% - 29px * 2);
+            }
+            
+            &__title {
+                margin-bottom: 58px;
+                max-width: 280px;
+                font-size: 36px;
+            }
+            
+            &__content {
+                flex-direction: column;
+                margin-bottom: 92px;
+            }
+            &__card {
+                max-width: 320px;
+                width: 100%;
+                &:first-child {
+                    margin-right: 0px;
+                    margin-bottom: 54px;
+                }   
+            }
+            &__img-wrapper {
+                margin-bottom: 29px;
+            }
+            &__img-play {
+                position: absolute;
+                top: 47%;
+                left: 49%;
+                width: 72px;
+                height: 72px;
+                object-fit: cover;
+                object-position: center center;
+                transform: translate(-50%,-50%);
+            }
+            
+            &__img-desc {
+                text-align: center;
+                font-family: ALS Hauss;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 125.8%;
+            }
+            &__content-decor {
+                display: none;
+
+            }
+            
+            &__subtitle {
+                max-width: 280px;
+                font-size: 24px;
+            }
+        }
+}
