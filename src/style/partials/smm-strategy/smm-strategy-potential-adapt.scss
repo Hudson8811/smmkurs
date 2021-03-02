@@ -1,0 +1,117 @@
+@media (max-width: 1350px) {
+    .smm-strategy-potential {            
+            &__title {
+                font-size: 96px;
+            }
+            
+            &__content {
+            }
+            &__content-img {
+                right: 75px;
+            }
+            
+            &__block {
+                padding: 87px 62px;
+                &_1 {
+                    margin-bottom: 300px;
+                    margin-top: 239px;
+                    margin-right: 147px;
+                }
+                &_2 {
+                    margin-top: 127px;
+                    margin-bottom: 121px;
+                    margin-left: 58px;
+                }
+                &_3 {
+                    margin-right: 0px;
+                }
+            }
+        }
+}
+@media (max-width: 1200px) {
+    .smm-strategy-potential {            
+        &__title {
+            font-size: 96px;
+        }
+        
+        &__content {
+        }
+        &__content-img {
+            right: 131px;
+            width: 1000px;
+        }
+        
+        &__block {
+            padding: 87px 62px;
+            font-size: 32px;
+            &_1 {
+                padding: 60px 62px;
+                margin-bottom: 228px;
+                margin-top: 239px;
+                margin-right: 147px;
+            }
+            &_2 {
+                padding: 60px 62px;
+                margin-top: 0px;
+                margin-bottom: 170px;
+                margin-left: 58px;
+            }
+            &_3 {
+                margin-top: 31px;
+                padding: 52px 39px;
+                max-width: 729px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .smm-strategy-potential {    
+        padding-top: 76px;   
+        padding-bottom: 70px; 
+        &__container {
+            color: #fff;
+            max-width: calc(100% - 20px * 2);
+        }    
+        &__title {
+            font-size: 36px;
+        }
+        
+        &__content {
+        }
+        &__content-img {
+            right: 0px;
+            display: none;
+            &-phone {
+                position: absolute;
+                z-index: -1;
+                display: block;
+                left: -20px;
+            }
+        }
+        
+        &__block {
+            padding: 87px 62px;
+            font-size: 32px;
+            font-size: 18px;
+            &_1 {
+                padding: 54px 70px;
+                margin-bottom: 56px;
+                margin-top: 63px;
+                margin-right: 0px;
+            }
+            &_2 {
+                padding: 40px 86px;
+                margin-top: 0px;
+                margin-bottom: 104px;
+                margin-left: 0px;
+            }
+            &_3 {
+                margin-top: 0px;
+                padding: 52px 51px;
+                max-width: 729px;
+                margin-right: 0px;
+            }
+        }
+    }
+}

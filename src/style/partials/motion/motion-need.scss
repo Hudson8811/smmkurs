@@ -1,0 +1,124 @@
+.motion-need {
+	position: relative;
+	overflow: hidden;
+	padding-top: 157px;
+	padding-bottom: 209px;
+	font-family: ALS Hauss, sans-serif;
+	z-index: 1;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 44px;
+		width: 100%;
+		background: #000000;
+		z-index: 1;
+	}
+
+
+	&__container {
+		color: #fff;
+		z-index: 3;
+		position: relative;
+	}
+
+	&__title {
+		max-width: 1200px;
+		margin-bottom: 185px;
+		letter-spacing: -0.4px;
+		color: #000000;
+		font-size: 113px;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 100%;
+		z-index: 3;
+	}
+
+
+	&__content {
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 100px 35px 236px;
+		border-radius: 80px;
+		background: #000000;
+	}
+
+	/*495
+	17*/
+	&__inner {
+		width: 1113px;
+         margin-left: 50px;
+	}
+
+	&__decor {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		display: flex;
+		align-items: center;
+		margin-top: -4px;
+		margin-left: 17px;
+		padding: 39px 76px;
+		transform: rotate(-10.51deg) translate(-50%, -75%);
+		text-align: center;
+		color: #FFFFFF;
+		/* or 48px */
+		background: #5B6CFF;
+		font-size: 48px;
+		font-weight: normal;
+		font-style: normal;
+		line-height: 100%;
+	}
+
+	&__row {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 13px;
+		margin-bottom: -54px;
+	}
+
+	&__card {
+		width: 433px;
+		margin-bottom: 73px;
+		/*	&:nth-child(2n) {
+			width: 398px;
+		}*/
+	}
+
+	&__card-img {
+		height: 353px;
+
+		img {
+			width: auto;
+			max-width: 100%;
+			height: 100%;
+			max-height: 100%;
+			object-fit: cover;
+			object-position: center center;
+		}
+	}
+
+	&__card-title {
+		margin-top: 47px;
+		font-size: 41px;
+		font-weight: 500;
+		font-style: normal;
+		line-height: 125.8%;
+	}
+
+	&__card-desc {
+		margin-top: 35px;
+		font-size: 24px;
+		font-weight: 350;
+		font-style: normal;
+		line-height: 125.8%;
+	}
+}
