@@ -90,6 +90,11 @@
 	}
 }
 @media (max-width:1024px) {
+
+
+	.copywriting-work__decor-two{
+		display: none;
+	}
 	.copywriting-work__container--2{
 		width: 100%;
 		max-width: 100%;
@@ -99,7 +104,7 @@
 		overflow: hidden;
 		background: #000;
 		padding-top: vw(98);
-		padding-bottom: vw(300);
+		padding-bottom: vw(130);
 		position: relative;
 
 		&__title {
@@ -225,8 +230,11 @@
 			border: vw(1) solid #000000;
 			border-radius: vw(51);
 			box-sizing: border-box;
-			padding: vw(12) vw(40);
+			padding: vw(12) 40px;
 			font-size: vw(18);
+			width: auto;
+
+			max-width: 100%;
 		}
 
 		&__card-title {

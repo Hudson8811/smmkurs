@@ -8,7 +8,7 @@
 .custom-slider {
 	--card-width: 220px;
 	--card-max-width: 420px;
-	--card-height: 350px;
+	--card-height: 340px;
 	--carousel-min-width: 0;
 	z-index: 1;
 	position: relative;
@@ -33,14 +33,12 @@
 	width: var(--card-width);
 	max-width: var(--card-max-width);
 	text-align: center;
-	padding: 1em;
 	min-width: 250px;
 	height: var(--card-height);
 	position: absolute;
 	margin: 0 auto;
 	color: rgba(0, 0, 0, .5);
 	transition: inherit;
-	border-radius: 1em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -55,7 +53,11 @@
 	img {
 		width: 420px;
 		height: auto;
-		transition-duration: .5s;
+		max-height: 100%;
+		object-fit: contain;
+		object-position: center center;
+		//transition-duration: .5s;
+		transition: all .5s;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
@@ -63,28 +65,48 @@
 
 	&[data-x="-1"] {
 		img {
-			position: absolute;
-			left: 0%;
-			transform: translateX(-50%);
+			//left: 0%;
+			left: 35%;
 		}
 	}
 
 	&[data-x="1"] {
 		img {
-			position: absolute;
-			left: 100%;
-			transform: translateX(-50%);
+			left: 114%;
+			//left: 100%;
 		}
 	}
 
 	&[data-x="-1"],
 	&[data-x="1"] {
-		opacity: .6 !important;
+		img {
+			opacity: .6 !important;
+		}
+
 		cursor: pointer;
 	}
 
 	&[data-x="-2"],
 	&[data-x="2"] {
-		opacity: 0 !important;
+		img {
+			opacity: .0 !important;
+		}
 	}
+
+	&[data-x="-2"] {
+
+		img {
+			left: 35%;
+			transform: translateX(0);
+		}
+	}
+
+	&[data-x="2"] {
+		transform: translateX(0);
+
+		img {
+			left: 51%;
+		}
+	}
+
 }

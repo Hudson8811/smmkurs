@@ -328,7 +328,7 @@ block main
 	section.copywriting-feedback
 		.container2.cwfeedback-container
 			.cwfeedback-title Что по поводу курса <br> думают наши выпускники:
-			//Размер скрина ДОЛЖЕН быть: w=420, h<=400
+			//Размер скрина ДОЛЖЕН быть: w=420, h<=340(Лучше большего размера, но пропорционально)
 			.cust-slider-wrap
 				.cwfeedback-slider.custom-slider.js-custom-slider
 					.custom-slider-card
@@ -364,10 +364,11 @@ block main
 
 	include partials/teacher/teacher
 	include partials/copywriting/copywriting-features
+	include partials/vacancies/vacancies
 	include partials/copywriting/ylearn
 
 	section.cart-page
-		.container
+		.container2
 			h1.cart-page__title Оплата
 			.cart-page__start Старт <span>30 октября</span>
 			.cart-page__flex
@@ -399,7 +400,6 @@ block main
 			.cart-page__payment
 				img(src="images/payment.png" alt="payment")
 
-	include partials/vacancies/vacancies
 	include partials/questions/questions
 	include partials/feedback/feedback
 	include partials/_footer-light

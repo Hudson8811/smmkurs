@@ -1,4 +1,8 @@
 //= libs/jquery.mCustomScrollbar.concat.min.js
+//= libs/gs.js
+//= libs/ScrollMagic.min.js
+//= libs/animation.gsap.min.js
+//= libs/debug.addIndicators.min.js
 //= libs/custom-slider.js
 
 $(function () {
@@ -23,18 +27,18 @@ $(function () {
 	});*/
 
 
-	$('.js-callFancyVideo').click(function(e){
+	$('.js-callFancyVideo').click(function (e) {
 		e.preventDefault();
-		$('#popup-video-player').attr('poster',$(this).attr('data-preview'));
-		$('#popup-video-player source').attr('src',$(this).attr('data-src'));
+		$('#popup-video-player').attr('poster', $(this).attr('data-preview'));
+		$('#popup-video-player source').attr('src', $(this).attr('data-src'));
 		//$('#popup-video video')[0].load();
-		setTimeout(function(){
+		setTimeout(function () {
 			$.fancybox.open({
 				src: '#popup-video',
 				type: 'inline',
 				touch: false,
 			});
-		},200)
+		}, 200)
 
 	});
 
@@ -43,17 +47,17 @@ $(function () {
 
 
 
-
-	if ($(".js-ylearn-hor-scroll").length > 0) {
-		$(".js-ylearn-hor-scroll").mCustomScrollbar({
-			axis: "x",
-			theme: "ylearn ",
-			mouseWheel: {
-				enable: false
-			}
-		});
-	}
-
+	/*
+		if ($(".js-ylearn-hor-scroll").length > 0) {
+			$(".js-ylearn-hor-scroll").mCustomScrollbar({
+				axis: "x",
+				theme: "ylearn ",
+				mouseWheel: {
+					enable: false
+				}
+			});
+		}
+	*/
 
 	if ($(".js-custom-slider").length > 0) {
 		const csCarousel = new CardCarousel(cardsContainer)
@@ -64,10 +68,10 @@ $(function () {
 			csCarousel.changeSlide('next');
 		});
 
-		$('.js-custom-slider').on('click', '[data-x="-1"]' ,function () {
+		$('.js-custom-slider').on('click', '[data-x="-1"]', function () {
 			csCarousel.changeSlide('prev');
 		});
-		$('.js-custom-slider').on('click', '[data-x="1"]' ,function () {
+		$('.js-custom-slider').on('click', '[data-x="1"]', function () {
 			csCarousel.changeSlide('next');
 		});
 
@@ -75,6 +79,28 @@ $(function () {
 	}
 
 
+	// init
+	var controller = new ScrollMagic.Controller();
 
+	var ylearnW = $("#ylearn-row").width();
 
+	var leftpin = ylearnW;
+	var leftpinpx = '-' + leftpin + 'px';
+	// create scene to pin and link animation
+	new ScrollMagic.Scene({
+			triggerElement: "#ylearn-pinContainer",
+			triggerHook: "onLeave",
+			duration: "500%"
+		})
+		.addTo(controller)
+		.setPin("#ylearn-pinContainer").setTween(moveleft);
+	var moveleft = TweenMax.to("#ylearn-scroll", 1, {
+		left: leftpinpx,
+		ease: Sine.easeInOut
+	});
+
+	/*.setTween(wipeAnimation)
+	.addIndicators() // add indicators (requires plugin)
+	.addTo(controller)*/
+	;
 });
