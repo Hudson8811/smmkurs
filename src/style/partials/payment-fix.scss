@@ -1,0 +1,190 @@
+.cart-page--fixed {
+
+	padding: 125px 0 143px;
+
+	.cart-page__title {
+		margin-bottom: 45px;
+	}
+
+	.cart-page__start {
+		span {}
+	}
+
+	.cart-page__flex {}
+
+	.product {
+		padding: 86px 25px 43px 81px;
+		display: flex;
+		flex-direction: column;
+
+		&__title {}
+
+		&__price {}
+
+		&__info {
+			margin-top: 31px;
+			min-height: 0;
+			flex-grow: 1;
+		}
+
+		&__btns {
+			margin-top: 60px;
+		}
+
+		.product__price-new {}
+
+		.product__btn.btn {
+			&--border {}
+
+			&:hover {}
+
+			&:active {}
+
+			&:focus {}
+		}
+	}
+
+	.product__timer {
+		span {
+			white-space: nowrap;
+		}
+	}
+
+	.cart-page__agree {
+		svg {}
+	}
+
+	.cart-page__payment {
+		img {}
+	}
+}
+
+
+@media screen and (max-width:1347px) {
+	.cart-page--fixed {
+		.product__timer {
+			font-size: 18px;
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.cart-page.cart-page--fixed {
+		padding: vw(65) 0 vw(67);
+
+		.cart-page__title {
+			font-size: vw(36);
+			margin-bottom: vw(4);
+		}
+
+		.cart-page__start {
+			width: vw(137);
+			height: vw(30);
+			font-size: vw(13);
+			margin-bottom: vw(55);
+		}
+
+		.cart-page__flex {
+			display: block;
+		}
+
+		.product {
+			width: 100%;
+			padding: vw(38) vw(28) vw(60) vw(29);
+
+			&__title {
+				font-size: vw(24);
+				line-height: 125.8%;
+				text-align: center;
+			}
+
+			&__price {
+				text-align: center;
+				justify-content: center;
+			}
+
+			&__price-new {
+				font-size: vw(20);
+				line-height: 125.8%;
+				margin-right: 0;
+			}
+
+			&__price-old {
+				font-size: vw(14);
+				line-height: 125.8%;
+				margin-left: vw(10);
+			}
+
+			&__info {
+				margin-top: vw(35);
+				text-align: center;
+				font-size: vw(18);
+				line-height: 125.8%;
+
+				br {
+					display: none;
+				}
+			}
+
+			&__btns {
+				margin-top: vw(50);
+				display: block;
+			}
+
+			.product__price-new {}
+
+			.product__btn.btn {
+				font-size: vw(18);
+				margin-right: 0;
+				width: 100%;
+				min-height: vw(56);
+
+				&--border {}
+
+				&:hover {}
+
+				&:active {}
+
+				&:focus {}
+			}
+		}
+
+		.product__timer {
+			font-size: vw(18);
+			text-align: center;
+			width: vw(207);
+			margin: vw(13) auto vw(26);
+		}
+
+		.cart-page__agree {
+			font-size: vw(14);
+			line-height: 100%;
+			text-align: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			span {
+				display: block;
+				width: vw(192);
+			}
+
+			svg {
+				margin-right: vw(9);
+				width: vw(24);
+				min-width: vw(24);
+				height: auto;
+			}
+		}
+
+		.cart-page__payment {
+			margin-top: vw(26);
+
+			img {
+				height: vw(26);
+				object-fit: contain;
+				object-position: center center;
+			}
+		}
+	}
+}

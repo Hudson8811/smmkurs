@@ -40,14 +40,14 @@
 
 @media (max-width:1024px) {
     .copywriting-features {
-        padding-top: 114px;
-        padding-bottom: 50px;
+        padding-top: vw(114);
+        padding-bottom: vw(50);
 
         &__line {
             z-index: 1;
-            left: 26px;
-            top: 46px;
-            width: 300px;
+            left: vw(26);
+            top: vw(46);
+            width: vw(300);
 
             &--desk {
                 display: none;
@@ -60,7 +60,7 @@
 
         &__text {
             font-weight: 350;
-            font-size: 20px;
+            font-size: vw(20);
             line-height: 125.8%;
             position: relative;
             z-index: 3;
@@ -68,7 +68,7 @@
 
         &__content {
             padding: 0;
-            margin: 0 -19px;
+            margin: 0 vw(-19);
         }
 
         &__text-one {
@@ -81,12 +81,12 @@
         }
 
         &__img-wrapper-one {
-            max-width: 216px;
-            transform: translateY(-32px);
+            max-width: vw(216);
+            transform: translateY(#{vw(-32)});
             align-self: flex-start;
             order: 1;
-            margin-bottom: -14px;
-            margin-left: 17px;
+            margin-bottom: vw(-14);
+            margin-left: vw(17);
 
             &::before {
                 content: '';
@@ -96,12 +96,12 @@
         }
 
         &__img-wrapper-two {
-            max-width: 196px;
-            margin-right: 0px;
+            max-width: vw(196);
+            margin-right: vw(0);
             width: 100%;
             align-self: flex-end;
-            margin-bottom: 23px;
-            margin-right: 2px;
+            margin-bottom: vw(23);
+            margin-right: vw(2);
 
             &::before {
                 content: '';
@@ -111,7 +111,7 @@
         }
 
         &__text-two {
-            margin-top: 0px;
+            margin-top: vw(0);
         }
 
         &__row {
@@ -120,11 +120,11 @@
             align-items: center;
 
             &:nth-child(1) {
-                margin-bottom: 75px;
+                margin-bottom: vw(75);
             }
 
             &:nth-child(2) {
-                margin-bottom: 50px;
+                margin-bottom: vw(50);
                 padding-right: 0;
             }
         }
@@ -137,12 +137,12 @@
 
         &__img-wrapper-three {
             align-self: flex-start;
-            margin-left: 29px;
-            max-width: 85px;
+            margin-left: vw(29);
+            max-width: vw(85);
             width: 100%;
             transform: translateY(0);
             order: 1;
-            margin-bottom: 27px;
+            margin-bottom: vw(27);
 
             &::before {
                 content: '';

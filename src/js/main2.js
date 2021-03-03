@@ -2,8 +2,10 @@
 //= libs/gs.js
 //= libs/ScrollMagic.min.js
 //= libs/animation.gsap.min.js
-//= libs/debug.addIndicators.min.js
+// libs/debug.addIndicators.min.js
 //= libs/custom-slider.js
+//= libs/easytimer.min.js
+
 
 $(function () {
 	$('.js-cwprog-open-sub').click(function () {
@@ -78,29 +80,106 @@ $(function () {
 
 	}
 
+	/*
+		// init
+		var controller = new ScrollMagic.Controller();
 
-	// init
-	var controller = new ScrollMagic.Controller();
+		var ylearnW = $("#ylearn-row").width();
 
-	var ylearnW = $("#ylearn-row").width();
-
-	var leftpin = ylearnW;
-	var leftpinpx = '-' + leftpin + 'px';
-	// create scene to pin and link animation
-	new ScrollMagic.Scene({
-			triggerElement: "#ylearn-pinContainer",
-			triggerHook: "onLeave",
-			duration: "500%"
-		})
-		.addTo(controller)
-		.setPin("#ylearn-pinContainer").setTween(moveleft);
-	var moveleft = TweenMax.to("#ylearn-scroll", 1, {
-		left: leftpinpx,
-		ease: Sine.easeInOut
-	});
-
+		var leftpin = ylearnW;
+		var leftpinpx = '-' + leftpin + 'px';
+		// create scene to pin and link animation
+		new ScrollMagic.Scene({
+				triggerElement: "#ylearn-pinContainer",
+				triggerHook: "onLeave",
+				duration: "500%"
+			})
+			.addTo(controller)
+			.setPin("#ylearn-pinContainer").setTween(moveleft);
+		var moveleft = TweenMax.to("#ylearn-scroll", 1, {
+			left: leftpinpx,
+			ease: Sine.easeInOut
+		});
+	*/
 	/*.setTween(wipeAnimation)
 	.addIndicators() // add indicators (requires plugin)
 	.addTo(controller)*/
-	;
+
+	// init
+	if (window.matchMedia("(min-width: 1025px)").matches) {
+		var controller = new ScrollMagic.Controller();
+		if ($('#ylearn-scroll').length > 0) {
+			var ylearnWL = -($("#ylearn-scroll").width() - $("#ylearn-pinContainer").width()) + 'px';
+			var ylearnOffsetTop = -(document.documentElement.clientHeight - $("#ylearn-scroll").height()) / 2 + 'px';
+			// define movement of panels
+			var wipeAnimation = new TimelineMax()
+				.to("#ylearn-scroll", 1, {
+					x: ylearnWL
+				})
+
+			// create scene to pin and link animation
+			new ScrollMagic.Scene({
+					triggerElement: "#ylearn-pinContainer",
+					triggerHook: "onLeave",
+					duration: "350%",
+					offset: ylearnOffsetTop
+				})
+				.setPin("#ylearn-pinContainer")
+				.setTween(wipeAnimation)
+				//.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+		}
+
+
+	}
+	var cCountdons = [];
+	if ($('.js-countdown').length > 0) {
+
+		$('.js-countdown').each(function (idx, element) {
+			cCountdons.push(new easytimer.Timer());
+			var $elem=$(element);
+			console.log($elem.length);
+			var currentTimer=cCountdons[idx];
+			currentTimer.start({
+				countdown: true,
+				startValues: {
+					seconds: parseInt($elem.attr('data-seconds'))
+				}
+			});
+
+			var vals=currentTimer.getTimeValues();
+			$elem.html(vals.hours.toString().padStart(2,0)+" : "+vals.minutes.toString().padStart(2,0)+" : "+vals.seconds.toString().padStart(2,0));
+
+			currentTimer.addEventListener('secondsUpdated', function (e) {
+				var vals=currentTimer.getTimeValues();
+				$elem.html(vals.hours.toString().padStart(2,0)+" : "+vals.minutes.toString().padStart(2,0)+" : "+vals.seconds.toString().padStart(2,0));
+			});
+
+
+
+
+			currentTimer.addEventListener('targetAchieved', function (e) {
+				$elem.html('KABOOM!!');
+			});
+
+		});
+	}
+
+	function copyText(copyTxt) {
+		var copyBlock = document.createElement("textarea");
+		copyBlock.style.position = 'absolute';
+		copyBlock.style.left = -9999;
+		copyBlock.style.display = 'block';
+		copyBlock.value = copyTxt;
+		//$('body').append('<div id="copyText" style="display:block;position:absolute;left:-9999px;">'++'</div>')
+		document.body.appendChild(copyBlock);
+		copyBlock.select();
+		document.execCommand("copy");
+		copyBlock.remove();
+
+	}
+	$('[data-copy]').click(function(){
+		copyText($(this).attr('data-copy'));
+	});
+
 });

@@ -33,6 +33,8 @@
 
 	.ylearn-row-wrap {
 		margin-top: vw(54);
+		overflow: scroll;
+		overflow-y: auto;
 	}
 
 	.ylearn-row {
