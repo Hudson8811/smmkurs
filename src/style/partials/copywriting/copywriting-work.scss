@@ -1,6 +1,6 @@
 .copywriting-work {
 	background: #000;
-    padding-bottom: 60px;
+	padding-bottom: 60px;
 	position: relative;
 
 	&__decor-one {
@@ -164,6 +164,28 @@
 			margin-bottom: 39px;
 		}
 	}
+}
+
+.copywriting-work--motion {
+	padding-top: 195px;
+    padding-bottom: 158px;
+
+	.copywriting-work__row {
+		justify-content: space-between;
+	}
+
+	.copywriting-work__card-md {
+		padding: 108px 20px 122px;
+	}
+
+	.copywriting-work__card-md-bottom {
+		padding: 65px 20px 54px;
+	}
+}
+
+.copywriting-work__card-desc--motion {
+
+	width: 888px;
 }
 
 .container {}
