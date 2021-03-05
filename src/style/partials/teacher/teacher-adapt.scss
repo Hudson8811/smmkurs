@@ -1,160 +1,173 @@
 @media (max-width: 1400px) {
-    .teacher {
-        &__title {
-            font-size: 82px;
-        }
-        
-        &__content {
-            display: flex;
-            align-items: center;
-        }
-        &__img-wrapper {
-            display: block;
-            position: relative;
-            width: 100%;
-            max-width: 677px;
-            margin-right: 88px;
-    
-            &::before {
-                content: '';
-                display: block;
-                padding-top: 877/677 * 100%;
-            }
-    
-        }
-        &__img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            object-position: center center;
-        }
-        
-        &__teacher-wrapper {
-            margin-top: -70px;
-        }
-        
-        &__teacher-name {
-            margin-bottom: 32px;
-            font-size: 41px;
-            line-height: 125.8%;
-        }
-        
-        &__teacher-info {
-            font-size: 24px;
-            margin-bottom: 62px;
-        }
-        
-    }
+	.teacher {
+		&__title {
+			font-size: 82px;
+		}
+
+		&__content {
+			display: flex;
+			align-items: center;
+		}
+
+		&__img-wrapper {
+			display: block;
+			position: relative;
+			width: 100%;
+			max-width: 677px;
+			margin-right: 88px;
+
+			&::before {
+				content: '';
+				display: block;
+				padding-top: 877/677 * 100%;
+			}
+
+		}
+
+		&__img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			object-position: center center;
+		}
+
+		&__teacher-wrapper {
+			margin-top: -70px;
+		}
+
+		&__teacher-name {
+			margin-bottom: 32px;
+			font-size: 41px;
+			line-height: 125.8%;
+		}
+
+		&__teacher-info {
+			font-size: 24px;
+			margin-bottom: 62px;
+		}
+
+	}
 }
+
 @media (max-width: 1200px) {
-    .teacher {
-        &__title {
-            font-size: 68px;
-        }
-        
-        &__content {
-            display: flex;
-            align-items: center;
-        }
-        &__img-wrapper {
-            display: block;
-            position: relative;
-            width: 100%;
-            max-width: 677px;
-            margin-right: 50px;
-    
-            &::before {
-                content: '';
-                display: block;
-                padding-top: 877/677 * 100% + 10%;
-            }
-    
-        }
-        &__img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            object-position: center center;
-        }
-        
-        &__teacher-wrapper {
-            margin-top: -40px;
-        }
-        
-        &__teacher-name {
-            margin-bottom: 32px;
-            font-size: 41px;
-            line-height: 125.8%;
-        }
-        
-        &__teacher-info {
-            font-size: 24px;
-            margin-bottom: 32px;
-        }
-        
-    }
+	.teacher {
+		&__title {
+			font-size: 68px;
+		}
+
+		&__content {
+			display: flex;
+			align-items: center;
+		}
+
+		&__img-wrapper {
+			display: block;
+			position: relative;
+			width: 100%;
+			max-width: 677px;
+			margin-right: 50px;
+
+			&::before {
+				content: '';
+				display: block;
+				padding-top: 877/677 * 100% + 10%;
+			}
+
+		}
+
+		&__img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			object-position: center center;
+		}
+
+		&__teacher-wrapper {
+			margin-top: -40px;
+		}
+
+		&__teacher-name {
+			margin-bottom: 32px;
+			font-size: 41px;
+			line-height: 125.8%;
+		}
+
+		&__teacher-info {
+			font-size: 24px;
+			margin-bottom: 32px;
+		}
+
+	}
 }
-@media (max-width: 375px) {
- 
-    .teacher {
-        &__content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        &__wrapper {
-            margin: 0 -20px;
-            padding: 0 30px;
-            padding-top: 54px;
-            order: 0;
-            border-radius: 32px;
-        }
-        &__title {
-            font-size: 36px;
-            margin-bottom: 35px;
-        }
 
-        &__img-wrapper {
-            margin-right: 0;
-            order: 1;
-            &::before {
-                padding-top: 877/677 * 100%;
-            }
-        }
+@media (max-width: 1024px) {
 
-        &__teacher-wrapper {
-            margin-top: 0;
-        }
+	.teacher {
+		padding-top: vw(63);
+		overflow: hidden;
 
-        &__teacher-name {
-            font-size: 18px;
-            margin-bottom: 19px;
-        }
+		&__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 
-        &__teacher-info {
-            font-size: 16px;
-            padding-right: 10px;
-        }
+		&__wrapper {
+			margin: 0 vw(-20);
+			padding: 0 vw(30);
+			padding-top: vw(54);
+			order: 0;
+			border-radius: vw(32);
+		}
 
-        &__teacher-link {
-            font-size: 16px;
-            margin-bottom: 24px;
-            &::before {
-                content: '';
-                position: absolute;
-                height: 2px;
-                bottom: 1px;
-                left: 0;
-                right: 0;
-                background-color: #FF4E00;
-            }
-        }
-    }
+		&__title {
+			font-size: vw(36);
+			margin-bottom: vw(39);
+		}
+
+		&__img-wrapper {
+			margin-right: 0;
+			order: 1;
+
+			&::before {
+				padding-top: 877/677 * 100%;
+			}
+		}
+
+		&__teacher-wrapper {
+			margin-top: 0;
+		}
+
+		&__teacher-name {
+			font-size: vw(18);
+			margin-bottom: vw(19);
+		}
+
+		&__teacher-info {
+			font-size: vw(16);
+			padding-right: vw(10);
+		}
+
+		&__teacher-link {
+			font-size: vw(16);
+			margin-bottom: vw(24);
+
+			&::before {
+				content: '';
+				position: absolute;
+				height: vw(2);
+				bottom: vw(1);
+				left: 0;
+				right: 0;
+				background-color: #FF4E00;
+			}
+		}
+	}
 }

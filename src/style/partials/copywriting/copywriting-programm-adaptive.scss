@@ -2,6 +2,7 @@
 	.cwprog-card-right {
 		width: calc(100% - 507px - 20px);
 	}
+
 }
 
 @media screen and (max-width: 1250px) {
@@ -237,4 +238,51 @@
 	.cwprog-titem-sub {
 		padding: vw(17) 0 vw(9);
 	}
+
+
+/*
+	.copywriting-programm {
+		padding-top: 73px;
+
+		&--motion {
+			padding-top: 176px;
+			padding-bottom: 150px;
+
+			.cwprog-desc {
+				margin-top: 33px;
+			}
+
+			.cwprog-cards {
+				margin-top: 117px;
+			}
+
+			.cwprog-card {
+				background: #000000;
+				border: 1px solid #FFFFFF;
+				padding: 69px 76px 95px 92px;
+			}
+
+			.cwprog-card-title {
+				color: #FFFFFF;
+			}
+
+			.cwprog-text-item {
+				color: #FFFFFF;
+
+			}
+
+			.cwprog-card-btn {
+				margin-top: 54px;
+			}
+
+			.cwprog-card-part-name {
+				color: #FFFFFF;
+				opacity: 0.3;
+			}
+
+			.copywriting-programm__content {
+				padding: 125px 35px 35px;
+			}
+		}
+	}*/
 }

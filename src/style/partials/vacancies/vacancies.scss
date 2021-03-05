@@ -1,54 +1,58 @@
 .vacancies {
-padding-top: 184px;
-padding-bottom: 254px;
-position: relative;
+    padding-top: 184px;
+    padding-bottom: 260px;
+    position: relative;
+    overflow: hidden;
 
     &__decor {
         position: absolute;
-        right: 3.5%;
-        top: 1%;
+        right: 0;
+        top: auto;
         bottom: 0;
-        height: 100%;
-        width: 40%;
+        height: auto;
+        width: 44%;
     }
-    
+
     &__container {
         position: relative;
     }
-    
+
     &__content {
         max-width: 54%;
     }
-    
+
     &__title-wrapper {
         position: relative;
         margin-bottom: 92px;
     }
-    
+
     &__img {
         position: absolute;
-        right: 12%;
+        right: 18%;
         top: -53px;
     }
-    
+
     &__title {
         font-weight: 500;
         font-size: 96px;
         line-height: 100%;
         position: relative;
     }
-    
+
     &__text {
         font-size: 41px;
         line-height: 125.8%;
+
         &:not(:last-child) {
             margin-bottom: 60px;
         }
     }
-    
+
     &__link {
         color: #FF9E00;
         position: relative;
+        transition-duration: .2s;
+
         &::before {
             content: '';
             position: absolute;
@@ -58,6 +62,10 @@ position: relative;
             height: 3px;
             background: #FF9E00;
 
+        }
+
+        &:hover {
+            opacity: .6;
         }
     }
 }

@@ -1,34 +1,35 @@
 @media (max-width: 1400px) {
-   
+
 }
 @media (max-width: 1200px) {
-  
+
 }
-@media (max-width:375px) {
+@media (max-width:1024px) {
     .questions {
-        padding-top: 89px;
-        padding-bottom: 75px;
+        padding-top: vw(89);
+        padding-bottom: vw(75);
         &__title {
-            font-size: 36px;
+            font-size: vw(36);
             margin-bottom: 0;
             line-height: 109%;
+            margin-bottom: vw(17);
         }
         &__question {
-            padding: 38px 0;
-            border-bottom: 1px solid #FFFFFF;
+            padding: vw(23) 0 vw(43);
+            border-bottom: vw(1) solid #FFFFFF;
             &:first-child {
                 border-top-width: 0;
             }
         }
         &__question-title {
             font-weight: 500;
-            font-size: 24px;
+            font-size: vw(24);
             line-height: 100%;
-            margin-bottom: 38px;
+            margin-bottom: vw(27);
         }
-        
+
         &__question-desc {
-            font-size: 18px;
+            font-size: vw(18);
         }
     }
 }

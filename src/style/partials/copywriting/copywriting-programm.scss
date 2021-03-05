@@ -1,4 +1,3 @@
-
 .cwprog-card-btn {
 	width: 265px;
 	margin-top: 80px;
@@ -7,6 +6,60 @@
 .copywriting-programm {
 	background: #000000;
 	padding-top: 73px;
+
+	&--motion {
+		padding-top: 176px;
+		padding-bottom: 150px;
+
+		.cwprog-desc {
+			margin-top: 33px;
+		}
+
+		.cwprog-cards {
+			margin-top: 117px;
+		}
+
+		.cwprog-card {
+			background: #000000;
+			border: 1px solid #FFFFFF;
+			padding: 69px 76px 95px 92px;
+		}
+
+		.cwprog-card-title {
+			color: #FFFFFF;
+		}
+
+		.cwprog-text-item {
+			color: #FFFFFF;
+
+		}
+
+		.cwprog-card-btn {
+			margin-top: 54px;
+		}
+
+		.cwprog-card-part-name {
+			color: #FFFFFF;
+			opacity: 0.3;
+		}
+		.copywriting-programm__content {
+			padding: 125px 35px 35px;
+		}
+	}
+}
+
+.cwprog-pic {
+
+	width: 246px;
+	margin-top: 16px;
+	//margin-bottom: -47px;
+	max-width: 100%;
+}
+
+.cwprog-pic__img {
+	max-width: 100%;
+	display: block;
+	height: auto;
 }
 
 .copywriting-programm__content {
@@ -178,6 +231,14 @@
 
 	&+.cwprog-text-item {
 		margin-top: 18px;
+	}
+
+	&--alone {
+		.cwprog-titem-name {
+			&::before {
+				display: none;
+			}
+		}
 	}
 }
 

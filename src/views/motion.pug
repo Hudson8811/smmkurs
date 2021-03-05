@@ -1,37 +1,42 @@
 extends layouts/lands
 
 block vars
-    -
-        const page = {
-            title: 'index.html'
-        };
+	-
+		const page = {
+			title: 'index.html'
+		};
 
 block main
-    include partials/motion/motion-banner
-    include partials/motion/motion-banner2
-    include partials/motion/motion-info
+	include partials/motion/motion-banner
+	include partials/motion/motion-banner2
+	include partials/motion/motion-info
 
+	include partials/motion/motion-program
 
-    //- section.copywriting-feedback
-    //- 	.container2.cwfeedback-container
-    //- 		.cwfeedback-title Что по поводу курса <br> думают наши выпускники:
-    //- 		.cwfeedback-slider.js-cwfeedback-slider
-    //- 			.cwfeedback-slider__slide
-    //- 				img(src="img/landings/copywriting/feedback/slide1.png", alt="")
-    //- 			.cwfeedback-slider__slide
-    //- 				img(src="img/landings/copywriting/feedback/slide1.png", alt="")
-    //- 			.cwfeedback-slider__slide
-    //- 				img(src="img/landings/copywriting/feedback/slide2.png", alt="")
-    //- 		.cwfeedback-btn-wrap
-    //- 			.btn.btn--white.cwfeedback-btn Смотреть всё
-    //- 		.cwfeedback-description
-    //- 			.cwfeedback-description__txt Только отзывы от реальных людей, <br> которые можно проверить
-    include partials/teacher/teacher-smm
-    //- include partials/copywriting/copywriting-features
-    include partials/vacancies/vacancies
-    include partials/motion/motion-components
-    include partials/motion/motion-need
-    include partials/questions/motion-questions
-    include partials/feedback/feedback
-    include partials/_footer-light
+	include partials/motion/motion-work
+	include partials/copywriting/cop-feedback
+	include partials/motion/motion-examples
+
+	//- section.copywriting-feedback
+	//- 	.container2.cwfeedback-container
+	//- 		.cwfeedback-title Что по поводу курса <br> думают наши выпускники:
+	//- 		.cwfeedback-slider.js-cwfeedback-slider
+	//- 			.cwfeedback-slider__slide
+	//- 				img(src="img/landings/copywriting/feedback/slide1.png", alt="")
+	//- 			.cwfeedback-slider__slide
+	//- 				img(src="img/landings/copywriting/feedback/slide1.png", alt="")
+	//- 			.cwfeedback-slider__slide
+	//- 				img(src="img/landings/copywriting/feedback/slide2.png", alt="")
+	//- 		.cwfeedback-btn-wrap
+	//- 			.btn.btn--white.cwfeedback-btn Смотреть всё
+	//- 		.cwfeedback-description
+	//- 			.cwfeedback-description__txt Только отзывы от реальных людей, <br> которые можно проверить
+	include partials/teacher/teacher-smm
+	//- include partials/copywriting/copywriting-features
+	include partials/vacancies/vacancies
+	include partials/motion/motion-components
+	include partials/motion/motion-need
+	include partials/questions/motion-questions
+	include partials/feedback/feedback
+	include partials/_footer-light
 
