@@ -121,7 +121,7 @@ $(function () {
 			new ScrollMagic.Scene({
 					triggerElement: "#ylearn-pinContainer",
 					triggerHook: "onLeave",
-					duration: "350%",
+					duration: "250%",
 					offset: ylearnOffsetTop
 				})
 				.setPin("#ylearn-pinContainer")
@@ -129,9 +129,62 @@ $(function () {
 				//.addIndicators() // add indicators (requires plugin)
 				.addTo(controller);
 		}
-
-
 	}
+
+	if (window.matchMedia("(min-width: 1025px)").matches) {
+		var controller = new ScrollMagic.Controller();
+		if ($('#moexam-scroll').length > 0) {
+			var ylearnWL = -($("#moexam-scroll").width() - $("#moexam-pinContainer").width()) + 'px';
+			var ylearnOffsetTop = -(document.documentElement.clientHeight - $("#moexam-scroll").height()) / 2 + 'px';
+			// define movement of panels
+			var wipeAnimation = new TimelineMax()
+				.to("#moexam-scroll", 1, {
+					x: ylearnWL
+				})
+
+			// create scene to pin and link animation
+			new ScrollMagic.Scene({
+					triggerElement: "#moexam-pinContainer",
+					triggerHook: "onLeave",
+					duration: "350%",
+					offset: ylearnOffsetTop
+				})
+				.setPin("#moexam-pinContainer")
+				.setTween(wipeAnimation)
+				//.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+		}
+	}
+	if (window.matchMedia("(min-width: 1025px)").matches) {
+		var controller = new ScrollMagic.Controller();
+		if ($('#motylearn-scroll').length > 0) {
+			var ylearnWL = -($("#motylearn-scroll").width() - $("#motylearn-pinContainer").width()) + 'px';
+			var ylearnOffsetTop = -(document.documentElement.clientHeight - $("#motylearn-scroll").height()) / 2 + 'px';
+			// define movement of panels
+			var wipeAnimation = new TimelineMax()
+				.to("#motylearn-scroll", 1, {
+					x: ylearnWL
+				})
+
+			// create scene to pin and link animation
+			new ScrollMagic.Scene({
+					triggerElement: "#motylearn-pinContainer",
+					triggerHook: "onLeave",
+					duration: "350%",
+					offset: ylearnOffsetTop
+				})
+				.setPin("#motylearn-pinContainer")
+				.setTween(wipeAnimation)
+				//.addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+		}
+	}
+
+
+
+
+
+
 	var cCountdons = [];
 	if ($('.js-countdown').length > 0) {
 

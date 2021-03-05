@@ -1,10 +1,10 @@
 .motion-components {
 background-color: #000;
-padding-top: 183px;
+padding-top: 190px;
 padding-bottom: 219px;
     &__container {
     }
-    
+
     &__content {
         box-sizing: border-box;
         padding: 96px;
@@ -13,11 +13,11 @@ padding-bottom: 219px;
         position: relative;
         padding-bottom: 119px;
     }
-    
+
     &__row {
         display: flex;
     }
-    
+
     &__column {
         display: flex;
         flex-direction: column;
@@ -28,14 +28,14 @@ padding-bottom: 219px;
             padding-left: 3.5%;
         }
     }
-    
+
     &__card-md {
         width: 100%;
         &:first-child {
             margin-bottom: -187px;
         }
     }
-    
+
     &__card-img-wrapper {
         position: relative;
         bottom: 43%;
@@ -47,34 +47,34 @@ padding-bottom: 219px;
             padding-top: 91%
         }
     }
-    
+
     &__card-img {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: -5px;
+        left: 12px;
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
     }
-    
+
     &__section-title {
         font-size: 72px;
         line-height: 125.8%;
     }
-    
+
     &__card-sm {
        &:not(:last-child) {
            margin-bottom: 82px;
        }
     }
-    
+
     &__card-title {
         font-size: 41px;
         line-height: 125.8%;
         margin-bottom: 29px;
     }
-    
+
     &__card-desc {
         font-size: 24px;
         line-height: 125.8%;
@@ -82,4 +82,3 @@ padding-bottom: 219px;
     }
     .container2 {
     }
-    

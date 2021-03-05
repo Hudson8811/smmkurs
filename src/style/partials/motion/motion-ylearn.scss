@@ -1,0 +1,125 @@
+.section-motylearn {
+	background: #000000;
+	padding-top: 254px;
+	padding-bottom: 351px;
+}
+
+.motylearn-title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 96px;
+	line-height: 100%;
+	color: #FFFFFF;
+}
+
+.container2--motylearn {
+	width: 100%;
+	max-width: 100%;
+}
+
+.motylearn-scroll {
+	margin-top: 158px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.motylearn-scroll-wrap {
+	display: inline-flex;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.motylearn-scroll-row {
+	display: flex;
+	padding-left: 167px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.motylearn-item {
+	overflow: hidden;
+
+	border: vwd(3) solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: vwd(24);
+	display: flex;
+	flex-direction: column;
+	width: vwd(631);
+	min-width: vwd(631);
+
+	padding: vwd(76) vwd(62) vwd(76) vwd(68);
+
+	&:not(:last-child) {
+		margin-right: vwd(40);
+	}
+}
+
+.motylearn-item-pic {
+	&__img {}
+}
+
+.motylearn-item-pic {
+	&--pic-2 {}
+
+	&__img {}
+}
+
+.motylearn-item-text {
+	font-size: vwd(64);
+	line-height: 125.8%;
+	font-weight: 300;
+	/* or vwd(81) */
+
+
+	color: #FFFFFF;
+}
+
+.motylearn-item-pic {
+	max-width: 100%;
+
+	&+.motylearn-item-text {
+		margin-top: vwd(84);
+	}
+
+	&--pic-1 {
+		margin-bottom: vwd(-76);
+		margin-right: vwd(-32);
+		margin-top: vwd(19);
+		align-self: flex-end;
+	}
+
+	&--pic-2 {
+		margin-top: vwd(-9);
+	}
+
+	&--pic-3 {
+		margin-top: vwd(8);
+
+		&+.motylearn-item-text {
+			margin-top: vwd(103);
+		}
+
+	}
+
+	&--pic-4 {
+		margin-top: vwd(-8);
+
+		&+.motylearn-item-text {
+			margin-top: vwd(55);
+		}
+
+	}
+
+	&--pic-5 {
+		margin-top: vwd(94);
+		margin-bottom: vwd(-76);
+		align-self: flex-end;
+	}
+
+	&__img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+}

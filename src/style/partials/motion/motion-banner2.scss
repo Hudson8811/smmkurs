@@ -1,6 +1,6 @@
 .motion-banner2 {
 padding-top: 147px;
-padding-bottom: 176px;
+padding-bottom: 78px;
 position: relative;
 overflow: hidden;
     &__line1 {
@@ -10,7 +10,7 @@ overflow: hidden;
         width: 43vw;
         height: 51vw;
     }
-    
+
     &__line2 {
         position: absolute;
         bottom: 0;
@@ -18,21 +18,21 @@ overflow: hidden;
         width: 53vw;
         height: 52vw;
     }
-    
+
     &__container {
         position: relative;
     }
-    
+
     &__title {
         max-width: 1140px;
         margin: 0 auto;
         text-align: center;
-        font-weight: 350;
+        font-weight: 400;
         font-size: 113px;
         line-height: 100%;
         margin-bottom: 126px;
     }
-    
+
     &__content {
         display: flex;
         justify-content: center;
@@ -45,7 +45,7 @@ overflow: hidden;
         &:first-child {
             margin-right: 45px;
 
-        }   
+        }
     }
     &__img-wrapper {
         position: relative;
@@ -74,7 +74,7 @@ overflow: hidden;
         object-fit: cover;
         object-position: center center;
     }
-    
+
     &__img-desc {
         text-align: center;
         font-family: ALS Hauss;
@@ -88,7 +88,7 @@ overflow: hidden;
         bottom: 30%;
         right: 15%;
     }
-    
+
     &__subtitle {
         max-width: 650px;
         margin: 0 auto;

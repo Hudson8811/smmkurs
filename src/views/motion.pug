@@ -17,26 +17,22 @@ block main
 	include partials/copywriting/cop-feedback
 	include partials/motion/motion-examples
 
-	//- section.copywriting-feedback
-	//- 	.container2.cwfeedback-container
-	//- 		.cwfeedback-title Что по поводу курса <br> думают наши выпускники:
-	//- 		.cwfeedback-slider.js-cwfeedback-slider
-	//- 			.cwfeedback-slider__slide
-	//- 				img(src="img/landings/copywriting/feedback/slide1.png", alt="")
-	//- 			.cwfeedback-slider__slide
-	//- 				img(src="img/landings/copywriting/feedback/slide1.png", alt="")
-	//- 			.cwfeedback-slider__slide
-	//- 				img(src="img/landings/copywriting/feedback/slide2.png", alt="")
-	//- 		.cwfeedback-btn-wrap
-	//- 			.btn.btn--white.cwfeedback-btn Смотреть всё
-	//- 		.cwfeedback-description
-	//- 			.cwfeedback-description__txt Только отзывы от реальных людей, <br> которые можно проверить
-	include partials/teacher/teacher-smm
-	//- include partials/copywriting/copywriting-features
+
+	include partials/teacher/teacher-motion
+
+
 	include partials/vacancies/vacancies
 	include partials/motion/motion-components
 	include partials/motion/motion-need
+
+
+	include partials/motion/motion-ylearn
+
+
+
+	include partials/copywriting/cop-payment.pug
 	include partials/questions/motion-questions
 	include partials/feedback/feedback
+	include partials/copywriting/other-courses.pug
 	include partials/_footer-light
 

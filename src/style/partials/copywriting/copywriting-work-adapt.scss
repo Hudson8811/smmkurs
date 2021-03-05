@@ -91,7 +91,13 @@
 }
 @media (max-width:1024px) {
 
+	.copywriting-work__card-md-bottom{
+		&:not(:last-child){
+			margin-right: vw(20);
 
+		}
+
+	}
 	.copywriting-work__decor-two{
 		display: none;
 	}

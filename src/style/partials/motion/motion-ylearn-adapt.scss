@@ -1,0 +1,127 @@
+@media screen and (max-width:1500px) {
+	.motylearn-items {
+		padding-left: calc(50vw - 786px);
+
+	}
+
+	.motylearn-item-pic {
+		max-width: 100%;
+		width: 250px;
+		height: 250px;
+
+		&__img {
+			object-fit: contain;
+			max-height: 100%;
+		}
+	}
+
+	.motylearn-item-text {
+		font-size: vwd(45);
+	}
+}
+
+
+
+@media screen and (max-width:1024px) {
+	.section-motylearn {
+		padding-top: vw(95);
+		padding-bottom: vw(135);
+	}
+
+	.motylearn-title {
+		font-size: vw(36);
+		line-height: 115%;
+		/* or vw(41) */
+
+		text-align: center;
+	}
+
+	.container2--motylearn {}
+
+	.motylearn-scroll {
+		margin-top: vw(54);
+		overflow: scroll;
+		overflow-y: auto;
+	}
+
+	.motylearn-scroll-wrap {}
+
+	.motylearn-scroll-row {
+		padding-left: vw(49);
+	}
+
+	.motylearn-item {
+		flex-direction: column;
+		width: vw(239);
+		border-radius: vw(24);
+		padding: vw(42) vw(17) vw(30);
+
+
+
+		&:not(:last-child) {
+			margin-right: vw(20);
+		}
+	}
+
+	.motylearn-item-pic {
+		width: vw(101);
+		height: auto;
+
+		&__img {}
+	}
+
+	.motylearn-item-pic {
+		&--pic-2 {}
+
+		&__img {}
+	}
+
+	.motylearn-item-text {
+		/* or vwd(81) */
+		font-size: vw(24);
+		line-height: 125.8%;
+		/* or vw(30) */
+
+
+		color: #FFFFFF;
+
+
+	}
+
+	.motylearn-item-pic {
+
+		&+.motylearn-item-text {
+			margin-top: vw(34);
+		}
+
+		&--pic-1 {
+			margin-bottom: vw(-30);
+			margin-right: vw(5);
+			margin-top: vw(34);
+		}
+
+		&--pic-2 {
+			margin-top: vw(-9);
+		}
+
+		&--pic-3 {
+
+			&+.motylearn-item-text {}
+
+		}
+
+		&--pic-4 {
+
+			&+.motylearn-item-text {}
+
+		}
+
+		&--pic-5 {
+			margin-bottom: vw(-30);
+			height: vw(163) !important;
+		}
+
+		&__img {}
+
+	}
+}

@@ -1,0 +1,75 @@
+@media screen and (max-width:1500px) {
+	.moexam-items {
+		padding-left: calc(50vw - 786px);
+	}
+}
+
+@media screen and (max-width:1400px) {
+	.moexam-item {
+		position: relative;
+		z-index: 1;
+		width: 330px;
+	}
+}
+
+@media (max-width:1024px) {
+	.moexam-examples-bg {
+		display: none;
+	}
+
+	.moexam-examples-bg-2 {
+		display: block;
+		position: absolute;
+		z-index: 2;
+		width: vw(1109);
+		min-width: 100%;
+		height: auto;
+		right: auto;
+		left: vw(-82);
+		top: vw(164);
+	}
+
+	.section-motion-examples {
+		padding-top: vw(31);
+		padding-bottom: vw(30);
+		overflow: hidden;
+	}
+
+	.moexam-item:not(:first-child) {
+		margin-left: vw(23);
+	}
+
+	.moexam-title {
+		font-size: vw(36);
+		line-height: 100%;
+
+	}
+
+	.moexam-items-wrap {
+		margin-top: vw(31);
+		overflow: scroll;
+		overflow-y: auto;
+	}
+
+	.moexam-items {
+		padding-left: vw(28);
+	}
+
+
+	.moexam-item {
+		width: vw(250);
+
+		&:hover {}
+
+		&:active {}
+
+		&:focus {}
+
+		&::after {
+			width: vw(48);
+			height: vw(48);
+		}
+	}
+
+	.moexam-item-preview {}
+}

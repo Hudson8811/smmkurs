@@ -19,3 +19,24 @@
 html,body{
 	display: block !important;
 }
+.oh-wrap{
+	overflow: hidden;
+}
+
+
+
+
+@media (min-width:1025px) {
+	.desk-nowrap{
+		display: inline;
+		white-space: nowrap;
+	}
+}
+
+
+@media (max-width:1024px) {
+	.mob-nowrap{
+		display: inline;
+		white-space: nowrap;
+	}
+}
