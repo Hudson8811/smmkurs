@@ -1,10 +1,9 @@
 .smm-strategy-potential {
-padding-top: 218px;
+padding-top: 196px;
 padding-bottom: 200px;
 background: #000;
     &__container {
         color: #fff;
-        
     }
     
     &__title {
@@ -15,7 +14,6 @@ background: #000;
     }
     
     &__content {
-        background: url('../');
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -25,7 +23,7 @@ background: #000;
     &__content-img {
         position: absolute;
         z-index: -1;
-        right: 272px;
+        right: 263px;
         &-phone {
             display: none;
         }
@@ -38,31 +36,30 @@ background: #000;
         border-radius: 40px;
         font-size: 41px;
         text-align: center;
+        line-height: 125%;
         &_1 {
             align-self: flex-end;
             margin-bottom: 300px;
             margin-top: 239px;
-            margin-right: 404px;
+            margin-right: 397px;
             max-width: 494px;
-            padding: 79px 92px;
+            padding: 88px 92px;
         }
         &_2 {
-            margin-top: 94px;
-            margin-bottom: 121px;
+            margin-top: 89px;
+            margin-bottom: 136px;
             max-width: 519px;
-            padding: 51px 55px;
-            margin-left: 58px;
+            padding: 63px 58px;
+            margin-left: 65px;
         }
         &_3 {
-            padding: 53px 111px;
-            margin-top: 299px;
+            padding: 62px 128px;
+            margin-top: 283px;
             max-width: 907px;
             margin-bottom: 200px;
             align-self: flex-end;
             justify-self: flex-end;
-            margin-right: 144px;
-
+            margin-right: 133px;
         }
     }
 }
-   
