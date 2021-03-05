@@ -1,4 +1,4 @@
-.motion-banner {
+.smm-strategy-banner {
     padding-top: 172px;
     padding-bottom: 200px;
     background-color: #000;
@@ -6,17 +6,17 @@
     position: relative;
     &__decor-wrapper {
         position: absolute;
-        right: -0.6vw;
+        right: 0vw;
         top: 0vw;
         overflow: hidden;
-        width: 64vw;
+        width: 81vw;
         height: auto;
         z-index: 2;
     }
     &__title-decor {
         position: absolute;
-        top: 0vw;
-        right: 46%;
+        top: -4vw;
+        right: 41%;
     
     }
     &__decor {
@@ -44,7 +44,7 @@
     &__logo {
         width: 64px;
         height: 64px;
-        margin-bottom: 179px;
+        margin-bottom: 97px;
     }
     &__row {
         display: flex;
@@ -55,16 +55,15 @@
         font-family: ALS Hauss;
         font-size: 41px;
         line-height: 125.8%;
-        margin-bottom: 15px;
+        margin-bottom: 27px;
         position: relative;
-        display: none;
     }
     
     &__subtitle {
         font-family: ALS Hauss;
         font-size: 113px;
         line-height: 100%;
-        margin-bottom: 53px;
+        margin-bottom: 56px;
         margin-right: 40px;
         position: relative;
     }

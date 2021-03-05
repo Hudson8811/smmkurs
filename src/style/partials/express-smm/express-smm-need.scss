@@ -1,8 +1,8 @@
-.smm-strategy-need {
+.express-smm-need {
 	position: relative;
 	overflow: hidden;
-	padding-top: 149px;
-	padding-bottom: 231px;
+	padding-top: 148px;
+	padding-bottom: 64px;
 	font-family: ALS Hauss, sans-serif;
 	z-index: 1;
 
@@ -15,7 +15,7 @@
 	&__title {
 		max-width: 1300px;
         margin: 0 auto;
-		margin-bottom: 235px;
+		margin-bottom: 259px;
 		color: #000000;
 		font-size: 113px;
 		font-weight: normal;
@@ -31,15 +31,15 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		padding: 155px 35px 135px;
+		padding: 155px 35px 219px;
 		border-radius: 80px;
-		background: #181725;
+		background: #000;
 	}
 
 	/*495
 	17*/
 	&__inner {
-		width: 1390px;
+		width: 1376px;
 	}
 
 	&__decor {
@@ -49,7 +49,7 @@
 		display: flex;
 		align-items: center;
 		margin-top: -4px;
-		margin-left: 8px;
+		margin-left: 18px;
 		padding: 39px 76px;
 		transform: rotate(-10.51deg) translate(-50%, -75%);
 		text-align: center;
@@ -75,13 +75,6 @@
 	&__card {
 		width: 433px;
 		margin-bottom: 102px;
-		&:nth-child(4) {
-			margin-left: 218px;
-		}
-        &:nth-child(5) {
-			margin-right: auto;
-            margin-left: 47px;
-		}
 	}
 
 	&__card-img {
@@ -107,7 +100,7 @@
 	}
 
 	&__card-desc {
-        max-width: 400px;
+        max-width: 350px;
 		margin-top: 35px;
 		font-size: 24px;
 		font-weight: 350;

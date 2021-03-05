@@ -1,0 +1,132 @@
+@media (max-width: 1600px) {
+    .smm-strategy-banner { 
+        &__logo {
+            margin-bottom: 90px;
+        }
+        &__subtitle {
+            font-size: 90px;
+        }
+        &__title-decor {
+            position: absolute;
+            top: -5vw;
+            right: 47%;
+        }
+    }
+}
+@media (max-width: 1400px) {
+    .smm-strategy-banner { 
+        &__decor-wrapper {
+            position: absolute;
+            overflow: hidden;
+            // width: 100vw;
+            height: auto;
+            z-index: 2;
+        }
+        &__decor {
+            // display: none;
+        }
+        &__line {
+            // top: -2px;
+            // left: -2px;
+            // display: block;
+            // width: 100%;
+            // height: 100%;
+        }
+        &__title-decor {
+            max-width: 240px;
+            top: -5vw;
+            right: 47%;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .smm-strategy-banner { 
+        &__title-decor {
+            position: absolute;
+            top: -1vw;
+            right: 56%;
+            width: 150px;
+            height: 125px;
+        }
+        &__decor-wrapper {
+            top: 6vw;
+        }
+        &__logo {
+            margin-bottom: 60px;
+        }
+        &__subtitle {
+            font-size: 64px;
+        }
+        &__link {
+            padding: 20px 50px;
+        }
+        &__row {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+        }
+    }
+}
+@media (max-width:375px) {
+    .smm-strategy-banner {
+        padding-top: 96px;
+        padding-bottom: 93px;
+        &__logo {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 92px;
+        }
+        &__decor-wrapper {
+            position: absolute;
+            right: 0;
+            left: -17vw;
+            top: 63vw;
+            overflow: hidden;
+            width: 200vw;
+            height: auto;
+            z-index: 2;
+        }
+        &__title-decor {
+            display: none;
+        }
+        &__decor {
+            display: none;
+        }
+        &__line {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        &__title {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &__subtitle {
+            font-family: ALS Hauss;
+            font-size: 36px;
+            line-height: 100%;
+            margin-bottom: 53px;
+            margin-right: 40px;
+            position: relative;
+        }
+        &__link {
+            font-size: 18px;
+            padding: 16px 59px;
+        }
+        &__play {
+            width: 14px;
+            height: 14px;
+            margin-right: 6px;
+        }
+        &__kurs-info {
+            margin-bottom: 53px;
+            padding-left: 0;
+            letter-spacing: -0.4px;
+        }
+        &__play-text {
+            font-size: 18px;
+          
+        }
+    }
+}
