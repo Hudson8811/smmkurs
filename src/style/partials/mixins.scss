@@ -1,3 +1,9 @@
+@mixin homeMax {
+  @media (max-width: 1620px) {
+    @content;
+  }
+}
+
 @mixin dMax {
 	@media (max-width: 1500px) {
 		@content;
@@ -51,4 +57,18 @@ $resolution: 375;
 
 @function vw($px) {
 	@return (($px/$resolution) * 100)+vw;
+}
+
+
+$resolutiond2: 1620;
+
+@function qw($px) {
+  @return (($px/$resolutiond2) * 100)+vw;
+}
+
+
+$resolutiond3: 1110;
+
+@function qw2($px) {
+  @return (($px/$resolutiond3) * 100)+vw;
 }
