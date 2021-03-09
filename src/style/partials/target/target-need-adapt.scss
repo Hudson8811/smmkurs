@@ -1,0 +1,146 @@
+@media screen and (max-width: 1385px) {
+	.target-need__title {
+		max-width: 910px;
+		font-size: 96px;
+		margin-bottom: 185px;
+	}
+
+	.target-need__inner {
+		max-width: 100%;
+		margin-left: 0;
+	}
+
+    .target-need__card {
+		margin-bottom: 10px;
+	}
+}
+@media screen and (min-width: 1025px) {
+
+	.target-need__bg-mob{
+		display: none;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.target-need {
+		overflow: hidden;
+		padding-top: vw(60);
+		padding-bottom: vw(53);
+		&::after{
+			display: none;
+		}
+
+		&__title {
+			width: 100%;
+			max-width: 100%;
+			font-size: vw(36);
+			line-height: 100%;
+			letter-spacing: vw(0);
+			letter-spacing: vw(-0.2);
+			margin-bottom: vw(84);
+            max-width: vw(278);
+            text-align: left;
+		}
+
+		&__decor {
+
+			font-size: vw(18);
+			line-height: 1;
+			padding: vw(17) vw(35);
+			margin-top: vw(6);
+			margin-left: vw(5);
+		}
+
+		&__bg-1,
+		&__bg-2 {
+			display: none;
+		}
+
+		&__bg-mob {
+			position: absolute;
+			bottom: 43.3%;
+			right: 0;
+			display: block;
+			width: 100%;
+			height: auto;
+			z-index: 2;
+		}
+
+		&__content {
+			border-radius: vw(40);
+			padding: vw(85) vw(10) vw(115);
+		}
+	}
+
+	.target-need__inner {
+		width: vw(184);
+	}
+
+	.target-need__row {}
+
+	.target-need__card {
+		margin-bottom: vw(47);
+
+		&-img {
+			height: vw(170);
+		}
+
+		&-title {
+			font-size: vw(18);
+			line-height: 1;
+			margin-top: vw(32);
+		}
+
+		&-desc {
+			font-size: vw(16);
+			line-height: 125.8%;
+			margin-top: vw(16);
+		}
+
+		img {
+            width: vw(202);
+        }
+        &:nth-child(1) {
+            margin-bottom: vw(49);
+
+            .target-need__card-title {
+                font-size: vw(18);
+                line-height: 1;
+                margin-top: vw(10);
+            }
+        }
+        &:nth-child(2) {
+            margin-bottom: vw(44);
+			.target-need__card-img {
+				height: vw(190);
+			}
+            .target-need__card-title {
+                font-size: vw(18);
+                line-height: 1;
+                margin-top: vw(-21);
+            }
+			.target-need__card-desc {
+                line-height: 125.8%;
+                margin-top: vw(11);
+            }
+        }
+        &:nth-child(3) {
+            .target-need__card-title {
+                font-size: vw(18);
+                line-height: 1;
+                margin-top: vw(-78);
+            }
+            .target-need__card-desc {
+                font-size: vw(16);
+                line-height: 125.8%;
+                margin-top: vw(11);
+            }
+            .target-need__card-img {
+                overflow: hidden;
+                height: vw(250);
+            }
+            img {
+                width: vw(173);
+            }
+        }
+	}
+}
