@@ -1,4 +1,4 @@
-extends layouts/lands
+extends layouts/newhome
 
 block vars
     -
@@ -11,4 +11,202 @@ block vars
 
 block main
     .home
-        .container
+        .container2.container2--home
+            .header
+                .container
+                    .header__flex
+                        a.header__logo(href="")
+                            img(src="img/logo-w.png" alt="logo")
+
+                        .header__right
+                            ul.header__menu-new
+                                li
+                                    a(href="#kurses") Курсы
+                                li
+                                    a(href="#hire") Наймите выпускника
+                                li
+                                    a(href="/login") Личный кабинет
+
+
+            .home-top
+                .home-top__left школа <br> диджитал навыков <br>от <span id="anim-txt">практикующих</span> <br>профессионалов
+                .home-top__right
+                    .home-top__right-img
+                        img(src="img/main/home-top.png" alt="")
+                    .home-top__right-text О школе <strong>за 72 секунды</strong>
+
+            .home-block.home-block--1
+                .home-block__img
+                    img(src="img/main/home1.svg" alt="")
+                .home-block__right
+                    .home-block__text
+                        p Каждый преподаватель это либо специалист нашей студии, либо владелец бизнеса
+                    .home-block__link
+                        a(href="" target="_blank") портфолио студии
+            .home-block.home-block--2
+                .home-block__img
+                    img(src="img/main/home2.svg" alt="")
+                .home-block__right
+                    .home-block__text
+                        p Мы не приглашаем именитых гостей ради заголовков
+                        p У нас только практические знания для приобретения навыка
+
+            .home-partners
+                .home-partners__text За 3 года через нас прошло более 7&nbsp;000 специалистов, среди которых сотрудники
+                .home-partners__flex
+                    .home-partners__item
+                        img(src="img/main/p1.png")
+                    .home-partners__item
+                        img(src="img/main/p2.svg")
+                    .home-partners__item
+                        img(src="img/main/p3.svg")
+                    .home-partners__item
+                        img(src="img/main/p4.png")
+                    .home-partners__item
+                        img(src="img/main/p5.svg")
+                    .home-partners__item
+                        img(src="img/main/p6.svg")
+                    .home-partners__item
+                        img(src="img/main/p7.svg")
+                    .home-partners__item
+                        img(src="img/main/p8.svg")
+
+
+            .home-kurses#kurses
+                .home-kurses__title Наши направления
+                .tabs
+                    ul.tabs__list
+                        li.active
+                            a(href="javascript:;" data-cat="") Все
+                        li
+                            a(href="javascript:;" data-cat="SMM") SMM
+                        li
+                            a(href="javascript:;" data-cat="Стратегии") Стратегии
+                        li
+                            a(href="javascript:;" data-cat="Таргетинг") Таргетинг
+                        li
+                            a(href="javascript:;" data-cat="Дизайн") Дизайн
+                        li
+                            a(href="javascript:;" data-cat="Копирайтинг") Копирайтинг
+                        li
+                            a(href="javascript:;" data-cat="Управление") Управление
+                        li
+                            a(href="javascript:;" data-cat="Контекст") Контекст
+
+                .kurses.tab-items
+                    .kurses__kurs.kurs(data-cat="SMM").kurs-new--1
+                        a.kurs__inner(href="" style="background-color:#6D16E8;")
+                            .kurs__content
+                                img.kurs__img-new(src="img/main/n1.svg" alt="")
+                                .kurs__top
+                                    .kurs__tag SMM
+                                .kurs__bottom
+                                    .kurs__title-home Экспресс SMM
+                                    .kurs__date-home 1 месяц
+                    .kurses__kurs.kurs(data-cat="Копирайтинг").kurs-new--2
+                        a.kurs__inner(href="" style="background-color:#1840F8;")
+                            .kurs__content
+                                img.kurs__img-new(src="img/main/n2.svg" alt="")
+                                .kurs__top
+                                    .kurs__tag Копирайтинг
+                                .kurs__bottom
+                                    .kurs__title-home Копирайтинг
+                                    .kurs__date-home 4 месяцa
+                    .kurses__kurs.kurs(data-cat="Управление").kurs-new--3
+                        a.kurs__inner(href="" style="background-color:#FF9B07;")
+                            .kurs__content
+                                img.kurs__img-new(src="img/main/n3.svg" alt="")
+                                .kurs__top
+                                    .kurs__tag Управление
+                                .kurs__bottom
+                                    .kurs__title-home Удалённое <br>управление <br>проектами
+                                    .kurs__date-home 1 месяц
+                    .kurses__kurs.kurs(data-cat="SMM").kurs-new--4
+                        a.kurs__inner(href="" style="background-color:#211D2C;")
+                            .kurs__content
+                                img.kurs__img-new(src="img/main/n4.svg" alt="")
+                                .kurs__top
+                                    .kurs__tag SMM
+                                .kurs__bottom
+                                    .kurs__title-home Личный бренд
+                                    .kurs__date-home 1 месяц
+                    .kurses__kurs.kurs(data-cat="Дизайн").kurs-new--5
+                        a.kurs__inner(href="" style="background-color:#181849;")
+                            .kurs__content
+                                img.kurs__img-new(src="img/main/n5.svg" alt="")
+                                .kurs__top
+                                    .kurs__tag Дизайн
+                                .kurs__bottom
+                                    .kurs__title-home Рекламный motion <br>дизайн
+                                    .kurs__date-home 4 месяцa
+                    .kurses__kurs.kurs(data-cat="SMM").kurs-new--6
+                        a.kurs__inner(href="" style="background-color:#02BB78;")
+                            .kurs__content
+                                img.kurs__img-new(src="img/main/n6.svg" alt="")
+                                .kurs__top
+                                    .kurs__tag SMM
+                                .kurs__bottom
+                                    .kurs__title-home Создание <br>SMM-стратегий
+                                    .kurs__date-home 1 месяц
+                    .kurses__kurs.kurs(data-cat="Таргетинг").kurs-new--7
+                        a.kurs__inner(href="" style="background-color:#3C599B;")
+                            .kurs__content
+                                img.kurs__img-new(src="img/main/n7.svg" alt="")
+                                .kurs__top
+                                    .kurs__tag Таргетинг
+                                .kurs__bottom
+                                    .kurs__title-home Таргетированная реклама в Facebook и Instagram
+                                    .kurs__date-home 1 месяц
+                    .kurses__kurs.kurs(data-cat="Копирайтинг").kurs-new--8
+                        a.kurs__inner(href="" style="background-color:#C15DD5;")
+                            .kurs__content
+                                img.kurs__img-new(src="img/main/n8.svg" alt="")
+                                .kurs__top
+                                    .kurs__tag SMM
+                                .kurs__bottom
+                                    .kurs__title-home Контекстная реклама
+                                    .kurs__date-home 4 месяцa
+
+    .home-form#hire
+        .container2.container2--home
+            .home-form__flex
+                .home-form__left
+                    .home-form__title Нужен специалист?
+                    .home-form__text Вы можете оставить вакансию на нужного вам специалиста, а мы скинем её в наш чат выпускников
+                    form.home-form__form
+                        .home-form__form-type
+                            .home-form__form-checkbox
+                                label
+                                    input(type="radio" name="type" value="1")
+                                    span Сммщик
+                            .home-form__form-checkbox
+                                label
+                                    input(type="radio" name="type" value="1")
+                                    span Таргетолог
+                            .home-form__form-checkbox
+                                label
+                                    input(type="radio" name="type" value="1")
+                                    span Стратег
+                            .home-form__form-checkbox
+                                label
+                                    input(type="radio" name="type" value="1")
+                                    span Motion-дизайнер
+                            .home-form__form-checkbox
+                                label
+                                    input(type="radio" name="type" value="1")
+                                    span Копирайтер
+
+                        textarea.home-form__form-text(name="text" placeholder="Опишите задачу и укажите контактные данные")
+
+                        button.home-form__form-btn(type="submit")
+                            span Отправить
+                            img(src="img/main/send.svg" alt="sent")
+
+                        .home-form__form-info Нажимая на кнопку, вы соглашаетесь <br>с политикой обработки персональных данных
+
+
+                .home-form__rigth
+                    img(src="img/main/main-form.png" alt="")
+
+
+
