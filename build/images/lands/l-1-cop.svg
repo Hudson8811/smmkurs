@@ -1,1 +1,33 @@
-<svg width="1920" height="1394" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".25" fill="#fff"><path d="M23.703 0h-1.807v1484h1.807V0zm134.813 0h-1.807v1484h1.807V0zm134.812 0h-1.806v1484h1.806V0zm134.84 0h-1.807v1484h1.807V0zm134.813 0h-1.807v1484h1.807V0zm134.813 0h-1.807v1484h1.807V0zm134.81 0h-1.807v1484h1.807V0zm134.813 0h-1.807v1484h1.807V0zm134.813 0h-1.81v1484h1.81V0zm134.81 0h-1.8v1484h1.8V0zm134.82 0h-1.81v1484h1.81V0zm134.81 0h-1.81v1484h1.81V0zm134.81 0h-1.81v1484h1.81V0zm134.81 0h-1.8v1484h1.8V0zm134.81 0h-1.8v1484h1.8V0z" opacity=".25"/><path d="M2045 133.992H-112v1.808h2157v-1.808zm0 134.909H-112v1.809h2157v-1.809zm0 134.91H-112v1.808h2157v-1.808zm0 134.936H-112v1.808h2157v-1.808zm0 134.908H-112v1.808h2157v-1.808zm0 134.909H-112v1.808h2157v-1.808zm0 134.91H-112v1.808h2157v-1.808zm0 134.906H-112v1.81h2157v-1.81zm0 134.91H-112v1.81h2157v-1.81zm0 134.91H-112v1.81h2157v-1.81z" opacity=".25"/></g></svg>
+<svg width="1920" height="1394" viewBox="0 0 1920 1394" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.25">
+<g opacity="0.25">
+<path d="M23.703 0H21.8961V1484H23.703V0Z" fill="white"/>
+<path d="M158.516 0H156.709V1484H158.516V0Z" fill="white"/>
+<path d="M293.328 0H291.522V1484H293.328V0Z" fill="white"/>
+<path d="M428.168 0H426.361V1484H428.168V0Z" fill="white"/>
+<path d="M562.981 0H561.174V1484H562.981V0Z" fill="white"/>
+<path d="M697.794 0H695.987V1484H697.794V0Z" fill="white"/>
+<path d="M832.604 0H830.797V1484H832.604V0Z" fill="white"/>
+<path d="M967.417 0H965.61V1484H967.417V0Z" fill="white"/>
+<path d="M1102.23 0H1100.42V1484H1102.23V0Z" fill="white"/>
+<path d="M1237.04 0H1235.24V1484H1237.04V0Z" fill="white"/>
+<path d="M1371.86 0H1370.05V1484H1371.86V0Z" fill="white"/>
+<path d="M1506.67 0H1504.86V1484H1506.67V0Z" fill="white"/>
+<path d="M1641.48 0H1639.67V1484H1641.48V0Z" fill="white"/>
+<path d="M1776.29 0H1774.49V1484H1776.29V0Z" fill="white"/>
+<path d="M1911.1 0H1909.3V1484H1911.1V0Z" fill="white"/>
+</g>
+<g opacity="0.25">
+<path d="M2045 133.992H-112V135.8H2045V133.992Z" fill="white"/>
+<path d="M2045 268.901H-112V270.71H2045V268.901Z" fill="white"/>
+<path d="M2045 403.811H-112V405.619H2045V403.811Z" fill="white"/>
+<path d="M2045 538.747H-112V540.555H2045V538.747Z" fill="white"/>
+<path d="M2045 673.655H-112V675.463H2045V673.655Z" fill="white"/>
+<path d="M2045 808.564H-112V810.372H2045V808.564Z" fill="white"/>
+<path d="M2045 943.474H-112V945.282H2045V943.474Z" fill="white"/>
+<path d="M2045 1078.38H-112V1080.19H2045V1078.38Z" fill="white"/>
+<path d="M2045 1213.29H-112V1215.1H2045V1213.29Z" fill="white"/>
+<path d="M2045 1348.2H-112V1350.01H2045V1348.2Z" fill="white"/>
+</g>
+</g>
+</svg>

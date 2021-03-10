@@ -1,0 +1,181 @@
+@media (max-width: 1600px) {
+	.brand-is-need {
+        &__decor-wrapper {
+            position: absolute;
+            overflow: hidden;
+            z-index: 0;
+            top: 20vw;
+            left: -10px;
+        }
+        &__card {
+            font-size: 36px;
+        }
+    }
+}
+@media (max-width: 1400px) {
+	.brand-is-need {
+        &__card {
+            font-size: 32px;
+            line-height: 100%;
+            &-question {
+                border: 2px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 55px;
+                color: #fff;
+                &-one {
+                    padding: 54px 60px 60px;
+                    max-width: 450px;
+                    margin-right: 404px;
+                }
+                &-two {
+                    margin-right: 230px;
+                    max-width: 450px;
+                    padding: 51px 52px 63px;
+                }
+                &-three {
+                    padding: 48px 55px 48px 55px;
+                    max-width: 498px;
+                    margin-top: 14px;
+                }
+            }
+            
+            &-answer {
+                background: #FFFFFF;
+                border-radius: 55px;
+                &-one {
+                    padding: 62px 83px;
+                    max-width: 500px;
+                }
+                &-two {
+                    max-width: 390px;
+                    padding: 67px 67px 67px 62px;
+                    margin-right: 0px;
+                }
+                &-three {
+                    padding: 65px 74px;
+                    max-width: 283px;
+                    margin-right: 39px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1200px) {
+    .brand-is-need {
+        padding-top: 150px;
+        &__decor-wrapper {
+           display: none;
+        }
+        &__card {
+            &-question {
+                border: 2px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 55px;
+                color: #fff;
+                &-one {
+                    padding: 54px 60px 60px;
+                    max-width: 667px;
+                    margin-right: 404px;
+                }
+                &-two {
+                    margin-right: 303px;
+                    max-width: 551px;
+                    padding: 51px 52px 63px;
+                }
+                &-three {
+                    padding: 55px 76px 55px 55px;
+                    max-width: 640px;
+                    margin-top: 14px;
+                }
+            }
+            
+            &-answer {
+                background: #FFFFFF;
+                border-radius: 55px;
+                &-one {
+                    padding: 62px 83px;
+                    max-width: 600px;
+                }
+                &-two {
+                    max-width: 527px;
+                    padding: 67px 76px 87px 62px;
+                    margin-right: 36px;
+                }
+                &-three {
+                    padding: 65px 74px;
+                    max-width: 283px;
+                    margin-right: 39px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:375px) {
+    .brand-is-need {
+        padding-top: 9px;
+        &__container {
+            max-width: calc(100% - 26px * 2)
+        }
+        &__row {
+            display: flex;
+            align-items: flex-end;
+            &:not(:last-child) {
+                flex-direction: column;
+            }
+            &:last-child {
+                margin-top: 36px;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: column;
+            }
+            &:first-child {
+                margin-bottom: 48px;
+            }
+        }
+        &__card {
+            font-size: 28px;
+            box-sizing: border-box;
+            &-question {
+                border: 2px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 55px;
+                color: #fff;
+                &-one {
+                    padding: 53px 40px 47px;
+                    max-width: 100%;
+                    margin-right: 0px;
+                }
+                &-two {
+                    margin-right: 0px;
+                    max-width: 551px;
+                    padding: 46px 40px 54px;
+                }
+                &-three {
+                    padding: 44px 44px 61px 39px;
+                    margin-top: 14px;
+                }
+            }
+            
+            &-answer {
+                background: #FFFFFF;
+                border-radius: 55px;
+                &-one {
+                    padding: 57px 40px 85px;
+                    max-width: 600px;
+                }
+                &-two {
+                    max-width: 527px;
+                    padding: 57px 38px 63px 40px;
+                    margin-right: 0px;
+                }
+                &-three {
+                    box-sizing: border-box;
+                    padding: 56px 42px 56px 42px;
+                    width: 100%;
+                    max-width: 100%;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}

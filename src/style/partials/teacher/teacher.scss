@@ -118,3 +118,47 @@
 
     padding-bottom: 216px;
 }
+
+.teacher--brand {
+	.teacher__wrapper {
+		background: #000;
+	}
+	.teacher__title{
+		color: #fff;
+	}
+	.teacher__teacher-wrapper {
+		margin-top: 62px;
+	}
+	.teacher__teacher-name {
+		color: #fff;
+
+	}
+	.teacher__teacher-info {
+		color: #fff;
+	}
+	.teacher__img {
+		left: 151px;
+		top: 119px;
+		&-wrapper {
+			max-width: 662px;
+			margin-right: 197px;
+			&::before {
+				content: '';
+				display: block;
+				padding-top: 753/662 * 100%;
+			}
+		}
+	}
+}
+
+.teacher__content-reverse {
+	flex-direction: row-reverse;
+	.teacher__img-wrapper {
+		margin-right: 0;
+		margin-left: 187px;
+	}
+	.teacher__img {
+		top: 120px;
+    	left: -145px;
+	}
+}

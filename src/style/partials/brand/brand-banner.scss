@@ -1,0 +1,222 @@
+.brand-banner {
+    padding-top: 330px;
+    padding-bottom: 255px;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    &__decor-wrapper {
+        position: absolute;
+        right: 33.3vw;
+        top: 9.5vw;
+        overflow: hidden;
+        width: 28vw;
+        height: 43vw;
+        z-index: 2;
+    }
+    &__decor {
+        top: -2px;
+        left: -2px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        &-mobile {
+            display: none;
+        }
+    }
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+        z-index: 3;
+    }
+    
+    &__content {
+        width: 100%;
+    }
+    
+    &__logo {
+        display: none;
+        width: 64px;
+        height: 64px;
+        margin-bottom: 122px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-family: ALS Hauss;
+        font-size: 41px;
+        line-height: 125.8%;
+        margin-bottom: 27px;
+        position: relative;
+    }
+    
+    &__subtitle {
+        font-family: ALS Hauss;
+        font-size: 113px;
+        line-height: 100%;
+        margin-bottom: 71px;
+        margin-right: 40px;
+        position: relative;
+        max-width: 350px;
+    }
+    
+    &__link {
+        font-size: 32px;
+        line-height: 125.8%;
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        background: #FF4E00;
+        border-radius: 18px; 
+        padding: 35px 82px;
+        cursor: pointer;
+        transition-duration: .2s;
+        &:hover {
+            background: #d03e00
+        }
+    }
+    &__video-preview {
+        margin-top: 46px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__video-wrapper {
+        margin-bottom: 41px;
+    }
+    &__video {
+        
+    }
+    &__video-desc {
+        font-size: 32px;
+        line-height: 100%;
+        span {
+            font-weight: 500;
+        }
+    }
+    &__kurs-info {
+        display: none;
+        align-items: center;
+        flex: 0 0 auto;
+        cursor: pointer;
+        margin-bottom: 84px;
+        padding-left: 6px;
+    }
+    
+    &__play {
+        margin-right: 28px;
+    }
+    
+    &__play-text {
+        font-size: 32px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FEA430;
+        & bold {
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+	#popup-video.hide .fancybox-button {
+		width: 45px !important;
+		height: 45px !important;
+	}
+}
+
+#popup-video .fancybox-button.fancybox-close-small svg {
+	display: none;
+}
+
+#popup-video .fancybox-button.fancybox-close-small:hover::after {
+	opacity: .5;
+}
+
+#popup-video .fancybox-button.fancybox-close-small::after {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	display: block;
+	opacity: 1;
+	background: url(https://smmagnat.ru/assets/template/img/cross-w.svg) no-repeat center center;
+	background-size: contain;
+	content: '';
+}
+
+#popup-video.hide {
+	color: #fff;
+	background: 0 0;
+}
+
+#popup-video.hide .fancybox-button {
+	right: 0;
+}
+
+#popup-video.hide .prop-blck {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#popup-video.hide .prop-blck::before {
+	content: '';
+	display: block;
+	background: red;
+}
+
+#popup-video.hide .prop-blck video {
+	max-width: 1000px;
+	max-height: calc(100vh - 200px);
+	//width: 100%;
+	width: auto;
+}
+
+#popup-video.hide .prop-blck .logo {
+	width: 242px;
+	display: block;
+	height: 25px;
+	background: url("../images/smmagnat_team.svg") center center no-repeat;
+	background-size: contain;
+	margin-top: 30px;
+}
+
+@media screen and (max-width:768px) {
+	#popup-video .fancybox-button.fancybox-close-small::after {
+		display: none;
+	}
+
+	#popup-video .fancybox-button.fancybox-close-small svg {
+		display: block;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.fancybox-content#popup-video {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}

@@ -48,7 +48,32 @@
 			font-size: 24px;
 			margin-bottom: 62px;
 		}
-
+	}
+	.teacher--brand {
+		.teacher__img {
+			left: 70px;
+			top: 50px;
+			&-wrapper {
+				max-width: 662px;
+				margin-right: 197px;
+				&::before {
+					content: '';
+					display: block;
+					padding-top: 753/662 * 100%;
+				}
+			}
+		}
+	}
+	.teacher__content-reverse {
+		flex-direction: row-reverse;
+		.teacher__img-wrapper {
+			margin-right: 0;
+			margin-left: 187px;
+		}
+		.teacher__img {
+			top: 50px;
+			left: -70px;
+		}
 	}
 }
 
@@ -103,6 +128,32 @@
 			margin-bottom: 32px;
 		}
 
+	}
+	.teacher--brand {
+		.teacher__img {
+			left: 30px;
+			top: 20px;
+			&-wrapper {
+				max-width: 662px;
+				margin-right: 60px;
+				&::before {
+					content: '';
+					display: block;
+					padding-top: 753/662 * 100%;
+				}
+			}
+		}
+	}
+	.teacher__content-reverse {
+		flex-direction: row-reverse;
+		.teacher__img-wrapper {
+			margin-right: 0;
+			margin-left: 60px;
+		}
+		.teacher__img {
+			top: 20px;
+			left: -30px;
+		}
 	}
 }
 
@@ -174,5 +225,13 @@
 	.teacher--motion{
 
 		padding-bottom: vw(117);
+	}
+	.teacher--brand {
+		.teacher__content {
+			flex-direction: column-reverse;
+		}
+	}
+	.teacher__content-reverse {
+		
 	}
 }

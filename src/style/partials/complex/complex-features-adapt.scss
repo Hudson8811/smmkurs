@@ -10,6 +10,11 @@
                 margin-bottom: 170px;
             }
         }
+        &__decor {
+            position: absolute;
+            top: -36.6vw;
+            left: -9vw;
+        }
     }
 }
 @media (max-width: 1400px) {
@@ -36,13 +41,7 @@
     .complex-features {
         padding-top: 15px;
         padding-bottom: 50px;
-        &__line {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            transform: translateY(60%);
-            width: 100%;
-        }
+      
         &__text {
             font-weight: 350;
             font-size: 20px;
@@ -52,9 +51,15 @@
             &-desctop {
                 display: none;
             }
-            &-mob {
+            &-mobile {
                 display: block;
             }
+        }
+        &__decor {
+            position: absolute;
+            top: -75.6vw;
+            left: -86vw;
+            width: 242vw;
         }
         &__content {
             padding: 0;
@@ -63,57 +68,62 @@
         &__text-one {
             margin-right: 0;
             order: 2;
-            max-width: 294px;
+            max-width: 276px;
             align-self: flex-start;
+            margin-top: 20px;
             span {
                 white-space: normal;
             }
         }
         
         &__img-wrapper-one {
-            max-width: 187px;
-            transform: translateY(-32px);
+            max-width: 332px;
+            transform: translateY(-17px);
             align-self: flex-start;
             order: 1;
             margin-bottom: -14px;
-            margin-left: 0px;
+            margin-left: 65px;
+            img {
+                object-fit: contain;
+            }
             &::before {
                 content: '';
                 display: block;
-                padding-top: 159/187 * 100%;
+                padding-top: 207/332 * 100%;
             }
         }
         &__img-wrapper-two {
-            max-width: 187px;
+            max-width: 329px;
             margin-right: 0px;
             width: 100%;
             align-self: flex-start;
-            margin-bottom: 15px;
+            margin-bottom: 27px;
             margin-right: 0px;
-            margin-left: 0;
+            margin-left: 34px;
             &::before {
                 content: '';
                 display: block;
-                padding-top: 221/190 * 100%;
+                padding-top: 238/329 * 100%;
             }
         }
         &__text-two {
             margin-top: 0px;
             max-width: 277px;
             align-self: flex-start;
+            margin-left: 0;
         }
         &__row {
             display: flex;
             flex-direction: column;
             align-items: center;
             &:nth-child(1) {
-                margin-bottom: 48px;
+                margin-bottom: 15px;
             }
             &:nth-child(2) {
-                margin-bottom: 40px;
+                margin-bottom: 47px;
             }
             &:nth-child(3) {
-                margin-bottom: 56px;
+                margin-bottom: 191px;
             }
             &:nth-child(4) {
                 padding-left: 0;
@@ -130,7 +140,7 @@
             position: relative;
             right: 0;
             align-self: flex-start;
-            margin-left: 0px;
+            margin-left: 9px;
             max-width: 250px;
             width: 100%;
             transform: translateY(0);
@@ -140,20 +150,20 @@
             &::before {
                 content: '';
                 display: block;
-                padding-top: 212/215 * 100%;
+                padding-top: 223/250 * 100%;
             }
         }
         &__text-four{
             max-width: 275px;
            align-self: flex-start;
-           margin-top: 2px;
+           margin-top: -14px;
         }
         &__img-wrapper-four{
             position: relative;
             right: 0;
             align-self: flex-start;
             margin-left: 0px;
-            max-width: 218px;
+            max-width: 320px;
             width: 100%;
             transform: translateY(0);
             order: 0;
@@ -161,7 +171,7 @@
             &::before {
                 content: '';
                 display: block;
-                padding-top: 130/178 * 100%;
+                padding-top: 171/320 * 100%;
             }
         }
     }
