@@ -252,4 +252,32 @@
 		}
 
 	}
+
+	.ylearn-section--smm-strat{
+		/*.ylearn-row-container {
+			overflow: scroll;
+		}*/
+		.ylearn-item--1 .ylearn-item__img {
+			margin-left: vwd(37);
+			margin-top: vwd(12);
+			width: vwd(677);
+			height: auto;
+		}
+		.ylearn-item--3 {
+			padding: vwd(88) vwd(100) vwd(55) vwd(77);
+		}
+		.ylearn-item--4 .ylearn-item__img {
+			margin: 0;
+			position: absolute;
+			width: vwd(769);
+			bottom: vwd(-225);
+			left: vwd(-77);
+		}
+		.ylearn-item--6 .ylearn-item__img {
+			position: absolute;
+			bottom: vwd(-3);
+			left: vwd(124);
+			width: 87%;
+		}
+	}
 }

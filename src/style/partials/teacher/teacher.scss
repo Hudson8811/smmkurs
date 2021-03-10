@@ -114,7 +114,22 @@
 	}
 
 }
-.teacher--motion{
 
-    padding-bottom: 216px;
+.teacher--motion {
+
+	padding-bottom: 216px;
+}
+
+@media screen and (min-width: 1025px){
+	.teacher--smm-strat {
+		padding-bottom: 226px;
+		.teacher__teacher-wrapper {
+			padding-top: 189px;
+			padding-bottom: 40px;
+		}
+		.teacher__teacher-info {
+			min-width: 100%;
+			width: 453px;
+		}
+	}
 }

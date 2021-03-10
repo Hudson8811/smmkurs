@@ -143,6 +143,7 @@
 
 		&__teacher-wrapper {
 			margin-top: 0;
+			max-width: 100%;
 		}
 
 		&__teacher-name {
@@ -153,6 +154,7 @@
 		&__teacher-info {
 			font-size: vw(16);
 			padding-right: vw(10);
+			max-width: 100%;
 		}
 
 		&__teacher-link {

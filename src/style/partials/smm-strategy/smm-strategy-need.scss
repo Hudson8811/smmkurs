@@ -2,7 +2,7 @@
 	position: relative;
 	overflow: hidden;
 	padding-top: 149px;
-	padding-bottom: 231px;
+    padding-bottom: 230px;
 	font-family: ALS Hauss, sans-serif;
 	z-index: 1;
 
@@ -14,7 +14,7 @@
 
 	&__title {
 		max-width: 1300px;
-        margin: 0 auto;
+		margin: 0 auto;
 		margin-bottom: 235px;
 		color: #000000;
 		font-size: 113px;
@@ -22,7 +22,7 @@
 		font-style: normal;
 		line-height: 100%;
 		z-index: 3;
-        text-align: center;
+		text-align: center;
 	}
 
 
@@ -31,7 +31,7 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		padding: 155px 35px 135px;
+		padding: 155px 35px 162px;
 		border-radius: 80px;
 		background: #181725;
 	}
@@ -39,7 +39,8 @@
 	/*495
 	17*/
 	&__inner {
-		width: 1390px;
+		width: 1375px;
+		max-width: 100%;
 	}
 
 	&__decor {
@@ -48,8 +49,8 @@
 		left: 50%;
 		display: flex;
 		align-items: center;
-		margin-top: -4px;
-		margin-left: 8px;
+		margin-top: -3px;
+		margin-left: 18px;
 		padding: 39px 76px;
 		transform: rotate(-10.51deg) translate(-50%, -75%);
 		text-align: center;
@@ -73,19 +74,22 @@
 	}
 
 	&__card {
-		width: 433px;
-		margin-bottom: 102px;
+		width: 419px;
+		margin-bottom: 73px;
+
 		&:nth-child(4) {
-			margin-left: 218px;
+			margin-left: 221px;
 		}
-        &:nth-child(5) {
+
+		&:nth-child(5) {
 			margin-right: auto;
-            margin-left: 47px;
+			margin-left: 60px;
 		}
 	}
 
 	&__card-img {
 		height: 353px;
+
 		img {
 			width: auto;
 			height: auto;
@@ -101,13 +105,14 @@
 		font-weight: 500;
 		font-style: normal;
 		line-height: 125.8%;
-        &-xl {
-            font-size: 41px;
-        }
+
+		&-xl {
+			font-size: 41px;
+		}
 	}
 
 	&__card-desc {
-        max-width: 400px;
+		max-width: 378px;
 		margin-top: 35px;
 		font-size: 24px;
 		font-weight: 350;

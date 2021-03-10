@@ -168,7 +168,7 @@
 
 .copywriting-work--motion {
 	padding-top: 195px;
-    padding-bottom: 158px;
+	padding-bottom: 158px;
 
 	.copywriting-work__row {
 		justify-content: space-between;
@@ -188,4 +188,27 @@
 	width: 888px;
 }
 
-.container {}
+.copywriting-work--smm-strat {
+	padding-top: 266px;
+    padding-bottom: 96px;
+
+	.copywriting-work__card-desc {
+		width: 893px;
+	}
+	.copywriting-work__row {
+		justify-content: space-between;
+	}
+	.copywriting-work__card-md-bottom {
+		padding: 55px 20px 64px;
+	}
+}
+
+.copywriting-work__card-md-one--smm-strat {
+
+	padding: 109px 0 89px;
+
+	.copywriting-work__card-text {
+		margin-bottom: 26px;
+	}
+
+}

@@ -128,8 +128,12 @@
 	}
 
 	.cwprog-card-types {
+		&:first-child {
+			margin-top: vw(-15);
+		}
+
 		margin-top: vw(41);
-		padding-left: vw(9);
+		padding-left: 0;
 	}
 
 
@@ -278,6 +282,22 @@
 			width: vw(164);
 			margin-bottom: vw(12);
 		}
+	}
+	.cwprog-card-gift {
+		position: absolute;
+		right: vw(58);
+		bottom: auto;
+		top: vw(47);
+		z-index: 1;
+		width: vw(77);
+	}
+	.copywriting-programm--smm-strat {
+		.cwprog-card-title {
+			width: vw(184);
+			max-width: 100%;
+		}
+
+
 	}
 
 	/*
