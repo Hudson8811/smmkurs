@@ -202,4 +202,27 @@
 
 	}
 
+
+	.ylearn-section--express-smm {
+
+		.ylearn-item--1 .ylearn-item__img {
+			margin-left: vw(-2);
+			margin-top: vw(4);
+			width: vw(165);
+			height: auto;
+			margin-bottom: vw(10);
+			position: static;
+			right: auto;
+			align-self: flex-start;
+		}
+
+		.ylearn-item--6 .ylearn-item__img {
+			position: absolute;
+			bottom: 0;
+			left: auto;
+			right: 0;
+			width: 74%;
+		}
+	}
+
 }

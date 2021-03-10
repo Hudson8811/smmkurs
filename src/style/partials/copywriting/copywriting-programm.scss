@@ -69,13 +69,30 @@
 				max-width: 100%;
 			}
 
-			.copywriting-programm__content{
+			.copywriting-programm__content {
 				padding-bottom: 155px;
 			}
 
-			.cwprog-card:last-child .cwprog-card-part-name{
+			.cwprog-card:last-child .cwprog-card-part-name {
 				margin-top: 105px !important;
 				margin-bottom: 10px !important;
+			}
+		}
+	}
+
+	&--expres-smm {
+		@media screen and (min-width:1025px) {
+			padding-top: 142px;
+			.copywriting-programm__content{
+				padding-bottom: 135px;
+			}
+			.cwprog-card {
+
+				padding-bottom: 86px !important;
+
+				.cwprog-card-part-name {
+					margin-bottom: 0 !important;
+				}
 			}
 		}
 	}
