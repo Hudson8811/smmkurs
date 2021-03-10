@@ -176,13 +176,21 @@
 			padding-top: vw(54);
 			order: 0;
 			border-radius: vw(32);
+			&_mb {
+				margin-bottom: vw(24);
+			}
 		}
 
 		&__title {
 			font-size: vw(36);
 			margin-bottom: vw(39);
+			&_mob {
+				display: block;
+			}
 		}
-
+		.content-reverse .teacher__teacher-wrapper {
+			margin-top: 0;
+		}
 		&__img-wrapper {
 			margin-right: 0;
 			order: 1;

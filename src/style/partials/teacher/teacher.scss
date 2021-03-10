@@ -157,7 +157,6 @@
 	}
 }
 .teacher--motion {
-
 	padding-bottom: 216px;
 }
 
@@ -173,4 +172,34 @@
 			width: 453px;
 		}
 	}
+}
+
+.content-reverse {
+	flex-direction: row-reverse;
+	.teacher__img-wrapper {
+		margin-right: 166px;
+		margin-left: 14px;
+		@media (max-width: 1400px) {
+			margin-right: 0px;
+		}
+	}
+	.teacher__teacher-wrapper {
+		margin-top: -81px;
+	}
+}
+.teacher__wrapper_pt0 {
+	padding-top: 0;
+}
+.teacher__wrapper_mb {
+	margin-bottom: 59px;
+	@media (max-width: 1024px) {
+		margin-bottom: vw(24);
+	}
+}
+
+.teacher__express-smm {
+	padding-bottom: 179px;
+}
+.teacher__title_mob {
+	display: none;
 }
