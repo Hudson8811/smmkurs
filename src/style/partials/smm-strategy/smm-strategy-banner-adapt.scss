@@ -1,5 +1,5 @@
 @media (max-width: 1600px) {
-    .smm-strategy-banner { 
+    .smm-strategy-banner {
         &__logo {
             margin-bottom: 90px;
         }
@@ -14,7 +14,7 @@
     }
 }
 @media (max-width: 1400px) {
-    .smm-strategy-banner { 
+    .smm-strategy-banner {
         &__decor-wrapper {
             position: absolute;
             overflow: hidden;
@@ -40,7 +40,7 @@
     }
 }
 @media (max-width: 1200px) {
-    .smm-strategy-banner { 
+    .smm-strategy-banner {
         &__title-decor {
             position: absolute;
             top: -1vw;
@@ -67,14 +67,14 @@
         }
     }
 }
-@media (max-width:375px) {
+@media (max-width:1024px) {
     .smm-strategy-banner {
-        padding-top: 96px;
-        padding-bottom: 93px;
+        padding-top: vw(96);
+        padding-bottom: vw(93);
         &__logo {
-            width: 32px;
-            height: 32px;
-            margin-bottom: 92px;
+            width: vw(32);
+            height: vw(32);
+            margin-bottom: vw(92);
         }
         &__decor-wrapper {
             position: absolute;
@@ -99,34 +99,38 @@
         }
         &__title {
             display: block;
-            font-size: 18px;
-            margin-bottom: 15px;
+            font-size: vw(18);
+            margin-bottom: vw(15);
         }
         &__subtitle {
             font-family: ALS Hauss;
-            font-size: 36px;
+            font-size: vw(36);
             line-height: 100%;
-            margin-bottom: 53px;
-            margin-right: 40px;
+            margin-bottom: vw(53);
+            margin-right: 0;
             position: relative;
         }
         &__link {
-            font-size: 18px;
-            padding: 16px 59px;
+            font-size: vw(18);
+            padding: vw(16) vw(59);
         }
         &__play {
-            width: 14px;
-            height: 14px;
-            margin-right: 6px;
+            width: vw(14);
+            height: vw(14);
+            margin-right: vw(6);
         }
         &__kurs-info {
-            margin-bottom: 53px;
+            margin-bottom: vw(53);
             padding-left: 0;
-            letter-spacing: -0.4px;
+            letter-spacing: vw(-0.4);
         }
         &__play-text {
-            font-size: 18px;
-          
+            font-size: vw(18);
+
         }
+    }
+    .teacher--smm-strat {
+
+    padding-bottom: vw(115);
     }
 }

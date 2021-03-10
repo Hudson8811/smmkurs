@@ -1,25 +1,28 @@
 extends layouts/lands
 
 block vars
-    -
-        const page = {
-            title: 'index.html'
-        };
+	-
+		const page = {
+			title: 'index.html'
+		};
 
 block main
-    include partials/express-smm/express-smm-banner
-    include partials/express-smm/express-smm-need
-    include partials/express-smm/express-smm-features
-    //- include partials/smm-strategy/smm-strategy-potential
-
-    //- include partials/motion/motion-info
+	include partials/express-smm/express-smm-banner
+	include partials/express-smm/express-smm-need
+	include partials/express-smm/express-smm-features
+	include partials/express-smm/express-smm-program
 
 
-    //- include partials/teacher/teacher-smm
-    //- include partials/vacancies/vacancies
-    //- include partials/motion/motion-components
 
-    //- include partials/questions/questions
-    //- include partials/feedback/feedback
-    //- include partials/_footer-light
 
+	include partials/express-smm/express-smm-work
+	include partials/copywriting/cop-feedback
+	include partials/teacher/teacher-smm
+	include partials/vacancies/vacancies
+	include partials/express-smm/express-smm-ylearn.pug
+
+	include partials/copywriting/cop-payment.pug
+	include partials/questions/motion-questions
+	include partials/feedback/feedback
+	include partials/copywriting/other-courses.pug
+	include partials/_footer-light
