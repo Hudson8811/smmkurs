@@ -20,7 +20,7 @@
 @media screen and (max-width: 1024px) {
 	.context-need {
 		overflow: hidden;
-		padding-top: 26vw;
+		padding-top: 16vw;
 		padding-bottom: vw(78);
 		&::after{
 			display: none;
@@ -37,7 +37,7 @@
 			line-height: 100%;
 			letter-spacing: vw(0);
 			letter-spacing: vw(-0.2);
-			margin-bottom: vw(84);
+			margin-bottom: vw(74);
 		}
 
 		&__decor {
@@ -66,7 +66,7 @@
 
 		&__content {
 			border-radius: vw(40);
-			padding: vw(74) vw(10) vw(80);
+			padding: vw(100) vw(10) vw(113);
 		}
 	}
 
@@ -78,20 +78,30 @@
 
 	.context-need__card {
 		&:nth-child(1) {
-			margin-bottom: vw(25);
+			margin-bottom: vw(66);
+			// margin-right: -1px;
+			.context-need__card-title {
+				margin-top: vw(8);
+			}
 			.context-need__card-img {
+				height: vw(160);
+				margin-right: vw(-11);
 				img {
-					width: vw(176);
-					height: vw(142);
+					width: vw(220);
+					height: vw(170);
 				}
+				
 			}
 		}
 		&:nth-child(2) {
-			margin-bottom: vw(45);
-
+			margin-bottom: vw(36);
+			.context-need__card-title {
+				margin-top: vw(-10);
+			}
 			.context-need__card-img {
+				height: vw(160);
 				img {
-					width: vw(163);
+					width: vw(190);
 					height: vw(132);
 				}
 			}
@@ -99,18 +109,15 @@
 		&:nth-child(3) {
 			margin-bottom: vw(54);
 			.context-need__card-title {
-				margin-top: vw(24);
+				margin-top: vw(8);
 			}
-		}
-		&:nth-child(4) {
 			.context-need__card-title {
-				margin-top: vw(24);
+				font-size: vw(18);
+				white-space: nowrap;
 			}
 		}
 		&-img {
-
-			height: vw(150);
-
+			height: vw(170);
 		}
 
 		&-title {

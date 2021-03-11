@@ -219,3 +219,58 @@
 .teacher__title_mob {
 	display: none;
 }
+
+.context-teacher {
+	padding-bottom: 180px;
+
+	.teacher__wrapper {
+		padding-bottom: 113px;
+		@media (max-width: 1024px) {
+			padding-bottom: vw(0);
+			border-bottom-left-radius: 24px;
+			border-bottom-right-radius: 24px;
+		}
+	}
+	.teacher__teacher-wrapper {
+		margin-top: -23px;
+	}
+	.teacher__title {
+		margin-bottom: 106px;
+		@media (max-width: 1024px) {
+			margin-bottom: vw(62);
+		}
+	}
+	.teacher__img-wrapper {
+		max-width: 632px;
+		margin-right: 88px;
+		margin-left: 73px;
+		@media (max-width: 1200px) {
+			margin-right: 44px;
+			margin-left: 0px;
+		}
+		@media (max-width: 1024px) {
+			margin: 0 vw(-20);
+			width: vw(321.5);
+			height: auto;
+			max-width: vw(321.5);
+		
+		}
+		img {
+			@media (max-width: 1024px) {
+				border-bottom-left-radius: 24px;
+				border-bottom-right-radius: 24px;
+			}
+		}
+		&::before {
+			content: '';
+			display: block;
+			padding-top: 320/322 * 100%;
+		}
+	}
+	.teacher__img {
+		left: 0;
+	}
+	.teacher__teacher-link {
+		margin-bottom: vw(46);
+	}
+}
