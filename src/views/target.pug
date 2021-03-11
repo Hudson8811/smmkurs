@@ -1,25 +1,25 @@
 extends layouts/lands
 
 block vars
-    -
-        const page = {
-            title: 'index.html'
-        };
+	-
+		const page = {
+			title: 'index.html'
+		};
 
 block main
-    include partials/target/target-banner
-    include partials/target/target-need
-    include partials/target/target-features
-    //- include partials/smm-strategy/smm-strategy-potential
+	include partials/target/target-banner
+	include partials/target/target-need
+	include partials/target/target-features
+	include partials/target/target-program
 
-    //- include partials/motion/motion-info
+	include partials/copywriting/cop-feedback
+	include partials/target/target-work
+	include partials/teacher/teacher-target
+	include partials/vacancies/vacancies
+	include partials/target/ylearn.pug
 
-
-    //- include partials/teacher/teacher-smm
-    //- include partials/vacancies/vacancies
-    //- include partials/motion/motion-components
-
-    include partials/questions/target-questions
-    //- include partials/feedback/feedback
-    //- include partials/_footer-light
-
+	include partials/copywriting/cop-payment.pug
+	include partials/questions/target-questions
+	include partials/feedback/feedback
+	include partials/copywriting/other-courses.pug
+	include partials/_footer-light
