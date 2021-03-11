@@ -116,17 +116,78 @@
 					margin-bottom: 0 !important;
 				}
 			}
-			.cwprog-text{
+
+			.cwprog-text {
 				width: 524px;
 				max-width: 100%;
 
 			}
+
 			.cwprog-card:last-child {
 				min-height: 427px;
 			}
 		}
 
 	}
+
+
+	&--complex {
+		@media screen and (min-width:1025px) {
+			padding-top: 150px;
+			padding-bottom: 120px;
+
+			.copywriting-programm__content {
+				padding-bottom: 166px;
+			}
+
+			.cwprog-card {
+
+				padding-bottom: 86px !important;
+
+				.cwprog-card-part-name {
+					margin-bottom: 0 !important;
+				}
+			}
+
+		}
+	}
+	&--brand{
+
+		@media screen and (min-width:1025px) {
+			position: relative;
+			z-index: 9;
+			padding-top: 157px;
+			padding-bottom: 120px;
+
+			.copywriting-programm__content {
+				padding-bottom: 179px;
+			}
+
+			.cwprog-card {
+
+				padding-bottom: 116px !important;
+
+				.cwprog-card-part-name {
+					margin-bottom: 0 !important;
+				}
+			}
+
+		}
+	}
+}
+
+.cwprog-bottom-attention {
+
+	font-size: 18px;
+	line-height: 125.8%;
+	/* or 23px */
+    width: 300px;
+	max-width: 100%;
+    margin-top: 17px;
+
+
+	color: #FF4E00;
+
 }
 
 .cwprog-card-btn--smm-strat {

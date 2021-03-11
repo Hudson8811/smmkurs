@@ -49,13 +49,16 @@
 			margin-bottom: 62px;
 		}
 	}
+
 	.teacher--brand {
 		.teacher__img {
 			left: 70px;
 			top: 50px;
+
 			&-wrapper {
 				max-width: 662px;
 				margin-right: 197px;
+
 				&::before {
 					content: '';
 					display: block;
@@ -64,12 +67,15 @@
 			}
 		}
 	}
+
 	.teacher__content-reverse {
 		flex-direction: row-reverse;
+
 		.teacher__img-wrapper {
 			margin-right: 0;
 			margin-left: 187px;
 		}
+
 		.teacher__img {
 			top: 50px;
 			left: -70px;
@@ -129,13 +135,16 @@
 		}
 
 	}
+
 	.teacher--brand {
 		.teacher__img {
 			left: 30px;
 			top: 20px;
+
 			&-wrapper {
 				max-width: 662px;
 				margin-right: 60px;
+
 				&::before {
 					content: '';
 					display: block;
@@ -144,12 +153,15 @@
 			}
 		}
 	}
+
 	.teacher__content-reverse {
 		flex-direction: row-reverse;
+
 		.teacher__img-wrapper {
 			margin-right: 0;
 			margin-left: 60px;
 		}
+
 		.teacher__img {
 			top: 20px;
 			left: -30px;
@@ -176,6 +188,7 @@
 			padding-top: vw(54);
 			order: 0;
 			border-radius: vw(32);
+
 			&_mb {
 				margin-bottom: vw(24);
 			}
@@ -184,13 +197,16 @@
 		&__title {
 			font-size: vw(36);
 			margin-bottom: vw(39);
+
 			&_mob {
 				display: block;
 			}
 		}
+
 		.content-reverse .teacher__teacher-wrapper {
 			margin-top: 0;
 		}
+
 		&__img-wrapper {
 			margin-right: 0;
 			order: 1;
@@ -232,25 +248,63 @@
 		}
 	}
 
-	.teacher--motion{
+	.teacher--motion {
 
 		padding-bottom: vw(117);
 	}
-	.teacher--brand {
-		.teacher__content {
-			flex-direction: column-reverse;
-		}
-	}
-	.teacher__content-reverse {
 
-	}
+
+	.teacher__content-reverse {}
 
 
 	.teacher__express-smm {
 		padding-bottom: vw(121);
 	}
-	.teacher--target{
+
+	.teacher--target {
 		padding-bottom: vw(113);
 
+	}
+
+	.teacher--brand {
+		padding-top: vw(83);
+		padding-bottom: vw(6);
+
+		.teacher__wrapper {
+			padding-top: 0;
+		}
+
+		.teacher__content {
+			flex-direction: column-reverse;
+		}
+
+		.teacher__wrapper {
+			background: #000;
+		}
+
+		.teacher__img-wrapper {
+			margin-left: vw(-48);
+			margin-right: 0;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		.teacher__img {
+			position: static;
+			left: auto;
+			right: auto;
+			width: vw(318);
+			top: vw(41);
+		}
+
+		.teacher__teacher-wrapper {
+			margin-top: vw(39);
+		}
+
+		.teacher__content+.teacher__content {
+			margin-top: vw(53);
+		}
 	}
 }

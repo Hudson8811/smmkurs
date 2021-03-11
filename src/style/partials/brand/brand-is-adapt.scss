@@ -1,100 +1,121 @@
 @media (max-width: 1500px) {
 	.brand-is {
-        &__title {
-            font-size: 76px;
-            line-height: 130%;
-        }
-        
-        &__inner-title {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        &__inner-desc {
-            font-size: 24px;
-            line-height: 125%;
-        }
-    }
+		&__title {
+			font-size: 76px;
+			line-height: 130%;
+		}
+
+		&__inner-title {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		&__inner-desc {
+			font-size: 24px;
+			line-height: 125%;
+		}
+	}
 }
+
 @media (max-width: 1350px) {
 	.brand-is {
-        &__inner-title {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        &__inner-desc {
-            font-size: 22px;
-            line-height: 125%;
-        }
-        &__inner {
-            &-xl {
-                padding: 58px 55px 58px;
-                width: 1034/1571 * 100%;
-                border-radius: 32px;
-                margin-right: 40px;
-            }
-            &-md {
-                padding: 80px 88px 95px;
-                width: 766/1571 * 100%;
-                &:not(:last-child) {
-                    margin-right: 40px;
-                }
-            }
-            &-sm {
-                padding: 58px 37px 58px;
-                width: 497/1571 * 100%;
-            }
-        }
-    }
+		&__inner-title {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+
+		&__inner-desc {
+			font-size: 22px;
+			line-height: 125%;
+		}
+
+		&__inner {
+			&-xl {
+				padding: 58px 55px 58px;
+				width: 1034/1571 * 100%;
+				border-radius: 32px;
+				margin-right: 40px;
+			}
+
+			&-md {
+				padding: 80px 88px 95px;
+				width: 766/1571 * 100%;
+
+				&:not(:last-child) {
+					margin-right: 40px;
+				}
+			}
+
+			&-sm {
+				padding: 58px 37px 58px;
+				width: 497/1571 * 100%;
+			}
+		}
+	}
 }
-@media (max-width:375px) {
-    .brand-is {
-        &__container {
-            max-width: calc(100% - 27px * 2);
-        }
-        &__row {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            &:first-child {
-                margin-bottom: 20px;
-            }
-        }
-        &__title {
-            font-size: 36px;
-            line-height: 130%;
-        }
-        &__inner-title {
-            font-size: 24px;
-            margin-bottom: 20px;
-            line-height: 117%;
-        }
-        &__inner-desc {
-            font-size: 18px;
-            line-height: 130%;
-        }
-        &__inner {
-            border-radius: 32px;
-            &-xl {
-                padding: 63px 53px 154px;
-                width: 100%;
-                margin-right: 0px;
-                margin-bottom: 20px;
-            }
-            &-md {
-                padding: 70px 53px 70px;
-                width: 100%;
-                &:not(:last-child) {
-                    margin-right: 0px;
-                    margin-bottom: 20px;
-                }
-                &:last-child {
-                    padding-bottom: 101px;
-                }
-            }
-            &-sm {
-                padding: 69px 53px 79px;
-                width: 100%;
-            }
-        }
-    }
+
+@media (max-width:1024px) {
+	.brand-is {
+		padding-top: vw(109);
+		padding-bottom: vw(92);
+		&__container {
+			max-width: calc(100% - #{vw(27)} * 2);
+		}
+
+		&__row {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+
+			&:first-child {
+				margin-bottom: vw(20);
+			}
+		}
+
+		&__title {
+			font-size: vw(36);
+			line-height: 130%;
+		}
+
+		&__inner-title {
+			font-size: vw(24);
+			margin-bottom: vw(20);
+			line-height: 117%;
+		}
+
+		&__inner-desc {
+			font-size: vw(18);
+			line-height: 130%;
+		}
+
+		&__inner {
+			border-radius: vw(32);
+
+			&-xl {
+				padding: vw(63) vw(53) vw(154);
+				width: 100%;
+				margin-right: vw(0);
+				margin-bottom: vw(20);
+			}
+
+			&-md {
+				padding: vw(70) vw(53) vw(70);
+				width: 100%;
+
+				&:not(:last-child) {
+					margin-right: vw(0);
+					margin-bottom: vw(20);
+				}
+
+				&:last-child {
+					padding-bottom: vw(101);
+				}
+			}
+
+			&-sm {
+				padding: vw(69) vw(53) vw(79);
+				width: 100%;
+			}
+		}
+	}
 }
