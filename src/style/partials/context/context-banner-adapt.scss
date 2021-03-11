@@ -1,0 +1,95 @@
+@media (max-width: 1600px) {
+    .context-banner { 
+        &__logo {
+            margin-bottom: 90px;
+        }
+        &__subtitle {
+            font-size: 90px;
+        }
+        // &__decor-wrapper {
+        //     top: 5.5vw;
+        //     overflow: hidden;
+        //     right: 0vw;
+        //     width: 54vw;
+        //     height: 54vw;
+        // }
+    }
+}
+@media (max-width: 1400px) {
+    .context-banner { 
+        padding-bottom: 150px;
+        &__decor-wrapper {
+            top: 18.5vw;
+            width: 63vw;
+            height: 49vw;
+        }
+        &__logo {
+            margin-bottom: 60px;
+        }
+        &__subtitle {
+            font-size: 64px;
+        }
+        &__link {
+            padding: 20px 50px;
+        }
+        &__row {
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+        }
+    }
+}
+@media (max-width:375px) {
+    .context-banner {
+        padding-top: 96px;
+        padding-bottom: 95px;
+        &__logo {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 125px;
+        }
+        &__decor-wrapper {
+            position: absolute;
+            top: -37vw;
+            overflow: hidden;
+            right: -33vw;
+            width: 134vw;
+            height: 105vw;
+        }
+        &__decor {
+          
+        }
+        &__title {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &__subtitle {
+            font-family: ALS Hauss;
+            font-size: 36px;
+            line-height: 100%;
+            margin-bottom: 20px;
+            margin-right: 0px;
+            position: relative;
+        }
+        &__link {
+            font-size: 18px;
+            padding: 16px 59px;
+        }
+        &__play {
+            width: 14px;
+            height: 14px;
+            margin-right: 6px;
+        }
+        &__kurs-info {
+            margin-bottom: 53px;
+            padding-left: 0;
+            letter-spacing: -0.4px;
+
+        }
+        &__play-text {
+            font-size: 18px;
+          
+        }
+    }
+}

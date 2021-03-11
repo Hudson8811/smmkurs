@@ -1,0 +1,26 @@
+extends layouts/lands
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+block main
+    include partials/context/context-banner
+    include partials/context/context-need
+    include partials/context/context-features
+
+    //- include partials/smm-strategy/smm-strategy-potential
+
+    //- include partials/motion/motion-info
+
+
+    include partials/teacher/context-teacher 
+    include partials/context/context-questions
+    //- include partials/vacancies/vacancies
+    //- include partials/motion/motion-components
+
+    //- include partials/feedback/feedback
+    //- include partials/_footer-light
+
