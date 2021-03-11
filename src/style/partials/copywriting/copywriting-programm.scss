@@ -127,6 +127,46 @@
 		}
 
 	}
+
+	&--context {
+		padding-top: 148px;
+
+		.copywriting-programm__content {
+			padding: 127px 35px 186px;
+		}
+
+		.cwprog-card {
+			padding: 70px 77px 87px 93px;
+
+			&:nth-child(2) {
+				padding-bottom: 86px;
+
+				.cwprog-card-part-name {
+					margin-bottom: 0 !important;
+				}
+			}
+
+			&:nth-child(3) {
+				padding-bottom: 122px;
+			}
+
+			&:nth-child(4) {
+				.cwprog-card-right {
+					padding-top: 0;
+				}
+			}
+		}
+
+		.cwprog-titem-name {
+			&::before {
+				content: '';
+			}
+		}
+
+		.cwprog-card-btn {
+			margin-top: 50px;
+		}
+	}
 }
 
 .cwprog-card-btn--smm-strat {
