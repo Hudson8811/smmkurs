@@ -1,0 +1,100 @@
+.context-advantages {
+	position: relative;
+	padding-bottom: 256px;
+
+	@media (max-width: 1024px) {
+		padding-bottom: 90px;
+	}
+
+	&__container {
+		@media (max-width: 1024px) {
+			max-width: calc(100% - 7.4vw * 2);
+		}
+	}
+
+	&__img {
+		position: absolute;
+
+		&--1 {
+			max-width: 44%;
+			top: -193px;
+			right: 0;
+
+			@media (max-width: 1024px) {
+				position: relative;
+				top: 0;
+				right: -28px;
+			}
+		}
+
+		&--2 {
+			max-width: 19%;
+			top: 32.5%;
+			left: 0;
+
+			@media (max-width: 1024px) {
+				top: 51.3%;
+			}
+		}
+
+		&--3 {
+			max-width: 37%;
+			top: 42.5%;
+			left: 19%;
+
+			@media (max-width: 1024px) {
+				top: 58.3%;
+				left: unset;
+				right: 0;
+			}
+		}
+
+		&--4 {
+			bottom: -148px;
+			left: 0;
+
+			@media (max-width: 1024px) {
+				bottom: 0;
+				left: unset;
+				right: 0;
+			}
+		}
+
+		@media (max-width: 1024px) {
+			max-width: 100%;
+		}
+	}
+
+	&__text {
+		max-width: 55.7%;
+		font-size: 64px;
+		line-height: 80.51px;
+		position: relative;
+
+		@media (max-width: 1300px) {
+			font-size: 54px;
+			line-height: 64px;
+		}
+
+		@media (max-width: 1024px) {
+			max-width: 90%;
+			font-size: vw(20);
+			line-height: vw(24.8);
+			padding-top: 16px;
+		}
+
+		&--right {
+			max-width: 1205px;
+			padding-top: 460px;
+			margin-left: auto;
+			text-align: right;
+
+			@media (max-width: 1024px) {
+				max-width: 75%;
+				text-align: left;
+				margin-left: 0;
+				padding-top: 275px;
+			}
+		}
+	}
+}

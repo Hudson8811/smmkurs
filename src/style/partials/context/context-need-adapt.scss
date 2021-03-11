@@ -20,8 +20,8 @@
 @media screen and (max-width: 1024px) {
 	.context-need {
 		overflow: hidden;
-		padding-top: 16vw;
-		padding-bottom: vw(78);
+		padding-top: 26vw;
+		padding-bottom: vw(66);
 		&::after{
 			display: none;
 		}
@@ -90,7 +90,7 @@
 					width: vw(220);
 					height: vw(170);
 				}
-				
+
 			}
 		}
 		&:nth-child(2) {
