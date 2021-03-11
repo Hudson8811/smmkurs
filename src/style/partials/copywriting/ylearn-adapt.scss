@@ -234,4 +234,17 @@
 
 	}
 
+	.ylearn-section--complex {
+		.ylearn-item--1 .ylearn-item__img {
+			position: absolute;
+			right: vw(0);
+			bottom: vw(0);
+			left: auto;
+			top: auto;
+			-ms-flex-item-align: end;
+			align-self: flex-end;
+			width: 100%;
+		}
+
+	}
 }

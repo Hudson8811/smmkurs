@@ -36,9 +36,10 @@
 			line-height: 100%;
 			letter-spacing: vw(0);
 			letter-spacing: vw(-0.2);
-			margin-bottom: vw(59);
+			margin-bottom: vw(55);
             max-width: vw(278);
             text-align: left;
+			line-height: 1.04;
 		}
 
 		&__decor {
@@ -89,7 +90,7 @@
 			font-size: vw(18);
 			line-height: 1;
 			margin-top: vw(32);
-		
+
 		}
 
 		&-desc {
@@ -98,7 +99,7 @@
 			margin-top: vw(16);
             max-width: vw(195);
 		}
-       
+
 		img {
             width: vw(216);
         }
@@ -112,7 +113,7 @@
                 height: vw(170);
             }
             .complex-need__card-desc {
-                max-width: 188px;
+                max-width: vw(188);
                 margin-top: vw(22);
 
             }
@@ -132,7 +133,7 @@
                 line-height: 125.8%;
                 margin-top: vw(20);
             }
-            
+
             img {
                 width: vw(200);
             }
@@ -151,7 +152,7 @@
             .express-smm-need__card-img {
                 overflow: hidden;
                 height: vw(250);
-                
+
             }
             .complex-need__card-img-desc {
                 display: none;

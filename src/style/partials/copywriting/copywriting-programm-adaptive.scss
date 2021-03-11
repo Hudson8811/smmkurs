@@ -283,6 +283,7 @@
 			margin-bottom: vw(12);
 		}
 	}
+
 	.cwprog-card-gift {
 		position: absolute;
 		right: vw(58);
@@ -291,6 +292,7 @@
 		z-index: 1;
 		width: vw(77);
 	}
+
 	.copywriting-programm--smm-strat {
 		.cwprog-card-title {
 			width: vw(184);
@@ -303,6 +305,15 @@
 	.copywriting-programm--expres-smm {
 		padding-top: vw(60);
 
+	}
+
+	.cwprog-bottom-attention {
+		font-size: vw(12);
+		line-height: 125.8%;
+		color: #FF4E00;
+		margin-top: vw(-2);
+		margin-bottom: vw(22);
+		width: vw(300);
 	}
 
 	/*

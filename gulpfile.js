@@ -115,12 +115,12 @@ gulp.task('images:build', function () {
 });
 gulp.task('img:build', function () {
 	return gulp.src(path.src.img)
-		.pipe(imagemin({
+		/*.pipe(imagemin({
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()],
 			interlaced: true
-		}))
+		}))*/
 		.pipe(gulp.dest(path.build.img))
 		.pipe(reload({stream: true}));
 });

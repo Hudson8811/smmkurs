@@ -1,26 +1,26 @@
 extends layouts/lands
 
 block vars
-    -
-        const page = {
-            title: 'index.html'
-        };
+	-
+		const page = {
+			title: 'index.html'
+		};
 
 block main
-    include partials/complex/complex-banner
-    include partials/complex/complex-need
-    include partials/complex/complex-features
+	include partials/complex/complex-banner
+	include partials/complex/complex-need
+	include partials/complex/complex-features
+	include partials/complex/complex-program
+	include partials/copywriting/cop-feedback
+	include partials/complex/complex-work
+	include partials/teacher/teacher-complex.pug
 
-    //- include partials/smm-strategy/smm-strategy-potential
+	include partials/vacancies/vacancies
+	include partials/complex/complex-ylearn.pug
 
-    //- include partials/motion/motion-info
-
-
-    //- include partials/teacher/teacher-smm
-    //- include partials/vacancies/vacancies
-    //- include partials/motion/motion-components
-
-    include partials/questions/complex-questions
-    //- include partials/feedback/feedback
-    //- include partials/_footer-light
+	include partials/copywriting/cop-payment.pug
+	include partials/questions/complex-questions
+	include partials/feedback/feedback
+	include partials/copywriting/other-courses.pug
+	include partials/_footer-light
 

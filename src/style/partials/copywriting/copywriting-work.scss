@@ -216,16 +216,46 @@
 }
 
 .copywriting-work--express-smm {
-    padding-bottom: 170px;
+	padding-bottom: 170px;
 	padding-top: 158px;
-	@media screen and (min-width: 1024px){
+
+	@media screen and (min-width: 1024px) {
 		.copywriting-work__card-desc {
 			width: 888px;
 		}
 	}
+
 	.copywriting-work__row {
 		justify-content: space-between;
 	}
+
+	.copywriting-work__card-md-bottom {
+		padding: 55px 20px 64px;
+	}
+}
+
+.copywriting-work--brand {
+	padding-bottom: 170px;
+    padding-bottom: 0;
+
+	@media screen and (min-width: 1024px) {
+		.copywriting-work__card-md-one--smm-strat {
+			padding: 88px 0 98px;
+
+			.copywriting-work__card-text {
+				margin-bottom: 39px;
+			}
+		}
+
+		.copywriting-work__card-desc {
+			width: 888px;
+		}
+	}
+
+	.copywriting-work__row {
+		justify-content: space-between;
+	}
+
 	.copywriting-work__card-md-bottom {
 		padding: 55px 20px 64px;
 	}

@@ -3,7 +3,7 @@ padding-top: 314px;
 background-color: #000;
 padding-bottom: 88px;
 position: relative;
-  
+
     &__decor-wrapper {
         position: absolute;
         overflow: hidden;
@@ -24,13 +24,13 @@ position: relative;
         position: relative;
 		width: 1644px;
     }
-    
+
     &__title {
     }
-    
+
     &__content {
     }
-    
+
     &__row {
         display: flex;
         align-items: flex-end;
@@ -46,7 +46,7 @@ position: relative;
             margin-bottom: 120px;
         }
     }
-    
+
     &__card {
         font-size: 42px;
         line-height: 100%;
@@ -71,7 +71,7 @@ position: relative;
                 margin-top: 14px;
             }
         }
-        
+
         &-answer {
             background: #FFFFFF;
             border-radius: 55px;
@@ -91,10 +91,10 @@ position: relative;
             }
         }
     }
-    
+
     &__question-text {
     }
-    
+
     &__answer-text {
     }
 }
