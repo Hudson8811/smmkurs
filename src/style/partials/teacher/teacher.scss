@@ -253,12 +253,16 @@
 			width: vw(321.5);
 			height: auto;
 			max-width: vw(321.5);
-		
+			overflow: hidden;
 		}
 		img {
+			top: 1px;
 			@media (max-width: 1024px) {
 				border-bottom-left-radius: 24px;
 				border-bottom-right-radius: 24px;
+				left: -30px;
+				width: 115%;
+    			height: 125%;
 			}
 		}
 		&::before {
