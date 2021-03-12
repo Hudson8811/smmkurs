@@ -247,4 +247,25 @@
 		}
 
 	}
+
+	.ylearn-section--context {
+		padding-bottom: 33vw;
+
+		.ylearn-col {
+			height: vw(350);
+
+			&--short {
+				width: vw(700);
+
+				.ylearn-item {
+					img {
+						width: 100%;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
 }

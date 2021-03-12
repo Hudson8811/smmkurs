@@ -46,5 +46,25 @@
             max-width: 1105px;
         }
     }
+
+    &--context {
+        padding-top: 110px;
+        padding-bottom: 150px;
+
+        .questions__question {
+            padding-top: 44px;
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .questions__question-desc a,
+        .questions__question-desc_mb a {
+            color: #ff4e00;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 }
 

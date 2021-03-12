@@ -133,12 +133,24 @@
 	&--context {
 		padding-top: 148px;
 
+		@media screen and (max-width: 1024px) {
+			padding-top: 84px;
+		}
+
 		.copywriting-programm__content {
 			padding: 127px 35px 186px;
+
+			@media screen and (max-width: 1024px) {
+				padding: 0 0 186px;
+			}
 		}
 
 		.cwprog-card {
 			padding: 70px 77px 87px 93px;
+
+			@media screen and (max-width: 1024px) {
+				padding: 10px 72px 87px 70px;
+			}
 
 			&:nth-child(2) {
 				padding-bottom: 86px;
@@ -156,6 +168,12 @@
 				.cwprog-card-right {
 					padding-top: 0;
 				}
+			}
+		}
+
+		.cwprog-card-right {
+			@media screen and (max-width: 1024px) {
+				padding-top: 7.6vw;
 			}
 		}
 

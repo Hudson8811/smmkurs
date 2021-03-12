@@ -31,5 +31,32 @@
         &__question-desc {
             font-size: vw(18);
         }
+
+        &--context {
+            .questions__question {
+                padding-top: 18px;
+            }
+
+            .questions__question-title {
+                margin-bottom: vw(11);
+            }
+
+            .questions__question-desc {
+                br {
+                    display: none;
+                }
+            }
+
+            .questions__question-desc a,
+            .questions__question-desc_mb a {
+                pointer-events: none;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .questions__question-desc_mb {
+                font-size: vw(18);
+            }
+        }
     }
 }

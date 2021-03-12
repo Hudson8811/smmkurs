@@ -164,6 +164,22 @@
 			margin-bottom: 39px;
 		}
 	}
+
+	&--context {
+		padding-top: 207px;
+
+		.copywriting-work__row {
+			justify-content: space-between;
+		}
+
+		.copywriting-work__card-desc {
+			width: 888px;
+		}
+
+		.copywriting-work__card-md-bottom {
+			padding: 62px 0;
+		}
+	}
 }
 
 .copywriting-work--motion {
