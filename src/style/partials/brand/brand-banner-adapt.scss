@@ -1,117 +1,139 @@
 @media (max-width: 1600px) {
-    .brand-banner { 
-        &__logo {
-            margin-bottom: 90px;
-        }
-        &__subtitle {
-            font-size: 90px;
-        }
-        &__decor-wrapper {
-            top: 16.5vw;
-            overflow: hidden;
-            }
-    }
+	.brand-banner {
+		&__logo {
+			margin-bottom: 90px;
+		}
+
+		&__subtitle {
+			font-size: 90px;
+		}
+
+		&__decor-wrapper {
+			top: 16.5vw;
+			overflow: hidden;
+		}
+	}
 }
+
 @media (max-width: 1400px) {
-    .brand-banner { 
-        padding-bottom: 150px;
-        &__decor-wrapper {
-            right: 37.3vw;
-            top: 19.5vw;
-        }
-        &__logo {
-            margin-bottom: 60px;
-        }
-        &__subtitle {
-            font-size: 90px;
-        }
-        &__link {
-            padding: 20px 50px;
-        }
-        &__video-preview {
-            margin-top: 0px;
-        }
-    }
+	.brand-banner {
+		padding-bottom: 150px;
+
+		&__decor-wrapper {
+			right: 37.3vw;
+			top: 19.5vw;
+		}
+
+		&__logo {
+			margin-bottom: 60px;
+		}
+
+		&__subtitle {
+			font-size: 90px;
+		}
+
+		&__link {
+			padding: 20px 50px;
+		}
+
+		&__video-preview {
+			margin-top: 0px;
+		}
+	}
 }
+
 @media (max-width: 1200px) {
-    .brand-banner { 
-        padding-top: 180px;
-        &__video-preview {
-            display: none;
-        }
-        &__kurs-info {
-            display: flex;
-        }
-        &__row {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        &__decor-wrapper {
-            right: 1.3vw;
-            top: 5vw;
-            width: 50vw;
-            height: 70vw;
+	.brand-banner {
+		padding-top: 180px;
 
-        }
-        &__play-text {
-            font-size: 26px;    
-        }
-    }
+		&__video-preview {
+			display: none;
+		}
+
+		&__kurs-info {
+			display: flex;
+		}
+
+		&__row {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&__decor-wrapper {
+			right: 1.3vw;
+			top: 5vw;
+			width: 50vw;
+			height: 70vw;
+
+		}
+
+		&__play-text {
+			font-size: 26px;
+		}
+	}
 }
-@media (max-width:375px) {
-    .brand-banner {
-        padding-top: 96px;
-        padding-bottom: 93px;
-        &__logo {
-            display: block;
-            width: 32px;
-            height: 32px;
-            margin-bottom: 90px;
-        }
-        &__decor-wrapper {
-            position: absolute;
-            position: absolute;
-            top: -2vw;
-            overflow: hidden;
-            right: -9vw;
-            width: 108vw;
-            height: 167vw;
-        }
-        &__decor {
-          
-        }
-        &__title {
-            display: block;
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-        &__subtitle {
-            font-family: ALS Hauss;
-            font-size: 36px;
-            line-height: 100%;
-            margin-bottom: 90px;
-            margin-right: 0px;
-            position: relative;
-            max-width: 100%;
-        }
-        &__link {
-            font-size: 18px;
-            padding: 16px 25px;
-        }
-        &__play {
-            width: 14px;
-            height: 14px;
-            margin-right: 6px;
-        }
-        &__kurs-info {
-            margin-bottom: 53px;
-            padding-left: 0;
-            letter-spacing: -0.4px;
 
-        }
-        &__play-text {
-            font-size: 18px;
-        }
-    }
+@media (max-width:1024px) {
+	.brand-banner {
+		padding-top: vw(96);
+		padding-bottom: vw(93);
+
+		&__logo {
+			display: block;
+			width: vw(32);
+			height: vw(32);
+			margin-bottom: vw(90);
+		}
+
+		&__decor-wrapper {
+			position: absolute;
+			position: absolute;
+			top: -2vw;
+			overflow: hidden;
+			right: -9vw;
+			width: 108vw;
+			height: 167vw;
+		}
+
+		&__decor {}
+
+		&__title {
+			display: block;
+			font-size: vw(18);
+			margin-bottom: vw(15);
+		}
+
+		&__subtitle {
+			font-family: ALS Hauss;
+			font-size: vw(36);
+			line-height: 100%;
+			margin-bottom: vw(90);
+			margin-right: vw(0);
+			position: relative;
+			max-width: 100%;
+		}
+
+		&__link {
+			font-size: vw(18);
+			padding: vw(16) vw(25);
+		}
+
+		&__play {
+			width: vw(14);
+			height: vw(14);
+			margin-right: vw(6);
+		}
+
+		&__kurs-info {
+			margin-bottom: vw(53);
+			padding-left: 0;
+			letter-spacing: vw(-0.4);
+
+		}
+
+		&__play-text {
+			font-size: vw(18);
+		}
+	}
 }

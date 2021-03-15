@@ -1,1 +1,9 @@
-<svg width="1920" height="436" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-35.5 332l317-140.5 288 111h261l278 124 441-124H1687L2010.5 2" stroke="#000" stroke-width="4"/><circle cx="280" cy="192" r="8.5" fill="#fff" stroke="#000" stroke-width="3"/><circle cx="568" cy="301" r="8.5" fill="#fff" stroke="#000" stroke-width="3"/><circle cx="830" cy="301" r="8.5" fill="#fff" stroke="#000" stroke-width="3"/><circle cx="1111" cy="426" r="8.5" fill="#fff" stroke="#000" stroke-width="3"/><circle cx="1548" cy="303" r="8.5" fill="#fff" stroke="#000" stroke-width="3"/><circle cx="1688" cy="303" r="8.5" fill="#fff" stroke="#000" stroke-width="3"/></svg>
+<svg width="1920" height="436" viewBox="0 0 1920 436" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-35.5 332L281.5 191.5L569.5 302.5H830.5L1108.5 426.5L1549.5 302.5H1687L2010.5 2" stroke="black" stroke-width="4"/>
+<circle cx="280" cy="192" r="8.5" fill="white" stroke="black" stroke-width="3"/>
+<circle cx="568" cy="301" r="8.5" fill="white" stroke="black" stroke-width="3"/>
+<circle cx="830" cy="301" r="8.5" fill="white" stroke="black" stroke-width="3"/>
+<circle cx="1111" cy="426" r="8.5" fill="white" stroke="black" stroke-width="3"/>
+<circle cx="1548" cy="303" r="8.5" fill="white" stroke="black" stroke-width="3"/>
+<circle cx="1688" cy="303" r="8.5" fill="white" stroke="black" stroke-width="3"/>
+</svg>

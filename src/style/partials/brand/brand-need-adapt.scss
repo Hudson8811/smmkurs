@@ -45,9 +45,9 @@
 			&-last {
 				margin-bottom: 0;
 			}
-			span {
-				display: inline-block;
-			}
+				span{
+					display: inline;
+				}
 		}
 
 		&__decor {
@@ -72,7 +72,7 @@
 			border-radius: vw(40);
 			padding: vw(79) vw(10) vw(115);
             background-color: #181725;
-			margin-bottom: vw(110);
+			margin-bottom: vw(119);
 		}
 	}
 
@@ -101,7 +101,7 @@
 			margin-top: vw(16);
             max-width: vw(195);
 		}
-       
+
 		img {
             width: vw(195);
         }
@@ -116,7 +116,7 @@
                 height: vw(170);
             }
             .brand-need__card-desc {
-                max-width: 188px;
+                max-width: vw(188);
                 margin-top: vw(22);
 
             }
@@ -136,7 +136,7 @@
                 line-height: 125.8%;
                 margin-top: vw(20);
             }
-            
+
             img {
                 width: vw(200);
             }
@@ -155,7 +155,7 @@
             .express-smm-need__card-img {
                 overflow: hidden;
                 height: vw(250);
-                
+
             }
             img {
                 width: vw(190);

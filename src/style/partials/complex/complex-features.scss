@@ -1,17 +1,17 @@
 .complex-features {
     position: relative;
     padding-top: 12px;
-    padding-bottom: 209px;
+    padding-bottom: 272px;
     overflow: hidden;
     &__container {
         color: #000;
         position: relative;
     }
-    
+
     &__content {
         padding: 0;
     }
-    
+
     &__row {
         display: flex;
         align-items: center;
@@ -25,7 +25,7 @@
         }
         &:nth-child(3) {
             margin-bottom: 211px;
-            
+
         }
         &:nth-child(4) {
             padding-left: 75px;
@@ -47,7 +47,7 @@
             white-space: nowrap;
         }
     }
-    
+
     &__img-wrapper-one {
         max-width: 679px;
         width: 100%;
@@ -59,10 +59,10 @@
             padding-top: 354/679 * 100%;
         }
     }
-    
+
     &__img {
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
         width: 100%;
         height: 100%;
@@ -84,22 +84,22 @@
 
         }
     }
-    
+
     &__text-two {
         max-width: 761px;
         margin-left: 80px;
         margin-top: 235px;
     }
-    
+
     &__text-three {
         margin-right: 60px;
         max-width: 953px;
-       
+
     }
     &__text-four {
         margin-top: 27px;
         max-width: 850px;
-        margin-right: -8px; 
+        margin-right: -8px;
         strong {
             letter-spacing: 1px;
         }
@@ -134,4 +134,3 @@
     }
     .container2 {
     }
-    
