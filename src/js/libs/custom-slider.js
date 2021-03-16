@@ -124,9 +124,17 @@ class CardCarousel extends DraggingEvent {
 
 	build(fix = 0) {
 		for (let i = 0; i < this.cards.length; i++) {
-			const x = i - this.centerIndex;
+			///const x = i - this.centerIndex;
+			//
+			///////
+			var noX = i - this.centerIndex;
+			const x = (Math.abs(noX % 1) == 0) ? noX : noX - 0.5;
+			//////
+
+
+
 			const scale = this.calcScale(x)
-			const scale2 =  this.calcScale2(x)
+			const scale2 = this.calcScale2(x)
 			const zIndex = -(Math.abs(i - this.centerIndex))
 
 			const leftPos = this.calcPos(x, scale2)
@@ -151,8 +159,12 @@ class CardCarousel extends DraggingEvent {
 		if (e.keyCode === 39) {
 			// Left arrow
 			for (let x in this.xScale) {
-				const newX = (parseInt(x) - 1 < -this.centerIndex) ? this.centerIndex : parseInt(x) - 1;
 
+				//const newX = (parseInt(x) - 1 < -this.centerIndex) ? this.centerIndex : parseInt(x) - 1;
+				///////
+				var noX = (parseInt(x) - 1 < -this.centerIndex) ? this.centerIndex : parseInt(x) - 1;
+				const newX = (Math.abs(noX % 1) == 0) ? noX : noX - 0.5;
+				//////
 				temp[newX] = this.xScale[x]
 			}
 		}
@@ -160,8 +172,12 @@ class CardCarousel extends DraggingEvent {
 		if (e.keyCode == 37) {
 			// Right arrow
 			for (let x in this.xScale) {
-				const newX = (parseInt(x) + 1 > this.centerIndex) ? -this.centerIndex : parseInt(x) + 1;
 
+				//const newX = (parseInt(x) + 1 > this.centerIndex) ? -this.centerIndex : parseInt(x) + 1;
+				///////
+				var noX = (parseInt(x) + 1 > this.centerIndex) ? -this.centerIndex : parseInt(x) + 1;
+				const newX = (Math.abs(noX % 1) == 0) ? noX : noX - 0.5;
+				//////
 				temp[newX] = this.xScale[x]
 			}
 		}
@@ -192,8 +208,12 @@ class CardCarousel extends DraggingEvent {
 		if (type === 'next') {
 			// Left arrow
 			for (let x in this.xScale) {
-				const newX = (parseInt(x) - 1 < -this.centerIndex) ? this.centerIndex : parseInt(x) - 1;
 
+				//const newX = (parseInt(x) - 1 < -this.centerIndex) ? this.centerIndex : parseInt(x) - 1;
+				///////
+				var noX = (parseInt(x) - 1 < -this.centerIndex) ? this.centerIndex : parseInt(x) - 1;
+				const newX = (Math.abs(noX % 1) == 0) ? noX : noX - 0.5;
+				//////
 				temp[newX] = this.xScale[x]
 			}
 		}
@@ -201,8 +221,13 @@ class CardCarousel extends DraggingEvent {
 		if (type === 'prev') {
 			// Right arrow
 			for (let x in this.xScale) {
-				const newX = (parseInt(x) + 1 > this.centerIndex) ? -this.centerIndex : parseInt(x) + 1;
 
+
+				//const newX = (parseInt(x) + 1 > this.centerIndex) ? -this.centerIndex : parseInt(x) + 1;
+				///////
+				var noX = (parseInt(x) + 1 > this.centerIndex) ? -this.centerIndex : parseInt(x) + 1;
+				const newX = (Math.abs(noX % 1) == 0) ? noX : noX - 0.5;
+				//////
 				temp[newX] = this.xScale[x]
 			}
 		}
@@ -229,12 +254,12 @@ class CardCarousel extends DraggingEvent {
 		let formula;
 
 		if (x < 0) {
-			formula = (scale * 100 - this.cardWidth/*1.35*/) / 2
+			formula = (scale * 100 - this.cardWidth /*1.35*/ ) / 2
 
 			return formula
 
 		} else if (x > 0) {
-			formula = 100 - (scale * 100 + this.cardWidth/**0.65*/) / 2
+			formula = 100 - (scale * 100 + this.cardWidth /**0.65*/ ) / 2
 
 			return formula
 		} else {
@@ -325,18 +350,30 @@ class CardCarousel extends DraggingEvent {
 	checkOrdering(card, x, xDist) {
 		const original = parseInt(card.dataset.x)
 		const rounded = Math.round(xDist)
-		let newX = x
+
+		//let newX = x;
+		let newX = (Math.abs(x % 1) == 0) ? x : x - 0.5;
+
 
 		if (x !== x + rounded) {
 			if (x + rounded > original) {
 				if (x + rounded > this.centerIndex) {
 
-					newX = ((x + rounded - 1) - this.centerIndex) - rounded + -this.centerIndex
+					//newX = ((x + rounded - 1) - this.centerIndex) - rounded + -this.centerIndex
+					///////
+					var noX = ((x + rounded - 1) - this.centerIndex) - rounded + -this.centerIndex;
+					newX = (Math.abs(noX % 1) == 0) ? noX : noX - 0.5;
+					//////
 				}
 			} else if (x + rounded < original) {
 				if (x + rounded < -this.centerIndex) {
 
-					newX = ((x + rounded + 1) + this.centerIndex) - rounded + this.centerIndex
+
+					//newX = ((x + rounded + 1) + this.centerIndex) - rounded + this.centerIndex
+					///////
+					var noX = ((x + rounded + 1) + this.centerIndex) - rounded + this.centerIndex;
+					newX = (Math.abs(noX % 1) == 0) ? noX : noX - 0.5;
+					//////
 				}
 			}
 
@@ -373,8 +410,15 @@ class CardCarousel extends DraggingEvent {
 		}
 
 		for (let i = 0; i < this.cards.length; i++) {
-			const x = this.checkOrdering(this.cards[i], parseInt(this.cards[i].dataset.x), xDist),
-				scale = this.calcScale(x + xDist),
+
+
+			//const x = this.checkOrdering(this.cards[i], parseInt(this.cards[i].dataset.x), xDist)
+			///////
+			var noX = this.checkOrdering(this.cards[i], parseInt(this.cards[i].dataset.x), xDist);
+			const x = (Math.abs(noX % 1) == 0) ? noX : noX - 0.5;
+			//////
+
+			const scale = this.calcScale(x + xDist),
 				scale2 = this.calcScale2(x + xDist),
 				leftPos = this.calcPos(x + xDist, scale2)
 
@@ -386,4 +430,3 @@ class CardCarousel extends DraggingEvent {
 		}
 	}
 }
-
