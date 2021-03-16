@@ -109,4 +109,16 @@
 		}
 	}
 
+
+
+	&:not([data-x="-2"]):not([data-x="-1"]):not([data-x="0"]):not([data-x="1"]):not([data-x="2"]){
+
+		left: 50% !important;
+		img {
+			left: 50%;
+			transform: translateX(0);
+			opacity: .0 !important;
+		}
+	}
+
 }
