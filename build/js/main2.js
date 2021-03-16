@@ -652,4 +652,22 @@ $(function () {
 		copyText($(this).attr('data-copy'));
 	});
 
+	var video = $('.motion-banner2__video');
+
+	video.click(function () {
+		if (!$(this)[0].paused) {
+			$(this)[0].pause();
+		} else {
+			$(this)[0].play();
+		}
+	});
+
+	video.bind('play ended', function () {
+		$(this).next().hide();
+	});
+
+	video.bind('pause', function () {
+		$(this).next().show();
+	});
+
 });
