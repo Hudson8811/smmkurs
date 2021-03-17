@@ -5,6 +5,7 @@
 // libs/debug.addIndicators.min.js
 //= libs/custom-slider.js
 //= libs/easytimer.min.js
+//= libs/tooltipster.bundle.min.js
 
 
 $(function () {
@@ -251,6 +252,23 @@ $(function () {
 
 	video.bind('pause', function () {
 		$(this).next().show();
+	});
+
+	$('.js-tooltip').tooltipster({
+		contentCloning: true,
+		contentAsHTML: true,
+		maxWidth: 595,
+		delay: [0, 100],
+		side: ['top'],
+		distance: 10,
+		arrow: false,
+		animation: 'grow',
+		interactive: true,
+		trigger: window.matchMedia('(min-width: 1025px)').matches ? 'hover' : 'click',
+		functionInit: function (instance, helper) {
+			var content = $(helper.origin).siblings('.js-tooltip-content').html();
+			instance.content(content);
+		}
 	});
 
 });

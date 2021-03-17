@@ -5,6 +5,9 @@
 			}
 
 			&__content {
+				&--2 {
+					margin-top: 0;
+				}
 			}
 			&__content-img {
 				right: 75px;
@@ -35,6 +38,9 @@
 		}
 
 		&__content {
+			&--2 {
+				margin-top: 70px;
+			}
 		}
 		&__content-img {
 			right: 131px;
@@ -80,6 +86,9 @@
 		}
 
 		&__content {
+			&--2 {
+				margin-top: 20px;
+			}
 		}
 		&__content-img {
 			right: vw(0);

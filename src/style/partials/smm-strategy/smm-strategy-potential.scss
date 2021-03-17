@@ -20,6 +20,10 @@
 		align-items: flex-start;
 		position: relative;
 		z-index: 3;
+
+		&--2 {
+			margin-top: 120px;
+		}
 	}
 
 	&__content-img {
