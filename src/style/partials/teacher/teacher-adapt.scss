@@ -235,16 +235,6 @@
 		&__teacher-link {
 			font-size: vw(16);
 			margin-bottom: vw(24);
-
-			&::before {
-				content: '';
-				position: absolute;
-				height: vw(2);
-				bottom: vw(1);
-				left: 0;
-				right: 0;
-				background-color: #FF4E00;
-			}
 		}
 	}
 
