@@ -502,6 +502,9 @@ $(function () {
 				src: '#popup-video',
 				type: 'inline',
 				touch: false,
+				afterLoad: function () {
+					$('#popup-video video')[0].load();
+				}
 			});
 		}, 200)
 
