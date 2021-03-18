@@ -51,11 +51,8 @@ $resolutiond: 1920;
 	@return (($px/$resolutiond) * 100)+vw;
 }
 
-$resolutionx: 2000;
-
-
 @function vwx($px) {
-	@return (($px/$resolutionx) * 80)+vw;
+	@return (($px/$resolutiond) * 80)+vw;
 }
 
 
