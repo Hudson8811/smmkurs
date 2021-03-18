@@ -34,7 +34,7 @@ main .home{
     }
     li{
       +li{
-        margin-left: vwx(100);
+        margin-left: 100px;
         @include sMax{
           margin-left: 50px;
         }
@@ -42,10 +42,10 @@ main .home{
     }
     a{
       font-weight: 350;
-      font-size: vwx(24);
-      line-height: vwx(50);
+      font-size: 24px;
+      line-height: 50px;
       text-align: right;
-      letter-spacing: vwx(-1.25573);
+      letter-spacing: -1.25573px;
       color: #FFFFFF;
       &:hover{
         color: #ff5210;
