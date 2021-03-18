@@ -1,12 +1,12 @@
 .page-section{
-  padding: 110px 0 180px;
+  padding: vwx(110) 0 vwx(180);
   @include mMax{
     padding: 50px 0 100px;
   }
   &__title{
-    font-size: 64px;
-    letter-spacing: -1.25573px;
-    margin-bottom: 60px;
+    font-size: vwx(64);
+    letter-spacing: vwx(-1.25573);
+    margin-bottom: vwx(60);
     @include mMax{
       margin-bottom: 48px;
       font-size: 36px;
@@ -17,9 +17,9 @@
     }
   }
   &__subtitle{
-    font-size: 36px;
-    letter-spacing: -1.25573px;
-    margin-bottom: 80px;
+    font-size: vwx(36);
+    letter-spacing: vwx(-1.25573);
+    margin-bottom: vwx(80);
     @include sMax{
       font-size: 18px;
       line-height: 124%;
@@ -33,9 +33,9 @@
     }
   }
   &__text{
-    font-size: 36px;
-    line-height: 124%;
-    letter-spacing: -1.25573px;
+    font-size: vwx(36);
+    line-height: vwx(40);
+    letter-spacing: vwx(-1.25573);
     @include mMax{
       font-size: 24px;
     }
@@ -45,7 +45,7 @@
 .kurses{
   display: flex;
   flex-wrap: wrap;
-  margin: -20px;
+  margin: vwx(-20);
   @include tMax{
     margin: -15px;
   }
@@ -53,7 +53,7 @@
     margin: -10px;
   }
   &__kurs{
-    padding: 20px;
+    padding: vwx(20);
     width: 33.333%;
     box-sizing: border-box;
     @include tMax{
@@ -86,7 +86,7 @@
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 40px;
+    padding: vwx(40);
     width: 100%;
     height: 100%;
     background: #6D16E8;
@@ -106,15 +106,15 @@
   }
   &__tag{
     background: rgba(0, 0, 0, 0.1);
-    border-radius: 51px;
-    font-size: 18px;
-    line-height: 125.8%;
+    border-radius: vwx(51);
+    font-size: vwx(18);
+    line-height: vwx(23);
     display: flex;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    min-height: 57px;
-    padding: 0 40px;
+    min-height: vwx(57);
+    padding: 0 vwx(40);
     @include mobile{
       min-height: 40px;
       padding: 0 20px;
@@ -122,18 +122,18 @@
     }
   }
   &__time{
-    font-size: 24px;
-    line-height: 124%;
+    font-size: vwx(24);
+    line-height: vwx(30);
     text-align: right;
-    letter-spacing: -1.25573px;
+    letter-spacing: vwx(-1.25573);
     opacity: 0.6;
     @include mobile{
       font-size: 20px;
     }
   }
   &__title{
-    font-size: 34px;
-    line-height: 124%;
+    font-size: vwx(34);
+    line-height: vwx(40);
     @include dMax{
       font-size: 30px;
     }
@@ -144,7 +144,7 @@
   &__btns{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: vwx(20);
     align-items: center;
     @include mobile{
       display: block;
@@ -158,8 +158,8 @@
     align-items: center;
     justify-content: center;
     text-align: left;
-    font-size: 16px;
-    line-height: 110%;
+    font-size: vwx(16);
+    line-height: vwx(18);
     @include tMax{
       font-size: 17px;
     }
@@ -174,10 +174,10 @@
   }
   &__underbtn{
     text-align: center;
-    font-size: 17px;
-    line-height: 110%;
-    margin-top: 12px;
-    margin-bottom: -31px;
+    font-size: vwx(17);
+    line-height: vwx(19);
+    margin-top: vwx(12);
+    margin-bottom: vwx(-31);
     @include mobile{
       margin-top: 0;
       margin-bottom: 0;
@@ -186,14 +186,14 @@
   }
 
   &__sale{
-    font-size: 12px;
+    font-size: vwx(12);
     color: #000000;
-    line-height: 24px;
+    line-height: vwx(24);
     background: #FFFFFF;
-    padding: 0 8px;
+    padding: 0 vwx(8);
     position: relative;
-    padding-right: 4px;
-    margin-right: 4px;
+    padding-right: vwx(4);
+    margin-right: vwx(4);
     &::after{
       content: "";
       width: 0;
@@ -212,10 +212,10 @@
     flex-wrap: wrap;
     align-items: baseline;
     &-current{
-      font-size: 34px;
-      line-height: 110%;
+      font-size: vwx(34);
+      line-height: vwx(37);
       white-space: nowrap;
-      margin-right: 15px;
+      margin-right: vwx(15);
       @include tMax{
         font-size: 29px;
       }
@@ -225,8 +225,8 @@
     }
     &-old{
       white-space: nowrap;
-      font-size: 25px;
-      line-height: 110%;
+      font-size: vwx(25);
+      line-height: vwx(28);
       text-decoration-line: line-through;
       opacity: 0.5;
       @include tMax{
@@ -239,7 +239,7 @@
   }
 
   &__progress{
-    margin-top: 52px;
+    margin-top: vwx(52);
     @include dMax{
       margin-top: 40px;
     }
@@ -271,7 +271,7 @@
     }
     &_3{
       .kurs__content{
-        padding-bottom: 56px;
+        padding-bottom: vwx(56);
         @include mobile{
           padding-bottom: 25px;
         }
@@ -309,11 +309,11 @@
   }
 
   &--withdown{
-    margin-bottom: 70px;
+    margin-bottom: vwx(70);
   }
   &__down{
     position: absolute;
-    height: 70px;
+    height: vwx(70);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,11 +324,11 @@
     top: 100%;
     background: #F3F3F3;
     border-radius: 0 0 24px 24px;
-    width: 252px;
-    padding: 10px;
+    width: vwx(252);
+    padding: vwx(10);
     box-sizing: border-box;
-    font-size: 14px;
-    line-height: 125.8%;
+    font-size: vwx(14);
+    line-height: vwx(18);
     text-align: center;
     color: #AFAFAF;
     span{
@@ -343,21 +343,21 @@
   width: 100%;
   &__bar{
     width: 86.6%;
-    margin-right: 8px;
-    height: 20px;
+    margin-right: vwx(8);
+    height: vwx(20);
     background: rgba(255,255,255,0.4);
-    border-radius: 60px;
+    border-radius: vwx(60);
     overflow: hidden;
     &-inner{
-      border-radius: 60px;
+      border-radius: vwx(60);
       height: 100%;
       background: $orange;
     }
   }
   &__procent{
     font-weight: 300;
-    font-size: 18px;
-    line-height: 100%;
+    font-size: vwx(18);
+    line-height: vwx(18);
   }
 }
 
