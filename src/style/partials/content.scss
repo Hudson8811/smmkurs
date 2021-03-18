@@ -387,18 +387,30 @@
       overflow: hidden;
       flex-shrink: 0;
       +li{
-        margin-left: 40px;
+        margin-left: vwx(40);
+
+        @include homeMax{
+          margin-left: 40px;
+        }
+
         @include mMax{
           margin-left: 20px;
         }
       }
       a{
         display: block;
-        padding-bottom: 20px;
-        font-size: 18px;
-        line-height: 22px;
+        padding-bottom: vwx(22);
+        font-size: vwx(18);
+        line-height: vwx(22);
         color: rgba(255,255,255,0.3);
         transition: 0.2s linear;
+
+        @include homeMax{
+          padding-bottom: 20px;
+          font-size: 18px;
+          line-height: 22px;
+        }
+
         @include mMax{
           padding-bottom: 15px;
           font-size: 16px;
@@ -412,9 +424,16 @@
         a{
           color: #FFFFFF;
           font-weight: 500;
-          font-size: 22px;
-          padding-left: 20px;
-          padding-right: 20px;
+          font-size: vwx(22);
+          padding-left: vwx(20);
+          padding-right: vwx(20);
+
+          @include homeMax{
+            font-size: 22px;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+
           @include mMax{
             font-size: 18px;
             padding-left: 10px;

@@ -1,15 +1,27 @@
 .copywriting-banner {
-	padding-top: 172px;
-	padding-bottom: 302px;
+	padding-top: vwx(172);
+	padding-bottom: vwx(302);
 	background-color: #000;
 	position: relative;
 	z-index: 10;
 
+	@media (max-width: 1200px) {
+		padding-top: 172px;
+		padding-bottom: 302px;
+	}
+
 	&__decor {
 		&-img {
+			width: vwx(980);
+			height: vwx(1283);
 			position: absolute;
 			right: 0%;
 			top: 0;
+
+			@media (max-width: 1200px) {
+				width: auto;
+				height: auto;
+			}
 		}
 	}
 
@@ -24,15 +36,17 @@
 	&__content {}
 
 	&__logo {
-		width: 64px;
-		height: 64px;
+		width: vwx(64);
+		height: vwx(64);
 		margin-bottom: 97px;
 
 		@media (max-width: 1600px) {
-			margin-bottom: 90px;
+			margin-bottom: qw(90);
 		}
 
 		@media (max-width: 1200px) {
+			width: 64px;
+			height: 64px;
 			margin-bottom: 60px;
 		}
 	}
@@ -45,36 +59,43 @@
 
 	&__title {
 		font-family: ALS Hauss;
-		font-size: 41px;
+		font-size: vwx(41);
 		line-height: 125.8%;
-		margin-bottom: 30px;
+		margin-bottom: vwx(30);
+
+		@media (max-width: 1200px) {
+			font-size: 41px;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__subtitle {
 		font-family: ALS Hauss;
-		font-size: 113px;
+		font-size: vwx(113);
 		line-height: 100%;
-		margin-bottom: 69px;
-		margin-right: 40px;
+		margin-bottom: vwx(69);
+		margin-right: vwx(40);
 
 		@media (max-width: 1600px) {
-			font-size: 90px;
+			font-size: qw(90);
 		}
 
 		@media (max-width: 1200px) {
 			font-size: 64px;
+			margin-bottom: 69px;
+			margin-right: 40px;
 		}
 	}
 
 	&__link {
-		font-size: 32px;
+		font-size: vwx(32);
 		line-height: 125.8%;
 		display: inline-flex;
 		align-items: center;
 		text-align: center;
 		background: #FF4E00;
-		border-radius: 18px;
-		padding: 37px 141px;
+		border-radius: vwx(18);
+		padding: vwx(37) vwx(141);
 		cursor: pointer;
 		transition-duration: .2s;
 
@@ -83,30 +104,45 @@
 		}
 
 		@media (max-width: 1200px) {
+			font-size: 32px;
 			padding: 20px 50px;
+			border-radius: 18px;
 		}
 	}
 
 	&__kurs-info {
-		margin-right: 94px;
-		margin-top: -130px;
+		margin-right: vwx(94);
+		margin-top: vwx(-130);
 		display: flex;
 		align-items: center;
 		flex: 0 0 auto;
 		cursor: pointer;
+
+		@media (max-width: 1200px) {
+			margin-right: 94px;
+			margin-top: -130px;
+		}
 	}
 
 	&__play {
-		margin-right: 28px;
+		margin-right: vwx(28);
+
+		@media (max-width: 1200px) {
+			margin-right: 28px;
+		}
 	}
 
 	&__play-text {
-		font-size: 32px;
+		font-size: vwx(32);
 		line-height: 100%;
 		display: flex;
 		align-items: center;
 		text-align: center;
 		color: #FEA430;
+
+		@media (max-width: 1200px) {
+			font-size: 32px;
+		}
 	}
 }
 

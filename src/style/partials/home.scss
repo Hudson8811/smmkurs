@@ -12,7 +12,7 @@ main .home{
   color: #ffffff;
   overflow: hidden;
   position: relative;
-  padding-bottom: 306px;
+  padding-bottom: vwx(306);
   @include homeMax{
     padding-bottom: qw(306);
   }
@@ -158,6 +158,14 @@ main .home{
         margin-left: -6.6vw;
         margin-right: -6.6vw;
         margin-bottom: vw(24);
+      }
+
+      img {
+        width: 46vw;
+
+        @include homeMax {
+          width: 100vw;
+        }
       }
     }
     &__right{
@@ -350,8 +358,8 @@ main .home{
       }
       img{
         display: block;
-        max-width: 80%;
-        max-height: 80%;
+        max-width: 55%;
+        max-height: 55%;
         @include mMax{
           max-width: 100%;
           max-height: 100%;
@@ -491,6 +499,11 @@ main .home{
       position: absolute;
       z-index: -1;
       display: block;
+      width: vwx(200);
+
+      @include homeMax {
+        width: auto;
+      }
     }
     .kurs-new{
       &--1{
@@ -513,6 +526,8 @@ main .home{
         .kurs__img-new{
           top: vwx(127);
           left: vwx(20);
+          width: vwx(400);
+
           @include homeMax {
             top: qw(127);
             left: qw(20);
@@ -534,6 +549,8 @@ main .home{
         .kurs__img-new{
           bottom: vwx(25);
           right: vwx(35);
+          width: vwx(300);
+
           @include homeMax {
             bottom: qw(25);
             right: qw(35);
@@ -556,6 +573,8 @@ main .home{
           top: vwx(119);
           left: 50%;
           transform:translateX(-50%);
+          width: vwx(350);
+
           @include homeMax {
             top: qw(119);
             width: qw(329);
@@ -574,6 +593,8 @@ main .home{
         .kurs__img-new{
           top: 0;
           right: 0;
+          width: vwx(450);
+
           @include homeMax {
             width: qw(473);
           }
@@ -591,6 +612,8 @@ main .home{
         .kurs__img-new{
           top: 0;
           right: 0;
+          width: vwx(300);
+
           @include homeMax {
             width: qw(305);
           }
@@ -609,6 +632,8 @@ main .home{
           top: vwx(143);
           left: 45%;
           transform:translateX(-50%);
+          width: vwx(150);
+
           @include homeMax {
             top: qw(143);
             width: qw(105);
@@ -630,6 +655,8 @@ main .home{
         .kurs__img-new{
           top: vwx(125);
           left: vwx(26);
+          width: vwx(560);
+
           @include homeMax {
             top: qw(125);
             left: qw(26);
@@ -687,6 +714,7 @@ main .home{
     &__rigth{
       width: calc(100% - 50.8vw);
       img{
+        width: vwx(1000);
         @include homeMax{
           width: qw(1009);
         }

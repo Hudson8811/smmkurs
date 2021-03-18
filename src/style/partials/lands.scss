@@ -6,9 +6,10 @@
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 	.container2 {
-		max-width: calc(100% - #{vw(47)} * 2);
+		width: 1571px;
+		max-width: calc(100% - 20px * 2);
 	}
 }
 
