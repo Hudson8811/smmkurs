@@ -4,7 +4,6 @@
 	@include dMMax{
 		width: novwx(1571);
 	}
-	max-width: 95%;
 	max-width: calc(100% - 20px * 2);
 	margin: 0 auto;
 }
@@ -12,7 +11,7 @@
 @media screen and (max-width: 1200px) {
 	.container2 {
 		width: 1571px;
-		max-width: calc(100% - #{vw(47)} * 2);
+		max-width: calc(100% - 47px * 2);
 	}
 }
 

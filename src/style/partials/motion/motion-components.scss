@@ -2,6 +2,10 @@
 background-color: #000;
 padding-top: 190px;
 padding-bottom: 219px;
+    @include dArea{
+        padding-top: vwx(190);
+        padding-bottom: vwx(219);
+    }
     &__container {
     }
 
@@ -12,6 +16,11 @@ padding-bottom: 219px;
         border-radius: 32px;
         position: relative;
         padding-bottom: 119px;
+        @include dArea{
+            padding: vwx(96);
+            border-radius: vwx(32);
+            padding-bottom: vwx(119);
+        }
     }
 
     &__row {
@@ -33,6 +42,9 @@ padding-bottom: 219px;
         width: 100%;
         &:first-child {
             margin-bottom: -187px;
+            @include dArea{
+                margin-bottom: vwx(-187);
+            }
         }
     }
 
@@ -56,16 +68,25 @@ padding-bottom: 219px;
         height: 100%;
         object-fit: cover;
         object-position: center;
+        @include dArea{
+            left: vwx(12);
+        }
     }
 
     &__section-title {
         font-size: 72px;
         line-height: 125.8%;
+        @include dArea{
+            font-size: vwx(72);
+        }
     }
 
     &__card-sm {
        &:not(:last-child) {
            margin-bottom: 82px;
+           @include dArea{
+               margin-bottom: vwx(82);
+           }
        }
     }
 
@@ -73,11 +94,18 @@ padding-bottom: 219px;
         font-size: 41px;
         line-height: 125.8%;
         margin-bottom: 29px;
+        @include dArea{
+            font-size: vwx(41);
+            margin-bottom: vwx(29);
+        }
     }
 
     &__card-desc {
         font-size: 24px;
         line-height: 125.8%;
+        @include dArea{
+            font-size: vwx(24);
+        }
     }
     }
     .container2 {

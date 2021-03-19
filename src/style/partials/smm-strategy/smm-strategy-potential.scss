@@ -2,6 +2,10 @@
 	padding-top: 196px;
     padding-bottom: 63px;
 	background: #000;
+	@include dArea{
+		padding-top: vwx(196);
+		padding-bottom: vwx(63);
+	}
 
 	&__container {
 		color: #fff;
@@ -12,6 +16,10 @@
 		line-height: 100%;
 		text-align: center;
 		margin-bottom: 33px;
+		@include dArea{
+			font-size: vwx(113);
+			margin-bottom: vwx(33);
+		}
 	}
 
 	&__content {
@@ -23,6 +31,9 @@
 
 		&--2 {
 			margin-top: 120px;
+			@include dArea{
+				margin-top: vwx(120);
+			}
 		}
 	}
 
@@ -31,6 +42,10 @@
 		z-index: -1;
 		right: 262px;
 		top: 3px;
+		@include dArea{
+			right: vwx(240);
+			width:55vw;
+		}
 
 		&-phone {
 			display: none;
@@ -46,6 +61,11 @@
 		text-align: center;
 		line-height: 125%;
 		font-weight: 300;
+		@include dArea{
+			padding: vwx(87) vwx(62);
+			border-radius: vwx(40);
+			font-size: vwx(41);
+		}
 
 		&_1 {
 			align-self: flex-end;
@@ -55,6 +75,13 @@
 			max-width: 494px;
 			padding: 82px 93px 93px 93px;
 			letter-spacing: 0.15px;
+			@include dArea{
+				margin-bottom: vwx(300);
+				margin-top: vwx(242);
+				margin-right: vwx(397);
+				max-width: vwx(494);
+				padding: vwx(82) vwx(93) vwx(93) vwx(93);
+			}
 		}
 
 		&_2 {
@@ -63,6 +90,13 @@
 			max-width: 519px;
 			padding: 56px 57px 68px;
 			margin-left: 65px;
+			@include dArea{
+				margin-bottom: vwx(136);
+				margin-top: vwx(90);
+				max-width: vwx(519);
+				margin-left: vwx(65);
+				padding: vwx(56) vwx(57) vwx(68);
+			}
 		}
 
 		&_3 {
@@ -73,6 +107,13 @@
 			align-self: flex-end;
 			justify-self: flex-end;
 			margin-right: 133px;
+			@include dArea{
+				margin-bottom: vwx(200);
+				margin-top: vwx(283);
+				max-width: vwx(907);
+				margin-right: vwx(133);
+				padding: vwx(56) vwx(127) vwx(68);
+			}
 		}
 	}
 }

@@ -5,6 +5,10 @@
     padding-bottom: 230px;
 	font-family: ALS Hauss, sans-serif;
 	z-index: 1;
+	@include dArea{
+		padding-top: vwx(149);
+		padding-bottom: vwx(230);
+	}
 
 	&__container {
 		color: #fff;
@@ -23,6 +27,11 @@
 		line-height: 100%;
 		z-index: 3;
 		text-align: center;
+		@include dArea{
+			max-width: vwx(1300);
+			margin-bottom: vwx(235);
+			font-size: vwx(113);
+		}
 	}
 
 
@@ -34,6 +43,10 @@
 		padding: 155px 35px 162px;
 		border-radius: 80px;
 		background: #181725;
+		@include dArea{
+			padding: vwx(155) vwx(35) vwx(162);
+			border-radius: vwx(80);
+		}
 	}
 
 	/*495
@@ -41,6 +54,9 @@
 	&__inner {
 		width: 1375px;
 		max-width: 100%;
+		@include dArea{
+			width: vwx(1375);
+		}
 	}
 
 	&__decor {
@@ -61,6 +77,10 @@
 		font-weight: normal;
 		font-style: normal;
 		line-height: 100%;
+		@include dArea{
+			margin-left: vwx(18);
+			font-size: vwx(48);
+		}
 	}
 
 	&__row {
@@ -71,24 +91,41 @@
 		width: 100%;
 		margin-top: 13px;
 		margin-bottom: -54px;
+		@include dArea{
+			margin-top: vwx(13);
+			margin-bottom: vwx(-54);
+		}
 	}
 
 	&__card {
 		width: 419px;
 		margin-bottom: 73px;
+		@include dArea{
+			width: vwx(419);
+			margin-bottom: vwx(73);
+		}
 
 		&:nth-child(4) {
 			margin-left: 221px;
+			@include dArea{
+				margin-left: vwx(221);
+			}
 		}
 
 		&:nth-child(5) {
 			margin-right: auto;
 			margin-left: 60px;
+			@include dArea{
+				margin-left: vwx(60);
+			}
 		}
 	}
 
 	&__card-img {
 		height: 353px;
+		@include dArea{
+			height: vwx(353);
+		}
 
 		img {
 			width: auto;
@@ -105,9 +142,15 @@
 		font-weight: 500;
 		font-style: normal;
 		line-height: 125.8%;
+		@include dArea{
+			font-size: vwx(36);
+		}
 
 		&-xl {
 			font-size: 41px;
+			@include dArea{
+				font-size: vwx(41);
+			}
 		}
 	}
 
@@ -118,5 +161,10 @@
 		font-weight: 350;
 		font-style: normal;
 		line-height: 125.8%;
+		@include dArea{
+			max-width: vwx(378);
+			margin-top: vwx(35);
+			font-size: vwx(24);
+		}
 	}
 }

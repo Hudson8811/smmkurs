@@ -2,6 +2,10 @@
 	background: #000000;
 	padding-top: 254px;
 	padding-bottom: 351px;
+	@include dArea{
+		padding-top: vwx(254);
+		padding-bottom: vwx(351);
+	}
 }
 
 .motylearn-title {
@@ -10,6 +14,9 @@
 	font-size: 96px;
 	line-height: 100%;
 	color: #FFFFFF;
+	@include dArea{
+		font-size: vwx(96);
+	}
 }
 
 .container2--motylearn {
@@ -21,6 +28,9 @@
 	margin-top: 158px;
 	box-sizing: border-box;
 	overflow: hidden;
+	@include dArea{
+		margin-top: vwx(158);
+	}
 }
 
 .motylearn-scroll-wrap {
@@ -35,6 +45,10 @@
 	padding-right: 167px;
 	box-sizing: border-box;
 	overflow: hidden;
+	@include dArea{
+		padding-left: vwx(167);
+		padding-right: vwx(167);
+	}
 }
 
 .motylearn-item {

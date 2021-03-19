@@ -1,6 +1,10 @@
 .feedback {
 padding-top: 123px;
 padding-bottom: 151px;
+	@include dArea{
+		padding-top: vwx(123);
+		padding-bottom: vwx(151);
+	}
 	&__container {
 	}
 
@@ -10,6 +14,10 @@ padding-bottom: 151px;
 		line-height: 100%;
 		text-align: center;
 		margin-bottom: 48px;
+		@include dArea{
+			font-size: vwx(96);
+			margin-bottom: vwx(48);
+		}
 	}
 	&__subtitle {
 		font-weight: 350;
@@ -17,6 +25,10 @@ padding-bottom: 151px;
 		line-height: 125.8%;
 		text-align: center;
 		margin-bottom: 80px;
+		@include dArea{
+			font-size: vwx(24);
+			margin-bottom: vwx(80);
+		}
 		bold {
 			font-weight: 700;
 		}
@@ -32,6 +44,9 @@ padding-bottom: 151px;
 		align-items: center;
 		&:not(:last-child) {
 			margin-bottom: 19px;
+			@include dArea{
+				margin-bottom: vwx(19);
+			}
 		}
 	}
 
@@ -44,6 +59,10 @@ padding-bottom: 151px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@include dArea{
+			width: vwx(57);
+			height: vwx(57);
+		}
 	}
 
 	&__icon {
@@ -70,6 +89,13 @@ padding-bottom: 151px;
 
 		border-radius: 51px;
 		margin-right: 20px;
+		@include dArea{
+			padding: vwx(19) vwx(20) vwx(16);
+			width: vwx(239);
+			font-size: vwx(18);
+			border-radius: vwx(51);
+			margin-right: vwx(20);
+		}
 
 	}
 	&__copy {

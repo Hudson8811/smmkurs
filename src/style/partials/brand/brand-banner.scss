@@ -4,6 +4,10 @@
 	background-color: #000;
 	overflow: hidden;
 	position: relative;
+	@include dArea{
+		padding-top: vwx(330);
+		padding-bottom: vwx(225);
+	}
 	&__decor-wrapper {
 		position: absolute;
 		right: 33.3vw;

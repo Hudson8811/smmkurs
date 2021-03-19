@@ -2,6 +2,10 @@
     padding-top: 128px;
     padding-bottom: 130px;
     background-color: #000;
+    @include dArea{
+        padding-top: vwx(128);
+        padding-bottom: vwx(130);
+    }
     &__container {
         color: #fff;
     }
@@ -11,15 +15,26 @@
         line-height: 100%;
         margin-bottom: 114px;
         text-align: center;
+        @include dArea{
+            font-size: vwx(96);
+            margin-bottom: vwx(114);
+        }
     }
     &__content {
         margin: 0 auto;
         max-width: 1302px;
+        @include dArea{
+            max-width: vwx(1302);
+        }
     }
 
     &__question {
         padding-top: 55px;
         padding-bottom: 55px;
+        @include dArea{
+            padding-top: vwx(55);
+            padding-bottom: vwx(55);
+        }
 
         border-bottom: 1px solid #FFFFFF;
         &:first-child {
@@ -33,12 +48,21 @@
         line-height: 100%;
         margin-bottom: 38px;
         max-width: 950px;
+        @include dArea{
+            font-size: vwx(41);
+            margin-bottom: vwx(38);
+            max-width: vwx(950);
+        }
     }
 
     &__question-desc {
         font-size: 27px;
         line-height: 124%;
         max-width: 1105px;
+        @include dArea{
+            font-size: vwx(27);
+            max-width: vwx(1105);
+        }
         &_mb {
             margin-bottom: 35px;
             font-size: 27px;

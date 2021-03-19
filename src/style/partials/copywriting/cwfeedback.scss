@@ -6,9 +6,16 @@
 	padding-top: 225px;
 	padding-bottom: 160px;
 	overflow: hidden;
+	@include dArea{
+		padding-top: vwx(225);
+		padding-bottom: vwx(160);
+	}
 
 	&--context {
 		padding-top: 298px;
+		@include dArea{
+			padding-top: vwx(298);
+		}
 	}
 }
 
@@ -26,10 +33,17 @@
 	max-width: 100%;
 
 	br {}
+	@include dArea{
+		font-size: vwx(96);
+		width: vwx(1370);
+	}
 }
 
 .cwfeedback-slider {
 	margin-top: 173px;
+	@include dArea{
+		margin-top: vwx(173);
+	}
 
 	svg {
 		path {}
@@ -43,6 +57,9 @@
 	display: flex;
 	justify-content: center;
 	margin-top: 18px;
+	@include dArea{
+		margin-top: vwx(18);
+	}
 }
 
 .cwfeedback-arrow {
@@ -56,10 +73,18 @@
 	align-items: center;
 	overflow: hidden;
 	cursor: pointer;
+	@include dArea{
+		margin: 0 vwx(18);
+		width: vwx(50);
+		height: vwx(50);
+	}
 
 	&--prev {
 		svg {
 			margin-right: 8px;
+			@include dArea{
+				margin-right: vwx(8);
+			}
 		}
 	}
 
@@ -67,12 +92,18 @@
 		svg {
 			transform: rotate(180deg);
 			margin-left: 8px;
+			@include dArea{
+				margin-left: vwx(8);
+			}
 		}
 	}
 
 	svg {
 		width: 23px;
 		height: auto;
+		@include dArea{
+			width: vwx(23);
+		}
 	}
 
 	&:hover {
@@ -87,11 +118,17 @@
 
 .cwfeedback-btn {
     font-size: 24px;
-	margin-top: 50px;
 		margin-top: 73px;
 		width: 273px;
 		margin-left: 19px;
 		min-height: 69px;
+	@include dArea{
+		font-size: vwx(24);
+		margin-top: vwx(73);
+		width: vwx(273);
+		margin-left: vwx(19);
+		min-height: vwx(69);
+	}
 	&--white {}
 }
 
@@ -101,6 +138,10 @@
 	text-align: center;
 	color: #FFFFFF;
     margin-top: 44px;
+	@include dArea{
+		font-size: vwx(24);
+		margin-top: vwx(44);
+	}
 
 	&__txt {}
 

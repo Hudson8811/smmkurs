@@ -3,6 +3,10 @@
     padding-top: 123px;
     padding-bottom: 334px;
     overflow: hidden;
+    @include dArea{
+        padding-top: vwx(123);
+        padding-bottom: vwx(334);
+    }
     &__container {
         color: #000;
         position: relative;
@@ -10,6 +14,9 @@
 
     &__content {
         padding: 0 84px;
+        @include dArea{
+            padding: 0 vwx(84);
+        }
     }
 
     &__row {
@@ -18,17 +25,29 @@
         position: relative;
         &:nth-child(1) {
             margin-bottom: 198px;
+            @include dArea{
+                margin-bottom: vwx(198);
+            }
 
         }
         &:nth-child(2) {
             margin-bottom: 134px;
+            @include dArea{
+                margin-bottom: vwx(134);
+            }
         }
         &:nth-child(3) {
             margin-bottom: 145px;
+            @include dArea{
+                margin-bottom: vwx(145);
+            }
 
         }
         &:nth-child(4) {
             padding-left: 75px;
+            @include dArea{
+                padding-left: vwx(75);
+            }
         }
     }
     &__img-wrapper {
@@ -40,6 +59,10 @@
         font-size: 64px;
         line-height: 125.8%;
         max-width: 757px;
+        @include dArea{
+            font-size: vwx(64);
+            max-width: vwx(757);
+        }
     }
     &__text-one {
         span {
@@ -51,6 +74,9 @@
         max-width: 602px;
         width: 100%;
         transform: translate(27%,6%);
+        @include dArea{
+            max-width: vwx(602);
+        }
         &::before {
             content: '';
             display: block;
@@ -76,6 +102,11 @@
         margin-right: 110px;
         margin-left: -29px;
         width: 100%;
+        @include dArea{
+            max-width: vwx(552);
+            margin-right: vwx(110);
+            margin-left: vwx(-29);
+        }
         &::before {
             content: '';
             display: block;
@@ -86,16 +117,27 @@
 
     &__text-two {
         margin-top: -84px;
+        @include dArea{
+            margin-top: vwx(-84);
+        }
     }
 
     &__text-three {
         margin-right: 60px;
         max-width: 1240px;
+        @include dArea{
+            margin-right: vwx(60);
+            max-width: vwx(1240);
+        }
 
     }
     &__text-four {
         margin-top: 80px;
         max-width: 677px;
+        @include dArea{
+            margin-top: vwx(80);
+            max-width: vwx(677);
+        }
     }
 
     &__img-wrapper-three {
@@ -104,6 +146,11 @@
         max-width: 490px;
         width: 100%;
         transform: translateY(-83px);
+        @include dArea{
+            right: vwx(-258);
+            max-width: vwx(490);
+            transform: translateY(vwx(-83));
+        }
         &::before {
             content: '';
             display: block;
@@ -115,6 +162,10 @@
         width: 100%;
         transform: translateY(-52px);
         margin-right: 231px;
+        @include dArea{
+            transform: translateY(vwx(-52));
+            max-width: vwx(322);
+        }
 
         &::before {
             content: '';

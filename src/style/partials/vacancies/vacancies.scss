@@ -3,6 +3,10 @@
     padding-bottom: 260px;
     position: relative;
     overflow: hidden;
+    @include dArea{
+        padding-top: vwx(184);
+        padding-bottom: vwx(260);
+    }
 
     &__decor {
         position: absolute;
@@ -24,12 +28,19 @@
     &__title-wrapper {
         position: relative;
         margin-bottom: 92px;
+        @include dArea{
+            margin-bottom: vwx(92);
+        }
     }
 
     &__img {
         position: absolute;
         right: 18%;
         top: -53px;
+        @include dArea{
+            top: vwx(-53);
+            max-width: 10vw;
+        }
     }
 
     &__title {
@@ -37,14 +48,23 @@
         font-size: 96px;
         line-height: 100%;
         position: relative;
+        @include dArea{
+            font-size: vwx(96);
+        }
     }
 
     &__text {
         font-size: 41px;
         line-height: 125.8%;
+        @include dArea{
+            font-size: vwx(41);
+        }
 
         &:not(:last-child) {
             margin-bottom: 60px;
+            @include dArea{
+                margin-bottom: vwx(60);
+            }
         }
     }
 
@@ -61,6 +81,10 @@
             right: 0;
             height: 3px;
             background: #FF9E00;
+            @include dArea{
+                bottom: vwx(5);
+                height: vwx(3);
+            }
 
         }
 

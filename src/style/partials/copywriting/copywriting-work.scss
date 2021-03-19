@@ -2,6 +2,9 @@
 	background: #000;
 	padding-bottom: 60px;
 	position: relative;
+	@include dArea{
+		padding-bottom: vwx(60);
+	}
 
 	&__decor-one {
 		position: absolute;
@@ -31,6 +34,10 @@
 		text-align: center;
 		color: #FFFFFF;
 		margin-bottom: 86px;
+		@include dArea{
+			font-size: vwx(96);
+			margin-bottom: vwx(86);
+		}
 
 	}
 
@@ -50,6 +57,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@include dArea{
+			border-radius: vwx(32);
+			padding: vwx(87) 0 vwx(99);
+			flex-basis: calc(50% - .83333vw);
+		}
 
 		&:not(:last-child) {}
 
@@ -57,20 +69,35 @@
 			margin-right: 40px;
 			margin-bottom: 40px;
 			flex-direction: column;
+			@include dArea{
+				margin-right: vwx(40);
+				margin-bottom: vwx(40);
+			}
 
 			.copywriting-work__card-text {
 				margin-bottom: 39px;
+				@include dArea{
+					margin-bottom: vwx(39);
+				}
 			}
 		}
 
 		&-two {
 			margin-bottom: 40px;
+			@include dArea{
+				margin-bottom: vwx(40);
+			}
 		}
 
 		&-three {
 			flex-basis: calc(50% - 20px);
 			margin-right: 40px;
 			padding: 81px 105px;
+			@include dArea{
+				flex-basis: calc(50% - .83333vw);
+				margin-right: vwx(40);
+				padding: vwx(81) vwx(105);
+			}
 		}
 	}
 
@@ -79,12 +106,19 @@
 		line-height: 125.8%;
 		text-align: center;
 		color: #000000;
+		@include dArea{
+			font-size: vwx(41);
+		}
 	}
 
 	&__tooltip-content {
 		font-size: 18px;
 		line-height: 24px;
 		text-align: center;
+		@include dArea{
+			font-size: vwx(18);
+			line-height: vwx(24);
+		}
 	}
 
 	&__card-btn {
@@ -93,6 +127,11 @@
 		box-sizing: border-box;
 		padding: 17px 65px;
 		min-height: 57px;
+		@include dArea{
+			padding: vwx(17) vwx(65);
+			min-height: vwx(57);
+			border-radius: vwx(51);
+		}
 	}
 
 	&__card-xl {
@@ -104,16 +143,29 @@
 		display: flex;
 		align-items: center;
 		padding: 90px 20px;
+		@include dArea{
+			margin-bottom: vwx(39);
+			border-radius: vwx(32);
+			padding: vwx(90) vwx(20);
+		}
 	}
 
 	&__card-img-wrapper {
-		margin-left: 5.8vw;
+		margin-left: 111px;
+		@include dArea{
+			margin-left: 5.8vw;
+		}
 	}
 
 	&__card-img {
 		margin-right: 132px;
 		background-color: #fff;
 		margin-left: 68px;
+		@include dArea{
+			margin-right: vwx(132);
+			margin-left: vwx(68);
+			max-width: 140px;
+		}
 
 	}
 
@@ -125,6 +177,10 @@
 		line-height: 125.8%;
 		color: #FFFFFF;
 		margin-bottom: 29px;
+		@include dArea{
+			font-size: vwx(41);
+			margin-bottom: vwx(29);
+		}
 	}
 
 	&__card-desc {
@@ -134,6 +190,10 @@
 		color: #FFFFFF;
 		width: 865px;
 		max-width: 100%;
+		@include dArea{
+			font-size: vwx(24);
+			width: vwx(865) !important;
+		}
 	}
 
 	&__column {
@@ -141,6 +201,9 @@
 		flex-basis: calc(50% - 20px);
 		display: flex;
 		flex-direction: column;
+		@include dArea{
+			flex-basis: calc(50% - .83333vw);
+		}
 	}
 
 	&__card-sm {
@@ -154,25 +217,43 @@
 		justify-content: center;
 		height: calc(50% - 20px);
 		max-height: 171px;
+		@include dArea{
+			padding: vwx(60) 22%;
+			border-radius: vwx(32);
+			height: calc(50% - .83333vw);
+			max-height: vwx(171);
+		}
 
 		.copywriting-work__card-text {
 			width: 400px;
 			max-width: 100%;
+			@include dArea{
+				width: vwx(400);
+			}
 		}
 
 		&:first-child {
 			.copywriting-work__card-text {
 				margin-right: 28px;
+				@include dArea{
+					margin-right: vwx(28);
+				}
 			}
 		}
 
 		&:not(:last-child) {
 			margin-bottom: 39px;
+			@include dArea{
+				margin-bottom: vwx(39);
+			}
 		}
 	}
 
 	&--context {
 		padding-top: 207px;
+		@include dArea{
+			padding-top: vwx(207);
+		}
 
 		.copywriting-work__row {
 			justify-content: space-between;
@@ -180,10 +261,16 @@
 
 		.copywriting-work__card-desc {
 			width: 888px;
+			@include dArea{
+				width: vwx(888);
+			}
 		}
 
 		.copywriting-work__card-md-bottom {
 			padding: 62px 0;
+			@include dArea{
+				padding: vwx(62) 0;
+			}
 		}
 	}
 }
@@ -191,6 +278,10 @@
 .copywriting-work--motion {
 	padding-top: 195px;
 	padding-bottom: 158px;
+	@include dArea{
+		padding-top: vwx(195);
+		padding-bottom: vwx(158);
+	}
 
 	.copywriting-work__row {
 		justify-content: space-between;
@@ -198,24 +289,40 @@
 
 	.copywriting-work__card-md {
 		padding: 108px 20px 122px;
+		@include dArea{
+			padding: vwx(108) vwx(20) vwx(122);
+		}
 	}
 
 	.copywriting-work__card-md-bottom {
 		padding: 65px 20px 54px;
+		@include dArea{
+			padding: vwx(65) vwx(20) vwx(54);
+		}
 	}
 }
 
 .copywriting-work__card-desc--motion {
 
 	width: 888px;
+	@include dArea{
+		width: vwx(888);
+	}
 }
 
 .copywriting-work--smm-strat {
 	padding-top: 266px;
 	padding-bottom: 96px;
+	@include dArea{
+		padding-top: vwx(266);
+		padding-bottom: vwx(96);
+	}
 
 	.copywriting-work__card-desc {
 		width: 893px;
+		@include dArea{
+			width: vwx(893);
+		}
 	}
 
 	.copywriting-work__row {
@@ -225,15 +332,25 @@
 	.copywriting-work__card-md-bottom {
 		padding: 55px 20px 64px;
 		flex-basis: calc(33.3333% - 20px);
+		@include dArea{
+			padding: vwx(55) vwx(20) vwx(64);
+			flex-basis: calc(33.3333% - .83333vw);
+		}
 	}
 }
 
 .copywriting-work__card-md-one--smm-strat {
 
 	padding: 109px 0 89px;
+	@include dArea{
+		padding: vwx(109) 0 vwx(89);
+	}
 
 	.copywriting-work__card-text {
 		margin-bottom: 26px;
+		@include dArea{
+			margin-bottom: vwx(26);
+		}
 	}
 
 }
@@ -241,10 +358,15 @@
 .copywriting-work--express-smm {
 	padding-bottom: 170px;
 	padding-top: 158px;
+	@include dArea{
+		padding-bottom: vwx(170);
+		padding-top: vwx(158);
+	}
 
 	@media screen and (min-width: 1024px) {
 		.copywriting-work__card-desc {
 			width: 888px;
+
 		}
 	}
 
@@ -254,16 +376,20 @@
 
 	.copywriting-work__card-md-bottom {
 		padding: 55px 20px 64px;
+		@include dArea{
+			padding: vwx(55) vwx(20) vwx(64);
+		}
 	}
 }
 
 .copywriting-work--brand {
-	padding-bottom: 170px;
     padding-bottom: 0;
+
 
 	@media screen and (min-width: 1024px) {
 		.copywriting-work__card-md-one--smm-strat {
 			padding: 88px 0 98px;
+
 
 			.copywriting-work__card-text {
 				margin-bottom: 39px;
@@ -281,5 +407,8 @@
 
 	.copywriting-work__card-md-bottom {
 		padding: 55px 20px 64px;
+		@include dArea{
+			padding: vwx(55) vwx(20) vwx(64);
+		}
 	}
 }

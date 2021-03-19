@@ -3,12 +3,19 @@ padding-top: 147px;
 padding-bottom: 78px;
 position: relative;
 overflow: hidden;
+    @include dArea{
+        padding-top: vwx(147);
+        padding-bottom: vwx(78);
+    }
     &__line1 {
         position: absolute;
         top: 9%;
         left: 0;
         width: 43vw;
         height: 51vw;
+        @include dArea{
+            top: 0;
+        }
     }
 
     &__line2 {
@@ -17,6 +24,9 @@ overflow: hidden;
         right: 0;
         width: 53vw;
         height: 52vw;
+        @include dArea{
+            bottom: -25%;
+        }
     }
 
     &__container {
@@ -32,6 +42,12 @@ overflow: hidden;
         line-height: 100%;
         margin-bottom: 126px;
         padding-right: 22px;
+        @include dArea{
+            max-width: vwx(1140);
+            font-size: vwx(113);
+            margin-bottom: vwx(126);
+            padding-right: vwx(22);
+        }
     }
 
     &__content {
@@ -39,12 +55,21 @@ overflow: hidden;
         justify-content: center;
         margin-bottom: 66px;
         position: relative;
+        @include dArea{
+            margin-bottom: vwx(66);
+        }
     }
     &__card {
         max-width: 360px;
         width: 100%;
+        @include dArea{
+            max-width: vwx(360);
+        }
         &:first-child {
             margin-right: 45px;
+            @include dArea{
+                margin-right: vwx(45);
+            }
 
         }
     }
@@ -52,6 +77,9 @@ overflow: hidden;
         position: relative;
         width: 100%;
         margin-bottom: 22px;
+        @include dArea{
+            margin-bottom: vwx(22);
+        }
         &::before {
             content: '';
             display: block;
@@ -93,6 +121,9 @@ overflow: hidden;
         font-weight: 300;
         font-size: 24px;
         line-height: 125.8%;
+        @include dArea{
+            font-size: vwx(24);
+        }
     }
     &__content-decor {
         position: absolute;
@@ -107,5 +138,9 @@ overflow: hidden;
         font-weight: 350;
         font-size: 41px;
         line-height: 125.8%;
+        @include dArea{
+            font-size: vwx(41);
+            max-width: vwx(650);
+        }
     }
 }

@@ -24,6 +24,12 @@
 		border-radius: vwx(18);
 		font-size: vwx(18);
 		line-height: 125.8%;
+		@include dMMax{
+			width: novwx(273);
+			min-height: novwx(72);
+			border-radius: novwx(18);
+			font-size: novwx(18);
+		}
 
 		@media (max-width: 1200px) {
 			width: 273px;
@@ -37,6 +43,9 @@
 		color: #000;
 		border-radius: vwx(18);
 		background: #AFF800;
+		@include dMMax{
+			border-radius: novwx(18);
+		}
 
 		@media (max-width: 1200px) {
 			border-radius: 18px;

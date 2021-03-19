@@ -4,6 +4,10 @@
 	padding-bottom: 221px;
 	background: #000;
 	overflow: hidden;
+	@include dArea{
+		padding-top: vwx(157);
+		padding-bottom: vwx(221);
+	}
 
 	&__line {
 		position: absolute;
@@ -13,6 +17,10 @@
 		// width: 100%;
 		left: 74px;
 		top: 151px;
+		@include dArea{
+			left: vwx(74);
+			top: vwx(151);
+		}
 		&--mob{
 			display: none;}
 	}
@@ -21,10 +29,16 @@
 		color: #fff;
 		position: relative;
 		width: 1545px;
+		@include dArea{
+			width: vwx(1545);
+		}
 	}
 
 	&__content {
 		padding: 0 84px;
+		@include dArea{
+			padding: 0 vwx(84);
+		}
 	}
 
 	&__row {
@@ -33,15 +47,26 @@
 
 		&:nth-child(1) {
 			margin-bottom: -105px;
+			@include dArea{
+				margin-bottom: vwx(-105);
+			}
 		}
 
 		&:nth-child(2) {
 			margin-bottom: 160px;
 			box-sizing: border-box;
 			padding-right: 45px;
+			@include dArea{
+				margin-bottom: vwx(160);
+				box-sizing: border-box;
+				padding-right: vwx(45);
+			}
 
 			.copywriting-features__img {
 				left: -16px;
+				@include dArea{
+					left: vwx(-16);
+				}
 			}
 		}
 
@@ -49,10 +74,16 @@
 
 			.copywriting-features__text-three {
 				margin-right: 47px;
+				@include dArea{
+					margin-right: vwx(47);
+				}
 			}
 
 			.copywriting-features__img {
 				top: 6px;
+				@include dArea{
+					top: vwx(6);
+				}
 			}
 		}
 	}
@@ -68,16 +99,26 @@
 		line-height: 125.8%;
 		max-width: 743px;
 		font-weight: 300;
+		@include dArea{
+			font-size: vwx(64);
+			max-width: vwx(743);
+		}
 	}
 
 	&__text-one {
 		margin-right: 111px;
+		@include dArea{
+			margin-right: vwx(111);
+		}
 
 	}
 
 	&__img-wrapper-one {
 		max-width: 514px;
 		transform: translateY(-32px);
+		@include dArea{
+			max-width: vwx(514);
+		}
 
 		&::before {
 			content: '';
@@ -99,6 +140,10 @@
 	&__img-wrapper-two {
 		max-width: 564px;
 		margin-right: 42px;
+		@include dArea{
+			max-width: vwx(564);
+			margin-right: vwx(42);
+		}
 
 		width: 100%;
 
@@ -113,16 +158,26 @@
 	&__text-two {
 		text-align: right;
 		margin-top: 92px;
+		@include dArea{
+			margin-top: vwx(92);
+		}
 	}
 
 	&__text-three {
 		margin-right: 60px;
+		@include dArea{
+			margin-right: vwx(60);
+		}
 	}
 
 	&__img-wrapper-three {
 		max-width: 261px;
 		width: 100%;
 		transform: translateY(-52px);
+		@include dArea{
+			max-width: vwx(261);
+			transform: translateY(vwx(-52));
+		}
 
 		&::before {
 			content: '';

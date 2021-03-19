@@ -6,6 +6,11 @@
 	font-family: ALS Hauss, sans-serif;
 	z-index: 1;
 
+	@include dMMax{
+		padding-top: novwx(157);
+		padding-bottom: novwx(209);
+	}
+
 	@media (max-width: 1200px) {
 		padding-top: 157px;
 		padding-bottom: 209px;
@@ -31,6 +36,9 @@
 		width: 100%;
 		height: auto;
 		z-index: 2;
+		@include dMMax{
+			right: novwx(20);
+		}
 
 		@media (max-width: 1200px) {
 			right: 20px;
@@ -64,6 +72,10 @@
 			display: block;
 			width: vwx(458);
 			height: vwx(458);
+			@include dMMax{
+				width: novwx(458);
+				height: novwx(458);
+			}
 
 			@media (max-width: 1200px) {
 				width: calc(100% + 4px);
@@ -92,6 +104,11 @@
 		font-style: normal;
 		line-height: 100%;
 		z-index: 3;
+		@include dMMax{
+			max-width: novwx(1200);
+			margin-bottom: novwx(185);
+			font-size: novwx(113);
+		}
 
 		@media (max-width: 1200px) {
 			max-width: 1200px;
@@ -109,6 +126,10 @@
 		padding: vwx(100) vwx(35) vwx(135);
 		border-radius: vwx(80);
 		background: #000000;
+		@include dMMax{
+			padding: novwx(100) novwx(35) novwx(135);
+			border-radius: novwx(80);
+		}
 
 		@media (max-width: 1200px) {
 			padding: 100px 35px 135px;
@@ -121,6 +142,10 @@
 	&__inner {
 		width: vwx(1076);
 		margin-left: vwx(24);
+		@include dMMax{
+			width: novwx(1076);
+			margin-left: novwx(24);
+		}
 
 		@media (max-width: 1200px) {
 			width: 1076px;
@@ -146,6 +171,12 @@
 		font-weight: normal;
 		font-style: normal;
 		line-height: 100%;
+		@include dMMax{
+			font-size: novwx(48);
+			margin-top: novwx(-4);
+			margin-left: novwx(17);
+			padding: novwx(39) novwx(76);
+		}
 
 		@media (max-width: 1200px) {
 			margin-top: -4px;
@@ -163,6 +194,10 @@
 		width: 100%;
 		margin-top: vwx(13);
 		margin-bottom: vwx(-54);
+		@include dMMax{
+			margin-top: novwx(13);
+			margin-bottom: novwx(-54);
+		}
 
 		@media (max-width: 1200px) {
 			margin-top: 13px;
@@ -173,6 +208,10 @@
 	&__card {
 		width: vwx(400);
 		margin-bottom: vwx(54);
+		@include dMMax{
+			width: novwx(400);
+			margin-bottom: novwx(54);
+		}
 
 		@media (max-width: 1200px) {
 			width: 400px;
@@ -182,6 +221,9 @@
 
 	&__card-img {
 		height: vwx(353);
+		@include dMMax{
+			height: novwx(353);
+		}
 
 		@media (max-width: 1200px) {
 			height: 353px;
@@ -203,6 +245,10 @@
 		font-weight: 500;
 		font-style: normal;
 		line-height: 125.8%;
+		@include dMMax{
+			margin-top: novwx(47);
+			font-size: novwx(41);
+		}
 
 		@media (max-width: 1200px) {
 			margin-top: 47px;
@@ -216,6 +262,10 @@
 		font-weight: 350;
 		font-style: normal;
 		line-height: 125.8%;
+		@include dMMax{
+			margin-top: novwx(35);
+			font-size: novwx(24);
+		}
 
 		@media (max-width: 1200px) {
 			margin-top: 35px;

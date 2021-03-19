@@ -6,6 +6,10 @@
 	font-family: ALS Hauss, sans-serif;
 	z-index: 1;
 
+	@include dArea{
+		padding-top: vwx(147);
+		padding-bottom: vwx(241);
+	}
 
 	&__container {
 		color: #fff;
@@ -25,6 +29,11 @@
 		line-height: 100%;
 		text-align: center;
 		z-index: 3;
+		@include dArea{
+			max-width: vwx(1380);
+			margin-bottom: vwx(185);
+			font-size: vwx(113);
+		}
 		span:first-child {
 			color: #FF4E00;
 		}
@@ -39,12 +48,19 @@
 		padding: 100px 35px 253px;
 		border-radius: 80px;
 		background: #000000;
+		@include dArea{
+			border-radius: vwx(80);
+			padding: vwx(100) vwx(35) vwx(253);
+		}
 	}
 
 	/*495
 	17*/
 	&__inner {
 		width: 1383px;
+		@include dArea{
+			width: vwx(1383);
+		}
 	}
 
 	&__decor {
@@ -65,6 +81,11 @@
 		font-weight: normal;
 		font-style: normal;
 		line-height: 100%;
+		@include dArea{
+			margin: vwx(17);
+			font-size: vwx(48);
+			padding: vwx(39) vwx(76);
+		}
 	}
 
 	&__row {
@@ -75,29 +96,48 @@
 		width: 100%;
 		margin-top: -16px;
 		margin-bottom: -54px;
+		@include dArea{
+			margin-top: vwx(-16);
+			margin-bottom: vwx(-54);
+		}
 	}
 
 	&__card {
 		width: 433px;
 		margin-bottom: 0px;
+		@include dArea{
+			width: vwx(433);
+		}
 		&:nth-child(2) {
 			.context-need__card-img {
 				height: 390px;
+				@include dArea{
+					height: vwx(390);
+				}
 			}
 			.context-need__card-title {
 				margin-top: -40px;
+				@include dArea{
+					margin-top: vwx(-40);
+				}
 			}
 		}
 		&:nth-child(3) {
 			margin-right: -11px;
 			.context-need__card-title {
 				font-size: 41px;
+				@include dArea{
+					font-size: vwx(41);
+				}
 			}
 		}
 	}
 
 	&__card-img {
 		height: 353px;
+		@include dArea{
+			height: vwx(353);
+		}
 
 		img {
 			width: auto;
@@ -116,6 +156,10 @@
 		font-style: normal;
 		line-height: 125.8%;
 		max-width: 380px;
+		@include dArea{
+			font-size: vwx(36);
+			max-width: vwx(380);
+		}
 	}
 
 	&__card-desc {
@@ -124,5 +168,9 @@
 		font-weight: 350;
 		font-style: normal;
 		line-height: 125.8%;
+		@include dArea{
+			margin: vwx(35);
+			font-size: vwx(24);
+		}
 	}
 }

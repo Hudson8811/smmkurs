@@ -3,6 +3,9 @@
 	background: #000000;
 	position: relative;
 	padding: vwd(306) 0 vwd(293);
+	@include dArea{
+		padding: vwx(306) 0 vwx(293);
+	}
 }
 
 .ylearn-container {}
@@ -578,5 +581,21 @@
 				}
 			}
 		}
+	}
+}
+
+@include dArea{
+	.ylearn-art {
+		width: 6.6875vw !important;
+		top: 12.19792vw !important;
+		left: calc(50% + 364px) !important;
+		max-width: vwx(364) !important;
+	}
+
+	.ylearn-title {
+		font-size: vwx(96) !important;
+	}
+	.ylearn-item__title {
+		font-size: vwx(64) !important;
 	}
 }

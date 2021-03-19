@@ -4,6 +4,10 @@
     background-color: #000;
     overflow: hidden;
     position: relative;
+    @include dArea{
+      padding-top: vwx(172);
+      padding-bottom: vwx(200);
+    }
     &__decor-wrapper {
         position: absolute;
         right: -0.6vw;
@@ -17,7 +21,9 @@
         position: absolute;
         top: 0vw;
         right: 46%;
-    
+      @include dArea{
+        max-width: 180px;
+      }
     }
     &__decor {
         top: -2px;
@@ -45,11 +51,19 @@
         width: 64px;
         height: 64px;
         margin-bottom: 179px;
+      @include dArea{
+        width: vwx(64);
+        height: vwx(64);
+        margin-bottom: vwx(179);
+      }
     }
     &__row {
         display: flex;
         flex-direction: column;
         max-width: 1140px;
+      @include dArea{
+        max-width: vwx(1140);
+      }
     }
     &__title {
         font-family: ALS Hauss;
@@ -58,6 +72,10 @@
         margin-bottom: 15px;
         position: relative;
         display: none;
+      @include dArea{
+        font-size: vwx(41);
+        margin-bottom: vwx(15);
+      }
     }
     
     &__subtitle {
@@ -67,6 +85,11 @@
         margin-bottom: 53px;
         margin-right: 40px;
         position: relative;
+      @include dArea{
+        font-size: vwx(113);
+        margin-bottom: vwx(53);
+        margin-right: vwx(40);
+      }
     }
     
     &__link {
@@ -80,6 +103,11 @@
         padding: 37px 141px;
         cursor: pointer;
         transition-duration: .2s;
+      @include dArea{
+        border-radius: vwx(18);
+        padding: vwx(37) vwx(141);
+        font-size: vwx(32);
+      }
         &:hover {
             background: #d03e00
         }
@@ -94,10 +122,17 @@
         cursor: pointer;
         margin-bottom: 84px;
         padding-left: 6px;
+      @include dArea{
+        margin-bottom: vwx(84);
+        padding-left: vwx(6);
+      }
     }
     
     &__play {
         margin-right: 28px;
+      @include dArea{
+        margin-right: (28);
+      }
     }
     
     &__play-text {
@@ -107,6 +142,9 @@
         align-items: center;
         text-align: center;
         color: #FEA430;
+      @include dArea{
+        font-size: vwx(32);
+      }
         & bold {
             font-weight: 500;
         }

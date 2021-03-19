@@ -1,6 +1,22 @@
 .other-courses-section {
 	padding: 275px 0 223px;
 	background: #000;
+	@include dArea{
+		padding: vwx(275) 0 vwx(223);
+	}
+
+	.kurs__title{
+		@include dArea{
+			font-size: vwx(36);
+		}
+	}
+	.btn{
+		@include dArea {
+			min-height: vwx(50);
+			border-radius: vwx(17);
+			font-size: vwx(19);
+		}
+	}
 }
 
 .otcourses-title {
@@ -14,6 +30,10 @@
 
 	color: #FFFFFF;
 	margin: 0 auto 113px;
+	@include dArea{
+		margin: 0 auto vwx(113);
+		font-size: vwx(48);
+	}
 }
 
 

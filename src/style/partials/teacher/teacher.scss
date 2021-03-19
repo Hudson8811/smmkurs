@@ -1,15 +1,22 @@
 .teacher {
 	background: #000;
 	padding-top: 187px;
+	@include dArea{
+		padding-top: vwx(187);
+	}
 
 	&__container {}
 
 	&__wrapper {
 		background: #FFFFFF;
 		border-radius: 60px;
-		padding: 0 61px;
-		padding-bottom: 0;
+		padding: 0 61px 0;
 		padding-top: 88px;
+		@include dArea{
+			border-radius: vwx(60);
+			padding: 0 vwx(61) 0;
+			padding-top: vwx(88);
+		}
 	}
 
 	&__title {
@@ -21,6 +28,10 @@
 		text-align: center;
 		color: #000000;
 		margin-bottom: 14px;
+		@include dArea{
+			margin-bottom: vwx(14);
+			font-size: vwx(96);
+		}
 
 	}
 
@@ -35,6 +46,10 @@
 		width: 100%;
 		max-width: 677px;
 		margin-right: 115px;
+		@include dArea{
+			max-width: vwx(677);
+			margin-right: vwx(115);
+		}
 
 		&::before {
 			content: '';
@@ -65,6 +80,10 @@
 		align-items: baseline;
 		max-width: 535px;
 		margin-top: 20px;
+		@include dArea{
+			max-width: vwx(535);
+			margin-top: vwx(20);
+		}
 	}
 
 	&__teacher-name {
@@ -74,6 +93,10 @@
 		font-weight: 500;
 		font-size: 41px;
 		line-height: 125.8%;
+		@include dArea{
+			margin-bottom: vwx(35);
+			font-size: vwx(41);
+		}
 	}
 
 	&__teacher-info {
@@ -84,9 +107,18 @@
 		line-height: 125.8%;
 		color: #000000;
 		margin-bottom: 62px;
+		@include dArea{
+			font-size: vwx(24);
+			margin-bottom: vwx(62);
+			width:vwx(453) !important;
+		}
 
 		p + p {
 			margin-top: 30px;
+			@include dArea{
+				margin-top: vwx(30);
+			}
+
 		}
 	}
 
@@ -100,6 +132,10 @@
 		color: #FF4E00;
 		text-decoration: underline;
 		transition: 0.2s;
+		@include dArea{
+			font-size: vwx(24);
+			line-height: vwx(30);
+		}
 
 		&:hover {
 			opacity: 0.8;
@@ -110,6 +146,10 @@
 .teacher--brand {
     padding-top: 135px;
     padding-bottom: 245px;
+	@include dArea{
+		padding-top: vwx(135);
+		padding-bottom: vwx(245);
+	}
 	.teacher__wrapper {
 		background: #000;
 	}
@@ -120,6 +160,9 @@
 
 	.teacher__teacher-wrapper {
 		margin-top: 50px;
+		@include dArea{
+			margin-top: vwx(50);
+		}
 	}
 
 	.teacher__teacher-name {
@@ -133,11 +176,19 @@
 
 	.teacher__img {
 		top: 119px;
+		@include dArea{
+			top: vwx(119);
+		}
 
 		&-wrapper {
 			max-width: 584px;
 			margin-right: 145px;
 			margin-left: 130px;
+			@include dArea{
+				max-width: vwx(584);
+				margin-right: vwx(145);
+				margin-left: vwx(130);
+			}
 
 			&::before {
 				content: '';
@@ -154,16 +205,26 @@
 	.teacher__img-wrapper {
 		margin-right: 0;
 		margin-left: 187px;
+		@include dArea{
+			margin-left: vwx(187);
+		}
 	}
 
 	.teacher__img {
 		top: 120px;
 		left: -145px;
+		@include dArea{
+			top: vwx(120);
+			left: vwx(-145);
+		}
 	}
 }
 
 .teacher--motion {
 	padding-bottom: 216px;
+	@include dArea{
+		padding-bottom: vwx(216);
+	}
 }
 
 .teacher--smm-strat {
@@ -259,6 +320,10 @@
 	.teacher__img-wrapper {
 		margin-right: 166px;
 		margin-left: 14px;
+		@include dArea{
+			margin-right: vwx(166);
+			margin-left: vwx(14);
+		}
 
 		@media (max-width: 1400px) {
 			margin-right: 0px;
@@ -267,6 +332,9 @@
 
 	.teacher__teacher-wrapper {
 		margin-top: -81px;
+		@include dArea{
+			margin-top: vwx(-81);
+		}
 	}
 }
 
@@ -276,6 +344,9 @@
 
 .teacher__wrapper_mb {
 	margin-bottom: 59px;
+	@include dArea{
+		margin-bottom: vwx(59);
+	}
 
 	@media (max-width: 1024px) {
 		margin-bottom: vw(24);
@@ -284,6 +355,9 @@
 
 .teacher__express-smm {
 	padding-bottom: 179px;
+	@include dArea{
+		padding-bottom: vwx(179);
+	}
 
 	.teacher__teacher-wrapper {
 		@media screen and (min-width: 1025px) {
@@ -330,6 +404,10 @@
 .context-teacher {
 	padding-bottom: 180px;
 	padding-top: 193px;
+	@include dArea{
+		padding-bottom: vwx(180);
+		padding-top: vwx(193);
+	}
 
 	@media (max-width: 1024px) {
 		padding-bottom: vw(130);
@@ -337,6 +415,9 @@
 
 	.teacher__wrapper {
 		padding-bottom: 113px;
+		@include dArea{
+			padding-bottom: vwx(113);
+		}
 		@media (max-width: 1024px) {
 			padding-bottom: vw(0);
 			border-bottom-left-radius: 24px;
@@ -346,9 +427,16 @@
 	.teacher__teacher-wrapper {
 		margin-top: -23px;
 		max-width: 488px;
+		@include dArea{
+			margin-top: vwx(-23);
+			max-width: vwx(488);
+		}
 	}
 	.teacher__title {
 		margin-bottom: 106px;
+		@include dArea{
+			margin-bottom: vwx(106);
+		}
 		@media (max-width: 1024px) {
 			margin-bottom: vw(62);
 		}
@@ -359,6 +447,12 @@
 		margin-left: 73px;
 		border-radius: 24px;
 		overflow: hidden;
+		@include dArea{
+			max-width: vwx(632);
+			margin-right: vwx(88);
+			margin-left: vwx(73);
+			border-radius: vwx(24);
+		}
 
 		@media (max-width: 1200px) {
 			margin-right: 44px;

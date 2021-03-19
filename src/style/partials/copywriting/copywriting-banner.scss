@@ -4,7 +4,10 @@
 	background-color: #000;
 	position: relative;
 	z-index: 10;
-
+	@include dMMax{
+		padding-top: novwx(172);
+		padding-bottom: novwx(302);
+	}
 	@media (max-width: 1200px) {
 		padding-top: 172px;
 		padding-bottom: 302px;
@@ -17,6 +20,10 @@
 			position: absolute;
 			right: 0%;
 			top: 0;
+			@include dMMax{
+				width: novwx(980);
+				height: novwx(1283);
+			}
 
 			@media (max-width: 1200px) {
 				width: auto;
@@ -39,6 +46,10 @@
 		width: vwx(64);
 		height: vwx(64);
 		margin-bottom: 97px;
+		@include dMMax{
+			width: novwx(64);
+			height: novwx(64);
+		}
 
 		@media (max-width: 1600px) {
 			margin-bottom: qw(90);
@@ -62,6 +73,10 @@
 		font-size: vwx(41);
 		line-height: 125.8%;
 		margin-bottom: vwx(30);
+		@include dMMax{
+			font-size: novwx(41);
+			margin-bottom: novwx(30);
+		}
 
 		@media (max-width: 1200px) {
 			font-size: 41px;
@@ -75,9 +90,10 @@
 		line-height: 100%;
 		margin-bottom: vwx(69);
 		margin-right: vwx(40);
-
-		@media (max-width: 1600px) {
-			font-size: qw(90);
+		@include dMMax{
+			font-size: novwx(113);
+			margin-bottom: novwx(69);
+			margin-right: novwx(40);
 		}
 
 		@media (max-width: 1200px) {
@@ -98,6 +114,11 @@
 		padding: vwx(37) vwx(141);
 		cursor: pointer;
 		transition-duration: .2s;
+		@include dMMax{
+			font-size: novwx(32);
+			border-radius: novwx(18);
+			padding: novwx(37) novwx(141);
+		}
 
 		&:hover {
 			background: #d03e00
@@ -117,6 +138,10 @@
 		align-items: center;
 		flex: 0 0 auto;
 		cursor: pointer;
+		@include dMMax{
+			margin-right: novwx(94);
+			margin-top: novwx(-130);
+		}
 
 		@media (max-width: 1200px) {
 			margin-right: 94px;
@@ -126,6 +151,9 @@
 
 	&__play {
 		margin-right: vwx(28);
+		@include dMMax{
+			margin-right: novwx(28);
+		}
 
 		@media (max-width: 1200px) {
 			margin-right: 28px;
@@ -139,6 +167,9 @@
 		align-items: center;
 		text-align: center;
 		color: #FEA430;
+		@include dMMax{
+			font-size: novwx(32);
+		}
 
 		@media (max-width: 1200px) {
 			font-size: 32px;
