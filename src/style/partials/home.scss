@@ -13,6 +13,9 @@ main .home{
   overflow: hidden;
   position: relative;
   padding-bottom: vwx(306);
+  @include dMMax{
+    padding-bottom: novwx(306);
+  }
   @include homeMax{
     padding-bottom: qw(306);
   }
@@ -58,6 +61,9 @@ main .home{
     position: relative;
     z-index: 3;
     margin-top: vwx(115);
+    @include dMMax{
+      margin-top: novwx(115);
+    }
     @include homeMax{
       margin-top: qw(115);
     }
@@ -72,6 +78,14 @@ main .home{
       color: #FFFFFF;
       width: vwx(923);
       padding-top: vwx(83);
+      @include dMMax{
+        font-size: novwx(100);
+        line-height: 100%;
+        letter-spacing: novwx(-1.25573);
+        color: #FFFFFF;
+        width: novwx(923);
+        padding-top: novwx(83);
+      }
       @include homeMax{
         font-size: qw(100);
         line-height: 100%;
@@ -95,6 +109,10 @@ main .home{
       width: vwx(474);
       padding-right: vwx(15);
       text-align: center;
+      @include dMMax{
+        width: novwx(474);
+        padding-right: novwx(15);
+      }
       @include homeMax{
         width: qw(474);
         padding-right: qw(15);
@@ -107,6 +125,7 @@ main .home{
       &-img{
         width: 100%;
         display: block;
+
         @include mMax{
           width: vw(275);
           margin: 0 auto;
@@ -122,6 +141,11 @@ main .home{
         line-height: vwx(25);
         color: #FEA430;
         margin-top: vwx(50);
+        @include dMMax{
+          font-size: novwx(32);
+          line-height: novwx(25);
+          margin-top: novwx(50);
+        }
         strong{
           font-weight: 500;
         }
@@ -150,6 +174,9 @@ main .home{
     &__img{
       width: calc(100% - 29.2vw);
       display: flex;
+      @include dMMax{
+        width: calc(100% - 560px);
+      }
       @include homeMax {
         width: calc(100% - 45vw);
       }
@@ -170,6 +197,9 @@ main .home{
     }
     &__right{
       width: vwx(713);
+      @include dMMax{
+        width: novwx(713);
+      }
       @include homeMax {
         width: 45vw;
       }
@@ -183,6 +213,11 @@ main .home{
       line-height: vwx(60);
       letter-spacing: vwx(-1.25573);
       color: #FFFFFF;
+      @include dMMax{
+        font-size: novwx(48);
+        line-height: novwx(60);
+        letter-spacing: novwx(-1.25573);
+      }
       @include homeMax {
         font-size: qw(48);
         line-height: qw(60);
@@ -202,6 +237,9 @@ main .home{
     }
     &__link{
       margin-top: vwx(47);
+      @include dMMax{
+        margin-top: novwx(47);
+      }
       @include homeMax {
         margin-top: qw(47);
       }
@@ -213,6 +251,10 @@ main .home{
         line-height: vwx(32);
         text-decoration-line: underline;
         color: #FF9B07;
+        @include dMMax{
+          font-size: novwx(32);
+          line-height: novwx(32);
+        }
         @include homeMax {
           font-size: qw(32);
         }
@@ -229,6 +271,9 @@ main .home{
 
     &--1{
       margin-top: vwx(-59);
+      @include dMMax{
+        margin-top: novwx(-59);
+      }
       @include homeMax {
         margin-top: qw(-59);
       }
@@ -251,6 +296,9 @@ main .home{
       flex-direction: row-reverse;
       margin-top: vwx(-69);
       z-index: 1;
+      @include dMMax{
+        margin-top: novwx(-69);
+      }
       @include homeMax {
         margin-top: qw(-69);
       }
@@ -269,6 +317,11 @@ main .home{
         right: vwx(-340);
         bottom: 0;
         z-index: -1;
+        @include dMMax{
+          right: novwx(-340);
+          width: novwx(1111);
+          height: novwx(1373);
+        }
         @include homeMax {
           width: qw(1111);
           height: qw(1373);
@@ -298,6 +351,9 @@ main .home{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include dMMax{
+      margin-top: novwx(41);
+    }
     @include homeMax {
       margin-top: qw(41);
     }
@@ -311,6 +367,12 @@ main .home{
       letter-spacing: vwx(-1.25573);
       color: #FFFFFF;
       max-width: vwx(770);
+      @include dMMax{
+        font-size: novwx(48);
+        line-height: novwx(60);
+        letter-spacing: novwx(-1.25573);
+        max-width: novwx(770);
+      }
       @include homeMax {
         font-size: qw(48);
         line-height: qw(60);
@@ -331,6 +393,10 @@ main .home{
       width: vwx(1040);
       max-width: 100%;
       margin-top: vwx(100);
+      @include dMMax{
+        margin-top: novwx(100);
+        width: novwx(1040);
+      }
       @include homeMax {
         width: qw(1040);
         margin-top: qw(100);
@@ -347,6 +413,9 @@ main .home{
       justify-content: center;
       align-items: center;
       box-sizing: border-box;
+      @include dMMax{
+        height: novwx(133);
+      }
       @include homeMax {
         height: qw(133);
       }
@@ -370,6 +439,9 @@ main .home{
 
   &-kurses{
     padding-top: vwx(182);
+    @include dMMax{
+      padding-top: novwx(182);
+    }
     @include homeMax {
       padding-top: qw(182);
     }
@@ -382,6 +454,12 @@ main .home{
       line-height: vwx(64);
       letter-spacing: vwx(-1.25573);
       color: #FFFFFF;
+      @include dMMax{
+        margin-bottom: novwx(103);
+        font-size: novwx(64);
+        line-height: novwx(64);
+        letter-spacing: novwx(-1.25573);
+      }
       @include homeMax {
         margin-bottom: qw(103);
         font-size: qw(64);
@@ -427,6 +505,9 @@ main .home{
       z-index: 2;
       padding: vwx(33) vwx(20) vwx(37) vwx(37);
       overflow: hidden;
+      @include dMMax{
+        padding: novwx(33) novwx(20) novwx(37) novwx(37);
+      }
       @include homeMax {
         padding: qw(33) qw(20) qw(37) qw(37);
       }
@@ -462,6 +543,11 @@ main .home{
       line-height: vwx(42);
       color: #FFFFFF;
       margin-bottom: vwx(5);
+      @include dMMax{
+        font-size: novwx(34);
+        line-height: novwx(42);
+        margin-bottom: novwx(5);
+      }
       @include homeMax {
         font-size: qw(34);
         line-height: qw(42);
@@ -482,6 +568,10 @@ main .home{
       line-height: vwx(30);
       color: #FFFFFF;
       opacity: 0.6;
+      @include dMMax{
+        font-size: novwx(24);
+        line-height: novwx(30);
+      }
       @include homeMax {
         font-size: qw(24);
         line-height: qw(30);
@@ -500,7 +590,9 @@ main .home{
       z-index: -1;
       display: block;
       width: vwx(200);
-
+      @include dMMax{
+        width: novwx(200);
+      }
       @include homeMax {
         width: auto;
       }
@@ -527,6 +619,11 @@ main .home{
           top: vwx(127);
           left: vwx(20);
           width: vwx(400);
+          @include dMMax{
+            top: novwx(127);
+            left: novwx(20);
+            width: novwx(400);
+          }
 
           @include homeMax {
             top: qw(127);
@@ -550,6 +647,11 @@ main .home{
           bottom: vwx(25);
           right: vwx(35);
           width: vwx(300);
+          @include dMMax{
+            bottom: novwx(25);
+            right: novwx(35);
+            width: novwx(300);
+          }
 
           @include homeMax {
             bottom: qw(25);
@@ -574,6 +676,10 @@ main .home{
           left: 50%;
           transform:translateX(-50%);
           width: vwx(350);
+          @include dMMax{
+            width: novwx(350);
+            top: novwx(119);
+          }
 
           @include homeMax {
             top: qw(119);
@@ -594,6 +700,9 @@ main .home{
           top: 0;
           right: 0;
           width: vwx(450);
+          @include dMMax{
+            width: novwx(450);
+          }
 
           @include homeMax {
             width: qw(473);
@@ -613,6 +722,9 @@ main .home{
           top: 0;
           right: 0;
           width: vwx(300);
+          @include dMMax{
+            width: novwx(300);
+          }
 
           @include homeMax {
             width: qw(305);
@@ -633,6 +745,10 @@ main .home{
           left: 45%;
           transform:translateX(-50%);
           width: vwx(150);
+          @include dMMax{
+            top: novwx(143);
+            width: novwx(150);
+          }
 
           @include homeMax {
             top: qw(143);
@@ -656,6 +772,11 @@ main .home{
           top: vwx(125);
           left: vwx(26);
           width: vwx(560);
+          @include dMMax{
+            top: novwx(125);
+            left: novwx(26);
+            width: novwx(560);
+          }
 
           @include homeMax {
             top: qw(125);
@@ -682,6 +803,10 @@ main .home{
     overflow: hidden;
     padding-top: vwx(129);
     padding-bottom: vwx(10);
+    @include dMMax{
+      padding-top: novwx(129);
+      padding-bottom: novwx(10);
+    }
     @include homeMax{
       padding-top: qw(129);
       padding-bottom: qw(10);
@@ -700,6 +825,11 @@ main .home{
       max-width: 100%;
       flex-shrink: 0;
       padding-bottom: vwx(50);
+      @include dMMax{
+        padding-top: novwx(53);
+        width: novwx(823);
+        padding-bottom: novwx(50);
+      }
       @include homeMax{
         padding-top: qw(53);
         width: qw(823);
@@ -715,6 +845,9 @@ main .home{
       width: calc(100% - 50.8vw);
       img{
         width: vwx(1000);
+        @include dMMax{
+          width: novwx(1000);
+        }
         @include homeMax{
           width: qw(1009);
         }
@@ -727,6 +860,10 @@ main .home{
       font-size: vwx(64);
       line-height: 100%;
       letter-spacing: vwx(-1.25573);
+      @include dMMax{
+        font-size: novwx(64);
+        letter-spacing: novwx(-1.25573);
+      }
       @include homeMax{
         font-size: qw(64);
         letter-spacing: qw(-1.25573);
@@ -743,6 +880,12 @@ main .home{
       letter-spacing: vwx(-1.25573);
       margin-top: vwx(35);
       max-width: vwx(780);
+      @include dMMax{
+        font-size: novwx(36);
+        letter-spacing: novwx(-1.25573);
+        margin-top: novwx(35);
+        max-width: novwx(780);
+      }
       @include homeMax{
         font-size: qw(36);
         letter-spacing: qw(-1.25573);
@@ -759,6 +902,9 @@ main .home{
     }
     &__form{
       margin-top: vwx(63);
+      @include dMMax{
+        margin-top: novwx(63);
+      }
       @include homeMax{
         margin-top: qw(63);
       }
@@ -770,6 +916,10 @@ main .home{
         flex-wrap: wrap;
         margin-left: vwx(-20);
         margin-right: vwx(-20);
+        @include dMMax{
+          margin-left: novwx(-20);
+          margin-right: novwx(-20);
+        }
         @include homeMax{
           margin-left: qw(-20);
           margin-right: qw(-20);
@@ -782,6 +932,9 @@ main .home{
       }
       &-checkbox{
         padding: 0 vwx(20) vwx(28);
+        @include dMMax{
+          padding: 0 novwx(20) novwx(28);
+        }
         @include homeMax{
           padding: 0 qw(20) qw(28);
         }
@@ -804,6 +957,13 @@ main .home{
             height: vwx(77);
             background: #E5EDF2;
             border-radius: vwx(51);
+            @include dMMax{
+              font-size: novwx(28);
+              min-width: novwx(236);
+              padding: 0 novwx(44);
+              height: novwx(77);
+              border-radius: novwx(51);
+            }
             @include homeMax{
               font-size: qw(28);
               min-width: qw(236);
@@ -842,6 +1002,12 @@ main .home{
         border-bottom: 3px solid #E5EDF2;
         width: 100%;
         letter-spacing: vwx(-1.25573);
+        @include dMMax{
+          margin-top: novwx(156);
+          font-size: novwx(28);
+          padding-bottom: novwx(13);
+          letter-spacing: novwx(-1.25573);
+        }
         @include homeMax{
           margin-top: qw(156);
           font-size: qw(28);
@@ -869,6 +1035,10 @@ main .home{
         padding: vwx(20) 0;
         display: inline-flex;
         align-content: center;
+        @include dMMax{
+          margin-top: novwx(94);
+          padding: novwx(20) 0;
+        }
         @include homeMax{
           margin-top: qw(94);
           padding: qw(20) 0;
@@ -893,6 +1063,10 @@ main .home{
           margin-left: vwx(10);
           width: vwx(39);
           display: block;
+          @include dMMax{
+            margin-left: novwx(10);
+            width: novwx(39);
+          }
           @include homeMax{
             margin-left: qw(10);
             width: qw(39);
@@ -910,6 +1084,9 @@ main .home{
         font-size: vwx(18);
         line-height: 124%;
         color: #BABABA;
+        @include dMMax{
+          font-size: novwx(18);
+        }
         @include homeMax{
           font-size: qw(18);
         }

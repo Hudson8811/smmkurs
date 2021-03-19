@@ -40,6 +40,12 @@
 	}
 }
 
+@mixin dMMax {
+	@media (min-width: 1950px) {
+		@content;
+	}
+}
+
 
 
 
@@ -54,6 +60,10 @@ $resolutiond: 1920;
 @function vwx($px) {
 	@return (($px/$resolutiond) * 80)+vw;
 }
+@function novwx($px) {
+	@return ($px) +px;
+}
+
 
 
 $resolution: 375;
