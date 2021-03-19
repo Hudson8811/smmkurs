@@ -1,7 +1,12 @@
 .copywriting-kurs {
     background: #000;
-    padding-top: 366px;
-    padding-bottom: 172px;
+    padding-top: vwx(366);
+    padding-bottom: vwx(172);
+
+    @media (max-width: 1200px) {
+        padding-top: 366px;
+        padding-bottom: 172px;
+    }
 
     &__container { 
         color: #fff;
@@ -11,46 +16,77 @@
     }
     
     &__expert-wrapper {
-        margin-bottom: 341px;
+        margin-bottom: vwx(341);
         position: relative;
+
+        @media (max-width: 1200px) {
+            margin-bottom: 341px;
+        }
     }
+
     &__expert-img {
         position: absolute;
-        right: 363px;
-        top: 25px;
+        right: vwx(363);
+        top: vwx(25);
+        width: vwx(292);
+        height: vwx(293);
+
+        @media (max-width: 1200px) {
+            right: 363px;
+            top: 25px;
+            width: auto;
+            height: auto;
+        }
     }
 
     &__expert-text {
-        font-size: 64px;
+        font-size: vwx(64);
         line-height: 125.8%;
         width: 50%;
         position: relative;
+
+        @media (max-width: 1200px) {
+            font-size: 64px;
+        }
     }
     
     
     &__possession-wrapper {
         position: relative;
-        margin-bottom: 310px;
+        margin-bottom: vwx(310);
 
+        @media (max-width: 1200px) {
+            margin-bottom: 310px;
+        }
     }
+
     &__possession-img {
-      position: absolute;
-      top: -147px;
+        position: absolute;
+        top: vwx(-147);
+        width: vwx(562);
+        height: vwx(353);
+
+        @media (max-width: 1200px) {
+            top: -147px;
+            width: auto;
+            height: auto;
+        }
     }
     
     &__possession {
         position: relative;
-        font-size: 64px;
+        font-size: vwx(64);
         line-height: 125.8%;
         width: 60%;
         background-repeat: no-repeat;
+
+        @media (max-width: 1200px) {
+            font-size: 64px;
+        }
     }
     
     &__core {
-        font-size: 200px;
+        font-size: vwx(200);
         line-height: 103.8%;
     }
-    }
-    .container {
-    }
-    
+}

@@ -7,15 +7,15 @@
 
 @media screen and (max-width: 1250px) {
 	.cwprog-card-title {
-		font-size: 35px;
+		font-size: qw(35);
 	}
 
 	.cwprog-card-left {
-		width: 413px;
+		width: qw(413);
 	}
 
 	.cwprog-card-right {
-		width: calc(100% - 413px - 25px);
+		width: calc(100% - 27.53333vw - 1.66667vw);
 	}
 }
 
@@ -29,11 +29,11 @@
 	}
 
 	.cwprog-card-left {
-		width: 330px;
+		width: qw(330);
 	}
 
 	.cwprog-card-right {
-		width: calc(100% - 330px - 25px);
+		width: calc(100% - 22vw - 1.66667vw);
 	}
 }
 

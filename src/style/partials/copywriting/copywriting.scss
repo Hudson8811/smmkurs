@@ -18,18 +18,29 @@
 		align-items: center;
 		justify-content: center;
 		box-sizing: border-box;
-		width: 273px;
+		width: vwx(273);
 		max-width: 100%;
-		min-height: 72px;
-		border-radius: 18px;
-		font-size: 18px;
+		min-height: vwx(72);
+		border-radius: vwx(18);
+		font-size: vwx(18);
 		line-height: 125.8%;
+
+		@media (max-width: 1200px) {
+			width: 273px;
+			min-height: 72px;
+			border-radius: 18px;
+			font-size: 18px;
+		}
 	}
 
 	&--green {
 		color: #000;
-		border-radius: 18px;
+		border-radius: vwx(18);
 		background: #AFF800;
+
+		@media (max-width: 1200px) {
+			border-radius: 18px;
+		}
 
 		&:hover {
 			opacity: .7;
