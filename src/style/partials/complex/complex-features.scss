@@ -3,6 +3,10 @@
     padding-top: 12px;
     padding-bottom: 272px;
     overflow: hidden;
+    @include dArea{
+        padding-top: vwx(12);
+        padding-bottom: vwx(272);
+    }
     &__container {
         color: #000;
         position: relative;
@@ -22,13 +26,22 @@
         }
         &:nth-child(2) {
             margin-bottom: 5px;
+            @include dArea{
+                margin-bottom: vwx(5);
+            }
         }
         &:nth-child(3) {
             margin-bottom: 211px;
+            @include dArea{
+                margin: vwx(211);
+            }
 
         }
         &:nth-child(4) {
             padding-left: 75px;
+            @include dArea{
+                padding-left: vwx(75);
+            }
         }
     }
     &__img-wrapper {
@@ -41,6 +54,10 @@
         line-height: 125.8%;
         max-width: 975px;
         letter-spacing: -0.2px;
+        @include dArea{
+            font-size: vwx(64);
+            max-width: vwx(975);
+        }
     }
     &__text-one {
         span {
@@ -53,6 +70,10 @@
         width: 100%;
         transform: translate(28.5%,-3.2%);
         margin-left: -100px;
+        @include dArea{
+            max-width: vwx(679);
+            margin-left: vwx(-100);
+        }
         &::before {
             content: '';
             display: block;
@@ -77,6 +98,9 @@
         max-width: 727px;
         width: 100%;
         transform: translate(-24%, -4%);
+        @include dArea{
+            max-width: vwx(727);
+        }
         &::before {
             content: '';
             display: block;
@@ -89,17 +113,31 @@
         max-width: 761px;
         margin-left: 80px;
         margin-top: 235px;
+        @include dArea{
+            max-width: vwx(761);
+            margin-left: vwx(80);
+            margin-top: vwx(235);
+        }
     }
 
     &__text-three {
         margin-right: 60px;
         max-width: 953px;
+        @include dArea{
+            margin-right: vwx(60);
+            max-width: vwx(953);
+        }
 
     }
     &__text-four {
         margin-top: 27px;
         max-width: 850px;
         margin-right: -8px;
+        @include dArea{
+            margin-top: vwx(27);
+            max-width: vwx(850);
+            margin-right: vwx(-8);
+        }
         strong {
             letter-spacing: 1px;
         }
@@ -114,6 +152,11 @@
         max-width: 576px;
         width: 100%;
         transform: translateY(-13px);
+        @include dArea{
+            right: vwx(52);
+            max-width: vwx(576);
+            transform: translateY(vwx(-13));
+        }
         &::before {
             content: '';
             display: block;
@@ -124,6 +167,9 @@
         width: 100%;
         transform: translate(-24%,5%);
         margin-right: 22px;
+        @include dArea{
+            margin-right: vwx(22);
+        }
 
         &::before {
             content: '';

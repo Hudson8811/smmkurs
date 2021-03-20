@@ -57,6 +57,10 @@
 		line-height: 125.8%;
 		margin-bottom: 27px;
 		position: relative;
+		@include dArea{
+			font-size: vwx(41);
+			margin-bottom: vwx(27);
+		}
 	}
 
 	&__subtitle {
@@ -67,6 +71,12 @@
 		margin-right: 40px;
 		position: relative;
 		max-width: 350px;
+		@include dArea{
+			font-size: vwx(113);
+			margin-bottom: vwx(71);
+			margin-right: vwx(40);
+			max-width: vwx(350);
+		}
 	}
 
 	&__link {
@@ -80,6 +90,11 @@
 		padding: 35px 82px;
 		cursor: pointer;
 		transition-duration: .2s;
+		@include dArea{
+			font-size: vwx(32);
+			border-radius: vwx(18);
+			padding: vwx(35) vwx(82);
+		}
 		&:hover {
 			background: #d03e00
 		}
@@ -90,9 +105,15 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		@include dArea{
+			margin-top: vwx(46);
+		}
 	}
 	&__video-wrapper {
 		margin-bottom: 41px;
+		@include dArea{
+			margin-bottom: vwx(41);
+		}
 	}
 	&__video {
 
@@ -100,6 +121,9 @@
 	&__video-desc {
 		font-size: 32px;
 		line-height: 100%;
+		@include dArea{
+			font-size: vwx(32);
+		}
 		span {
 			font-weight: 500;
 		}
@@ -111,10 +135,17 @@
 		cursor: pointer;
 		margin-bottom: 84px;
 		padding-left: 6px;
+		@include dArea{
+			margin-bottom: vwx(84);
+			padding-left: vwx(6);
+		}
 	}
 
 	&__play {
 		margin-right: 28px;
+		@include dArea{
+			margin-right: vwx(28);
+		}
 	}
 
 	&__play-text {
@@ -124,6 +155,9 @@
 		align-items: center;
 		text-align: center;
 		color: #FEA430;
+		@include dArea{
+			font-size: vwx(32);
+		}
 		& bold {
 			font-weight: 500;
 		}

@@ -4,6 +4,10 @@
     background-color: #000;
     overflow: hidden;
     position: relative;
+  @include dArea{
+    padding-top: vwx(172);
+    padding-bottom: vwx(255);
+  }
     &__decor-wrapper {
         position: absolute;
         right: -1vw;
@@ -12,6 +16,9 @@
         width: 51vw;
         height: 36vw;
         z-index: 2;
+      @include dArea{
+        top: 7vw;
+      }
     }
     &__decor {
         top: -2px;
@@ -44,6 +51,9 @@
         display: flex;
         flex-direction: column;
         max-width: 1140px;
+      @include dArea{
+        max-width: vwx(1140);
+      }
     }
     &__title {
         font-family: ALS Hauss;
@@ -51,6 +61,10 @@
         line-height: 125.8%;
         margin-bottom: 27px;
         position: relative;
+      @include dArea{
+        font-size: vwx(41);
+        margin-bottom: vwx(27);
+      }
     }
     
     &__subtitle {
@@ -60,6 +74,11 @@
         margin-bottom: 91px;
         margin-right: 40px;
         position: relative;
+      @include dArea{
+        font-size: vwx(96);
+        margin-bottom: vwx(91);
+        margin-right: vwx(40);
+      }
     }
     
     &__link {
@@ -73,6 +92,11 @@
         padding: 37px 141px;
         cursor: pointer;
         transition-duration: .2s;
+      @include dArea{
+        font-size: vwx(32);
+        border-radius: vwx(18);
+        padding: vwx(37) vwx(141);
+      }
         &:hover {
             background: #d03e00
         }
@@ -87,10 +111,17 @@
         cursor: pointer;
         margin-bottom: 84px;
         padding-left: 6px;
+      @include dArea{
+        margin-bottom: vwx(84);
+        padding-left: vwx(6);
+      }
     }
     
     &__play {
         margin-right: 28px;
+      @include dArea{
+        margin-right: vwx(28);
+      }
     }
     
     &__play-text {
@@ -100,6 +131,9 @@
         align-items: center;
         text-align: center;
         color: #FEA430;
+      @include dArea{
+        font-size: vwx(32);
+      }
         & bold {
             font-weight: 500;
         }
@@ -200,3 +234,4 @@
 		padding-left: 0;
 	}
 }
+

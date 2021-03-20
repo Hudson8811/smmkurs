@@ -3,6 +3,10 @@
 	padding-top: 122px;
 	padding-bottom: 109px;
 	overflow: hidden;
+	@include dArea{
+		padding-top: vwx(122);
+		padding-bottom: vwx(109);
+	}
 	&__container {
 		color: #000;
 		position: relative;
@@ -10,6 +14,9 @@
 
 	&__content {
 		padding: 0 0 0 84px;
+		@include dArea{
+			padding: 0 0 0 vwx(84);
+		}
 	}
 
 	&__row {
@@ -18,15 +25,27 @@
 		position: relative;
 		justify-content: space-between;
 		margin-bottom: 118px;
+		@include dArea{
+			margin-bottom: vwx(118);
+		}
 		&:nth-child(1) {
 			margin-bottom: 118px;
+			@include dArea{
+				margin-bottom: vwx(118);
+			}
 
 		}
 		&:nth-child(2) {
 			margin-bottom: 74px;
+			@include dArea{
+				margin-bottom: vwx(74);
+			}
 		}
 		&:nth-child(3) {
 			margin-bottom: 145px;
+			@include dArea{
+				margin-bottom: vwx(145);
+			}
 
 		}
 		&:last-child {
@@ -43,10 +62,18 @@
 		font-size: 64px;
 		line-height: 125.8%;
 		max-width: 757px;
+		@include dArea{
+			font-size: vwx(64);
+			max-width: vwx(757);
+		}
 	}
 	&__text-one {
 		max-width: 608px;
 		padding-top: 72px;
+		@include dArea{
+			max-width: vwx(608);
+			padding-top: vwx(72);
+		}
 	}
 
 	&__img-wrapper-one {
@@ -54,6 +81,11 @@
 		margin-left: -26px;
 		width: 100%;
 		margin-right: 50px;
+		@include dArea{
+			max-width: vwx(753);
+			margin-right: vwx(50);
+			margin-left: vwx(-26);
+		}
 		&::before {
 			content: '';
 			display: block;
@@ -79,6 +111,11 @@
 		max-width: 639px;
 		width: 100%;
 		margin-left: 50px;
+		@include dArea{
+			margin-right: vwx(40);
+			max-width: vwx(639);
+			margin-left: vwx(50);
+		}
 		&::before {
 			content: '';
 			display: block;
@@ -90,11 +127,19 @@
 	&__text-two {
 		margin-top: 48px;
 		padding-left: 26px;
+		@include dArea{
+			margin-top: vwx(48);
+			padding-left: vwx(26);
+		}
 	}
 
 	&__text-three {
 		max-width: 565px;
 		margin-right: 44px;
+		@include dArea{
+			max-width: vwx(565);
+			margin-right: vwx(44);
+		}
 	}
 
 	&__img-wrapper-three {
@@ -102,6 +147,11 @@
 		max-width: 761px;
 		margin-right: 50px;
 		width: 100%;
+		@include dArea{
+			margin-left: vwx(-88);
+			max-width: vwx(761);
+			margin-right: vwx(50);
+		}
 		&::before {
 			content: '';
 			display: block;

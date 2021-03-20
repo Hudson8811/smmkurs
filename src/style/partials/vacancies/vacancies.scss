@@ -15,6 +15,9 @@
         bottom: 0;
         height: auto;
         width: 44%;
+        @include dArea{
+            width: 35%;
+        }
     }
 
     &__container {

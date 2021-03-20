@@ -1,10 +1,16 @@
 .brand-is {
 	background-color: #000;
     padding-top: 109px;
+	@include dArea{
+		padding-top: vwx(109);
+	}
 
 	&__container {
 		position: relative;
 		width: 1571px;
+		@include dArea{
+			width: vwx(1571);
+		}
 	}
 
 	&__content {}
@@ -15,6 +21,9 @@
 
 		&:first-child {
 			margin-bottom: 40px;
+			@include dArea{
+				margin-bottom: vwx(40);
+			}
 		}
 	}
 
@@ -23,40 +32,66 @@
 		color: #fff;
 		background: #110F1F;
 		border-radius: 32px;
+		@include dArea{
+			border-radius: vwx(32);
+		}
 
 		&-xl {
 			padding: 58px 99px 79px;
 			width: 1034/1571 * 100%;
 			margin-right: 40px;
+			@include dArea{
+				padding: vwx(58) vwx(99) vwx(79);
+				margin-right: vwx(40);
+			}
 		}
 
 		&-md {
 			padding: 118px 135px 95px;
 			width: 766/1571 * 100%;
+			@include dArea{
+				padding: vwx(118) vwx(135) vwx(95);
+			}
 
 			&:not(:last-child) {
 				margin-right: 40px;
+				@include dArea{
+					margin-right: vwx(40);
+				}
 			}
 		}
 
 		&-sm {
 			padding: 87px 67px 87px;
 			width: 497/1571 * 100%;
+			@include dArea{
+				padding: vwx(87) vwx(67) vwx(87);
+			}
 		}
 	}
 
 	&__title {
 		font-size: 96px;
 		line-height: 130%;
+		@include dArea{
+			font-size: vwx(96);
+		}
 	}
 
 	&__inner-title {
 		font-size: 41px;
 		margin-bottom: 20px;
+		@include dArea{
+			font-size: vwx(41);
+			margin-bottom: vwx(20);
+		}
 	}
 
 	&__inner-desc {
 		font-size: 24px;
 		line-height: 125%;
+		@include dArea{
+			font-size: vwx(24);
+		}
 	}
 }

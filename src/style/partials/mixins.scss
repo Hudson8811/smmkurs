@@ -55,7 +55,6 @@
 
 
 
-
 $resolutiond: 1920;
 
 
@@ -92,3 +91,4 @@ $resolutiond3: 1110;
 @function qw2($px) {
   @return (($px/$resolutiond3) * 100)+vw;
 }
+
