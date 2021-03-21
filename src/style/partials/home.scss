@@ -37,19 +37,21 @@ main .home{
     }
     li{
       +li{
-        margin-left: 100px;
+        margin-left: 59px;
         @include sMax{
           margin-left: 50px;
         }
       }
     }
-    a{
+    a:not(.header__enter){
       font-weight: 350;
-      font-size: 24px;
+      font-family: $secondFont;
+      font-size: 20px;
       line-height: 50px;
       text-align: right;
-      letter-spacing: -1.25573px;
       color: #FFFFFF;
+      transition: color 0.3s ease;
+
       &:hover{
         color: #ff5210;
       }

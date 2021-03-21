@@ -736,4 +736,9 @@ $(function () {
 		}
 	});
 
+	$('.cabinet-page__reset-link').click(function (e) {
+		e.preventDefault();
+		$(this).closest('.js-login-toggle').hide().siblings('.js-login-toggle').fadeIn(300);
+	});
+
 });

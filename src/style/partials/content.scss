@@ -924,34 +924,10 @@
       margin-bottom: 24px;
     }
   }
-  &__start{
-    position: relative;
-    z-index: 2;
-    width: 308px;
-    height: 60px;
-    background: #AFF800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    line-height: 100%;
-    color: #000000;
-    margin: 0 auto -30px;
-    @include mobile{
-      width: 200px;
-      height: 44px;
-      font-size: 18px;
-      margin-bottom: -22px;
-    }
-    span{
-      font-weight: 500;
-      margin-left: 0.4rem;
-    }
-  }
   &__flex{
     position: relative;
     z-index: 1;
-    width: 1302px;
+    width: 1197px;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
@@ -967,7 +943,7 @@
     }
   }
   &__agree{
-    margin-top: 68px;
+    margin-top: 60px;
     text-align: center;
     font-size: 18px;
     line-height: 100%;
@@ -990,7 +966,7 @@
   &__payment{
     display: flex;
     justify-content: center;
-    margin-top: 63px;
+    margin-top: 54px;
     @include mobile{
       margin-top: 34px;
     }
@@ -1002,9 +978,26 @@
 }
 
 .product{
-  padding: 92px 25px 43px 82px;
+  padding: 56px 25px 37px 74px;
   box-sizing: border-box;
-  border: 1px solid #000000;
+  background-color: #c15dd5;
+  color: #FFFFFF;
+  position: relative;
+
+  &:not(:last-child) {
+    &::after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 70%;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
   @include tMax{
     padding: 70px 25px 35px 35px;
   }
@@ -1013,9 +1006,9 @@
   }
   &__title{
     font-weight: 500;
-    font-size: 41px;
-    line-height: 125.8%;
-    margin-bottom: 36px;
+    font-size: 60px;
+    line-height: 122%;
+    margin-bottom: 68px;
     @include sMax{
       font-size: 34px;
       margin-bottom: 24px;
@@ -1025,56 +1018,68 @@
     }
   }
   &__price{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    white-space: nowrap;
-    &-new{
-      font-weight: 500;
-      font-size: 48px;
-      line-height: 125.8%;
-      margin-right: 24px;
-      @include sMax{
-        font-size: 36px;
-      }
+    font-size: 22px;
+
+    p {
+      font-size: 70px;
+      line-height: 109%;
+      font-weight: bold;
     }
-    &-old{
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 125.8%;
-      text-decoration-line: line-through;
-      opacity: 0.5;
-      @include sMax{
-        font-size: 24px;
+  }
+  &__tooltip {
+    width: 27px;
+    height: 27px;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    &:hover svg {
+      opacity: 0.8;
+    }
+
+    svg {
+      fill: #fff;
+      transition: opacity 0.3s ease;
+    }
+  }
+  &__list {
+    margin-bottom: 50px;
+
+    li {
+      font-size: 22px;
+
+      + li {
+        margin-top: 19px;
       }
     }
   }
-  &__info{
-    font-family: $secondFont;
-    font-size: 24px;
-    line-height: 125.8%;
-    min-height: 170px;
-    @include sMax{
-      font-size: 18px;
-      min-height: 120px;
-    }
-  }
-  &__btns{
-    margin-top: 7px;
-    display: flex;
-    align-items: center;
-    @include mobile{
-      display: block;
-    }
+  &__feedback {
+    font-size: 22px;
+    line-height: 111%;
+    font-weight: bold;
   }
   &__btn{
+    display: none;
     font-family: $secondFont;
-    font-size: 24px;
-    width: 273px;
+    font-size: 22px;
+    width: 254px;
+    min-height: 61px;
     flex-shrink: 0;
+    margin-top: 64px;
     @include sMax{
       font-size: 18px;
       width: 180px;
+    }
+
+    @media (min-width:1025px) {
+      display: flex;
+    }
+
+    &--mob {
+      display: flex;
+
+      @media (min-width:1025px) {
+        display: none;
+      }
     }
   }
   &__timer{
@@ -1094,24 +1099,64 @@
     }
   }
 
-  &--dark{
-    background: #000000;
-    color: #FFFFFF;
+  &--center {
+    padding: 46px 25px 43px 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 
 .cabinet-page{
   padding: 92px 0 174px;
+
+  @include sMax{
+    padding: 69px 0 174px;
+  }
+
+  &__logo {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 36px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__recovery,
+  &__main {
+    max-width: 481px;
+    width: 100%;
+    margin: 0 auto;
+  }
   &__top{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 77px;
+    margin-bottom: 74px;
+  }
+  &__lock {
+    width: 72px;
+    height: 58px;
+    margin: 0 auto 54px;
   }
   &__title{
-    font-size: 64px;
-    letter-spacing: -1.25573px;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 0 auto 10px;
+
+    @include sMax{
+      font-size: 32px;
+      font-weight: 500;
+      text-align: center;
+      margin: 0 auto;
+    }
+
     img{
       width: 66px;
       margin-right: 6px;
@@ -1126,6 +1171,12 @@
       letter-spacing: inherit;
     }
   }
+  &__subtitle {
+    font-family: $secondFont;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 63px;
+  }
   &__edit{
     font-size: 18px;
     line-height: 110%;
@@ -1139,9 +1190,44 @@
     }
   }
   &__section{
-    margin-bottom: 91px;
+    margin-bottom: 93px;
+
+    @include sMax{
+      margin-bottom: 73px;
+    }
+
     &:last-child{
       margin-bottom: 0;
+    }
+    .input-block {
+      width: 100%;
+
+      @include sMax{
+        margin-top: 25px;
+      }
+
+      input {
+        height: 48px;
+
+        &::placeholder {
+          font-size: 14px;
+
+          @include sMax{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .btn[type="submit"] {
+      min-height: 58px;
+      margin: 36px auto 0;
+      width: 256px;
+      font-size: 17px;
+
+      @include sMax{
+        width: 168px;
+        margin: 41px auto 0;
+      }
     }
     &-title{
       margin-bottom: 13px;
@@ -1154,6 +1240,45 @@
       font-size: 18px;
       line-height: 110%;
       color: #A4A4A4;
+    }
+  }
+  &__reset-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+
+    &:hover span {
+      color: #ff4e00;
+    }
+
+    img {
+      margin-right: 13px;
+    }
+
+    span {
+      transition: color 0.3s ease;
+    }
+  }
+  &__bottom {
+    margin-top: 25px;
+    padding-top: 21px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.52);
+
+    @include sMax{
+      margin-top: 19px;
+      padding-top: 19px;
+    }
+
+    a {
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ff4e00;
+      }
     }
   }
   &__row{

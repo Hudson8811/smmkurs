@@ -34,25 +34,45 @@
     <main class="main">
       <section class="cabinet-page">
         <div class="container">
-          <div class="cabinet-page__top">
-            <div class="cabinet-page__title">Авторизация</div>
+          <div class="cabinet-page__main js-login-toggle">
+            <div class="cabinet-page__logo"><img src="img/logo.png" alt=""></div>
+            <div class="cabinet-page__top">
+              <div class="cabinet-page__title">Личный кабинет tutor</div>
+            </div>
+            <form class="cabinet-page__section login-form">
+              <input type="hidden" name="mode" value="login">
+              <label class="input-block">
+                <input class="js-noempty" type="text" required="required" placeholder="example@email.ru">
+                <div class="input-block__placeholder">Email</div>
+                <div class="input-block__status-icon"></div>
+                <div class="input-block__error">Неверный email</div>
+              </label>
+              <label class="input-block">
+                <input class="js-noempty" type="password" required="required">
+                <div class="input-block__placeholder">Пароль</div>
+                <div class="input-block__status-icon"></div>
+                <div class="input-block__error">Неверный пароль</div>
+              </label>
+              <button class="btn" type="submit">Войти</button>
+            </form><a class="cabinet-page__reset-link" href=""><img src="img/notice-2.png" alt=""><span>Забыли пароль?</span></a>
+            <div class="cabinet-page__bottom">Впервые у нас? <a href="">Зарегистрироваться</a></div>
           </div>
-          <form class="cabinet-page__section login-form">
-            <input type="hidden" name="mode" value="login">
-            <label class="input-block">
-              <input class="js-noempty" type="text" required="required" placeholder="example@email.ru">
-              <div class="input-block__placeholder">Email или логин</div>
-              <div class="input-block__status-icon"></div>
-              <div class="input-block__error">Неверный email</div>
-            </label>
-            <label class="input-block">
-              <input class="js-noempty" type="password" required="required" placeholder="*******">
-              <div class="input-block__placeholder">Пароль</div>
-              <div class="input-block__status-icon"></div>
-              <div class="input-block__error">Неверный пароль</div>
-            </label>
-            <button class="btn" type="submit">Войти</button>
-          </form>
+          <div class="cabinet-page__recovery js-login-toggle" style="display: none">
+            <div class="cabinet-page__lock"><img src="img/lock-2.svg" alt=""></div>
+            <div class="cabinet-page__title">Восстановление пароля</div>
+            <div class="cabinet-page__subtitle">Введите ваш E-mail, чтобы сбросить пароль</div>
+            <form class="cabinet-page__section login-form">
+              <input type="hidden" name="mode" value="login">
+              <label class="input-block">
+                <input class="js-noempty" type="text" required="required" placeholder="example@email.ru">
+                <div class="input-block__placeholder">Email</div>
+                <div class="input-block__status-icon"></div>
+                <div class="input-block__error">Неверный email</div>
+              </label>
+              <button class="btn" type="submit">Сбросить пароль</button>
+            </form><a class="cabinet-page__reset-link" href=""><img src="img/notice.png" alt=""><span>Я вспомнил пароль!</span></a>
+            <div class="cabinet-page__bottom">Если вам нужна помощь, пишите на <a href="mailto:tutor@smmagnat.ru">tutor@smmagnat.ru</a></div>
+          </div>
         </div>
       </section>
     </main>
@@ -70,5 +90,6 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
   </body>
 </html>

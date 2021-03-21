@@ -12,18 +12,42 @@ block vars
 block main
     section.cabinet-page
         .container
-            .cabinet-page__top
-                .cabinet-page__title Авторизация
-            form.cabinet-page__section.login-form
-                input(type='hidden' name='mode' value='login')
-                label.input-block
-                    input.js-noempty(type="text" required="required" placeholder="example@email.ru")
-                    .input-block__placeholder Email или логин
-                    .input-block__status-icon
-                    .input-block__error Неверный email
-                label.input-block
-                    input.js-noempty(type="password" required="required" placeholder="*******")
-                    .input-block__placeholder Пароль
-                    .input-block__status-icon
-                    .input-block__error Неверный пароль
-                button.btn(type="submit") Войти
+            .cabinet-page__main.js-login-toggle
+                .cabinet-page__logo
+                    img(src="img/logo.png" alt="")
+                .cabinet-page__top
+                    .cabinet-page__title Личный кабинет tutor
+                form.cabinet-page__section.login-form
+                    input(type='hidden' name='mode' value='login')
+                    label.input-block
+                        input.js-noempty(type="text" required="required" placeholder="example@email.ru")
+                        .input-block__placeholder Email
+                        .input-block__status-icon
+                        .input-block__error Неверный email
+                    label.input-block
+                        input.js-noempty(type="password" required="required")
+                        .input-block__placeholder Пароль
+                        .input-block__status-icon
+                        .input-block__error Неверный пароль
+                    button.btn(type="submit") Войти
+                a.cabinet-page__reset-link(href='')
+                    img(src="img/notice-2.png" alt="")
+                    span Забыли пароль?
+                .cabinet-page__bottom Впервые у нас? <a href="">Зарегистрироваться</a>
+            .cabinet-page__recovery.js-login-toggle(style='display: none')
+                .cabinet-page__lock
+                    img(src="img/lock-2.svg" alt="")
+                .cabinet-page__title Восстановление пароля
+                .cabinet-page__subtitle Введите ваш E-mail, чтобы сбросить пароль
+                form.cabinet-page__section.login-form
+                    input(type='hidden' name='mode' value='login')
+                    label.input-block
+                        input.js-noempty(type="text" required="required" placeholder="example@email.ru")
+                        .input-block__placeholder Email
+                        .input-block__status-icon
+                        .input-block__error Неверный email
+                    button.btn(type="submit") Сбросить пароль
+                a.cabinet-page__reset-link(href='')
+                    img(src="img/notice.png" alt="")
+                    span Я вспомнил пароль!
+                .cabinet-page__bottom Если вам нужна помощь, пишите на <a href="mailto:tutor@smmagnat.ru">tutor@smmagnat.ru</a>
