@@ -907,6 +907,11 @@
 
 .cart-page{
   padding: 92px 0 110px;
+
+  @include dArea{
+    font-size: vwx(96);
+    margin-bottom: vwx(55);
+  }
   @include sMax{
     padding: 50px 0 40px;
   }
@@ -915,6 +920,10 @@
     font-size: 96px;
     text-align: center;
     margin-bottom: 55px;
+    @include dArea{
+      font-size: vwx(96);
+      margin-bottom: vwx(55);
+    }
     @include sMax{
       font-size: 48px;
       margin-bottom: 34px;
@@ -932,6 +941,9 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    @include dArea{
+      width: vwx(2000);
+    }
     @include mMax{
       display: block;
     }
@@ -948,6 +960,10 @@
     font-size: 18px;
     line-height: 100%;
     color: #BABABA;
+    @include dArea{
+      margin-top: vwx(60);
+      font-size: vwx(18);
+    }
     @include mobile{
       margin-top: 34px;
     }
@@ -961,12 +977,18 @@
       display: inline-block;
       vertical-align: middle;
       margin-right: 9px;
+      @include dArea{
+        margin-right: vwx(9);
+      }
     }
   }
   &__payment{
     display: flex;
     justify-content: center;
     margin-top: 54px;
+    @include dArea{
+      margin-top: vwx(54);
+    }
     @include mobile{
       margin-top: 34px;
     }
@@ -984,6 +1006,10 @@
   color: #FFFFFF;
   position: relative;
 
+  @include dArea{
+    padding: vwx(56) vwx(25) vwx(37) vwx(74);
+  }
+
   &:not(:last-child) {
     &::after {
       content: '';
@@ -995,6 +1021,10 @@
       top: 50%;
       right: 0;
       transform: translateY(-50%);
+
+      @include dArea{
+        width: vwx(2);
+      }
     }
   }
 
@@ -1009,6 +1039,10 @@
     font-size: 60px;
     line-height: 122%;
     margin-bottom: 68px;
+    @include dArea{
+      font-size: vwx(60);
+      margin-bottom: vwx(68);
+    }
     @include sMax{
       font-size: 34px;
       margin-bottom: 24px;
@@ -1020,23 +1054,40 @@
   &__price{
     font-size: 22px;
 
+    @include dArea{
+      font-size: vwx(22);
+    }
+
     p {
       font-size: 70px;
       line-height: 109%;
       font-weight: bold;
+
+      @include dArea{
+        font-size: vwx(70);
+      }
     }
   }
   &__tooltip {
+    display: flex;
     width: 27px;
     height: 27px;
     margin-bottom: 30px;
     cursor: pointer;
+
+    @include dArea{
+      width: vwx(27);
+      height: vwx(27);
+      margin-bottom: vwx(30);
+    }
 
     &:hover svg {
       opacity: 0.8;
     }
 
     svg {
+      width: 100%;
+      height: 100%;
       fill: #fff;
       transition: opacity 0.3s ease;
     }
@@ -1044,11 +1095,23 @@
   &__list {
     margin-bottom: 50px;
 
+    @include dArea{
+      margin-bottom: vwx(50);
+    }
+
     li {
       font-size: 22px;
 
+      @include dArea{
+        font-size: vwx(22);
+      }
+
       + li {
         margin-top: 19px;
+
+        @include dArea{
+          margin-top: vwx(19);
+        }
       }
     }
   }
@@ -1056,6 +1119,10 @@
     font-size: 22px;
     line-height: 111%;
     font-weight: bold;
+
+    @include dArea{
+      font-size: vwx(22);
+    }
   }
   &__btn{
     display: none;
@@ -1065,6 +1132,12 @@
     min-height: 61px;
     flex-shrink: 0;
     margin-top: 64px;
+    @include dArea{
+      font-size: vwx(22);
+      width: vwx(254);
+      min-height: vwx(61);
+      margin-top: vwx(64);
+    }
     @include sMax{
       font-size: 18px;
       width: 180px;
@@ -1104,6 +1177,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include dArea{
+      padding: vwx(46) vwx(25) vwx(43) vwx(86);
+    }
   }
 }
 
