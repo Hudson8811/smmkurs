@@ -947,38 +947,34 @@ main .home{
         label{
           cursor: pointer;
           span{
-            font-size: vwx(28);
+            font-size: vwx(17);
             display: flex;
             align-items: center;
             text-align: center;
             justify-content: center;
             color: #373737;
             box-sizing: border-box;
-            min-width: vwx(236);
-            padding: 0 vwx(44);
-            height: vwx(77);
-            background: #E5EDF2;
-            border-radius: vwx(51);
+            padding: 0 vwx(50);
+            height: vwx(58);
+            background: rgb(229, 237, 242);
+            border-radius: vwx(13);
             @include dMMax{
-              font-size: novwx(28);
-              min-width: novwx(236);
-              padding: 0 novwx(44);
-              height: novwx(77);
-              border-radius: novwx(51);
+              font-size: novwx(17);
+              padding: 0 novwx(50);
+              height: novwx(58);
+              border-radius: novwx(13);
             }
             @include homeMax{
-              font-size: qw(28);
-              min-width: qw(236);
-              padding: 0 qw(44);
-              height: qw(77);
-              border-radius: qw(51);
+              font-size: qw(17);
+              padding: 0 qw(50);
+              height: qw(58);
+              border-radius: qw(13);
             }
             @include mMax{
-              font-size: vw(28);
-              min-width: vw(236);
-              padding: 0 vw(44);
-              height: vw(77);
-              border-radius: vw(51);
+              font-size: vw(17);
+              padding: 0 vw(50);
+              height: vw(58);
+              border-radius: vw(13);
             }
           }
           input{
@@ -1030,70 +1026,60 @@ main .home{
         }
       }
       &-btn{
-        background: transparent;
-        border: none;
         cursor: pointer;
         margin-top: vwx(94);
-        padding: vwx(20) 0;
-        display: inline-flex;
-        align-content: center;
+        padding: 0 vwx(50);
+        background-color: rgb(0, 0, 0);
+        border-radius: vwx(13);
+        transition: 0.3s;
+        font-size: vwx(17);
+        border: 1px solid #000000;
+        min-height: vwx(57);
+        color: #ffffff;
+
         @include dMMax{
           margin-top: novwx(94);
-          padding: novwx(20) 0;
+          padding: 0 novwx(50);
+          border-radius: novwx(13);
+          font-size: novwx(17);
+          min-height: novwx(57);
         }
         @include homeMax{
           margin-top: qw(94);
-          padding: qw(20) 0;
+          padding: 0 qw(50);
+          border-radius: qw(13);
+          font-size: qw(17);
+          min-height: qw(57);
         }
         @include mMax{
           margin-top: vw(64);
-          padding: vw(20) 0;
+          padding: 0 vw(50);
+          border-radius: vw(13);
+          font-size: vw(17);
+          min-height: vw(57);
         }
-        span{
-          font-weight: 500;
-          font-size: vwx(36);
-          line-height: 125.8%;
-          color: #000000;
-          @include homeMax{
-            font-size: qw(36);
-          }
-          @include mMax{
-            font-size: vw(36);
-          }
-        }
-        img{
-          margin-left: vwx(10);
-          width: vwx(39);
-          display: block;
-          @include dMMax{
-            margin-left: novwx(10);
-            width: novwx(39);
-          }
-          @include homeMax{
-            margin-left: qw(10);
-            width: qw(39);
-          }
-          @include mMax{
-            margin-left: vw(10);
-            width: vw(39);
-          }
-        }
+
         &:hover{
-          opacity: 0.8;
+          background: #ffffff;
+          color: #000000;
         }
       }
       &-info{
         font-size: vwx(18);
         line-height: 124%;
         color: #BABABA;
+        margin-top: vwx(10);
         @include dMMax{
           font-size: novwx(18);
+          margin-top: novwx(10);
         }
         @include homeMax{
           font-size: qw(18);
+          margin-top: qw(10);
         }
         @include mMax{
           font-size: vw(12);
+          margin-top: vw(10);
         }
       }
     }

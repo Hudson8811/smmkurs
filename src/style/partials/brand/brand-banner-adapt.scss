@@ -33,7 +33,7 @@
 		}
 
 		&__link {
-			padding: 20px 50px;
+			padding: 0px 50px;
 		}
 
 		&__video-preview {
@@ -115,8 +115,11 @@
 		}
 
 		&__link {
-			font-size: vw(18);
-			padding: vw(16) vw(25);
+			font-size: vw(17);
+			padding: vw(0) vw(50);
+			height: vw(58);
+			border-radius: vw(13);
+			min-width: vw(216);
 		}
 
 		&__play {

@@ -31,7 +31,7 @@
             font-size: 64px;
         }
         &__link {
-            padding: 20px 50px;
+            padding: 0px 50px;
         }
         &__row {
             display: flex;
@@ -73,10 +73,10 @@
             margin-right: 40px;
             position: relative;
         }
-        &__link {
+        /*&__link {
             font-size: 18px;
             padding: 16px 59px;
-        }
+        }*/
         &__play {
             width: 14px;
             height: 14px;

@@ -117,17 +117,23 @@
 }
 
 .cwfeedback-btn {
-    font-size: 24px;
-		margin-top: 73px;
-		width: 273px;
-		margin-left: 19px;
-		min-height: 69px;
+    font-size: 17px;
+	margin-top: 73px;
+	width: auto;
+	margin-left: 19px;
+	min-height: 56px;
+	box-sizing: border-box;
+	border-radius: 13px;
+	padding: 0 50px;
+
 	@include dArea{
-		font-size: vwx(24);
+		font-size: vwx(17);
 		margin-top: vwx(73);
-		width: vwx(273);
+		width: auto;
+		padding: 0 vwx(50);
 		margin-left: vwx(19);
-		min-height: vwx(69);
+		min-height: vwx(56);
+		border-radius: vwx(13);
 	}
 	&--white {}
 }

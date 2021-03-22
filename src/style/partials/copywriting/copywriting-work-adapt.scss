@@ -233,11 +233,11 @@
 		}
 
 		&__card-btn {
-			border: vw(1) solid #000000;
-			border-radius: vw(51);
+			border: 1px solid #000000;
+			border-radius: vw(13);
 			box-sizing: border-box;
-			padding: vw(12) 40px;
-			font-size: vw(18);
+			padding: vw(10) vw(50);
+			font-size: vw(17);
 			width: auto;
 
 			max-width: 100%;

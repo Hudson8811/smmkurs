@@ -103,21 +103,28 @@
 		}
 	}
 
+
 	&__link {
-		font-size: vwx(32);
 		line-height: 125.8%;
 		display: inline-flex;
 		align-items: center;
 		text-align: center;
+		justify-content: center;
 		background: #FF4E00;
-		border-radius: vwx(18);
-		padding: vwx(37) vwx(141);
 		cursor: pointer;
 		transition-duration: .2s;
+		font-size: vwx(17);
+		border-radius: vwx(13);
+		padding: vwx(0) vwx(50);
+		height: vwx(58);
+		min-width: vwx(216);
+		box-sizing: border-box;
 		@include dMMax{
-			font-size: novwx(32);
-			border-radius: novwx(18);
-			padding: novwx(37) novwx(141);
+			height: novwx(58);
+			min-width: novwx(216);
+			font-size: novwx(17);
+			border-radius: novwx(13);
+			padding: novwx(0) novwx(50);
 		}
 
 		&:hover {
@@ -125,9 +132,11 @@
 		}
 
 		@media (max-width: 1200px) {
-			font-size: 32px;
-			padding: 20px 50px;
-			border-radius: 18px;
+			font-size: 17px;
+			border-radius: 13px;
+			padding: 0 50px;
+			height: 58px;
+			min-width: 216px;
 		}
 	}
 
