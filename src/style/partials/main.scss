@@ -24,6 +24,7 @@ body{
 	color: $mainColor;
 	background: #ffffff;
 	font-family: $mainFont;
+	width: 100%;
 }
 input, button {
 	-webkit-appearance: none;
@@ -74,9 +75,6 @@ img {
 	max-width: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
-	/*@include dArea{
-		width: vwx(1611);
-	}*/
 }
 
 .fancybox-active{

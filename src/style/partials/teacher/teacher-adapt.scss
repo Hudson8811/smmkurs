@@ -1,5 +1,5 @@
 @media (max-width: 1200px) {
-	.teacher {
+	.teacherland {
 		&__title {
 			font-size: 82px;
 		}
@@ -50,8 +50,8 @@
 		}
 	}
 
-	.teacher--brand {
-		.teacher__img {
+	.teacherland--brand {
+		.teacherland__img {
 			left: 70px;
 			top: 50px;
 
@@ -68,15 +68,15 @@
 		}
 	}
 
-	.teacher__content-reverse {
+	.teacherland__content-reverse {
 		flex-direction: row-reverse;
 
-		.teacher__img-wrapper {
+		.teacherland__img-wrapper {
 			margin-right: 0;
 			margin-left: 187px;
 		}
 
-		.teacher__img {
+		.teacherland__img {
 			top: 50px;
 			left: -70px;
 		}
@@ -84,7 +84,7 @@
 }
 
 @media (max-width: 1200px) {
-	.teacher {
+	.teacherland {
 		&__title {
 			font-size: 68px;
 		}
@@ -136,8 +136,8 @@
 
 	}
 
-	.teacher--brand {
-		.teacher__img {
+	.teacherland--brand {
+		.teacherland__img {
 			left: 30px;
 			top: 20px;
 
@@ -154,15 +154,15 @@
 		}
 	}
 
-	.teacher__content-reverse {
+	.teacherland__content-reverse {
 		flex-direction: row-reverse;
 
-		.teacher__img-wrapper {
+		.teacherland__img-wrapper {
 			margin-right: 0;
 			margin-left: 60px;
 		}
 
-		.teacher__img {
+		.teacherland__img {
 			top: 20px;
 			left: -30px;
 		}
@@ -171,7 +171,7 @@
 
 @media (max-width: 1024px) {
 
-	.teacher {
+	.teacherland {
 		padding-top: vw(63);
 		overflow: hidden;
 
@@ -203,7 +203,7 @@
 			}
 		}
 
-		.content-reverse .teacher__teacher-wrapper {
+		.content-reverse .teacherland__teacher-wrapper {
 			margin-top: 0;
 		}
 
@@ -238,41 +238,41 @@
 		}
 	}
 
-	.teacher--motion {
+	.teacherland--motion {
 
 		padding-bottom: vw(117);
 	}
 
 
-	.teacher__content-reverse {}
+	.teacherland__content-reverse {}
 
 
-	.teacher__express-smm {
+	.teacherland__express-smm {
 		padding-bottom: vw(121);
 	}
 
-	.teacher--target {
+	.teacherland--target {
 		padding-bottom: vw(113);
 
 	}
 
-	.teacher--brand {
+	.teacherland--brand {
 		padding-top: vw(83);
 		padding-bottom: vw(6);
 
-		.teacher__wrapper {
+		.teacherland__wrapper {
 			padding-top: 0;
 		}
 
-		.teacher__content {
+		.teacherland__content {
 			flex-direction: column-reverse;
 		}
 
-		.teacher__wrapper {
+		.teacherland__wrapper {
 			background: #000;
 		}
 
-		.teacher__img-wrapper {
+		.teacherland__img-wrapper {
 			margin-left: vw(-48);
 			margin-right: 0;
 
@@ -281,7 +281,7 @@
 			}
 		}
 
-		.teacher__img {
+		.teacherland__img {
 			position: static;
 			left: auto;
 			right: auto;
@@ -289,11 +289,11 @@
 			top: vw(41);
 		}
 
-		.teacher__teacher-wrapper {
+		.teacherland__teacher-wrapper {
 			margin-top: vw(39);
 		}
 
-		.teacher__content+.teacher__content {
+		.teacherland__content+.teacherland__content {
 			margin-top: vw(53);
 		}
 	}

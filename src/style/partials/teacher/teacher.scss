@@ -1,4 +1,4 @@
-.teacher {
+.teacherland {
 	background: #000;
 	padding-top: 187px;
 	@include dArea{
@@ -11,11 +11,9 @@
 		background: #FFFFFF;
 		border-radius: 60px;
 		padding: 0 61px 0;
-		padding-top: 88px;
 		@include dArea{
 			border-radius: vwx(60);
 			padding: 0 vwx(61) 0;
-			padding-top: vwx(88);
 		}
 	}
 
@@ -26,10 +24,10 @@
 		font-size: 96px;
 		line-height: 100%;
 		text-align: center;
-		color: #000000;
-		margin-bottom: 14px;
+		color: #ffffff;
+		margin-bottom: 86px;
 		@include dArea{
-			margin-bottom: vwx(14);
+			margin-bottom: vwx(86);
 			font-size: vwx(96);
 		}
 
@@ -143,38 +141,38 @@
 	}
 }
 
-.teacher--brand {
+.teacherland--brand {
     padding-top: 135px;
     padding-bottom: 245px;
 	@include dArea{
 		padding-top: vwx(135);
 		padding-bottom: vwx(245);
 	}
-	.teacher__wrapper {
+	.teacherland__wrapper {
 		background: #000;
 	}
 
-	.teacher__title {
+	.teacherland__title {
 		color: #fff;
 	}
 
-	.teacher__teacher-wrapper {
+	.teacherland__teacher-wrapper {
 		margin-top: 50px;
 		@include dArea{
 			margin-top: vwx(50);
 		}
 	}
 
-	.teacher__teacher-name {
+	.teacherland__teacher-name {
 		color: #fff;
 
 	}
 
-	.teacher__teacher-info {
+	.teacherland__teacher-info {
 		color: #fff;
 	}
 
-	.teacher__img {
+	.teacherland__img {
 		top: 119px;
 		@include dArea{
 			top: vwx(119);
@@ -199,10 +197,10 @@
 	}
 }
 
-.teacher__content-reverse {
+.teacherland__content-reverse {
 	flex-direction: row-reverse;
 
-	.teacher__img-wrapper {
+	.teacherland__img-wrapper {
 		margin-right: 0;
 		margin-left: 187px;
 		@include dArea{
@@ -210,7 +208,7 @@
 		}
 	}
 
-	.teacher__img {
+	.teacherland__img {
 		top: 120px;
 		left: -145px;
 		@include dArea{
@@ -220,15 +218,15 @@
 	}
 }
 
-.teacher--motion {
+.teacherland--motion {
 	padding-bottom: 216px;
 	@include dArea{
 		padding-bottom: vwx(216);
 	}
 }
 
-.teacher--smm-strat {
-	.teacher__wrapper {
+.teacherland--smm-strat {
+	.teacherland__wrapper {
 		overflow: hidden;
 
 		@media screen and (max-width: 1024px) {
@@ -236,7 +234,7 @@
 		}
 	}
 
-	.teacher__img-wrapper {
+	.teacherland__img-wrapper {
 		@media screen and (max-width: 1024px) {
 			width: calc(100% + 16vw);
 			max-width: 1100px;
@@ -249,8 +247,8 @@
 	}
 }
 
-.teacher--target {
-	.teacher__wrapper {
+.teacherland--target {
+	.teacherland__wrapper {
 		overflow: hidden;
 
 		@media screen and (max-width: 1024px) {
@@ -258,7 +256,7 @@
 		}
 	}
 
-	.teacher__img-wrapper {
+	.teacherland__img-wrapper {
 		@media screen and (max-width: 1024px) {
 			width: calc(100% + 16vw);
 			max-width: 1100px;
@@ -272,15 +270,15 @@
 }
 
 @media screen and (min-width: 1025px) {
-	.teacher--smm-strat {
+	.teacherland--smm-strat {
 		padding-bottom: 226px;
 
-		.teacher__teacher-wrapper {
+		.teacherland__teacher-wrapper {
 			padding-top: 45px;
 			padding-bottom: 40px;
 		}
 
-		.teacher__teacher-info {
+		.teacherland__teacher-info {
 			min-width: 100%;
 			width: 453px;
 		}
@@ -288,27 +286,27 @@
 }
 
 @media screen and (min-width: 1025px) {
-	.teacher--target {
+	.teacherland--target {
 		padding-top: 93px;
 		padding-bottom: 187px;
 
-		.teacher__teacher-wrapper {
+		.teacherland__teacher-wrapper {
 			padding-top: 73px;
 			padding-bottom: 40px;
 		}
 
-		.teacher__teacher-info {
+		.teacherland__teacher-info {
 			min-width: 100%;
 			width: 453px;
 		}
 	}
 
-	.teacher--complex .teacher__teacher-wrapper {
+	.teacherland--complex .teacherland__teacher-wrapper {
 		padding-top: 0px;
 		padding-bottom: 55px;
 	}
 
-	.teacher--complex.teacher--target .teacher__teacher-info {
+	.teacherland--complex.teacherland--target .teacherland__teacher-info {
 		min-width: 100%;
 		width: 353px;
 	}
@@ -317,7 +315,7 @@
 .content-reverse {
 	flex-direction: row-reverse;
 
-	.teacher__img-wrapper {
+	.teacherland__img-wrapper {
 		margin-right: 166px;
 		margin-left: 14px;
 		@include dArea{
@@ -330,7 +328,7 @@
 		}
 	}
 
-	.teacher__teacher-wrapper {
+	.teacherland__teacher-wrapper {
 		margin-top: -81px;
 		@include dArea{
 			margin-top: vwx(-81);
@@ -338,11 +336,11 @@
 	}
 }
 
-.teacher__wrapper_pt0 {
+.teacherland__wrapper_pt0 {
 	padding-top: 0;
 }
 
-.teacher__wrapper_mb {
+.teacherland__wrapper_mb {
 	margin-bottom: 59px;
 	@include dArea{
 		margin-bottom: vwx(59);
@@ -353,24 +351,24 @@
 	}
 }
 
-.teacher__express-smm {
+.teacherland__express-smm {
 	padding-bottom: 179px;
 	@include dArea{
 		padding-bottom: vwx(179);
 	}
 
-	.teacher__teacher-wrapper {
+	.teacherland__teacher-wrapper {
 		@media screen and (min-width: 1025px) {
 			padding-bottom: 187px;
 		}
 	}
 
-	.teacher__wrapper {
+	.teacherland__wrapper {
 		overflow: hidden;
 	}
 
 	.content-reverse {
-		.teacher__teacher-wrapper {
+		.teacherland__teacher-wrapper {
 			@media screen and (min-width: 1025px) {
 				max-width: 450px;
 				margin-top: 0;
@@ -378,7 +376,7 @@
 			}
 		}
 
-		.teacher__img-wrapper {
+		.teacherland__img-wrapper {
 			@media screen and (max-width: 1024px) {
 				width: calc(100% + 16vw);
 				max-width: 1100px;
@@ -397,7 +395,7 @@
 	}
 }
 
-.teacher__title_mob {
+.teacherland__title_mob {
 	display: none;
 }
 
@@ -413,18 +411,21 @@
 		padding-bottom: vw(130);
 	}
 
-	.teacher__wrapper {
+	.teacherland__wrapper {
 		padding-bottom: 113px;
+		padding-top: 113px;
 		@include dArea{
 			padding-bottom: vwx(113);
+			padding-top: vwx(113);
 		}
 		@media (max-width: 1024px) {
 			padding-bottom: vw(0);
+			padding-top: vw(0);
 			border-bottom-left-radius: 24px;
 			border-bottom-right-radius: 24px;
 		}
 	}
-	.teacher__teacher-wrapper {
+	.teacherland__teacher-wrapper {
 		margin-top: -23px;
 		max-width: 488px;
 		@include dArea{
@@ -432,7 +433,7 @@
 			max-width: vwx(488);
 		}
 	}
-	.teacher__title {
+	.teacherland__title {
 		margin-bottom: 106px;
 		@include dArea{
 			margin-bottom: vwx(106);
@@ -441,7 +442,7 @@
 			margin-bottom: vw(62);
 		}
 	}
-	.teacher__img-wrapper {
+	.teacherland__img-wrapper {
 		max-width: 632px;
 		margin-right: 88px;
 		margin-left: 73px;
@@ -482,10 +483,10 @@
 			padding-top: 107.379%;
 		}
 	}
-	.teacher__img {
+	.teacherland__img {
 		left: 0;
 	}
-	.teacher__teacher-link {
+	.teacherland__teacher-link {
 		//margin-bottom: vw(46);
 	}
 }

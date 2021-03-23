@@ -1,12 +1,12 @@
 .page-section{
-  padding: vwx(110) 0 vwx(180);
+  padding: 110px 0 180px;
   @include mMax{
     padding: 50px 0 100px;
   }
   &__title{
-    font-size: vwx(64);
-    letter-spacing: vwx(-1.25573);
-    margin-bottom: vwx(60);
+    font-size: 64px;
+    letter-spacing: -1.25573px;
+    margin-bottom: 60px;
     @include mMax{
       margin-bottom: 48px;
       font-size: 36px;
@@ -17,9 +17,9 @@
     }
   }
   &__subtitle{
-    font-size: vwx(36);
-    letter-spacing: vwx(-1.25573);
-    margin-bottom: vwx(80);
+    font-size: 36px;
+    letter-spacing: -1.25573px;
+    margin-bottom: 80px;
     @include sMax{
       font-size: 18px;
       line-height: 124%;
@@ -33,9 +33,9 @@
     }
   }
   &__text{
-    font-size: vwx(36);
-    line-height: vwx(40);
-    letter-spacing: vwx(-1.25573);
+    font-size: 36px;
+    line-height: 124%;
+    letter-spacing: -1.25573px;
     @include mMax{
       font-size: 24px;
     }
@@ -45,7 +45,7 @@
 .kurses{
   display: flex;
   flex-wrap: wrap;
-  margin: vwx(-20);
+  margin: -20px;
   @include tMax{
     margin: -15px;
   }
@@ -53,7 +53,7 @@
     margin: -10px;
   }
   &__kurs{
-    padding: vwx(20);
+    padding: 20px;
     width: 33.333%;
     box-sizing: border-box;
     @include tMax{
@@ -86,7 +86,7 @@
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: vwx(40);
+    padding: 40px;
     width: 100%;
     height: 100%;
     background: #6D16E8;
@@ -106,15 +106,15 @@
   }
   &__tag{
     background: rgba(0, 0, 0, 0.1);
-    border-radius: vwx(51);
-    font-size: vwx(18);
-    line-height: vwx(23);
+    border-radius: 51px;
+    font-size: 18px;
+    line-height: 125.8%;
     display: flex;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    min-height: vwx(57);
-    padding: 0 vwx(40);
+    min-height: 57px;
+    padding: 0 40px;
     @include mobile{
       min-height: 40px;
       padding: 0 20px;
@@ -122,18 +122,18 @@
     }
   }
   &__time{
-    font-size: vwx(24);
-    line-height: vwx(30);
+    font-size: 24px;
+    line-height: 124%;
     text-align: right;
-    letter-spacing: vwx(-1.25573);
+    letter-spacing: -1.25573px;
     opacity: 0.6;
     @include mobile{
       font-size: 20px;
     }
   }
   &__title{
-    font-size: vwx(34);
-    line-height: vwx(40);
+    font-size: 34px;
+    line-height: 124%;
     @include dMax{
       font-size: 30px;
     }
@@ -144,7 +144,7 @@
   &__btns{
     display: flex;
     flex-wrap: wrap;
-    margin-top: vwx(20);
+    margin-top: 20px;
     align-items: center;
     @include mobile{
       display: block;
@@ -158,8 +158,8 @@
     align-items: center;
     justify-content: center;
     text-align: left;
-    font-size: vwx(16);
-    line-height: vwx(18);
+    font-size: 16px;
+    line-height: 110%;
     @include tMax{
       font-size: 17px;
     }
@@ -174,10 +174,10 @@
   }
   &__underbtn{
     text-align: center;
-    font-size: vwx(17);
-    line-height: vwx(19);
-    margin-top: vwx(12);
-    margin-bottom: vwx(-31);
+    font-size: 17px;
+    line-height: 110%;
+    margin-top: 12px;
+    margin-bottom: -31px;
     @include mobile{
       margin-top: 0;
       margin-bottom: 0;
@@ -186,14 +186,14 @@
   }
 
   &__sale{
-    font-size: vwx(12);
+    font-size: 12px;
     color: #000000;
-    line-height: vwx(24);
+    line-height: 24px;
     background: #FFFFFF;
-    padding: 0 vwx(8);
+    padding: 0 8px;
     position: relative;
-    padding-right: vwx(4);
-    margin-right: vwx(4);
+    padding-right: 4px;
+    margin-right: 4px;
     &::after{
       content: "";
       width: 0;
@@ -212,10 +212,10 @@
     flex-wrap: wrap;
     align-items: baseline;
     &-current{
-      font-size: vwx(34);
-      line-height: vwx(37);
+      font-size: 34px;
+      line-height: 110%;
       white-space: nowrap;
-      margin-right: vwx(15);
+      margin-right: 15px;
       @include tMax{
         font-size: 29px;
       }
@@ -225,8 +225,8 @@
     }
     &-old{
       white-space: nowrap;
-      font-size: vwx(25);
-      line-height: vwx(28);
+      font-size: 25px;
+      line-height: 110%;
       text-decoration-line: line-through;
       opacity: 0.5;
       @include tMax{
@@ -239,7 +239,7 @@
   }
 
   &__progress{
-    margin-top: vwx(52);
+    margin-top: 52px;
     @include dMax{
       margin-top: 40px;
     }
@@ -271,7 +271,7 @@
     }
     &_3{
       .kurs__content{
-        padding-bottom: vwx(56);
+        padding-bottom: 56px;
         @include mobile{
           padding-bottom: 25px;
         }
@@ -309,11 +309,11 @@
   }
 
   &--withdown{
-    margin-bottom: vwx(70);
+    margin-bottom: 70px;
   }
   &__down{
     position: absolute;
-    height: vwx(70);
+    height: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,11 +324,11 @@
     top: 100%;
     background: #F3F3F3;
     border-radius: 0 0 24px 24px;
-    width: vwx(252);
-    padding: vwx(10);
+    width: 252px;
+    padding: 10px;
     box-sizing: border-box;
-    font-size: vwx(14);
-    line-height: vwx(18);
+    font-size: 14px;
+    line-height: 125.8%;
     text-align: center;
     color: #AFAFAF;
     span{
@@ -343,21 +343,21 @@
   width: 100%;
   &__bar{
     width: 86.6%;
-    margin-right: vwx(8);
-    height: vwx(20);
+    margin-right: 8px;
+    height: 20px;
     background: rgba(255,255,255,0.4);
-    border-radius: vwx(60);
+    border-radius: 60px;
     overflow: hidden;
     &-inner{
-      border-radius: vwx(60);
+      border-radius: 60px;
       height: 100%;
       background: $orange;
     }
   }
   &__procent{
     font-weight: 300;
-    font-size: vwx(18);
-    line-height: vwx(18);
+    font-size: 18px;
+    line-height: 100%;
   }
 }
 
@@ -387,11 +387,7 @@
       overflow: hidden;
       flex-shrink: 0;
       +li{
-        margin-left: vwx(40);
-
-        @include homeMax{
-          margin-left: 40px;
-        }
+        margin-left: 40px;
 
         @include mMax{
           margin-left: 20px;
@@ -399,17 +395,12 @@
       }
       a{
         display: block;
-        padding-bottom: vwx(22);
-        font-size: vwx(18);
-        line-height: vwx(22);
+        padding-bottom: 20px;
+        font-size: 18px;
+        line-height: 22px;
         color: rgba(255,255,255,0.3);
         transition: 0.2s linear;
 
-        @include homeMax{
-          padding-bottom: 20px;
-          font-size: 18px;
-          line-height: 22px;
-        }
 
         @include mMax{
           padding-bottom: 15px;
@@ -424,15 +415,9 @@
         a{
           color: #FFFFFF;
           font-weight: 500;
-          font-size: vwx(22);
-          padding-left: vwx(20);
-          padding-right: vwx(20);
-
-          @include homeMax{
-            font-size: 22px;
-            padding-left: 20px;
-            padding-right: 20px;
-          }
+          font-size: 22px;
+          padding-left: 20px;
+          padding-right: 20px;
 
           @include mMax{
             font-size: 18px;
@@ -908,10 +893,6 @@
 .cart-page{
   padding: 92px 0 110px;
 
-  @include dArea{
-    font-size: vwx(96);
-    margin-bottom: vwx(55);
-  }
   @include sMax{
     padding: 50px 0 40px;
   }
@@ -920,10 +901,6 @@
     font-size: 96px;
     text-align: center;
     margin-bottom: 55px;
-    @include dArea{
-      font-size: vwx(96);
-      margin-bottom: vwx(55);
-    }
     @include sMax{
       font-size: 48px;
       margin-bottom: 34px;
@@ -933,17 +910,38 @@
       margin-bottom: 24px;
     }
   }
+  &__start{
+    position: relative;
+    z-index: 2;
+    width: 308px;
+    height: 60px;
+    background: #AFF800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000000;
+    margin: 0 auto -30px;
+    @include mobile{
+      width: 200px;
+      height: 44px;
+      font-size: 18px;
+      margin-bottom: -22px;
+    }
+    span{
+      font-weight: 500;
+      margin-left: 0.4rem;
+    }
+  }
   &__flex{
     position: relative;
     z-index: 1;
-    width: 1197px;
+    width: 1302px;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    @include dArea{
-      width: vwx(2000);
-    }
     @include mMax{
       display: block;
     }
@@ -955,15 +953,11 @@
     }
   }
   &__agree{
-    margin-top: 60px;
+    margin-top: 68px;
     text-align: center;
     font-size: 18px;
     line-height: 100%;
     color: #BABABA;
-    @include dArea{
-      margin-top: vwx(60);
-      font-size: vwx(18);
-    }
     @include mobile{
       margin-top: 34px;
     }
@@ -977,18 +971,12 @@
       display: inline-block;
       vertical-align: middle;
       margin-right: 9px;
-      @include dArea{
-        margin-right: vwx(9);
-      }
     }
   }
   &__payment{
     display: flex;
     justify-content: center;
-    margin-top: 54px;
-    @include dArea{
-      margin-top: vwx(54);
-    }
+    margin-top: 63px;
     @include mobile{
       margin-top: 34px;
     }
@@ -1000,34 +988,9 @@
 }
 
 .product{
-  padding: 56px 25px 37px 74px;
+  padding: 92px 25px 43px 82px;
   box-sizing: border-box;
-  background-color: #c15dd5;
-  color: #FFFFFF;
-  position: relative;
-
-  @include dArea{
-    padding: vwx(56) vwx(25) vwx(37) vwx(74);
-  }
-
-  &:not(:last-child) {
-    &::after {
-      content: '';
-      display: block;
-      width: 2px;
-      height: 70%;
-      background-color: #fff;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-
-      @include dArea{
-        width: vwx(2);
-      }
-    }
-  }
-
+  border: 1px solid #000000;
   @include tMax{
     padding: 70px 25px 35px 35px;
   }
@@ -1036,13 +999,9 @@
   }
   &__title{
     font-weight: 500;
-    font-size: 60px;
-    line-height: 122%;
-    margin-bottom: 68px;
-    @include dArea{
-      font-size: vwx(60);
-      margin-bottom: vwx(68);
-    }
+    font-size: 41px;
+    line-height: 125.8%;
+    margin-bottom: 36px;
     @include sMax{
       font-size: 34px;
       margin-bottom: 24px;
@@ -1052,107 +1011,57 @@
     }
   }
   &__price{
-    font-size: 22px;
-
-    @include dArea{
-      font-size: vwx(22);
-    }
-
-    p {
-      font-size: 70px;
-      line-height: 109%;
-      font-weight: bold;
-
-      @include dArea{
-        font-size: vwx(70);
-      }
-    }
-  }
-  &__tooltip {
     display: flex;
-    width: 27px;
-    height: 27px;
-    margin-bottom: 30px;
-    cursor: pointer;
-
-    @include dArea{
-      width: vwx(27);
-      height: vwx(27);
-      margin-bottom: vwx(30);
-    }
-
-    &:hover svg {
-      opacity: 0.8;
-    }
-
-    svg {
-      width: 100%;
-      height: 100%;
-      fill: #fff;
-      transition: opacity 0.3s ease;
-    }
-  }
-  &__list {
-    margin-bottom: 50px;
-
-    @include dArea{
-      margin-bottom: vwx(50);
-    }
-
-    li {
-      font-size: 22px;
-
-      @include dArea{
-        font-size: vwx(22);
+    align-items: center;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    &-new{
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 125.8%;
+      margin-right: 24px;
+      @include sMax{
+        font-size: 36px;
       }
-
-      + li {
-        margin-top: 19px;
-
-        @include dArea{
-          margin-top: vwx(19);
-        }
+    }
+    &-old{
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 125.8%;
+      text-decoration-line: line-through;
+      opacity: 0.5;
+      @include sMax{
+        font-size: 24px;
       }
     }
   }
-  &__feedback {
-    font-size: 22px;
-    line-height: 111%;
-    font-weight: bold;
-
-    @include dArea{
-      font-size: vwx(22);
+  &__info{
+    font-family: $secondFont;
+    font-size: 24px;
+    line-height: 125.8%;
+    min-height: 170px;
+    @include sMax{
+      font-size: 18px;
+      min-height: 120px;
+    }
+  }
+  &__btns{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    @include mobile{
+      display: block;
     }
   }
   &__btn{
-    display: none;
     font-family: $secondFont;
-    font-size: 22px;
-    width: 254px;
-    min-height: 61px;
+    font-size: 24px;
+    width: 273px;
     flex-shrink: 0;
-    margin-top: 64px;
-    @include dArea{
-      font-size: vwx(22);
-      width: vwx(254);
-      min-height: vwx(61);
-      margin-top: vwx(64);
-    }
+
     @include sMax{
       font-size: 18px;
       width: 180px;
-    }
-
-    @media (min-width:1025px) {
-      display: flex;
-    }
-
-    &--mob {
-      display: flex;
-
-      @media (min-width:1025px) {
-        display: none;
-      }
     }
   }
   &__timer{
@@ -1172,15 +1081,9 @@
     }
   }
 
-  &--center {
-    padding: 46px 25px 43px 86px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    @include dArea{
-      padding: vwx(46) vwx(25) vwx(43) vwx(86);
-    }
+  &--dark{
+    background: #000000;
+    color: #FFFFFF;
   }
 }
 
@@ -1277,8 +1180,6 @@
       margin-bottom: 0;
     }
     .input-block {
-      width: 100%;
-
       @include sMax{
         margin-top: 25px;
       }
@@ -1401,6 +1302,12 @@
         color: $orange;
       }
     }
+  }
+}
+
+.login-form{
+  .input-block{
+    width: 100%;
   }
 }
 

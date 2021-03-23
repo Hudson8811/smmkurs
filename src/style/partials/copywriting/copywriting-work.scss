@@ -130,10 +130,11 @@
 		padding: 10px 50px;
 		min-height: 56px;
 		font-size: 17px;
+		width: auto;
 		@include dArea{
 			padding: vwx(10) vwx(50);
 			min-height: vwx(56);
-			border-radius: (13);
+			border-radius: vwx(13);
 			font-size: vwx(17);
 		}
 	}
@@ -357,6 +358,14 @@
 		}
 	}
 
+}
+
+
+.copywriting-work--copy {
+	padding-top: 158px;
+	@include dArea{
+		padding-top: vwx(158);
+	}
 }
 
 .copywriting-work--express-smm {

@@ -1,17 +1,303 @@
-.cart-page {
+.cart-sec{
 	padding: 92px 0 110px;
 
-	.cart-page__title {
+	@include dArea{
+		font-size: vwx(96);
+		margin-bottom: vwx(55);
+	}
+	@include sMax{
+		padding: 50px 0 40px;
+	}
+	&__title{
+		font-weight: 500;
+		font-size: 96px;
+		text-align: center;
+		margin-bottom: 55px;
+		@include dArea{
+			font-size: vwx(96);
+			margin-bottom: vwx(55);
+		}
+		@include sMax{
+			font-size: 48px;
+			margin-bottom: 34px;
+		}
+		@include mobile{
+			font-size: 36px;
+			margin-bottom: 24px;
+		}
+	}
+	&__flex{
+		position: relative;
+		z-index: 1;
+		width: 1197px;
+		max-width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		@include dArea{
+			width: vwx(2000);
+		}
+		@include mMax{
+			display: block;
+		}
+	}
+	&__product{
+		width: 50%;
+		@include mMax{
+			width: 100%;
+		}
+	}
+	&__agree{
+		margin-top: 60px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 100%;
+		color: #BABABA;
+		@include dArea{
+			margin-top: vwx(60);
+			font-size: vwx(18);
+		}
+		@include mobile{
+			margin-top: 34px;
+		}
+		a{
+			color: $orange;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		svg{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 9px;
+			@include dArea{
+				margin-right: vwx(9);
+			}
+		}
+	}
+	&__payment{
+		display: flex;
+		justify-content: center;
+		margin-top: 54px;
+		@include dArea{
+			margin-top: vwx(54);
+		}
+		@include mobile{
+			margin-top: 34px;
+		}
+		img{
+			display: block;
+			max-width: 100%;
+		}
+	}
+}
+
+.cardprod{
+	padding: 56px 25px 37px 74px;
+	box-sizing: border-box;
+	background-color: #c15dd5;
+	color: #FFFFFF;
+	position: relative;
+
+	@include dArea{
+		padding: vwx(56) vwx(25) vwx(37) vwx(74);
+	}
+
+	&:not(:last-child) {
+		&::after {
+			content: '';
+			display: block;
+			width: 2px;
+			height: 70%;
+			background-color: #fff;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+
+			@include dArea{
+				width: vwx(2);
+			}
+		}
+	}
+
+	@include tMax{
+		padding: 70px 25px 35px 35px;
+	}
+	@include mobile{
+		padding: 25px;
+	}
+	&__title{
+		font-weight: 500;
+		font-size: 60px;
+		line-height: 122%;
+		margin-bottom: 68px;
+		@include dArea{
+			font-size: vwx(60);
+			margin-bottom: vwx(68);
+		}
+		@include sMax{
+			font-size: 34px;
+			margin-bottom: 24px;
+		}
+		@include mobile{
+			margin-bottom: 12px;
+		}
+	}
+	&__price{
+		font-size: 22px;
+
+		@include dArea{
+			font-size: vwx(22);
+		}
+
+		p {
+			font-size: 70px;
+			line-height: 109%;
+			font-weight: bold;
+
+			@include dArea{
+				font-size: vwx(70);
+			}
+		}
+	}
+	&__tooltip {
+		display: flex;
+		width: 27px;
+		height: 27px;
+		margin-bottom: 30px;
+		cursor: pointer;
+
+		@include dArea{
+			width: vwx(27);
+			height: vwx(27);
+			margin-bottom: vwx(30);
+		}
+
+		&:hover svg {
+			opacity: 0.8;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+			fill: #fff;
+			transition: opacity 0.3s ease;
+		}
+	}
+	&__list {
+		margin-bottom: 50px;
+
+		@include dArea{
+			margin-bottom: vwx(50);
+		}
+
+		li {
+			font-size: 22px;
+
+			@include dArea{
+				font-size: vwx(22);
+			}
+
+			+ li {
+				margin-top: 19px;
+
+				@include dArea{
+					margin-top: vwx(19);
+				}
+			}
+		}
+	}
+	&__feedback {
+		font-size: 22px;
+		line-height: 111%;
+		font-weight: bold;
+
+		@include dArea{
+			font-size: vwx(22);
+		}
+	}
+	&__btn{
+		border-radius: 13px;
+		box-sizing: border-box;
+		display: none;
+		font-family: $secondFont;
+		min-height: 56px;
+		font-size: 17px;
+		max-width: 100%;
+		width: max-content;
+		flex-shrink: 0;
+		margin-top: 64px;
+		padding: 10px 50px;
+
+		@include dArea{
+			padding: vwx(10) vwx(50);
+			min-height: vwx(56);
+			font-size: vwx(17);
+			border-radius: vwx(13);
+		}
+		@include sMax{
+			font-size: 18px;
+			width: 180px;
+		}
+
+		@media (min-width:1025px) {
+			display: flex;
+		}
+
+		&--mob {
+			display: flex;
+
+			@media (min-width:1025px) {
+				display: none;
+			}
+		}
+	}
+	&__timer{
+		margin-left: 24px;
+		font-size: 24px;
+		line-height: 125.8%;
+		@include tMax{
+			font-size: 18px;
+		}
+		@include mobile{
+			margin-left: 0;
+			margin-top: 12px;
+			font-size: 14px;
+		}
+		span{
+			font-weight: 500;
+		}
+	}
+
+	&--center {
+		padding: 46px 25px 43px 86px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@include dArea{
+			padding: vwx(46) vwx(25) vwx(43) vwx(86);
+		}
+	}
+}
+
+
+
+.cart-sec {
+	padding: 92px 0 110px;
+
+	.cart-sec__title {
 		margin-bottom: 45px;
 	}
 
-	.cart-page__start {
+	.cart-sec__start {
 		span {}
 	}
 
-	.cart-page__flex {}
+	.cart-sec__flex {}
 
-	.product {
+	.cardprod {
 		padding: 38px 25px 55px 74px;
 		display: flex;
 		flex-direction: column;
@@ -26,9 +312,9 @@
 			flex-grow: 1;
 		}
 
-		.product__price-new {}
+		.cardprod__price-new {}
 
-		.product__btn.btn {
+		.cardprod__btn.btn {
 			&--border {}
 
 			&:hover {}
@@ -39,17 +325,17 @@
 		}
 	}
 
-	.product__timer {
+	.cardprod__timer {
 		span {
 			white-space: nowrap;
 		}
 	}
 
-	.cart-page__agree {
+	.cart-sec__agree {
 		svg {}
 	}
 
-	.cart-page__payment {
+	.cart-sec__payment {
 		img {}
 	}
 
@@ -60,34 +346,34 @@
 
 
 @media screen and (max-width:1347px) {
-	.cart-page--fixed {
-		.product__timer {
+	.cart-sec--fixed {
+		.cardprod__timer {
 			font-size: 18px;
 		}
 	}
 }
 
 @media screen and (max-width:1024px) {
-	.cart-page {
+	.cart-sec {
 		padding: vw(65) 0 vw(67);
 
-		.cart-page__title {
+		.cart-sec__title {
 			font-size: vw(36);
 			margin-bottom: vw(4);
 		}
 
-		.cart-page__start {
+		.cart-sec__start {
 			width: vw(137);
 			height: vw(30);
 			font-size: vw(13);
 			margin-bottom: vw(55);
 		}
 
-		.cart-page__flex {
+		.cart-sec__flex {
 			display: block;
 		}
 
-		.product {
+		.cardprod {
 			width: 100%;
 			padding: vw(48) vw(52) vw(50) vw(52);
 
@@ -118,12 +404,13 @@
 				}
 			}
 
-			.product__btn.btn {
+			.cardprod__btn.btn {
 				font-size: vw(18);
 				margin-right: 0;
 				width: 90%;
 				min-height: vw(50);
 				margin-top: 52px;
+
 
 				&--border {}
 
@@ -147,14 +434,14 @@
 			}
 		}
 
-		.product__timer {
+		.cardprod__timer {
 			font-size: vw(18);
 			text-align: center;
 			width: vw(207);
 			margin: vw(13) auto vw(26);
 		}
 
-		.cart-page__agree {
+		.cart-sec__agree {
 			font-size: vw(14);
 			line-height: 100%;
 			text-align: left;
@@ -175,7 +462,7 @@
 			}
 		}
 
-		.cart-page__payment {
+		.cart-sec__payment {
 			margin-top: vw(26);
 
 			img {
