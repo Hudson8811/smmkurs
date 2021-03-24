@@ -212,7 +212,10 @@
 		font-size: 22px;
 		line-height: 111%;
 		font-weight: bold;
-
+		span{
+			font-weight: 400;
+			font-family: $secondFont;
+		}
 		@include dArea{
 			font-size: vwx(22);
 		}

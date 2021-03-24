@@ -44,3 +44,11 @@ html,body{
 		white-space: nowrap;
 	}
 }
+
+@supports (-webkit-backdrop-filter: blur(1px)) {
+	.main2 {
+		img[src$='svg'], svg {
+			height: intrinsic;
+		}
+	}
+}
