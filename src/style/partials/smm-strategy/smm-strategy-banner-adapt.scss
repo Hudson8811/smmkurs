@@ -61,16 +61,20 @@
             padding: 0px 50px;
         }
         &__row {
-            display: flex;
-            flex-direction: column;
-            max-width: 600px;
+
         }
     }
 }
-@media (max-width:1024px) {
+@media (max-width:768px) {
+
+
     .smm-strategy-banner {
         padding-top: vw(96);
         padding-bottom: vw(93);
+        &__row{
+            flex-direction: column;
+            align-items: flex-start;
+        }
         &__logo {
             width: vw(32);
             height: vw(32);
@@ -122,10 +126,14 @@
             height: vw(14);
             margin-right: vw(6);
         }
+
         &__kurs-info {
-            margin-bottom: vw(53);
-            padding-left: 0;
-            letter-spacing: vw(-0.4);
+            margin: 0 auto;
+            margin-top: vw(0);
+            margin-bottom: vw(52);
+            width: vw(275);
+
+            height: vw(350);
         }
         &__play-text {
             font-size: vw(18);

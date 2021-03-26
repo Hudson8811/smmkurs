@@ -33,63 +33,46 @@
             padding: 0px 50px;
         }
         &__row {
-            display: flex;
-            flex-direction: column;
-            max-width: 700px;
+
         }
     }
 }
-@media (max-width:375px) {
-    .context-banner {
-        padding-top: 96px;
-        padding-bottom: 95px;
-        &__logo {
-            width: 32px;
-            height: 32px;
-            margin-bottom: 125px;
-        }
-        &__decor-wrapper {
-            position: absolute;
-            top: -37vw;
-            overflow: hidden;
-            right: -33vw;
-            width: 134vw;
-            height: 105vw;
-        }
-        &__decor {
-          
-        }
-        &__title {
-            display: block;
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-        &__subtitle {
-            font-family: ALS Hauss;
-            font-size: 36px;
-            line-height: 100%;
-            margin-bottom: 20px;
-            margin-right: 0px;
-            position: relative;
-        }
-        /*&__link {
-            font-size: 18px;
-            padding: 16px 59px;
-        }*/
-        &__play {
-            width: 14px;
-            height: 14px;
-            margin-right: 6px;
-        }
-        &__kurs-info {
-            margin-bottom: 53px;
-            padding-left: 0;
-            letter-spacing: -0.4px;
+@media (max-width:1024px) {
+    .context-banner__row{
+        display: block;
+    }
+    .context-banner__kurs-info{
+        margin: 0 auto;
+        margin-top: vw(0);
+        margin-bottom: vw(52);
+        width: vw(275);
 
-        }
-        &__play-text {
-            font-size: 18px;
-          
-        }
+        height: vw(350);
+    }
+    .context-banner__subtitle{
+        font-size: 9.6vw;
+        margin-bottom: 4vw;
+    }
+}
+
+@media (max-width:768px) {
+
+    .context-banner{
+        padding-top: 25.86667vw;
+        padding-bottom: 25.06667vw;
+    }
+    .context-banner__logo{
+        width: 8.53333vw;
+        height: 8.53333vw;
+        margin-bottom: 25.06667vw;
+    }
+    .context-banner__link{
+        font-size: 4.53333vw;
+        padding: 0 13.33333vw;
+        height: 15.46667vw;
+        border-radius: 3.46667vw;
+        min-width: 57.6vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

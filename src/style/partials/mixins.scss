@@ -41,13 +41,13 @@
 }
 
 @mixin dMMax {
-	@media (min-width: 1660px) {
+	@media (min-width: 1920px) {
 		@content;
 	}
 }
 
 @mixin dArea {
-	@media (min-width: 1200px) and (max-width: 1660px){
+	@media (min-width: 1200px) and (max-width: 1920px){
 		@content;
 	}
 }

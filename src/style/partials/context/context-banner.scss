@@ -47,11 +47,8 @@
     }
     &__row {
         display: flex;
-        flex-direction: column;
-        max-width: 1140px;
-      @include dArea{
-        max-width: vwx(1140);
-      }
+      justify-content: space-between;
+      align-items: center;
     }
     &__title {
         font-family: ALS Hauss;
@@ -117,15 +114,28 @@
   }
     
     &__kurs-info {
-        display: flex;
-        align-items: center;
-        flex: 0 0 auto;
-        cursor: pointer;
-        margin-bottom: 84px;
-        padding-left: 6px;
-      @include dArea{
-        margin-bottom: vwx(84);
-        padding-left: vwx(6);
+      text-align: center;
+      margin-right: vwx(94);
+      margin-top: vwx(-130);
+      width: vwx(474);
+      height: vwx(650);
+      flex-shrink: 0;
+      @include dMMax{
+        height: novwx(650);
+        width: novwx(474);
+        margin-right: novwx(94);
+        margin-top: novwx(-130);
+      }
+      @media (max-width: 1200px) {
+        margin-right: 94px;
+        margin-top: -130px;
+      }
+      iframe{
+        width: 100%;
+        max-width: 100%;
+        height: 90%;
+        max-height: 90%;
+
       }
     }
     
@@ -139,8 +149,6 @@
     &__play-text {
         font-size: 32px;
         line-height: 100%;
-        display: flex;
-        align-items: center;
         text-align: center;
         color: #FEA430;
       @include dArea{

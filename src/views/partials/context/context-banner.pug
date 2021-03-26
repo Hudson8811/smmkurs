@@ -4,11 +4,13 @@ section.context-banner
         //- img.context-banner__decor.context-banner__decor-mobile(src='img/landings/context/banner-decor-mob.svg')
     .container2.context-banner__container
         .context-banner__content
-            img.context-banner__logo(src="img/logo2.png" alt="logo")
+            a.context-banner__logo(href="/" style="display:block")
+                img.context-banner__logo(src="img/logo2.png" alt="logo")
+
             .context-banner__row
                 .context-banner__subtitle Контекстная реклама Яндекс & Google
-                .context-banner__kurs-info.js-callFancyVideo(data-src="images/452-old.mp4" data-preview="images/video-preview.jpg")
-                    img.context-banner__play(src="img/play.svg" alt="play")
+                .context-banner__kurs-info
+                    <iframe src="https://player.vimeo.com/video/528921477?byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     .context-banner__play-text О курсе&nbsp;
                         b за 49 секунд
             .context-banner__link Записаться

@@ -67,8 +67,12 @@
 		}
 
 		&__kurs-info {
+			margin: 0 auto;
 			margin-top: vw(0);
 			margin-bottom: vw(52);
+			width: vw(275);
+
+			height: vw(350);
 		}
 
 		&__play {
