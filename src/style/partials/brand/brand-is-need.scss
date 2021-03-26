@@ -9,10 +9,11 @@ position: relative;
     }
 
     &__decor-wrapper {
+        max-width: 45%;
         position: absolute;
         overflow: hidden;
         z-index: 0;
-        top: 6vw;
+        bottom: 0;
         left: -10px;
         @include dArea{
             height: 100%;
@@ -33,7 +34,7 @@ position: relative;
     }
     &__container {
         position: relative;
-		width: 1644px;
+        width: 1644px;
         @include dArea{
             width: vwx(1644);
         }
