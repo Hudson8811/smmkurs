@@ -367,6 +367,9 @@
 
 	&--fixed {
 		padding: 247px 0 237px;
+		@include dArea{
+			padding: vwx(247) 0 vwx(237);
+		}
 	}
 }
 
