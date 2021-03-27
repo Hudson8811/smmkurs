@@ -27,14 +27,32 @@ main .home{
     position: static !important;
     @include mMax{
       padding-top: 80px;
+      .header__right{
+        display: flex;
+        position: static;
+        height: auto;
+        width: auto;
+        background: transparent;
+        padding: 0;
+        .header__menu-new li:not(:last-child){
+          display: none;
+        }
+        .header__menu-new li:last-child{
+          margin-left: 0;
+        }
+        .header__enter{
+          color: #ffffff;
+          width: vw(180);
+          min-height: vw(50);
+          font-size: vw(16);
+          line-height: vw(17);
+        }
+      }
     }
   }
   .header__menu-new{
     display: flex;
     align-items: center;
-    @include mMax{
-      display: none;
-    }
     li{
       +li{
         margin-left: 59px;

@@ -1,11 +1,11 @@
 .brand-banner {
-	padding-top: 330px;
+	padding-top: 172px;
 	padding-bottom: 255px;
 	background-color: #000;
 	overflow: hidden;
 	position: relative;
 	@include dArea{
-		padding-top: vwx(330);
+		padding-top: vwx(172);
 		padding-bottom: vwx(225);
 	}
 	&__decor-wrapper {
@@ -41,7 +41,6 @@
 	}
 
 	&__logo {
-		display: none;
 		width: 64px;
 		height: 64px;
 		margin-bottom: 122px;
@@ -70,12 +69,12 @@
 		margin-bottom: 71px;
 		margin-right: 40px;
 		position: relative;
-		max-width: 350px;
+		max-width: 900px;
 		@include dArea{
 			font-size: vwx(113);
 			margin-bottom: vwx(71);
 			margin-right: vwx(40);
-			max-width: vwx(350);
+			max-width: vwx(900);
 		}
 	}
 	&__link {
