@@ -35,7 +35,7 @@
 		display: flex;
 		justify-content: center;
 		@include dArea{
-			width: vwx(2000);
+			width: vwx(1197);
 		}
 		@include mMax{
 			display: block;
@@ -66,12 +66,35 @@
 				text-decoration: underline;
 			}
 		}
-		svg{
+		.checkbox{
+			flex-shrink: 0;
 			display: inline-block;
 			vertical-align: middle;
 			margin-right: 9px;
+			cursor: pointer;
 			@include dArea{
 				margin-right: vwx(9);
+			}
+		}
+		input{
+			display: none;
+			&:checked{
+				+.checkbox{
+					svg{
+						&:first-child{
+							display: none;
+						}
+						&:last-child{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+		svg{
+			display: block;
+			&:last-child{
+				display: none;
 			}
 		}
 	}
