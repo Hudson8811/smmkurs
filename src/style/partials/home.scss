@@ -534,6 +534,12 @@ main .home{
       }
     }
     .kurs__tag {
+      @include dArea{
+        border-radius: vwx(51);
+        font-size: vwx(18);
+        min-height: vwx(57);
+        padding: 0 vwx(40);
+      }
       @include homeMax {
         border-radius: qw(51);
         font-size: qw(18);
@@ -615,17 +621,31 @@ main .home{
     .kurs-new{
       &--1{
         .kurs__img-new{
-          top: 50%;
+          top: vwx(75);
+          right: 0;
+          width: vwx(350);
           left: 50%;
-          transform: translateY(-50%) translateX(-50%);
+          margin-left: vwx(-175);
+          @include dMMax{
+            width: novwx(350);
+            top: novwx(75);
+            margin-left: novwx(-175);
+          }
+
           @include homeMax {
-            width: qw(200);
+            top: qw(80);
+            width: qw(250);
+            margin-left: qw(-125);
           }
           @include sMax {
-            width: qw2(200);
+            top: qw2(80);
+            width: qw2(350);
+            margin-left: qw2(-175);
           }
-          @include mMax{
-            width: vw(132);
+          @include mMax {
+            top: vw(55);
+            width: vw(200);
+            margin-left: vw(-100);
           }
         }
       }
@@ -659,29 +679,31 @@ main .home{
       }
       &--3{
         .kurs__img-new{
-          bottom: vwx(25);
-          right: vwx(35);
-          width: vwx(300);
+          top: vwx(75);
+          right: 0;
+          width: vwx(350);
+          left: 50%;
+          margin-left: vwx(-175);
           @include dMMax{
-            bottom: novwx(25);
-            right: novwx(35);
-            width: novwx(300);
+            width: novwx(350);
+            top: novwx(75);
+            margin-left: novwx(-175);
           }
 
           @include homeMax {
-            bottom: qw(25);
-            right: qw(35);
-            width: qw(293);
+            top: qw(80);
+            width: qw(250);
+            margin-left: qw(-125);
           }
           @include sMax {
-            bottom: qw2(25);
-            right: qw2(35);
-            width: qw2(293);
+            top: qw2(80);
+            width: qw2(350);
+            margin-left: qw2(-175);
           }
           @include mMax {
-            bottom: vw(-82);
-            right: vw(-91);
-            width: vw(293);
+            top: vw(55);
+            width: vw(200);
+            margin-left: vw(-100);
           }
         }
       }
@@ -712,45 +734,61 @@ main .home{
       }
       &--5{
         .kurs__img-new{
-          top: 0;
+          top: vwx(75);
           right: 0;
-          width: vwx(450);
+          width: vwx(350);
+          left: 50%;
+          margin-left: vwx(-175);
           @include dMMax{
-            width: novwx(450);
+            width: novwx(350);
+            top: novwx(75);
+            margin-left: novwx(-175);
           }
 
           @include homeMax {
-            width: qw(473);
+            top: qw(80);
+            width: qw(250);
+            margin-left: qw(-125);
           }
           @include sMax {
-            width: qw2(473);
+            top: qw2(80);
+            width: qw2(350);
+            margin-left: qw2(-175);
           }
           @include mMax {
-            top: vw(-95);
-            right: vw(-172);
-            width: vw(460);
+            top: vw(55);
+            width: vw(200);
+            margin-left: vw(-100);
           }
         }
       }
       &--6{
         .kurs__img-new{
-          top: 0;
+          top: vwx(75);
           right: 0;
-          width: vwx(300);
+          width: vwx(350);
+          left: 50%;
+          margin-left: vwx(-175);
           @include dMMax{
-            width: novwx(300);
+            width: novwx(350);
+            top: novwx(75);
+            margin-left: novwx(-175);
           }
 
           @include homeMax {
-            width: qw(305);
+            top: qw(80);
+            width: qw(250);
+            margin-left: qw(-125);
           }
           @include sMax {
-            width: qw2(305);
+            top: qw2(80);
+            width: qw2(350);
+            margin-left: qw2(-175);
           }
           @include mMax {
-            width: vw(250);
-            top: vw(-60);
-            right: vw(-50);
+            top: vw(55);
+            width: vw(200);
+            margin-left: vw(-100);
           }
         }
       }
@@ -810,6 +848,25 @@ main .home{
             right: auto;
           }
         }
+      }
+    }
+
+  }
+
+  .kurs-new--new-banner{
+    .kurs__top:after{
+      content: '';
+      width:80px;
+      height: 52px;
+      background: url("../img/new.png") no-repeat;
+      background-size: 100% 100%;
+      @include dArea{
+        width:vwx(80);
+        height: vwx(52);
+      }
+      @include mMax{
+        width:vw(65);
+        height: vw(42);
       }
     }
   }

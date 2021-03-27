@@ -103,6 +103,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   &__tag{
     background: rgba(0, 0, 0, 0.1);
