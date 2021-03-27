@@ -46,7 +46,7 @@ html,body{
 }
 
 @supports (-webkit-backdrop-filter: blur(1px)) {
-	.main2 {
+	.main2 .home {
 		img[src$='svg'], svg {
 			height: intrinsic;
 		}
