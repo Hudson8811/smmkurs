@@ -985,7 +985,7 @@ main .home{
       @include mMax{
         max-width: 100%;
         margin-top: vw(40);
-        font-size: vw(28);
+        font-size: vw(24);
         text-align: center;
         letter-spacing: vw(-1.25573);
       }
@@ -1030,7 +1030,7 @@ main .home{
         }
         @include mMax{
           padding: 0;
-          margin-bottom: vw(25);
+          margin-bottom: vw(15);
         }
         label{
           cursor: pointer;
@@ -1060,8 +1060,8 @@ main .home{
             }
             @include mMax{
               font-size: vw(17);
-              padding: 0 vw(50);
-              height: vw(58);
+              padding: 0 vw(30);
+              height: vw(45);
               border-radius: vw(13);
             }
           }
@@ -1102,8 +1102,8 @@ main .home{
           letter-spacing: qw(-1.25573);
         }
         @include mMax{
-          margin-top: vw(95);
-          font-size: vw(28);
+          margin-top: vw(45);
+          font-size: vw(18);
           padding-bottom: vw(13);
           border-bottom: vw(3) solid #E5EDF2;
           letter-spacing: vw(-1.25573);
@@ -1140,7 +1140,10 @@ main .home{
           min-height: qw(57);
         }
         @include mMax{
-          margin-top: vw(64);
+          margin-top: vw(24);
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
           padding: 0 vw(50);
           border-radius: vw(13);
           font-size: vw(17);
@@ -1168,6 +1171,7 @@ main .home{
         @include mMax{
           font-size: vw(12);
           margin-top: vw(10);
+          text-align: center;
         }
       }
     }

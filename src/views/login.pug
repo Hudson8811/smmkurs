@@ -15,8 +15,16 @@ block main
             .cabinet-page__main.js-login-toggle
                 .cabinet-page__logo
                     img(src="img/logo.png" alt="")
-                .cabinet-page__top
-                    .cabinet-page__logintitle Личный кабинет tutor
+                .cabinet-page__logintitle Личный кабинет tutor
+
+                .order-steps
+                    .order-steps__flex
+                        .order-steps__item.order-steps__item--active 1
+                        .order-steps__sep.order-steps__sep--active
+                        .order-steps__item.order-steps__item--active 2
+                        .order-steps__sep
+                        .order-steps__item 3
+
                 form.cabinet-page__section.login-form
                     input(type='hidden' name='mode' value='login')
                     label.input-block

@@ -9,12 +9,13 @@ position: relative;
     }
 
     &__decor-wrapper {
-        max-width: 45%;
+        width: 90%;
         position: absolute;
         overflow: hidden;
         z-index: 0;
         bottom: 0;
         left: -10px;
+        transform: translateX(-50%);
         @include dArea{
             height: 100%;
         }
