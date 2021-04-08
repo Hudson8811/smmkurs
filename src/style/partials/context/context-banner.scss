@@ -35,10 +35,10 @@
         color: #FFFFFF;
         z-index: 3;
     }
-    
+
     &__content {
     }
-    
+
     &__logo {
         width: 64px;
         height: 64px;
@@ -61,7 +61,7 @@
         margin-bottom: vwx(27);
       }
     }
-    
+
     &__subtitle {
         font-family: ALS Hauss;
         font-size: 96px;
@@ -112,7 +112,7 @@
       min-width: 216px;
     }
   }
-    
+
     &__kurs-info {
       text-align: center;
       margin-right: vwx(94);
@@ -138,14 +138,14 @@
 
       }
     }
-    
+
     &__play {
         margin-right: 28px;
       @include dArea{
         margin-right: vwx(28);
       }
     }
-    
+
     &__play-text {
         font-size: 32px;
         line-height: 100%;

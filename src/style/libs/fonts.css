@@ -44,3 +44,26 @@
 }
 
 
+@font-face {
+    font-family: 'Druk Wide';
+    src: url('../fonts/DrukWideMediumCy.woff2') format('woff2'), url('../fonts/DrukWideMediumCy.woff') format('woff');
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Druk Wide';
+    src: url('../fonts/DrukTextWideCyr-Bold.woff2') format('woff2'),
+    url('../fonts/DrukTextWideCyr-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Druk Wide';
+    src: url('../fonts/DrukWide-Heavy.woff2') format('woff2'), url('../fonts/DrukWide-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal
+}
+

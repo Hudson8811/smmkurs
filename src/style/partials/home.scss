@@ -21,6 +21,7 @@ main .home{
   }
   @include mMax{
     padding-bottom: vw(133);
+    padding-top: vw(60);
   }
   .header{
     background: #131417 !important;

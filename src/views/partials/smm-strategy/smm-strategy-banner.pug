@@ -1,14 +1,28 @@
-section.smm-strategy-banner
-    .smm-strategy-banner__decor-wrapper
-        img.smm-strategy-banner__decor(src='img/landings/smm-strategy/smm-strategy-banner-decor.svg')
-    .container2.smm-strategy-banner__container
-        .smm-strategy-banner__content
-            a.smm-strategy-banner__logo(href="/" style="display:block")
-                img.smm-strategy-banner__logo(src="img/logo2.png" alt="logo")
-            .smm-strategy-banner__row
-                .smm-strategy-banner__subtitle Создание <br> SMM-стратегий
-                .smm-strategy-banner__kurs-info
-                    <iframe src="https://player.vimeo.com/video/528921356?byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    .smm-strategy-banner__play-text О курсе &nbsp;
-                        bold за 56 секунд
-            .smm-strategy-banner__link Записаться
+section.land-top.land-top--smm
+    include ../__header-land
+    .land-top__inner
+        .container3
+            .land-top__flex
+                img.land-top__bg(src="img/landings/smm-strategy/banner.png" alt="")
+                .land-top__left
+                    h1.land-top__title Создание <br>SMM-стратегий
+
+                    .land-top__info
+                        .land-top__info-item Старт курса <span>6 апреля</span>
+                        .land-top__info-item Среднее время прохождения <span>2 месяца</span>
+                        .land-top__info-item Доступ к курсу <span>4 месяца</span>
+
+                    .land-top__links
+                        a.land-top__link(href="#kurs-order") Записаться
+                        a.land-top__link.land-top__link--border(href="#programm") Программа
+
+                .land-top__right
+                    .land-top__right-iframe
+                        <iframe src="https://player.vimeo.com/video/528921356?byline=0&portrait=0&badge=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    .land-top__right-text
+                        img(src="img/play-button.png" alt="play")
+                        | О курсе <span>за 56 секунд</span>
+
+                    .land-top__links
+                        a.land-top__link(href="#kurs-order") Записаться
+                        a.land-top__link.land-top__link--border(href="#programm") Программа

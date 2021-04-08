@@ -279,4 +279,23 @@ $(function () {
 		$(this).closest('.js-login-toggle').hide().siblings('.js-login-toggle').fadeIn(300);
 	});*/
 
+
+	$(document).on('click','.js-open-mobile-menu',function (){
+		$(this).toggleClass('active');
+		$('.js-mobile-menu').toggleClass('active');
+	});
+
+	var header = $('.land-header'),
+		scrollPrev = 0;
+
+	$(window).scroll(function() {
+		var scrolled = $(window).scrollTop();
+
+		if ( scrolled > 100 && scrolled > scrollPrev ) {
+			header.addClass('hides');
+		} else {
+			header.removeClass('hides');
+		}
+		scrollPrev = scrolled;
+	});
 });

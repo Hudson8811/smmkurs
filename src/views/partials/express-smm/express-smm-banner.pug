@@ -1,11 +1,24 @@
-section.express-smm-banner
-    .express-smm-banner__decor-wrapper
-        img.express-smm-banner__decor.express-smm-banner__decor-desctop(src='img/landings/express-smm/banner-decor.svg')
-        img.express-smm-banner__decor.express-smm-banner__decor-mobile(src='img/landings/express-smm/banner-decor-mob.svg')
-    .container2.express-smm-banner__container
-        .express-smm-banner__content
-            a.express-smm-banner__logo(href="/" style="display:block")
-                img.express-smm-banner__logo(src="img/logo2.png" alt="logo")
-            .express-smm-banner__row
-                .express-smm-banner__subtitle Экспресс<br>SMM
-            .express-smm-banner__link Записаться
+section.land-top.land-top--express
+    include ../__header-land
+    .land-top__inner
+        .container3
+            .land-top__flex
+                .land-top__left
+                    h1.land-top__title Экспресс SMM
+                        img.land-top__title-decor(src="img/motion-title-decor.png")
+                    .land-top__subtitle Курс от основателя <u>smmagnat</u>
+
+                    .land-top__info
+                        .land-top__info-item Старт курса <span>6 апреля</span>
+                        .land-top__info-item Среднее время прохождения <span>2 месяца</span>
+                        .land-top__info-item Доступ к курсу <span>4 месяца</span>
+
+                    .land-top__links
+                        a.land-top__link(href="#kurs-order") Записаться
+                        a.land-top__link.land-top__link--border(href="#programm") Программа
+
+                .land-top__right
+                    img.land-top__bg(src="img/landings/express-smm/banner.png" alt="")
+                    .land-top__links
+                        a.land-top__link(href="#kurs-order") Записаться
+                        a.land-top__link.land-top__link--border(href="#programm") Программа
