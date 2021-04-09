@@ -537,16 +537,16 @@ main .home{
       position: absolute;
       background: transparent;
       z-index: 2;
-      padding: vwx(33) vwx(20) vwx(37) vwx(37);
+      padding: vwx(33) vwx(37) vwx(37) vwx(37);
       overflow: hidden;
       @include dMMax{
-        padding: novwx(33) novwx(20) novwx(37) novwx(37);
+        padding: novwx(33) novwx(37) novwx(37) novwx(37);
       }
       @include homeMax {
-        padding: qw(33) qw(20) qw(37) qw(37);
+        padding: qw(33) qw(37) qw(37) qw(37);
       }
       @include sMax {
-        padding: qw2(33) qw2(20) qw2(37) qw2(37);
+        padding: qw2(33) qw2(37) qw2(37) qw2(37);
       }
       @include mMax{
         padding: vw(25);

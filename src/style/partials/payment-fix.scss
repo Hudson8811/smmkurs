@@ -383,7 +383,10 @@
 			font-family: "ALS Hauss", sans-serif;
 			font-size: 22px;
 			@include dArea{
-				font-size: (22);
+				font-size: vwx(22);
+			};
+			@include mMax{
+				font-size: vw(18);
 			}
 		}
 		span{
