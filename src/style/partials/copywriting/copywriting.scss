@@ -39,6 +39,9 @@
 			border-radius: 13px;
 			font-size: 17px;
 		}
+		@include mMax {
+			min-width: vw(210);
+		}
 	}
 
 	&--green {

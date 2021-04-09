@@ -1,6 +1,7 @@
 .cwprog-card-btn {
 	width: vwx(265);
 	margin-top: vwx(80);
+	max-width: 100%;
 	@include dMMax{
 		width: novwx(265);
 		margin-top: novwx(80);

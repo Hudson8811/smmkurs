@@ -253,7 +253,7 @@
 		max-width: 100%;
 		width: max-content;
 		flex-shrink: 0;
-		margin-top: 64px;
+		margin-top: 22px;
 		padding: 10px 50px;
 
 		@include dArea{
@@ -261,6 +261,7 @@
 			min-height: vwx(56);
 			font-size: vwx(17);
 			border-radius: vwx(13);
+			margin-top: vwx(22);
 		}
 		@include sMax{
 			font-size: 18px;
@@ -371,6 +372,26 @@
 			padding: vwx(247) 0 vwx(237);
 		}
 	}
+
+	&__yandex {
+		margin-top: 16px;
+		@include dArea{
+			margin-top: vwx(16);
+		}
+		* {
+			color: #ffffff;
+			font-family: "ALS Hauss", sans-serif;
+			font-size: 22px;
+			@include dArea{
+				font-size: (22);
+			}
+		}
+		span{
+			span{
+				color: #FF5210;
+			}
+		}
+	}
 }
 
 
@@ -478,7 +499,7 @@
 			justify-content: center;
 			align-items: center;
 
-			span {
+			> span {
 				display: block;
 				width: vw(192);
 			}

@@ -19,9 +19,9 @@
     right: -300px;
     top: -245px;
     display: block;
-    width: 851px;
+    width: 950px;
     @include dArea{
-      width: vwd(851);
+      width: vwd(950);
       top: vwd(-245);
       right: vwd(-300);
     }
