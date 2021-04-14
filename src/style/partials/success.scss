@@ -1,0 +1,82 @@
+.success-page{
+  padding-top: 110px;
+  padding-bottom: 80px;
+  @include mMax{
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  &__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mMax{
+      flex-direction: column;
+    }
+    img{
+      margin-right: 32px;
+      flex-shrink: 0;
+      @include mMax{
+        margin-right: 0;
+        margin-bottom: 42px;
+      }
+    }
+    span{
+      font-size: 70px;
+      font-weight: 400;
+      letter-spacing: -1.25px;
+      @include sMax{
+        font-size: 50px;
+      }
+      @include mMax{
+        text-align: center;
+        font-size: 33px;
+        font-weight: 500;
+      }
+    }
+  }
+  &__subtitle{
+    margin-top: 90px;
+    font-size: 37px;
+    letter-spacing: -0.67px;
+    text-align: center;
+    @include sMax{
+      margin-top: 72px;
+      font-size: 32px;
+    }
+    @include mMax{
+      margin-top: 52px;
+      font-size: 25px;
+      letter-spacing: -0.45px;
+    }
+  }
+  &__text{
+    margin-top: 24px;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -0.37px;
+    max-width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    span{
+      font-weight: 500;
+    }
+    @include mMax{
+      margin-top: 30px;
+      font-size: 17px;
+      letter-spacing: -0.3px;
+    }
+    @include mobile{
+      max-width: 265px;
+    }
+  }
+  &__btn{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    @include sMax{
+      margin-top: 60px;
+    }
+  }
+}

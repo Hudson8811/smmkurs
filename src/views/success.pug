@@ -1,0 +1,23 @@
+extends layouts/default
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    section.success-page
+        .container
+            .success-page__title
+                img(src="img/success-pay.png" alt="")
+                span Добро пожаловать на&nbsp;борт!
+            .success-page__subtitle Вы оплатили курс «Создание SMM стартегий»
+            .success-page__text По любым вопросам вы можете обращаться в чат, расположенный справа внизу или на почту <span>tutor@smmagnat.ru</span>
+
+            .success-page__btn
+                a.btn(href="") Начать
+
