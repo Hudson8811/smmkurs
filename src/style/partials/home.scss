@@ -63,7 +63,6 @@ main .home{
       }
     }
     a:not(.header__enter){
-      font-weight: 350;
       font-family: $secondFont;
       font-size: 20px;
       line-height: 50px;
@@ -169,7 +168,7 @@ main .home{
         }
       }
       &-text{
-        font-weight: 350;
+        font-family: $secondFont;
         font-size: vwx(32);
         line-height: vwx(25);
         color: #FEA430;
