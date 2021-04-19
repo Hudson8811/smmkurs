@@ -192,14 +192,40 @@
 	}
 
 	&--context {
-		padding-top: 148px;
+		padding-top: 202px;
 
 		@media screen and (max-width: 1024px) {
 			padding-top: 84px;
 		}
 
+		.cwprog-title {
+			font-family: 'Druk Wide', sans-serif;
+			font-size: vwx(63);
+			letter-spacing: -1.25px;
+
+			@include dMMax {
+				font-size: novwx(63);
+			}
+
+			@include mMax {
+				font-size: vw(40);
+			}
+		}
+
+		.cwprog-cards {
+			margin-top: vwx(111);
+
+			@include dMMax {
+				margin-top: novwx(111);
+			}
+
+			@media (max-width: 1200px) {
+				margin-top: 111px;
+			}
+		}
+
 		.copywriting-programm__content {
-			padding: 127px 35px 186px;
+			padding: 127px 100px 186px;
 
 			@media screen and (max-width: 1024px) {
 				padding: 0 0 186px;

@@ -67,6 +67,76 @@
       padding: 10px;
     }
   }
+
+  &--with-price {
+    .kurs {
+      &__caption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: vwx(204);
+        height: vwx(65);
+        background-color: #ff4e00;
+        transform: skewX(-20deg);
+        font-size: vwx(34);
+        font-weight: 700;
+        font-style: italic;
+        color: #fff;
+        position: absolute;
+        top: vwx(38);
+        left: vwx(-25);
+        z-index: 2;
+
+        @include dMMax{
+          width: novwx(204);
+          height: novwx(65);
+          font-size: novwx(34);
+          top: novwx(38);
+          left: novwx(-25);
+        }
+
+        @include homeMax {
+          width: qw(204);
+          height: qw(65);
+          font-size: qw(34);
+          top: qw(38);
+          left: qw(-25);
+        }
+        @include sMax {
+          width: qw2(204);
+          height: qw2(65);
+          font-size: qw2(34);
+          top: qw2(38);
+          left: qw2(-25);
+        }
+        @include mMax {
+          width: vw(102);
+          height: vw(32);
+          font-size: vw(18);
+          top: vw(19);
+          left: vw(-13);
+        }
+
+        span {
+          display: block;
+          transform: skewX(20deg);
+        }
+      }
+
+      &__top {
+        justify-content: flex-end;
+        padding-right: vwx(7);
+        padding-top: vwx(23);
+      }
+
+      &__bottom {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: auto;
+      }
+    }
+  }
 }
 
 .kurs{

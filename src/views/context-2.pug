@@ -1,0 +1,313 @@
+extends layouts/lands
+
+block vars
+	-
+		const page = {
+		title: 'index.html'
+		};
+
+block main
+	section.land-top.land-top--context
+		include partials/__header-land
+		.land-top__inner
+			.container3
+				.land-top__flex
+					.land-top__left
+						h1.land-top__title Контекстная реклама Яндекс & Google
+						.land-top__subtitle Методическое пособие
+
+						.land-top__info
+							.land-top__info-item Доступ <span>сразу после оплаты</span>
+							.land-top__info-item Доступ к материалам <span>4 месяца</span>
+
+						.land-top__links
+							a.land-top__link(href="#kurs-order") Купить
+							a.land-top__link.land-top__link--border(href="#programm") Программа
+
+					.land-top__right
+						.land-top__caption 1 799 ₽
+						img.land-top__bg(src="img/landings/context/banner-decor-2.png" alt="")
+						.land-top__links
+							a.land-top__link(href="#kurs-order") Купить
+							a.land-top__link.land-top__link--border(href="#programm") Программа
+
+	section.context-need
+		.container2.context-need__container
+			.context-need__title
+				span Яндекс и Google
+				span — самые крупные рекламные сети в России и мире
+		.context-need__images
+			.context-need__images-item
+				img(src="img/landings/context/advantage-5.png" alt="")
+			.context-need__images-item
+				img(src="img/landings/context/advantage-6.png" alt="")
+
+	section.copywriting-work.copywriting-work--context
+		img.copywriting-work__img-get(src="img/landings/context/get-it.png" alt="")
+		.copywriting-work__container.container2
+			.copywriting-work__title Что я получу?
+		.copywriting-work__container.copywriting-work__container2.container2
+			.copywriting-work__content
+				.copywriting-work__row
+					.copywriting-work__card-md.copywriting-work__card-md-one
+						.copywriting-work__count 1
+						.copywriting-work__card-text Методическое пособие <br> с 35-ю уроками
+						.copywriting-work__card-subtext От составления майнд-карт <br> до работы с кодами сайта
+					.copywriting-work__card-md.copywriting-work__card-md-two
+						.copywriting-work__count 2
+						.copywriting-work__card-text Структурированные знания <br> в текстовом формате
+						.copywriting-work__card-subtext Разбитые по темам и уровням сложности изучения. Удобная навигация.
+					.copywriting-work__block
+						.copywriting-work__card-xl
+							.copywriting-work__count 3
+							.copywriting-work__card-img-wrapper
+								img.copywriting-work__card-img(src="img/check.svg")
+							.copywriting-work__text-wrapper
+								.copywriting-work__card-desc Одна методичка заменит десятки курсов, <br> видеообучений с YouTube и исключит <br> месяцы на отработку собственных ошибок
+						.copywriting-work__card-md.copywriting-work__card-md-three
+							.copywriting-work__count 4
+							.copywriting-work__card-text В среднем на изучение
+							.copywriting-work__card-subtext Методички у вас уйдёт около месяца
+						.copywriting-work__card-md.copywriting-work__card-md-four
+							.copywriting-work__count 5
+							.copywriting-work__card-text Вы решаете
+							.copywriting-work__card-subtext Как и когда будете изучать материалы
+
+	section.copywriting-programm.copywriting-programm--context
+		.container3.copywriting-programm__container
+			.copywriting-programm__content
+				.copywriting-programm__inner
+					h2.cwprog-title Программа
+					.cwprog-cards
+						.cwprog-card
+							.cwprog-card-left
+								.cwprog-card-left__top
+									h3.cwprog-card-title Сбор семантического ядра
+									.cwprog-card-types
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+											.cwprog-card-type__name Текстовые уроки
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/dz.svg", alt="icon")
+											.cwprog-card-type__name Домашние задания
+								.cwprog-card-left__bottom
+									.cwprog-card-part-name Модуль 1
+
+							.cwprog-card-right
+								.cwprog-text
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Майнд-карты и сегментация рекламных кампаний
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Сбор базовых фраз
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Сбор семантического ядра. Режим Easy
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Сбор семантического ядра. Режим Medium
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Сбор семантического ядра. Режим Hard
+
+								.cwprog-card-types
+									.cwprog-card-type
+										.cwprog-card-type__pic
+											img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+										.cwprog-card-type__name Текстовые уроки
+									.cwprog-card-type
+										.cwprog-card-type__pic
+											img(src="img/landings/copywriting/prog/dz.svg", alt="icon")
+										.cwprog-card-type__name Домашние задания
+						.cwprog-card
+							.cwprog-card-left
+								.cwprog-card-left__top
+									h3.cwprog-card-title Яндекс
+									.cwprog-card-types
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+											.cwprog-card-type__name Текстовые уроки
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/dz.svg", alt="icon")
+											.cwprog-card-type__name Домашние задания
+								.cwprog-card-left__bottom
+									.cwprog-card-part-name Модуль 2
+
+							.cwprog-card-right
+								.cwprog-text
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Поисковая реклама в Яндексе
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Создание Excel файла для поисковой рекламы в Яндексе
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Импорт рекламных кампаний в директ
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Импорт рекламных кампаний в Директ Коммандер
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Рекламная сеть Яндекса
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Ретаргетинг
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Динамические поисковые объявления
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Смарт-баннеры
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Баннер на поиске
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Медийные объявления
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Медийная реклама на главной странице Яндекса
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Анализ рекламных кампаний в Яндексе
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Яндекс.Метрика
+
+								.cwprog-card-types
+									.cwprog-card-type
+										.cwprog-card-type__pic
+											img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+										.cwprog-card-type__name Текстовые уроки
+									.cwprog-card-type
+										.cwprog-card-type__pic
+											img(src="img/landings/copywriting/prog/dz.svg", alt="icon")
+										.cwprog-card-type__name Домашние задания
+
+						.cwprog-card
+							.cwprog-card-left
+								.cwprog-card-left__top
+									h3.cwprog-card-title Google
+									.cwprog-card-types
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+											.cwprog-card-type__name Текстовые уроки
+										.cwprog-card-type
+											.cwprog-card-type__pic
+												img(src="img/landings/copywriting/prog/dz.svg", alt="icon")
+											.cwprog-card-type__name Домашние задания
+								.cwprog-card-left__bottom
+									.cwprog-card-part-name Модуль 3
+
+							.cwprog-card-right
+								.cwprog-text
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Регистрация кабинета Google Рекламы и подготовка к работе
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Поисковая реклама в Google
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Создание excel файла для поисковой рекламы в Google
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Импорт рекламных кампаний в Ads Editor
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Контекстно-медийная сеть Google
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Ремаркетинг
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Умная рекламная кампания Google
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Discovery кампания в Google
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Торговые рекламные кампании
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Google Мой бизнес
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Реклама в Google картах
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Локальные кампании
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Видеореклама в YouTube
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Анализ рекламных кампаний в Google
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Google Analytics. Для новых пользователей
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Google Analytics. Для существующих пользователей
+									.cwprog-text-item
+										.cwprog-titem-name
+											.cwprog-titem-name__txt Google Tag Manager
+
+								.cwprog-card-types
+									.cwprog-card-type
+										.cwprog-card-type__pic
+											img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+										.cwprog-card-type__name Текстовые уроки
+									.cwprog-card-type
+										.cwprog-card-type__pic
+											img(src="img/landings/copywriting/prog/dz.svg", alt="icon")
+										.cwprog-card-type__name Домашние задания
+
+
+	section.cart-sec.cart-sec--fixed.cart-sec--context
+		.container
+			.cart-sec__flex
+				.cart-sec__product.cardprod
+					.cardprod__title Стоимость обучения
+					.cardprod__price Цена
+						p 15 000 ₽
+					a.cardprod__btn.btn(href="")
+						| Оплатить
+
+				.cart-sec__product.cardprod.cardprod--center
+					.cardprod__tooltip.js-tooltip
+						svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.625 23.625')
+							path(d='M11.812,0C5.289,0,0,5.289,0,11.812s5.289,11.813,11.812,11.813s11.813-5.29,11.813-11.813S18.335,0,11.812,0z M14.271,18.307c-0.608,0.24-1.092,0.422-1.455,0.548c-0.362,0.126-0.783,0.189-1.262,0.189c-0.736,0-1.309-0.18-1.717-0.539s-0.611-0.814-0.611-1.367c0-0.215,0.015-0.435,0.045-0.659c0.031-0.224,0.08-0.476,0.147-0.759l0.761-2.688c0.067-0.258,0.125-0.503,0.171-0.731c0.046-0.23,0.068-0.441,0.068-0.633c0-0.342-0.071-0.582-0.212-0.717c-0.143-0.135-0.412-0.201-0.813-0.201c-0.196,0-0.398,0.029-0.605,0.09c-0.205,0.063-0.383,0.12-0.529,0.176l0.201-0.828c0.498-0.203,0.975-0.377,1.43-0.521c0.455-0.146,0.885-0.218,1.29-0.218c0.731,0,1.295,0.178,1.692,0.53c0.395,0.353,0.594,0.812,0.594,1.376c0,0.117-0.014,0.323-0.041,0.617c-0.027,0.295-0.078,0.564-0.152,0.811l-0.757,2.68c-0.062,0.215-0.117,0.461-0.167,0.736c-0.049,0.275-0.073,0.485-0.073,0.626c0,0.356,0.079,0.599,0.239,0.728c0.158,0.129,0.435,0.194,0.827,0.194c0.185,0,0.392-0.033,0.626-0.097c0.232-0.064,0.4-0.121,0.506-0.17L14.271,18.307zM14.137,7.429c-0.353,0.328-0.778,0.492-1.275,0.492c-0.496,0-0.924-0.164-1.28-0.492c-0.354-0.328-0.533-0.727-0.533-1.193c0-0.465,0.18-0.865,0.533-1.196c0.356-0.332,0.784-0.497,1.28-0.497c0.497,0,0.923,0.165,1.275,0.497c0.353,0.331,0.53,0.731,0.53,1.196C14.667,6.703,14.49,7.101,14.137,7.429z')
+					.js-tooltip-content(style='display: none')
+						.copywriting-work__tooltip-content Информация о курсе
+					ul.cardprod__list
+						li Старт курса: <b>10 апреля</b>
+						li Длительность: <b>1.5 месяца</b>
+						li Доступ к курсу: <b>4 месяца</b>
+					.cardprod__feedback Обратная связь по курсу, клиентам <br> и любым вопросам
+					a.cardprod__btn.cardprod__btn--mob.btn(href="")
+						| Оплатить
+
+
+			.cart-sec__agree
+				label
+					input(type="checkbox" value="1" checked)
+					span.checkbox
+						svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path(fill-rule='evenodd' clip-rule='evenodd' d='M16.3344 2.7502H7.66537C4.64437 2.7502 2.75037 4.8892 2.75037 7.9162V16.0842C2.75037 19.1112 4.63537 21.2502 7.66537 21.2502H16.3334C19.3644 21.2502 21.2504 19.1112 21.2504 16.0842V7.9162C21.2504 4.8892 19.3644 2.7502 16.3344 2.7502Z' stroke='#BABABA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
+						svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path(fill-rule='evenodd' clip-rule='evenodd' d='M16.3344 2.7502H7.66537C4.64437 2.7502 2.75037 4.8892 2.75037 7.9162V16.0842C2.75037 19.1112 4.63537 21.2502 7.66537 21.2502H16.3334C19.3644 21.2502 21.2504 19.1112 21.2504 16.0842V7.9162C21.2504 4.8892 19.3644 2.7502 16.3344 2.7502Z' stroke='#BABABA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
+							path(d='M8.43982 12.0002L10.8138 14.3732L15.5598 9.6272' stroke='#BABABA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
+				span Я соглашаюсь на обработку моих <a href="" target="_blank">персональных данных</a>.
+			.cart-sec__payment
+				img(src="images/payment.png" alt="payment")
+
+	include partials/context/context-questions
+

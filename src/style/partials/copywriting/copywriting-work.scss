@@ -1,4 +1,6 @@
 .copywriting-work {
+	$self: &;
+
 	background: #000;
 	padding-bottom: 60px;
 	position: relative;
@@ -171,7 +173,6 @@
 			margin-left: vwx(68);
 			max-width: 140px;
 		}
-
 	}
 
 	&__text-wrapper {}
@@ -255,26 +256,260 @@
 	}
 
 	&--context {
-		padding-top: 207px;
-		@include dArea{
-			padding-top: vwx(207);
-		}
+		padding-top: 100px;
 
-		.copywriting-work__row {
-			justify-content: space-between;
-		}
-
-		.copywriting-work__card-desc {
-			width: 888px;
-			@include dArea{
-				width: vwx(888);
+		#{$self} {
+			&__container {
+				width: 1275px;
 			}
-		}
 
-		.copywriting-work__card-md-bottom {
-			padding: 62px 0;
-			@include dArea{
-				padding: vwx(62) 0;
+			&__title {
+				font-family: 'Druk Wide', sans-serif;
+				font-size: 61px;
+				letter-spacing: -0.02em;
+				margin-bottom: vwx(107);
+
+				@include dMMax {
+					font-size: novwx(61);
+					margin-bottom: novwx(107);
+				}
+
+				@include mMax {
+					font-size: vw(40);
+					margin-bottom: qw(107);
+				}
+			}
+
+			&__row {
+				justify-content: space-between;
+
+				@media (max-width: 1024px) {
+					padding-top: 20px;
+				}
+			}
+
+			&__block {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				padding-left: 28.5%;
+				position: relative;
+
+				@include sMax {
+					padding-left: 0;
+				}
+
+				@media (max-width: 1024px) {
+					flex-wrap: nowrap;
+				}
+			}
+
+			&__card-xl {
+				position: relative;
+				padding: 85px 20px 75px;
+				margin-bottom: 26px;
+
+				@include dArea {
+					padding: vwx(85) vwx(50) vwx(75);
+				}
+
+				@media (max-width: 1024px) {
+					justify-content: center;
+				}
+			}
+
+			&__card-md {
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				position: relative;
+				margin-bottom: 26px;
+
+				@media (max-width: 1024px) {
+					justify-content: center;
+				}
+
+				.copywriting-work__card-text {
+					font-size: 30px;
+				}
+			}
+
+			&__card-md-one {
+				padding: 67px 92px 73px;
+				margin-right: 30px;
+
+				@media (max-width: 1024px) {
+					padding: vwx(140) vwx(50) vwx(99);
+				}
+
+				@include dMax2 {
+					flex-basis: calc(50% - 20px);
+				}
+
+				.copywriting-work__card-text {
+					font-size: 33px;
+				}
+			}
+
+			&__card-md-two {
+				padding: 60px 77px 73px;
+
+				@media (max-width: 1024px) {
+					padding: vwx(140) vwx(50) vwx(99);
+				}
+
+				@include dMax {
+					flex-basis: calc(50% - 20px);
+				}
+			}
+
+			&__card-md-three {
+				padding: 55px 58px 50px 75px;
+				margin-right: 30px;
+				flex-basis: calc(53% - 0.83333vw);
+
+				@media (max-width: 1024px) {
+					padding: vwx(140) vwx(50) vwx(99);
+				}
+
+				@include dMax2 {
+					flex-basis: calc(50% - 20px);
+				}
+			}
+
+			&__card-md-four {
+				padding: 50px 45px 50px 89px;
+				flex-basis: calc(47% - 0.83333vw);
+
+				@media (max-width: 1024px) {
+					padding: vwx(140) vwx(50) vwx(99);
+				}
+
+				@include dMax2 {
+					flex-basis: calc(50% - 20px);
+				}
+			}
+
+			&__count {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: vwx(100);
+				height: vwx(100);
+				border-radius: 50%;
+				background-color: #e1e5f0;
+				font-family: 'Didona', sans-serif;
+				font-size: vwx(50);
+				color: #ff4e00;
+				position: absolute;
+				top: vwx(-36);
+				left: vwx(90);
+
+				@include dMMax {
+					width: novwx(59);
+					height: novwx(59);
+					font-size: novwx(27);
+					top: novwx(-18);
+					left: novwx(10);
+				}
+
+				@include mMax {
+					width: qw(100);
+					height: qw(100);
+					font-size: qw(50);
+					top: qw(-36);
+					left: vwx(80);
+				}
+			}
+
+			&__card-desc {
+				width: auto !important;
+				font-size: 30px;
+			}
+
+			&__card-img {
+				margin-right: 132px;
+				margin-left: 55px;
+
+				@include dArea{
+					margin-right: vwx(50);
+					margin-left: vwx(55);
+				}
+
+				@media (max-width: 1024px) {
+					margin: 0;
+				}
+			}
+
+			&__card-img-wrapper {
+				margin-left: 0;
+
+				@include dArea{
+					margin-left: 0;
+				}
+			}
+
+			&__img-get {
+				position: absolute;
+				left: -8.3%;
+				bottom: -28px;
+
+				@include dArea{
+					width: vwx(988);
+				}
+
+				@media (max-width: 1700px) {
+					width: vwx(800);
+				}
+
+				@include sMax {
+					position: relative;
+					margin: 0 auto qw(20);
+					bottom: 0;
+					left: 0;
+				}
+			}
+
+			&__card-text {
+				font-size: 33px;
+				font-weight: 500;
+				text-align: left;
+				margin-bottom: 11px;
+
+				@media (max-width: 1024px) {
+					width: 100%;
+					font-size: qw(60) !important;
+					margin-bottom: qw(20) !important;
+					text-align: center;
+				}
+
+				@include mMax {
+					font-size: vw(20) !important;
+				}
+			}
+
+			&__card-subtext {
+				font-size: 25px;
+				line-height: 30px;
+				font-weight: 300;
+
+				@media (max-width: 1024px) {
+					width: 100%;
+					font-size: qw(25);
+					text-align: center;
+				}
+
+				@include mMax {
+					font-size: vw(10);
+				}
+
+				@include mobile {
+					font-size: vw(16);
+				}
+			}
+
+			&__card-md-bottom {
+				padding: 62px 0;
 			}
 		}
 	}

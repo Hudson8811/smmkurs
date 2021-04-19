@@ -485,7 +485,7 @@ main .home{
     &__title{
       margin-bottom: vwx(103);
       font-size: vwx(64);
-      line-height: vwx(64);
+      line-height: 100%;
       letter-spacing: vwx(-1.25573);
       color: #FFFFFF;
       @include dMMax{
@@ -508,6 +508,11 @@ main .home{
         font-size: vw(36);
         letter-spacing: vw(-1.25573);
         margin-bottom: vw(25);
+      }
+
+      &--margin {
+        margin-top: vwx(187);
+        margin-bottom: vwx(118);
       }
     }
     .kurs__inner{
@@ -840,25 +845,45 @@ main .home{
         }
       }
       &--8{
+        width: 66.6666%;
+
+        @include sMax{
+          width: 50%;
+        }
+        @include mMax{
+          width: 100%;
+        }
+
+        .kurs__inner {
+          &::before {
+            padding-top: 47.6%;
+
+            @include sMax{
+              padding-top: 100%;
+            }
+          }
+        }
+
         .kurs__img-new{
-          top: vwx(125);
-          left: vwx(26);
-          width: vwx(560);
+          top: vwx(10);
+          right: vwx(-140);
+          width: vwx(800);
+
           @include dMMax{
-            top: novwx(125);
-            left: novwx(26);
-            width: novwx(560);
+            top: novwx(10);
+            right: novwx(-140);
+            width: novwx(800);
           }
 
           @include homeMax {
-            top: qw(125);
-            left: qw(26);
-            width: qw(579);
+            top: qw(10);
+            right: qw(-140);
+            width: qw(800);
           }
           @include sMax {
-            top: qw2(125);
-            left: qw2(26);
-            width: qw2(579);
+            top: qw2(110);
+            right: qw2(-70);
+            width: qw2(500);
           }
           @include mMax {
             width: vw(337);
