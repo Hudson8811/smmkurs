@@ -396,6 +396,7 @@
 				justify-content: center;
 				width: vwx(100);
 				height: vwx(100);
+				padding: 5px;
 				border-radius: 50%;
 				background-color: #e1e5f0;
 				font-family: 'Didona', sans-serif;
@@ -490,7 +491,7 @@
 
 			&__card-subtext {
 				font-size: 25px;
-				line-height: 30px;
+				line-height: 110%;
 				font-weight: 300;
 
 				@media (max-width: 1024px) {

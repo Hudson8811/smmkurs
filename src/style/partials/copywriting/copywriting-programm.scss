@@ -203,12 +203,12 @@
 			font-size: vwx(63);
 			letter-spacing: -1.25px;
 
-			@include dMMax {
+			@include dMax2 {
 				font-size: novwx(63);
 			}
 
 			@include mMax {
-				font-size: vw(40);
+				font-size: vw(30);
 			}
 		}
 
