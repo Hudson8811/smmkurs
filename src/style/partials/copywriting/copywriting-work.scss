@@ -261,6 +261,9 @@
 		#{$self} {
 			&__container {
 				width: 1275px;
+				@include dArea{
+					width: vwx(1275);
+				}
 			}
 
 			&__title {
@@ -272,6 +275,11 @@
 				@include dMMax {
 					font-size: novwx(61);
 					margin-bottom: novwx(107);
+				}
+
+				@include dArea{
+					font-size: vwx(61);
+					margin-bottom: vwx(107);
 				}
 
 				@include mMax {
@@ -311,6 +319,7 @@
 
 				@include dArea {
 					padding: vwx(85) vwx(50) vwx(75);
+					margin-bottom: vwx(26);
 				}
 
 				@media (max-width: 1024px) {
@@ -330,6 +339,9 @@
 				justify-content: flex-start;
 				position: relative;
 				margin-bottom: 26px;
+				@include dArea{
+					margin-bottom: vwx(26);
+				}
 
 				@media (max-width: 1024px) {
 					justify-content: center;
@@ -337,6 +349,9 @@
 
 				.copywriting-work__card-text {
 					font-size: 30px;
+					@include dArea{
+						font-size: vwx(30);
+					}
 				}
 			}
 
@@ -346,6 +361,12 @@
 
 				@include dMax2 {
 					flex-basis: calc(50% - 20px);
+				}
+
+				@include dArea{
+					padding: vwx(67) vwx(92) vwx(73);
+					margin-right: vwx(30);
+					flex-basis: calc(50% - 0.83333vw);
 				}
 
 				@media (max-width: 1024px) {
@@ -360,15 +381,23 @@
 
 				.copywriting-work__card-text {
 					font-size: 33px;
+					@include dArea{
+						font-size: vwx(33);
+					}
 				}
 			}
 
 			&__card-md-two {
 				padding: 60px 77px 73px;
 
-				@include dMax {
+				@include dMax2 {
 					flex-basis: calc(50% - 20px);
 				}
+				@include dArea{
+					padding: vwx(60) vwx(77) vwx(73);
+					flex-basis: calc(50% - 0.83333vw);
+				}
+
 
 				@media (max-width: 1024px) {
 					padding: vwx(140) vwx(50) vwx(99);
@@ -390,6 +419,12 @@
 					flex-basis: calc(50% - 20px);
 				}
 
+				@include dArea {
+					padding: vwx(55) vwx(58) vwx(50) vwx(75);
+					margin-right: vwx(30);
+					flex-basis: calc(50% - 0.83333vw);
+				}
+
 				@media (max-width: 1024px) {
 					padding: vwx(140) vwx(50) vwx(99);
 					width: qw2(750);
@@ -407,6 +442,10 @@
 
 				@include dMax2 {
 					flex-basis: calc(50% - 20px);
+				}
+				@include dArea {
+					padding: vwx(50) vwx(45) vwx(50) vwx(89);
+					flex-basis: calc(50% - 0.83333vw);
 				}
 
 				@media (max-width: 1024px) {
@@ -444,6 +483,14 @@
 					left: novwx(10);
 				}
 
+				@include dArea{
+					width: vwx(59);
+					height: vwx(59);
+					font-size: vwx(27);
+					top: vwx(-18);
+					left: vwx(10);
+				}
+
 				@include mMax {
 					width: qw(100);
 					height: qw(100);
@@ -461,6 +508,10 @@
 			&__card-desc {
 				width: auto !important;
 				font-size: 30px;
+
+				@include dArea{
+					font-size: vwx(30);
+				}
 
 				@media (max-width: 1024px) {
 					font-size: qw(60);
@@ -502,9 +553,6 @@
 					width: vwx(988);
 				}
 
-				@media (max-width: 1700px) {
-					width: vwx(800);
-				}
 
 				@include sMax {
 					position: relative;
@@ -525,6 +573,11 @@
 				margin-bottom: 11px;
 				word-break: break-word;
 
+				@include dArea{
+					font-size: vwx(33);
+					margin-bottom: vwx(11);
+				}
+
 				@media (max-width: 1024px) {
 					width: 100%;
 					font-size: qw(60) !important;
@@ -541,6 +594,12 @@
 				font-size: 25px;
 				line-height: 110%;
 				font-weight: 300;
+
+
+				@include dArea{
+					font-size: vwx(25);
+				}
+
 
 				@media (max-width: 1024px) {
 					width: 100%;

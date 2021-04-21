@@ -193,10 +193,18 @@
 
 	&--context {
 		padding-top: 202px;
+		padding-bottom: 383px;
 
-		@media screen and (max-width: 1024px) {
-			padding-top: 84px;
+		@include dArea{
+			padding-top: vwd(202);
+			padding-bottom: vwd(383);
 		}
+		@include mMax{
+			padding-top: vw(84);
+			padding-bottom: vw(0);
+		}
+
+
 
 		.cwprog-title {
 			font-family: 'Druk Wide', sans-serif;

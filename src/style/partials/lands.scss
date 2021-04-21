@@ -601,7 +601,6 @@ html,body{
 		transform: skewX(-20deg);
 		font-size: vwx(34);
 		font-weight: 700;
-		font-style: italic;
 		color: #fff;
 
 		@include dMMax{
@@ -631,7 +630,7 @@ html,body{
 
 		span {
 			display: block;
-			transform: skewX(20deg);
+			transform: skewX(10deg);
 		}
 	}
 }
