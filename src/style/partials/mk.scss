@@ -1,0 +1,288 @@
+@mixin mkMax {
+  @media (max-width: 571px) {
+    @content;
+  }
+}
+@function mk($px) {
+  @return (($px/571) * 100)+vw;
+}
+
+
+
+.mk-page{
+  padding-bottom: 26px;
+  @include mkMax{
+    padding-bottom: mk(26);
+  }
+  &__container{
+    width: 571px;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    @include mkMax{
+      width: mk(571);
+      padding: 0 mk(10);
+    }
+  }
+  &__block{
+    border-radius: 20px;
+    box-sizing: border-box;
+    @include mkMax{
+      border-radius: mk(20);
+    }
+    +.mk-page__block{
+      margin-top: 26px;
+      @include mkMax{
+        margin-top: mk(26);
+      }
+    }
+    &--top{
+      padding: 43px 33px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 1px solid #000000;
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      @include mkMax{
+        padding: mk(43) mk(33) mk(60);
+      }
+    }
+    &--center{
+      background-color: #171744;
+      color: #ffffff;
+      padding: 20px 47px 46px;
+      @include mkMax{
+        padding: mk(20) mk(47) mk(46);
+      }
+    }
+    &--bottom{
+      padding: 45px 33px 55px;
+      border: 1px solid #000000;
+      text-align: center;
+      @include mkMax{
+        padding: mk(45) mk(33) mk(55);
+      }
+    }
+  }
+
+  &__logo{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-bottom: 45px;
+    @include mkMax{
+      width: mk(60);
+      height: mk(60);
+      margin-bottom: mk(45);
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__title{
+    font-family: $titleFont;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: -0.67px;
+    margin-bottom: 26px;
+    line-height: 1;
+    @include mkMax{
+      font-size: mk(33);
+      letter-spacing: mk(-0.67);
+      margin-bottom: mk(26);
+    }
+  }
+  &__subtitle{
+    font-family: $secondFont;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    line-height: 1;
+    @include mkMax{
+      font-size: mk(25);
+      letter-spacing: mk(-0.5);
+    }
+  }
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 42px;
+    @include mkMax{
+      margin-bottom: mk(42);
+    }
+    &-date{
+      font-family: $secondFont;
+      font-size: 25px;
+      letter-spacing: -0.5px;
+      line-height: 1;
+      @include mkMax{
+        font-size: mk(25);
+        letter-spacing: mk(-0.5);
+      }
+    }
+    &-live{
+      font-family: $secondFont;
+      font-size: 17px;
+      letter-spacing: -0.33px;
+      line-height: 1;
+      padding: 13px 22px;
+      border-radius: 10px;
+      background-color: #ff0000;
+      @include mkMax{
+        font-size: mk(17);
+        letter-spacing: mk(-0.33);
+        padding: mk(13) mk(22);
+        border-radius: mk(10);
+      }
+    }
+  }
+  &__text{
+    font-family: $secondFont;
+    font-size: 21px;
+    letter-spacing: -0.42px;
+    color: #ffffff;
+    line-height: normal;
+    @include mkMax{
+      font-size: mk(21);
+      letter-spacing: mk(-0.42);
+    }
+    > p + p{
+      margin-top: 1em;
+    }
+  }
+
+  &__insta{
+    margin: 43px -11px 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    padding: 19px 11px;
+    @include mkMax{
+      margin: mk(43) mk(-11) 0;
+      border-radius: mk(20);
+      padding: mk(19) mk(11);
+    }
+    &-left{
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+    }
+    &-right{
+      width: 95px;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include mkMax{
+        width: mk(95);
+      }
+      &::before{
+        content: "";
+        width: 1px;
+        height: 43px;
+        border-radius: 1px;
+        background-color: #000000;
+        opacity: 0.15;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include mkMax{
+          height: mk(43);
+        }
+      }
+    }
+
+    &-img{
+      width: 71px;
+      height: 71px;
+      display: block;
+      border-radius: 100%;
+      overflow: hidden;
+      flex-shrink: 0;
+      margin-right: 25px;
+      @include mkMax{
+        width: mk(71);
+        height: mk(71);
+        margin-right: mk(25);
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &-text{
+      color: #000000;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 17px;
+      line-height: normal;
+      letter-spacing: -0.33px;
+      @include mkMax{
+        font-size: mk(17);
+        letter-spacing: mk(-0.33);
+      }
+      h3{
+        font-size: 21px;
+        letter-spacing: -0.42px;
+        @include mkMax{
+          font-size: mk(21);
+          letter-spacing: mk(-0.42);
+        }
+      }
+    }
+    &-link{
+      width: 20px;
+      height: 20px;
+      display: block;
+      padding: 20px;
+      box-sizing: content-box;
+      cursor: pointer;
+      opacity: 0.42;
+      @include mkMax{
+        width: mk(20);
+        height: mk(20);
+        padding: mk(20);
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: contain;
+      }
+      @media screen and (min-width: 768px){
+        transition: 0.3s;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__form{
+    margin-top: 45px;
+    @include mkMax{
+      margin-top: mk(45);
+    }
+    .btn[type=submit] {
+      min-height: 58px;
+      margin: 36px auto 0;
+      width: 256px;
+      font-size: 17px;
+    }
+  }
+}

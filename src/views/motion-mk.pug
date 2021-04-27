@@ -1,0 +1,57 @@
+extends layouts/empty
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+
+
+
+block main
+    section.mk-page
+        .mk-page__container
+            .mk-page__block.mk-page__block--top
+                a(href="/").mk-page__logo
+                    img(src="img/logo.png" alt="tutor")
+                h1.mk-page__title Motion-видео за час
+                .mk-page__subtitle Регистрация на мастер-класс
+
+            .mk-page__block.mk-page__block--center
+                .mk-page__flex
+                    .mk-page__flex-date 3 мая, 19:00
+                    .mk-page__flex-live Прямой эфир
+
+                h2.mk-page__title Что будет?
+                .mk-page__text
+                    p Мы решили провести эксперимент и провести прямой эфир, где я совместно со зрителями за&nbsp;час сделаю motion-видео с нуля.
+                    p Я такого ещё не делал, но в любом случае думаю будет интересно посмотреть на процесс изнутри :).
+
+                .mk-page__insta
+                    .mk-page__insta-left
+                        .mk-page__insta-img
+                            img(src="img/mk-insta.png" alt="Евгений Медведев")
+                        .mk-page__insta-text
+                            h3 Евгений Медведев
+                            p Автор курса
+                            p «Рекламный motion-дизайн»
+                    .mk-page__insta-right
+                        .mk-page__insta-link
+                            a(href="" target="_blank" rel="nofollow")
+                                img(src="img/mk-insta-link.png" alt="instagram")
+
+            .mk-page__block.mk-page__block--bottom
+                h2.mk-page__title Регистрация
+                form.mk-page__form.login-form
+                    label.input-block
+                        input.js-noempty(name="email" type="email" required="required" pattern=".{3,}" placeholder="example@email.ru" value="" autocomplete="nope")
+                        .input-block__placeholder Email
+                        .input-block__status-icon
+                        .input-block__error Неверный email
+                    label.input-block
+                        input.js-noempty(type="phone" required="required")
+                        .input-block__placeholder Телефон
+                        .input-block__status-icon
+                        .input-block__error Неверный телефон
+                    button.btn(type="submit") Зарегистрироваться
