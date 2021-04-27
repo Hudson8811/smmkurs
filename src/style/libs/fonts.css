@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: 'ALS Hauss';
-    src: url('../fonts/ALSHauss-Lightitalic.woff2') format('woff2'),
-    url('../fonts/ALSHauss-Lightitalic.woff') format('woff');
+    src: url('../fonts/ALSHauss-LightItalic.woff2') format('woff2'),
+    url('../fonts/ALSHauss-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -58,6 +58,7 @@
     src: url('../fonts/DrukWideMediumCy.woff2') format('woff2'), url('../fonts/DrukWideMediumCy.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -66,6 +67,7 @@
     url('../fonts/DrukTextWideCyr-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -74,6 +76,7 @@
     src: url('../fonts/DrukWide-Heavy.woff2') format('woff2'), url('../fonts/DrukWide-Heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
