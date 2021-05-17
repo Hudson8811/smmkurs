@@ -760,4 +760,18 @@ $(function () {
 		}
 		scrollPrev = scrolled;
 	});
+
+
+
+	$('.js-see-free').on('click',function (){
+		event.preventDefault();
+		let type = parseInt($(this).data('type'));
+		$.fancybox.open({
+			src  : '#get-free',
+			type : 'inline'
+		});
+	});
+
+
+
 });

@@ -1,0 +1,14 @@
+#get-free.free-modal
+    .free-modal__inner
+        .free-modal__logo
+            img(src="img/logo-w.png")
+
+        .free-modal__text Чтобы посмотреть бесплатный урок укажите вашу почту
+
+        form.free-modal__form.login-form
+            label.input-block
+                input.js-noempty2(name="email" type="email" required="required" placeholder="example@email.ru" value="" autocomplete="nope")
+                .input-block__placeholder Email
+                .input-block__status-icon
+                .input-block__error Неверный email
+            button.btn(type="submit") Отправить

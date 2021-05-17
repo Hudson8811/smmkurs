@@ -1,0 +1,37 @@
+extends layouts/lands
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+block main
+    include partials/__header-land
+    .freepage
+        .container.freepage__container
+            h1.freepage__title Копирайтинг
+            .freepage__subtitle Бесплатный урок
+
+            .freepage__main
+                .freepage__video
+
+                .freepage__programm
+                    .freepage__programm-title Программа урока:
+                    .freepage__programm-text.
+                        1. О себе<br>
+                        2. Для чего нужно уметь писать<br>
+                        3. Страхи перед текстом<br>
+                        4. Как научиться писать?<br>
+                        5. Личные фишки, как улучшить текст
+
+
+            .freepage__banner.banner(style="background-image:url(images/banner.jpg);")
+                .banner__title Откройте доступ ко всему курсу
+                .banner__btns
+                    a.banner__btn.btn.btn--small(href="")
+                        svg(width='14' height='14' viewbox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(fill-rule='evenodd' clip-rule='evenodd' d='M4.79886 5.08129H9.46853C10.8437 5.08129 11.9587 6.17189 11.9587 7.51702V10.3974C11.9587 11.7426 10.8437 12.8332 9.46853 12.8332H4.53153C3.15695 12.8332 2.04199 11.7426 2.04199 10.3974V7.51702C2.04199 6.41076 2.80071 5.48715 3.83328 5.19029L3.76867 5.19783V4.309C3.78052 2.57599 5.22149 1.1665 6.98788 1.1665C8.36898 1.1665 9.58945 2.01938 10.0399 3.28276C10.0874 3.41032 10.0755 3.54947 10.0162 3.67123C9.95695 3.79298 9.85085 3.88575 9.71985 3.92692C9.45312 4.0191 9.15674 3.88053 9.05597 3.61383C8.75367 2.75515 7.92442 2.18115 6.99973 2.18115C5.78994 2.18115 4.81249 3.13259 4.80597 4.29741V5.08013L4.79886 5.08129ZM6.99717 10.1083C7.28762 10.1083 7.51879 9.88215 7.51879 9.59805V8.3109C7.51879 8.0326 7.28762 7.80648 6.99717 7.80648C6.71266 7.80648 6.48148 8.0326 6.48148 8.3109V9.59805C6.48148 9.88215 6.71266 10.1083 6.99717 10.1083Z' fill='white')
+                        | 5 990 ₽
+                    a.banner__btn.btn.btn--border.btn--small(href="")
+                        | Подробнее
