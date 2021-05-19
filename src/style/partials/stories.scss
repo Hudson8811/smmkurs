@@ -11,6 +11,40 @@
     padding-top: vw(55);
     padding-bottom: vw(45);
   }
+
+  .cwprog-title{
+    font-family: $titleFont;
+    font-size: 63px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+
+    @include dMMax {
+      font-size: novwx(63);
+    }
+
+    @include dArea{
+      font-size: vwx(63);
+    }
+
+    @include mMax {
+      font-size: vw(32);
+    }
+  }
+  .cwprog-card{
+    max-width: 1042px;
+    margin-left: auto;
+    margin-right: auto;
+    @include dArea{
+      max-width: vwd(1042);
+    }
+  }
+
+  .copywriting-programm__content{
+    padding-bottom: 100px;
+    @include dArea{
+      padding-bottom: vwd(100);
+    }
+  }
 }
 
 .land-top--stories{
