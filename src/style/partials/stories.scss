@@ -1,0 +1,47 @@
+.copywriting-programm--stories{
+  padding-top: 110px;
+  padding-bottom: 90px;
+
+
+  @include dArea{
+    padding-top: vwd(110);
+    padding-bottom: vwd(90);
+  }
+  @include mMax{
+    padding-top: vw(55);
+    padding-bottom: vw(45);
+  }
+}
+
+.land-top--stories{
+  overflow: visible;
+  @media screen and (max-width: 1199px){
+    overflow: hidden;
+  }
+  .land-top__right{
+    z-index: 1;
+  }
+  .land-top__bg{
+    position: absolute;
+    right: -300px;
+    top: auto;
+    bottom: -255px;
+    display: block;
+    width: 651px;
+    @include dArea{
+      width: vwd(651);
+      bottom: vwd(-255);
+      right: vwd(-300);
+    }
+    @media screen and (max-width: 1199px){
+      width: 400px;
+      right: 0;
+      bottom: 0;
+    }
+    @include mMax{
+      width: 100%;
+      position: static;
+      margin-top: vw(35);
+    }
+  }
+}

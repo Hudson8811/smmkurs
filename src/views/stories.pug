@@ -1,0 +1,128 @@
+extends layouts/lands
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+block main
+    section.land-top.land-top--stories
+        include partials/__header-land
+        .land-top__inner
+            .container3
+                .land-top__flex
+                    .land-top__left
+                        h1.land-top__title Идеальные Stories с&nbsp;телефона
+                        .land-top__subtitle Методическое пособие
+
+                        .land-top__info
+                            .land-top__info-item Доступ <span>сразу после оплаты</span>
+                            .land-top__info-item Доступ к материалам <span>4 месяца</span>
+                            .land-top__info-item Подойдёт <span>для Android и iOS</span>
+
+                        .land-top__links
+                            a.land-top__link(href="#kurs-order") Купить
+                            a.land-top__link.land-top__link--border(href="#programm") Программа
+
+                    .land-top__right
+                        .land-top__caption
+                            span 499 ₽
+                        img.land-top__bg(src="img/landings/stories/banner.png" alt="")
+                        .land-top__links
+                            a.land-top__link(href="#kurs-order") Купить
+                            a.land-top__link.land-top__link--border(href="#programm") Программа
+
+
+    section.copywriting-work.copywriting-work--stories
+        img.copywriting-work__img-get(src="img/landings/stories/what.png" alt="")
+        .copywriting-work__container.container2
+            .copywriting-work__title Что внутри?
+        .copywriting-work__container.copywriting-work__container2.container2
+            .copywriting-work__content
+                .copywriting-work__row
+                    .copywriting-work__card-md.copywriting-work__card-md-one
+                        .copywriting-work__count
+                            img(src="img/landings/context/1.svg")
+                        .copywriting-work__card-text Методическое пособие <br> по stories
+                        .copywriting-work__card-subtext От оформления постов до <br> создания stop-motion видео
+                    .copywriting-work__card-md.copywriting-work__card-md-two
+                        .copywriting-work__count
+                            img(src="img/landings/context/2.svg")
+                        .copywriting-work__card-text Подборка приложений с <br> примерами и их обзором
+                        .copywriting-work__card-subtext А так же мини видео-уроки как <br> сделать тот или иной эффект
+                    .copywriting-work__block
+                        .copywriting-work__card-xl
+                            .copywriting-work__count
+                                img(src="img/landings/context/3.svg")
+                            .copywriting-work__card-img-wrapper
+                                img.copywriting-work__card-img(src="img/check.svg")
+                            .copywriting-work__text-wrapper
+                                .copywriting-work__card-desc Одна методичка поможет привести <br> в порядок визуальную составляющую <br> instagram прямо с телефона ;)
+                        .copywriting-work__card-md.copywriting-work__card-md-three
+                            .copywriting-work__count
+                                img(src="img/landings/context/4.svg")
+                            .copywriting-work__card-text В среднем на изучение
+                            .copywriting-work__card-subtext Методички у вас уйдёт <br> около двух недель
+                        .copywriting-work__card-md.copywriting-work__card-md-four
+                            .copywriting-work__count
+                                img(src="img/landings/context/5.svg")
+                            .copywriting-work__card-text Вы решаете
+                            .copywriting-work__card-subtext Как и когда будете изучать материалы
+
+    section.copywriting-programm.copywriting-programm--stories
+        .container3.copywriting-programm__container
+            .copywriting-programm__content
+                .copywriting-programm__inner
+                    h2.cwprog-title Программа
+                    .cwprog-cards
+                        .cwprog-card
+                            .cwprog-card-left
+                                .cwprog-card-left__top
+                                    h3.cwprog-card-title Бонусы
+                                    .cwprog-card-types
+                                        .cwprog-card-type
+                                            .cwprog-card-type__pic
+                                                img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+                                            .cwprog-card-type__name Текстовые уроки
+                                        .cwprog-card-type
+                                            .cwprog-card-type__pic
+                                                img(src="img/landings/copywriting/prog/video-urok.svg", alt="icon")
+                                            .cwprog-card-type__name Видео-урок
+
+                            .cwprog-card-right
+                                .cwprog-text
+                                    .cwprog-text-item
+                                        .cwprog-titem-name
+                                            .cwprog-titem-name__txt Карманный фотошоп
+                                    .cwprog-text-item
+                                        .cwprog-titem-name
+                                            .cwprog-titem-name__txt Шаблоны stories
+                                    .cwprog-text-item
+                                        .cwprog-titem-name
+                                            .cwprog-titem-name__txt Анимирование stories
+                                    .cwprog-text-item
+                                        .cwprog-titem-name
+                                            .cwprog-titem-name__txt Фоторедакторы
+                                    .cwprog-text-item
+                                        .cwprog-titem-name
+                                            .cwprog-titem-name__txt Видеоредакторы
+                                    .cwprog-text-item
+                                        .cwprog-titem-name
+                                            .cwprog-titem-name__txt Стоп-motion
+                                    .cwprog-text-item
+                                        .cwprog-titem-name
+                                            .cwprog-titem-name__txt Необычные stories
+                                    .cwprog-text-item
+                                        .cwprog-titem-name
+                                            .cwprog-titem-name__txt FAQ
+
+                                .cwprog-card-types
+                                    .cwprog-card-type
+                                        .cwprog-card-type__pic
+                                            img(src="img/landings/copywriting/prog/text-dz.svg", alt="icon")
+                                        .cwprog-card-type__name Текстовые уроки
+                                    .cwprog-card-type
+                                        .cwprog-card-type__pic
+                                            img(src="img/landings/copywriting/prog/video-urok.svg", alt="icon")
+                                        .cwprog-card-type__name Видео-урок
