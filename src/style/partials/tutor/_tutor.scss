@@ -1,0 +1,48 @@
+/*
+  Tutor page variables and mixins
+*/
+
+$tutorWhite: #ffffff;
+$tutorBlack: #000000;
+$tutorYellow: #88f900;
+
+$tutorMainFont: "ALS Hauss Book", sans-serif;
+$tutorSecondaryFont: "ALS Hauss", sans-serif;
+
+$tutorTransition: all ease-out 0.3s;
+
+@mixin hover {
+  @media (min-width: 992px) {
+    &:hover,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/*
+  Tutor page global settings
+*/
+
+.tutor {
+  font-family: $tutorMainFont;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  color: $tutorWhite;
+  background-color: $tutorBlack;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $tutorBlack;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 1px solid $tutorBlack;
+    background-color: $tutorYellow;
+  }
+}

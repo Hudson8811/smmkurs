@@ -16,7 +16,6 @@
 @import "partials/_header";
 @import "partials/footer";
 
-
 @import "partials/content";
 //////////////////
 @import "libs/custom-slider";
@@ -43,7 +42,6 @@
 @import "partials/recommendation/recommendation";
 @import "partials/recommendation/recommendation-adapt";
 
-
 @import "partials/motion/motion-banner";
 @import "partials/motion/motion-banner2";
 @import "partials/motion/motion-banner2-adapt";
@@ -64,15 +62,11 @@
 @import "partials/smm-strategy/smm-strategy-potential.scss";
 @import "partials/smm-strategy/smm-strategy-potential-adapt.scss";
 
-
-
-
 @import "partials/express-smm/express-smm-banner.scss";
 @import "partials/express-smm/express-smm-need.scss";
 @import "partials/express-smm/express-smm-need-adapt.scss";
 @import "partials/express-smm/express-smm-features.scss";
 @import "partials/express-smm/express-smm-features-adapt.scss";
-
 
 @import "partials/target/target-banner.scss";
 @import "partials/target/target-need.scss";
@@ -116,14 +110,16 @@
 @import "partials/payment-fix";
 @import "partials/copywriting/other-courses";
 
-
-
 @import "partials/home";
 @import "partials/success";
 
-
 @import "partials/mk";
-
 
 @import "partials/freemodal";
 @import "partials/stories";
+
+// Tutor page
+@import "partials/tutor/tutor";
+@import "partials/tutor/components";
+@import "partials/tutor/header";
+@import "partials/tutor/footer";

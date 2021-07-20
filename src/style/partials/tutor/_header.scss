@@ -1,0 +1,93 @@
+.tutor {
+  .header {
+    position: absolute;
+    top: 58px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+
+    &-wrapper {
+      background-color: tomato;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 182px 0 84px;
+
+      @include dArea {
+        padding: 0 vwd(182) 0 vwd(84);
+      }
+    }
+
+    &-logo {
+      width: 74px;
+      height: 73px;
+
+      &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &-nav {
+      font-family: $tutorSecondaryFont;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 20px;
+      letter-spacing: -1.01px;
+      text-align: center;
+      color: $tutorBlack;
+
+      &__item {
+        padding: 2px 19px;
+        background-color: $tutorWhite;
+        transition: $tutorTransition;
+
+        @include hover {
+          color: $tutorYellow;
+          transition: $tutorTransition;
+        }
+
+        &:not(:last-child) {
+          margin-right: 90px;
+
+          @include dArea {
+            margin-right: vwd(90);
+          }
+        }
+      }
+    }
+
+    &-contants {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__link {
+        color: $tutorWhite;
+        font-family: $tutorSecondaryFont;
+        transition: $tutorTransition;
+
+        @include hover {
+          color: $tutorYellow;
+          transition: $tutorTransition;
+        }
+      }
+
+      &__text {
+        font-size: 18px;
+        text-align: center;
+        opacity: 0.6;
+      }
+    }
+
+    &__nav {
+      margin: 0 auto 0 107px;
+
+      @include dArea {
+        margin: 0 auto 0 vwd(107);
+      }
+    }
+  }
+}
