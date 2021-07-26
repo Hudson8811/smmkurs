@@ -903,15 +903,23 @@
 				margin-right: 43px;
 				margin-left: 55px;
 				max-width: 131px;
+				background: transparent;
+				padding: 10px;
+				box-sizing: border-box;
 
 				@include dArea{
 					margin-right: vwx(43);
 					margin-left: vwx(55);
 					max-width: vwx(131);
+					padding: vwx(10);
 				}
 
 				@media (max-width: 1024px) {
 					margin: 0;
+					padding: 10px;
+				}
+				@include mMax {
+					padding: vw(10);
 				}
 			}
 

@@ -52,6 +52,58 @@
   @media screen and (max-width: 1199px){
     overflow: hidden;
   }
+  .land-top {
+    &__flex {
+      @include dArea{
+        padding: vwd(40) 0 vwd(148);
+      }
+
+      @include sMax {
+        display: block;
+      }
+    }
+
+    &__title {
+      letter-spacing: -0.05em;
+    }
+
+    &__subtitle {
+      margin-top: 0.5em;
+    }
+
+    &__info {
+      @include dArea{
+        margin-top: vwd(96);
+      }
+    }
+
+    &__right {
+      @include dArea{
+        padding-top: vwd(68);
+      }
+      @include sMax {
+        position: static;
+      }
+    }
+
+
+    &__links {
+      @include mMax {
+        width: 100%;
+      }
+    }
+
+    &__link {
+      max-width: 176px;
+      width: 100%;
+
+      @include mMax {
+        max-width: 100%;
+      }
+    }
+  }
+
+
   .land-top__right{
     z-index: 1;
   }
@@ -71,6 +123,10 @@
       width: 400px;
       right: 0;
       bottom: 0;
+    }
+    @include sMax{
+      right: 0;
+      bottom: 150px;
     }
     @include mMax{
       width: 100%;
