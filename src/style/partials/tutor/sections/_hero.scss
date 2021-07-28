@@ -200,25 +200,25 @@
 			margin-left: 1280px;
 			margin-top: 208px;
 			width: 560px;
+			color: #000000;
+			font-family: $secondFont;
+			font-size: 27px;
+			line-height: 1.1;
+			letter-spacing: -0.54px;
 			@include max(1920){
 				margin-left: vwd(1280);
 				margin-top: vwd(208);
 				width: vwd(560);
+				font-size: vwd(27);
+				letter-spacing: vwd(-0.54);
 			}
 			span{
 				display: inline;
-				color: #000000;
-				font-family: $secondFont;
-				font-size: 27px;
-				line-height: 1.1;
-				letter-spacing: -0.54px;
 				background-color: #ffffff;
 				padding: 2px 14px;
 				box-decoration-break: clone;
 				-webkit-box-decoration-break: clone;
 				@include max(1920){
-					font-size: vwd(27);
-					letter-spacing: vwd(-0.54);
 					padding: vwd(2) vwd(14);
 				}
 				strong{
