@@ -4,10 +4,8 @@
 
 $tutorWhite: #ffffff;
 $tutorBlack: #000000;
-$tutorYellow: #88f900;
+$green: #88f900;
 
-$tutorMainFont: "ALS Hauss Book", sans-serif;
-$tutorSecondaryFont: "ALS Hauss", sans-serif;
 
 $tutorTransition: all ease-out 0.3s;
 
@@ -23,14 +21,11 @@ $tutorTransition: all ease-out 0.3s;
 /*
   Tutor page global settings
 */
-
-.tutor {
-  font-family: $tutorMainFont;
+.page-template-smmagnat,
+body.tutor {
   font-weight: 400;
   font-style: normal;
   font-size: 21px;
-  color: $tutorWhite;
-  background-color: $tutorBlack;
 
   &::-webkit-scrollbar {
     width: 7px;
@@ -43,6 +38,6 @@ $tutorTransition: all ease-out 0.3s;
   &::-webkit-scrollbar-thumb {
     border-radius: 8px;
     border: 1px solid $tutorBlack;
-    background-color: $tutorYellow;
+    background-color: $green;
   }
 }

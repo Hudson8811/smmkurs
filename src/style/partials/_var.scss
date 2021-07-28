@@ -1,8 +1,20 @@
 $mainFont: 'ALS Hauss', sans-serif;
 $secondFont: 'ALS Hauss Book', sans-serif;
 $titleFont: 'Druk Wide','ALS Hauss', sans-serif;
+$afterFont: "Levi Brush", sans-serif;
 
 $mainColor: #000000;
 
 $orange: #ff4e00;
 $black: #131417;
+
+
+/* media */
+$media-list: (
+		'450': 450,
+		'768': 768,
+		'1100': 1100,
+		'1200': 1200,
+		'1500': 1500,
+		'1920': 1920
+);

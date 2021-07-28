@@ -87,3 +87,12 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Levi Brush";
+    src: local("Levi Brush"), local("Levi-Brush"),
+    url("../fonts/LeviBrush.woff2") format("woff2"),
+    url("../fonts/LeviBrush.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

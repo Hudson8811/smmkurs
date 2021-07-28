@@ -311,5 +311,9 @@ $(function () {
 	});
 
 
+	//tutor
+	$('.ts-programm__item-top').on('click',function (){
+		$(this).parent().toggleClass('active').find('.ts-programm__item-text').slideToggle(300);
+	});
 
 });
