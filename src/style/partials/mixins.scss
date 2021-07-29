@@ -129,3 +129,9 @@ $resolutiond3: 1110;
 
 
 
+
+$resolution4: 320;
+
+@function vw2($px) {
+	@return (($px/$resolution4) * 100)+vw;
+}
