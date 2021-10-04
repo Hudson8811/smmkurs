@@ -2,12 +2,27 @@
   position: relative;
   padding: 93px 0 70px;
 
+  @include max(450) {
+    padding: vw(40) 0 vw(170);
+  }
+
   &__image {
     position: absolute;
     top: 0;
-    right: -375px;
+    left: vwd(1201);
     width: 1094px;
     mix-blend-mode: lighten;
+
+    @include max(1100) {
+      left: qw2(600);
+    }
+
+    @include max(450) {
+      top: auto;
+      bottom: vw(-80);
+      left: 0;
+      width: vw(400);
+    }
 
     &-item {
       width: 100%;
@@ -20,11 +35,33 @@
     position: relative;
     margin-bottom: 73px;
 
+    @include max(450) {
+      margin-bottom: vw(24);
+    }
+
     &-icon {
       position: absolute;
-      top: -102px;
-      left: -350px;
-      width: 408px;
+      top: vwd(-102);
+      left: vwd(-350);
+      width: vwd(408);
+
+      @include max(1100) {
+        position: relative;
+        top: -90px;
+        left: -90px;
+        margin-bottom: -90px;
+        width: 256px;
+      }
+
+      @include max(768) {
+        top: 0;
+        margin-bottom: 0;
+      }
+
+      @include max(450) {
+        left: -48px;
+        width: 128px;
+      }
 
       &-item {
         width: 100%;
@@ -37,12 +74,28 @@
       max-width: 622px;
       font-family: $titleFont;
       font-size: 77px;
+
+      @include max(1100) {
+        font-size: 8.10526vw;
+      }
+
+      @include max(450) {
+        font-size: vw(36);
+      }
     }
   }
 
   &__description {
     max-width: 550px;
     font-size: 28px;
+
+    @include max(1100) {
+      font-size: 3.36842vw;
+    }
+
+    @include max(450) {
+      font-size: vw(16);
+    }
   }
 
   &__text {

@@ -3,7 +3,19 @@
   background-color: $black;
   overflow-x: hidden;
 
-  &__container-inner {
+  &__container {
+    box-sizing: border-box;
+    width: 1256px;
+    max-width: calc(100% - 20px * 2);
+    margin: 0 auto;
     padding: 0 122px;
+
+    @include mMax {
+      max-width: calc(100% - 6.4vw * 2);
+    }
+
+    @include max(1100) {
+      padding: 0;
+    }
   }
 }
