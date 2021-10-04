@@ -13,15 +13,13 @@ block main
   .promo
     //- Heading
     .promo-heading
-      .container3.promo__container-inner       
-        .promo-heading__image
-          img(src="img/landings/promo/45.png", alt="").promo-heading__image-item
-
+      .promo__container   
         .promo-heading__title
           .promo-heading__title-icon
             img(src="img/landings/promo/heading-i.png", alt="!").promo-heading__title-icon-item
           h1.promo-heading__title-item
             | Глобальное обновление
+
         .promo-heading__description
           p.promo-heading__text
             | Мы ушли на обновление всех наших курсов. Для самых преданных мы сделали возможность предзаписи и покупки новой программы по старой цене.
@@ -31,9 +29,12 @@ block main
               | 1 ноября 
             | объявим даты, программы и новые цены.
 
+        .promo-heading__image
+          img(src="img/landings/promo/45.png", alt="").promo-heading__image-item            
+
     //- Cards
     .promo-cards
-      .container3.promo__container-inner
+      .promo__container
         .promo-cards__wrapper
           //- Card 1
           .promo-card.promo-cards__item
@@ -116,7 +117,7 @@ block main
             .promo-card__inner(style="background-color:#ff9b07;")
               .promo-card__content
                 .promo-card__title
-                  | Создание SMM-стратегий
+                  | Создание SMM&#8209;стратегий
                 
                 .promo-card__bottom
                   .promo-card__price
