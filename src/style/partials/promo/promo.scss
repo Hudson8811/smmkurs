@@ -1,0 +1,9 @@
+.promo {
+  color: #ffffff;
+  background-color: $black;
+  overflow-x: hidden;
+
+  &__container-inner {
+    padding: 0 122px;
+  }
+}

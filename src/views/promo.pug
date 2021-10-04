@@ -1,0 +1,161 @@
+extends layouts/empty
+
+block vars
+    -
+        const page = {
+            title: 'index.html'
+        };
+
+block header
+  include partials/__header-simple
+
+block main
+  .promo
+    //- Heading
+    .promo-heading
+      .container3.promo__container-inner       
+        .promo-heading__image
+          img(src="img/landings/promo/45.png", alt="").promo-heading__image-item
+
+        .promo-heading__title
+          .promo-heading__title-icon
+            img(src="img/landings/promo/heading-i.png", alt="!").promo-heading__title-icon-item
+          h1.promo-heading__title-item
+            | Глобальное обновление
+        .promo-heading__description
+          p.promo-heading__text
+            | Мы ушли на обновление всех наших курсов. Для самых преданных мы сделали возможность предзаписи и покупки новой программы по старой цене.
+          br
+          p.promo-heading__text
+            span.promo-heading__text--highlighted
+              | 1 ноября 
+            | объявим даты, программы и новые цены.
+
+    //- Cards
+    .promo-cards
+      .container3.promo__container-inner
+        .promo-cards__wrapper
+          //- Card 1
+          .promo-card.promo-cards__item
+            .promo-card__inner(style="background-color:#1254f3;")
+              .promo-card__content
+                .promo-card__title
+                  | Экспресс SMM
+                
+                .promo-card__bottom
+                  .promo-card__price
+                    | 10 000 ₽
+                  .promo-card__old-price
+                    | 15 000 ₽
+                  
+                  a(href="javascript:;").promo-card__button.promo-card__buy
+                    | Предзапись
+
+                  a(href="javascript:;").promo-card__button.promo-card__info
+                    | Старая программа
+
+          //- Card 2
+          .promo-card.promo-cards__item
+            .promo-card__inner(style="background-color:#ff445a;")
+              .promo-card__content
+                .promo-card__title
+                  | Комплексный SMM
+                
+                .promo-card__bottom
+                  .promo-card__price
+                    | 25 000 ₽
+                  .promo-card__old-price
+                    | 35 000 ₽
+                  
+                  a(href="javascript:;").promo-card__button.promo-card__buy
+                    | Предзапись
+
+                  a(href="javascript:;").promo-card__button.promo-card__info
+                    | Старая программа
+
+          //- Card 3
+          .promo-card.promo-cards__item
+            .promo-card__inner(style="background-color:#c15dd4;")
+              .promo-card__content
+                .promo-card__title
+                  | Личный бренд
+                
+                .promo-card__bottom
+                  .promo-card__price
+                    | 25 000 ₽
+                  .promo-card__old-price
+                    | 35 000 ₽
+                  
+                  a(href="javascript:;").promo-card__button.promo-card__buy
+                    | Предзапись
+
+                  a(href="javascript:;").promo-card__button.promo-card__info
+                    | Старая программа
+
+          //- Card 4
+          .promo-card.promo-cards__item
+            .promo-card__inner(style="background-color:#fb5114;")
+              .promo-card__content
+                .promo-card__title
+                  | Личный бренд <span>с распаковкой<br>личности / экспертности</span>
+                
+                .promo-card__bottom
+                  .promo-card__price
+                    | 80 000 ₽
+                  .promo-card__old-price
+                    | 90 000 ₽
+                  
+                  a(href="javascript:;").promo-card__button.promo-card__buy
+                    | Предзапись
+
+                  a(href="javascript:;").promo-card__button.promo-card__info
+                    | Старая программа      
+
+          //- Card 5
+          .promo-card.promo-cards__item
+            .promo-card__inner(style="background-color:#ff9b07;")
+              .promo-card__content
+                .promo-card__title
+                  | Создание SMM-стратегий
+                
+                .promo-card__bottom
+                  .promo-card__price
+                    | 20 000 ₽
+                  .promo-card__old-price
+                    | 35 000 ₽
+                  
+                  a(href="javascript:;").promo-card__button.promo-card__buy
+                    | Предзапись
+
+                  a(href="javascript:;").promo-card__button.promo-card__info
+                    | Старая программа
+
+          //- Card 6
+          .promo-card.promo-cards__item
+            .promo-card__inner(style="background-color:#414190;")
+              .promo-card__content
+                .promo-card__title
+                  | Таргетированная реклама
+                
+                .promo-card__bottom
+                  .promo-card__price
+                    | 15 000 ₽
+                  .promo-card__old-price
+                    | 20 000 ₽
+                  
+                  a(href="javascript:;").promo-card__button.promo-card__buy
+                    | Предзапись
+
+                  a(href="javascript:;").promo-card__button.promo-card__info
+                    | Старая программа                                                       
+
+      .promo-cards__bg.promo-cards__bg--1
+        img(src="img/landings/promo/bg-1.png", alt="").promo-cards__bg-item
+      
+      .promo-cards__bg.promo-cards__bg--2
+        img(src="img/landings/promo/bg-2.png", alt="").promo-cards__bg-item
+
+      .promo-cards__bg.promo-cards__bg--3
+        img(src="img/landings/promo/bg-3.png", alt="").promo-cards__bg-item
+block footer
+  include partials/_footer-light
