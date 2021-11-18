@@ -24,6 +24,9 @@
     align-items: center;
     font-size: 24px;
     line-height: 1;
+    @include mMin{
+      max-width: calc(100% - 620px);
+    }
   }
   &__logo{
     display: block;
@@ -38,6 +41,7 @@
     &--admin{
       width: 179px;
       margin-right: 53px;
+      flex-shrink: 0;
     }
   }
   &__right{
@@ -100,6 +104,19 @@
             bottom: -12px;
             background: $orange;
             border-radius: 72px/34px;
+          }
+        }
+      }
+
+      &-wrapper{
+        overflow: auto;
+        li{
+          flex-shrink: 0;
+          width: max-content;
+          a{
+            white-space: nowrap;
+            flex-shrink: 0;
+            width: max-content;
           }
         }
       }
