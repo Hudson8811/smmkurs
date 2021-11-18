@@ -119,6 +119,91 @@
             width: max-content;
           }
         }
+
+        /* Scrollbar style for Chrome */
+
+        /* Track */
+        &::-webkit-scrollbar
+        {
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-track
+        {
+          background: rgba(0, 0, 0, 0.05);
+          border: none;
+          border-radius: 5px;
+        }
+
+
+        /* Thumb */
+        &::-webkit-scrollbar-thumb
+        {
+          background: #AFF800;
+          transition: background-color 0.1s ease;
+          border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover
+        {
+          background: #AFF800;
+        }
+
+        &::-webkit-scrollbar-thumb:active
+        {
+          background: #FF5210;
+        }
+
+        &::-webkit-scrollbar-thumb:vertical
+        {
+          border: none
+        }
+
+        &::-webkit-scrollbar-thumb:horizontal
+        {
+          border: none
+        }
+
+
+        /* Buttons */
+        &::-webkit-scrollbar-button
+        {
+          border-style: solid;
+          height: 10px;
+          width: 10px;
+        }
+
+
+
+        /* Left */
+        &::-webkit-scrollbar-button:horizontal:decrement
+        {
+          border-width: 5px 10px 5px 0;
+          transition: border 0.1s linear;
+          border-color: transparent #AFF800 transparent transparent;
+        }
+
+        &::-webkit-scrollbar-button:horizontal:decrement:hover
+        {
+          border-color: transparent #FF5210 transparent transparent;
+        }
+
+
+        /* Right */
+        &::-webkit-scrollbar-button:horizontal:increment
+        {
+          transition: border 0.1s linear;
+          border-width: 5px 0 5px 10px;
+          border-color: transparent transparent transparent #AFF800;
+        }
+
+        &::-webkit-scrollbar-button:horizontal:increment:hover
+        {
+          border-color: transparent transparent transparent #FF5210;
+        }
+
       }
     }
   }
